@@ -1,6 +1,5 @@
 /* **********ui-input********** */
 div.ui-input-container {
-	position: relative;
     display: flex;
     flex-direction: column;
     width: 920px;    
@@ -58,9 +57,53 @@ div.ui-input-container p.error-text {
 div.ui-input-container.error p.error-text {
 	display: block;
 }
-/* **********ui-input********** */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-/* **********ui-text-area********** */
+/* **********ui-textarea********** */
+div.ui-textarea-container {
+    display: flex;
+    flex-direction: column;
+    width: 920px;
+	position: relative;
+}
 
-/* **********ui-text-area********** */
+div.ui-textarea-container .ui-textarea-label {
+    width: fit-content;
+	height: 30px;
+    margin-bottom: -15px;
+    margin-left: 10px;
+	padding: 0 6px 0 6px;
+    z-index: 1;
+    background-color: #ffffff;
+	color: #525251;
+}
+
+div.ui-textarea-container .ui-textarea {
+	padding: 15px 24px 15px 24px;
+	border: 2px solid #000000;
+  	min-height: 242px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 31px;	
+}
+
+div.ui-textarea-container .ui-textarea::before {
+	content: "";
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 893px;
+	bottom: -1px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2IDFWMjZIMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0xMy41IDFWMTMuNUgxIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTIwIDFWMjBIMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
+}
+
+div.ui-textarea-container .ui-textarea:focus {
+	outline-color: #ED7A33;
+}
+
+div.ui-textarea-container .ui-textarea:focus::before {
+	outline-color: #ED7A33;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2IDFWMjZIMSIgc3Ryb2tlPSIjRUQ3QTMzIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEzLjUgMVYxMy41SDEiIHN0cm9rZT0iI0VEN0EzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0yMCAxVjIwSDEiIHN0cm9rZT0iI0VEN0EzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
