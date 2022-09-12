@@ -1,0 +1,56 @@
+*,:after,:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+	font-family: 'DINPro', sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+body {
+padding-top: 68px;
+background: #EBEAE9;
+}
+
+div.webinars-content {
+display: flex;
+background: #EBEAE9;
+}
+
+nav {
+	/* width: 110px; */
+	border-right: 2px solid black;
+}
+
+header {
+	display: flex;
+	height: 67px;
+	border-bottom: 2px solid black;
+}
+
+header .logo {
+	width: 187px;
+    height: 55px;
+	margin-left: 45px;
+}
+
+main {
+	
+}
+
+main .video-container {
+	width: 1772px ;
+	height: 909px;
+	border-bottom: 2px solid black;
+	padding-left: 44px;
+}
+
+main .video-panel {
+	width: 1772px ;
+	height: 133px;
+	border-bottom: 2px solid black;
+}

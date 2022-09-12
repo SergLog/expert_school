@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="ru-RU">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="keywords" content="" />
+  <title>UI Kit</title>
+  <meta name="description" content="UI Kit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="css/style.css?v=106" type="text/css" rel="stylesheet" />
+  <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ui-dropdown -->
+  <div style="display:none">
+    <h1>ui-dropdown</h1>
+    <div style="margin-top: 25px; margin-bottom: 25px"></div>
+    <div class="ui-dropdown-container">
+      <label class="ui-dropdown-label" for="dropdown">ОБРАЗОВАНИЕ</label>
+      <select class="ui-dropdown" id="dropdown">
+        <!-- <option value="volvo"></option> -->
+        <option value="" disabled selected style='display:none;'></option>
+        <option value="val">ПОЛНОЕ ВЫСШЕЕ</option>
+        <option value="val">НЕ ПОЛНОЕ ВЫСШЕЕ</option>
+        <option value="val">СПЕЦИАЛЬНОЕ</option>
+        <option value="val">СРЕДНЕСПЕЦИАЛЬНОЕ</option>
+      </select>
+    </div>
+  </div>
+  <!-- ui-dropdown -->
+
+  <!-- ui-input -->
+  <div style="display:none">
+    <div style="margin-top: 40px; margin-bottom: 25px"></div>
+    <h1>ui-example</h1>
+    <div style="margin-top: 25px; margin-bottom: 25px"></div>
+    <div class="ui-input-container">
+      <label class="ui-input-label" for="input">НАЗВАНИЕ КЛИНИЧЕСКОГО СЛУЧАЯ</label>
+      <input class="ui-input" type="text" id="input" />
+      <p class="error-text"></p>
+    </div>
+    <div style="margin-top: 25px; margin-bottom: 25px"></div>
+    <div class="ui-input-container">
+      <label class="ui-input-label" for="input-typed">НАЗВАНИЕ КЛИНИЧЕСКОГО СЛУЧАЯ</label>
+      <input class="ui-input" type="text" id="input-typed" value="Текст который был напечатан" />
+      <p class="error-text"></p>
+    </div>
+    <div style="margin-top: 25px; margin-bottom: 25px"></div>
+    <div class="ui-input-container error">
+      <label class="ui-input-label" for="input-error">НАЗВАНИЕ КЛИНИЧЕСКОГО СЛУЧАЯ</label>
+      <input class="ui-input" type="text" id="input-error" />
+      <p class="error-text">Ошибка ввода</p>
+    </div>
+    <div style="margin-top: 25px; margin-bottom: 25px"></div>
+    <div class="ui-input-container required">
+      <label class="ui-input-label" for="input-error">НАЗВАНИЕ КЛИНИЧЕСКОГО СЛУЧАЯ</label>
+      <input class="ui-input" type="text" id="input-error" />
+      <p class="error-text">Ошибка ввода</p>
+    </div>
+  </div>
+  <!-- ui-input -->
+
+  <!-- ui-textarea -->
+  <div style="display:none">
+    <div style="margin-top: 40px; margin-bottom: 25px"></div>
+    <h1>textarea example</h1>
+    <div style="margin-top: 25px; margin-bottom: 25px"></div>
+    <div class="ui-textarea-container">
+      <label class="ui-textarea-label" for="textarea">НАЗВАНИЕ КЛИНИЧЕСКОГО СЛУЧАЯ</label>
+      <!-- <textarea class="ui-textarea" type="text" id="textarea"></textarea> -->
+      <div class="ui-textarea" contentEditable="true"></div>
+    </div>
+  </div>
+  <!-- ui-texarea -->
+
+  <!-- ui-buttons -->
+  <div style="margin-top: 40px; margin-bottom: 25px"></div>
+  <h1>buttons example</h1>
+  <div style="margin-top: 25px; margin-bottom: 25px"></div>
+  <div class="ui-button-container">
+    <button type="button" class="ui-button">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+  </div>
+  <div style="margin-top: 25px; margin-bottom: 25px"></div>
+
+  <div class="ui-upload-button-container">
+    <label for="file-upload" class="ui-upload-button">
+      <span>ЗАГРУЗИТЬ</span>
+    </label>
+    <input id="file-upload" type="file" />
+    <!-- <button type="button" class="ui-upload-button">ЗАГРУЗИТЬ</button>
+    <p class="description">Максимальный размер файла 5 Мб. Форматы: png, jpg, gif</p> -->
+  </div>
+  <div style="margin-top: 25px; margin-bottom: 25px"></div>
+  <div class="ui-upload-button-container">
+    <!-- <input class="ui-upload-button uploaded" type="file" id="uploaded"> -->
+    <button type="button" class="ui-upload-button uploaded">НАЗВАНИЕ ДОКУМЕНТА...PNG</button>
+    <p class="description">Максимальный размер файла 5 Мб. Форматы: png, jpg, gif</p>
+  </div>
+  <!-- ui-buttons -->
+
+  <!-- ui-breadcrumbs -->
+  <div style="margin-top: 40px; margin-bottom: 25px"></div>
+  <h1>breadcrumbs example</h1>
+  <div style="margin-top: 25px; margin-bottom: 25px"></div>
+
+
+  <div class="breadcrumbs">
+    <a class="breadcrumb-link" href="#">Home</a>
+    <a class="breadcrumb-link" href="#">Categoryт</a>
+  </div>
+
+
+
+
+
+  <!-- <nav class="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#">Sub Category</a></li>
+      <li><a href="#">Type</a></li>
+      <li><span aria-current="page">Product</span></li>
+    </ul>
+  </nav> -->
+  <!-- ui-breadcrumbs -->
+</body>
+
+</html>
