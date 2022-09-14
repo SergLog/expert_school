@@ -1,4 +1,6 @@
-*,:after,:before {
+*,
+:after,
+:before {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -12,45 +14,361 @@ html {
 }
 
 body {
-padding-top: 68px;
-background: #EBEAE9;
+	display: flex;
+	justify-content: center;
 }
 
 div.webinars-content {
-display: flex;
-background: #EBEAE9;
+	padding-top: 68px;
+	padding-right: 40px;
+	display: flex;
+	background: #EBEAE9;
+}
+
+@media(max-width:768px) {
+	div.webinars-content {
+		padding: 0px;
+	}
 }
 
 nav {
-	/* width: 110px; */
+	width: 110px;
 	border-right: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media(max-width:768px) {
+	nav {
+		display: none;
+	}
+}
+
+nav .nav-burger-icon {
+	width: 44px;
+	height: 28px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCA0NSAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjEuNTk0NzMiIHkxPSIxIiB4Mj0iNDMuNTk0NyIgeTI9IjAuOTk5OTk2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPGxpbmUgeDE9IjEuNTk0NzMiIHkxPSIxNCIgeDI9IjQzLjU5NDciIHkyPSIxNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+CjxsaW5lIHgxPSIxLjU5NDczIiB5MT0iMjciIHgyPSI0My41OTQ3IiB5Mj0iMjciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgo8L3N2Zz4K");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 85px;
+}
+
+nav .nav-text-container {
+	height: 804px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+nav .nav-text-container .text {
+	transform: rotate(-90deg);
+	width: 804px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 99%;
+}
+
+nav .nav-user-icon {
+	width: 42px;
+	height: 42px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA0NSA0MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjIuNDQ2NCIgY3k9IjExLjQyNTkiIHI9IjEwLjQyNTkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNNDMuMjk4NCA0MS4yMTQyQzQzLjI5ODQgMzYuMDc5IDQxLjEwMTUgMzEuMTU0MSAzNy4xOTExIDI3LjUyMjlDMzMuMjgwNiAyMy44OTE4IDI3Ljk3NjggMjEuODUxOCAyMi40NDY2IDIxLjg1MThDMTYuOTE2MyAyMS44NTE4IDExLjYxMjYgMjMuODkxOCA3LjcwMjA5IDI3LjUyMjlDMy43OTE2MSAzMS4xNTQxIDEuNTk0NzMgMzYuMDc5IDEuNTk0NzMgNDEuMjE0MiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 header {
 	display: flex;
+	align-items: center;
 	height: 67px;
 	border-bottom: 2px solid black;
 }
 
+@media(max-width:768px) {
+	header {
+		height: 60px;
+		border-bottom: none;
+	}
+}
+
+header .header-burger-icon {}
+
 header .logo {
 	width: 187px;
-    height: 55px;
+	height: 55px;
 	margin-left: 45px;
 }
 
+@media(max-width:768px) {
+	header .logo {
+		width: 143px;
+		height: 42px;
+	}
+}
+
+header .webinar-breadcrumbs {
+	margin-left: 40px;
+}
+
+@media(max-width:768px) {
+	header .webinar-breadcrumbs {
+		display: none;
+	}
+}
+
 main {
-	
+	/* width: 100%; */
 }
 
 main .video-container {
-	width: 1772px ;
-	height: 909px;
+	/* width: 100%; */
 	border-bottom: 2px solid black;
 	padding-left: 44px;
+	padding-right: 153px;
 }
 
+@media(max-width:768px) {
+	main .video-container {
+		/* width: 768px; */
+		border-bottom: none;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+/* @media(max-width:375px){
+	main .video-container {
+		width: 375px;
+		border-bottom: none;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+} */
+
+main .video-container video {
+	width: 100%;
+	/* min-width: 375px; */
+	/* min-width: 1537px;	 */
+}
+
+
+
 main .video-panel {
-	width: 1772px ;
+	display: flex;
+	justify-content: space-between;
+	/* width: 1772px; */
 	height: 133px;
 	border-bottom: 2px solid black;
+	padding-left: 45px;
+	padding-right: 90px;
+}
+
+@media(max-width:768px) {
+	main .video-panel {
+		display: none;
+	}
+}
+
+main .video-panel .video-panel-likes {
+	display: flex;
+}
+
+main .video-panel .video-panel-controls {
+	display: flex;
+}
+
+main .video-panel .ui-like-container.like,
+main .video-panel .ui-share-container,
+main .video-panel .ui-save-container {
+	margin-right: 34px;
+}
+
+
+@media(max-width:768px) {
+	main .video-container video {
+		margin-right: 0px;
+	}
+}
+
+main .webinars-empty-row {
+	height: 124px;
+	border-bottom: 2px solid black;
+}
+
+main .webinars-tags {
+	display: flex;
+	align-items: center;
+	padding: 86px 170px 86px 24px;
+	border-bottom: 2px solid black;
+}
+
+main .webinars-tags .title {
+	margin-right: 250px;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 99%;
+}
+
+main .webinars-tags .tags-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -30px;
+}
+
+main .webinars-tags .tags-container p {
+	margin-right: 25px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	margin-top: 30px;
+	text-decoration-line: underline;
+}
+
+
+main .webinars-poll {
+	display: flex;
+	align-items: center;
+	height: 1119px;
+	border-bottom: 2px solid black;
+	padding: 66px 16px 276px 24px;
+}
+
+main .webinars-poll .poll-description-container {
+	display: flex;
+	flex-direction: column;
+	margin-right: 389px;
+
+}
+
+main .webinars-poll .poll-title {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 58px;
+	text-transform: uppercase;
+
+}
+
+main .webinars-poll .poll-description {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 41px;
+	margin-top: 44px;
+	margin-left: 102px;
+}
+
+main .webinars-poll .poll-table {}
+
+main .webinars-poll .poll-table .table-title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 41px;
+}
+
+main .webinars-poll .poll-table form {
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: -0.01em;
+	text-transform: uppercase;
+	margin-top: 24px;
+}
+
+main .webinars-poll .poll-table form legend {
+	min-width: 235px;
+}
+
+main .webinars-poll .poll-table form .row {
+	border-top: 2px solid #3B3B3A;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main .webinars-poll .poll-table form .row:hover {
+	background-color: #cac1c1;
+}
+
+main .webinars-poll .poll-table form fieldset {
+	display: flex;
+	border: none;
+}
+
+main .webinars-poll .poll-table form fieldset input {
+	appearance: none;
+	text-align: center;
+}
+
+main .webinars-poll .poll-table form fieldset input::before {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	line-height: 23px;
+	width: 130px;
+	height: 100px;
+	text-transform: uppercase;
+}
+
+main .webinars-poll .poll-table form fieldset input:hover::before {
+	background-color: #DAD6D2;
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(1n)::before {
+	content: "1";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(1n):hover::before {
+	content: "Очень плохо";
+}
+
+main .webinars-poll .poll-table form fieldset input:checked:nth-child(1n)::before {
+	content: "Очень плохо";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(2n)::before {
+	content: "2";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(2n):hover::before {
+	content: "Плохо";
+}
+
+main .webinars-poll .poll-table form fieldset input:checked:nth-child(2n)::before {
+	content: "Плохо";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(3n)::before {
+	content: "3";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(3n):hover::before {
+	content: "Нормально";
+}
+
+main .webinars-poll .poll-table form fieldset input:checked:nth-child(3n)::before {
+	content: "Нормально";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(4n)::before {
+	content: "4";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(4n):hover::before {
+	content: "Хорошо";
+}
+
+main .webinars-poll .poll-table form fieldset input:checked:nth-child(4n)::before {
+	content: "Хорошо";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(5n)::before {
+	content: "5";
+}
+
+main .webinars-poll .poll-table form fieldset input:nth-child(5n):hover::before {
+	content: "Очень хорошо";
+}
+
+main .webinars-poll .poll-table form fieldset input:checked:nth-child(5n)::before {
+	content: "Очень хорошо";
 }

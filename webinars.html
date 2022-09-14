@@ -20,27 +20,153 @@
 
 <body>
   <div class="webinars-content">
-    <nav>nav</nav>
+    <nav>
+      <div class="nav-burger-icon"></div>
+      <div class="nav-text-container">
+        <p class="text">ОСТАВАЙТЕСЬ В КУРСЕ ТЕНДЕНЦИЙ</p>
+      </div>
+      <div class="nav-user-icon"></div>
+    </nav>
     <div>
       <header>
+        <div class="header-burger-icon"></div>
+        <div class="header-search-icon"></div>
         <img class="logo" src="/img/logo.png"></img>
-        <div class="breadcrumbs">
-          <a class="breadcrumb-link" href="#">Home</a>
-          <a class="breadcrumb-link" href="#">Categoryт</a>
+        <div class="webinar-breadcrumbs">
+          <div class="breadcrumbs">
+            <a class="breadcrumb-link" href="#">ВЕБИНАРЫ</a>
+            <a class="breadcrumb-link" href="#">ФУНКЦИОНАЛЬНЫЕ ЗАБОЛЕВАНИЯ ОРГАНОВ ПИЩЕВАРЕНИЯ: МЕЖДИСЦИПЛИНАРНАЯ
+              ПРОБЛЕМА</a>
+          </div>
         </div>
-    </header>
-    <main>
-      <div class="video-container">
-        <video width="1611" height="907" controls>
-          <source src="/video/3.mp4">
-        </video>
-        <!-- <iframe width="1611" height="907" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </header>
+      <main>
+        <div class="video-container">
+          <video controls>
+            <source src="/video/3.mp4">
+          </video>
+          <!-- <iframe width="1611" height="907" src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe> -->
-      </div>
-      <div class="video-panel">ddd
-      </div>
-    </main>
-  </div>
+        </div>
+        <div class="video-panel">
+          <div class="video-panel-likes">
+            <div class="ui-like-container like">
+              <p class="text">Нравится</p>
+              <div class="icon"></div>
+            </div>
+            <div class="ui-like-container unlike">
+              <p class="text">Не нравится</p>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="video-panel-controls">
+            <div class="ui-share-container">
+              <p class="text">Поделиться</p>
+              <div class="icon"></div>
+            </div>
+            <div class="ui-save-container">
+              <p class="text">Сохранить материал</p>
+              <div class="icon"></div>
+            </div>
+            <div class="ui-views-container">
+              <p class="text">Просмотров</p>
+              <div class="icon"></div>
+              <p class="count">143</p>
+            </div>
+          </div>
+        </div>
+        <div class="webinars-empty-row"></div>
+        <div class="webinars-tags">
+          <p class="title">ТЕГИ</p>
+          <div class="tags-container">
+            <p>Тералиджен</p>
+            <p>Тералиджен® ретард</p>
+            <p>Тримебутин</p>
+            <p>Тримедат®</p>
+            <p>Функциональные заболевания ЖКТ</p>
+            <p>Психические расстройства в гастроэнтерологии</p>
+            <p>Гастроэнтеролог</p>
+            <p>СРК</p>
+            <p>Бордин Д.С.</p>
+            <p>Медведев В.Э.</p>
+            <p>Психиатр</p>
+            <p>Терапевт</p>
+          </div>
+        </div>
+        <div class="webinars-empty-row"></div>
+        <div class="webinars-poll">
+          <div class="poll-description-container">
+            <p class="poll-title">Нам очень важно<br> ваше мнение</p>
+            <p class="poll-description">Пожалуйста, поделитесь вашими<br> впечатлениями от мероприятия </p>
+          </div>
+          <div class="poll-table">
+            <p class="table-title">Пожалуйста, оцените вебинар по 5-ти балльной шкале</p>
+            <form id="webinar-poll-answer">
+              <div class="row">
+                <legend>Общее впечатление</legend>
+                <fieldset>              
+                  <input type="radio" id="1-1">
+                  <input type="radio" id="1-2">
+                  <input type="radio" id="1-3">
+                  <input type="radio" id="1-4">
+                  <input type="radio" id="1-5">
+                </fieldset>
+              </div>
+              <div class="row">
+                <legend>Общее впечатление</legend>
+                <fieldset>              
+                  <input type="radio" id="1-1">
+                  <input type="radio" id="1-2">
+                  <input type="radio" id="1-3">
+                  <input type="radio" id="1-4">
+                  <input type="radio" id="1-5">
+                </fieldset>
+              </div>
+              <div class="row">
+                <legend>Общее впечатление</legend>
+                <fieldset>              
+                  <input type="radio" id="2-1">
+                  <input type="radio" id="2-2">
+                  <input type="radio" id="2-3">
+                  <input type="radio" id="2-4">
+                  <input type="radio" id="2-5">
+                </fieldset>
+              </div>
+              <div class="row">
+                <legend>Общее впечатление</legend>
+                <fieldset>              
+                  <input type="radio" id="3-1">
+                  <input type="radio" id="3-2">
+                  <input type="radio" id="3-3">
+                  <input type="radio" id="3-4">
+                  <input type="radio" id="3-5">
+                </fieldset>
+              </div>
+              <div class="row">
+                <legend>Общее впечатление</legend>
+                <fieldset>              
+                  <input type="radio" id="4-1">
+                  <input type="radio" id="4-2">
+                  <input type="radio" id="4-3">
+                  <input type="radio" id="4-4">
+                  <input type="radio" id="4-5">
+                </fieldset>
+              </div>
+              <div class="row">
+                <legend>Общее впечатление</legend>
+                <fieldset>              
+                  <input type="radio" id="5-1">
+                  <input type="radio" id="5-2">
+                  <input type="radio" id="5-3">
+                  <input type="radio" id="5-4">
+                  <input type="radio" id="5-5">
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
   </div>
   </div>
 </body>
