@@ -362,6 +362,7 @@ div.ui-save-container .icon {
 div.ui-save-container .icon:active {
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAxOCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi45OTA0IDIyLjQ4MzVWMy43NTY4NEMxNi45OTY1IDMuMDMxOTEgMTYuNzE5MiAyLjMzNDI0IDE2LjIxOTcgMS44MTczMkMxNS43MjAyIDEuMzAwNCAxNS4wMzkzIDEuMDA2NTcgMTQuMzI2OSAxLjAwMDQ5SDMuNjcyOUMyLjk2MDQ4IDEuMDA2NTcgMi4yNzk2MiAxLjMwMDQgMS43ODAxMSAxLjgxNzMyQzEuMjgwNiAyLjMzNDI0IDEuMDAzMzYgMy4wMzE5MSAxLjAwOTM5IDMuNzU2ODRWMjIuNDgzNUMwLjk0NjA3NCAyMy4wMjQyIDEuMjA2OTcgMjMuNTUxIDEuNjcxNzUgMjMuODIwOUMyLjEzNjU0IDI0LjA5MDcgMi43MTQ5MyAyNC4wNTEzIDMuMTQwMTkgMjMuNzIwOEw4LjIwMDg2IDE5LjI3NDVDOC42NTcwNiAxOC44NTU2IDkuMzUwNzUgMTguODU1NiA5LjgwNjk1IDE5LjI3NDVMMTQuODU5NiAyMy43MjIxQzE1LjI4NTEgMjQuMDUyOSAxNS44NjM5IDI0LjA5MjMgMTYuMzI4OCAyMy44MjJDMTYuNzkzNyAyMy41NTE4IDE3LjA1NDQgMjMuMDI0NSAxNi45OTA0IDIyLjQ4MzVaIiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
 }
+
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* **********ui-views********** */
@@ -390,5 +391,80 @@ div.ui-views-container .icon {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAyOCAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2LjU2MDUgOC41MjQ4MkMyMC45NTQgMTcuODU4MyA3LjA0NTkgMTcuODU4MyAxLjQzOTMyIDguNTI0ODJDNy4wNDU5IC0wLjgwODQwMyAyMC45NTQgLTAuODA4NDAzIDI2LjU2MDUgOC41MjQ4MloiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMTguNzE0MiA4LjUyNTMyQzE4LjcxNDIgMTEuMTI4OSAxNi42MDM0IDEzLjIzOTYgMTMuOTk5OSAxMy4yMzk2QzExLjM5NjUgMTMuMjM5NiA5LjI4NTY0IDExLjEyODkgOS4yODU2NCA4LjUyNTMyQzkuMjg1NjQgNS45MjE3MSAxMS4zOTY1IDMuODExMDQgMTMuOTk5OSAzLjgxMTA0QzE2LjYwMzQgMy44MTEwNCAxOC43MTQyIDUuOTIxNzEgMTguNzE0MiA4LjUyNTMyWiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* **********ui-footer********** */
+div.ui-footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	margin-bottom: 100px;
+	border-bottom: 1px solid black;
+}
+
+div.ui-footer-container .up-button {
+	display: flex;
+	font-weight: 400;
+	margin-left: 44px;
+	font-size: 23px;
+	line-height: 99%;
+	text-transform: uppercase;
+	border: none;
+	padding: 0;
+	background: inherit;
+	cursor: pointer;
+}
+
+div.ui-footer-container .up-button::after {
+	content: "";
+	width: 15px;
+	height: 17px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxNyAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuMDYxNTIgNy42MzUxM0w4LjQ5OTg3IDEuMTk2NzlMMTQuOTM4MiA3LjYzNTEzIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgo8cGF0aCBkPSJNOC40OTk3NiAxLjUwNzQ0TDguNTAwMTUgMTcuNDk5OSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 4px;
+}
+
+div.ui-footer-container .site-links {
+	display: flex;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 31px;
+	margin-left: 10px;
+
+}
+
+div.ui-footer-container .site-links a,
+div.ui-footer-container .site-links p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 99%;
+	text-decoration: none;
+	color: #525251;
+}
+
+div.ui-footer-container .site-links a {
+	text-decoration-line: underline;
+	text-underline-offset: 3px;
+}
+
+div.ui-footer-container .site-links a:before {
+	content: '|';
+	margin-left: 5px;
+}
+
+div.ui-footer-container .site-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 99%;
+}
+
+div.ui-footer-container .logo {
+	width: 126px;
+	height: 37px;
+	margin-right: 38px;
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////// */

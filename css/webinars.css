@@ -252,7 +252,7 @@ main .webinars-tab-bar {
 	border-bottom: 2px solid black;
 	padding-left: 45px;
 	padding-right: 90px;
-	/* display: none; */
+	display: none;
 }
 
 /* @media(max-width:768px) {
@@ -459,6 +459,7 @@ main .webinars-poll .poll-table form fieldset input:checked:nth-child(5n)::befor
 
 main .webinars-recomendations {
 	border-bottom: 2px solid black;
+	/* display: none; */
 }
 
 main .webinars-recomendations .title {
@@ -476,6 +477,7 @@ main .webinars-recomendations .title {
 main .webinars-recomendations .recomendations-container {
 	display: flex;
 	padding: 40px 0px 68px 16px;
+	max-width: 1766px;	
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 
@@ -492,9 +494,9 @@ main .webinars-recomendations .buttons-container {
 	margin-bottom: 74px;
 }
 
-main .webinars-recomendations .buttons-container .next {
-	display: flex;
-	margin-right: 80px;
+main .webinars-recomendations .buttons-container .next,
+main .webinars-recomendations .buttons-container .prev  {
+	display: flex;	
 	font-weight: 500;
 	font-size: 26px;
 	line-height: 99%;
@@ -503,6 +505,14 @@ main .webinars-recomendations .buttons-container .next {
 	padding: 0;
 	background: inherit;
 	cursor: pointer;
+}
+
+main .webinars-recomendations .buttons-container .next  {
+	margin-right: 80px;
+}
+
+main .webinars-recomendations .buttons-container .prev  {
+	margin-left: 40px;
 }
 
 main .webinars-recomendations .buttons-container .next::after {
@@ -514,3 +524,17 @@ main .webinars-recomendations .buttons-container .next::after {
 	background-position: center;
 	margin-left: 24px;
 }
+
+footer {
+	height: 135px;
+}
+
+/* main .webinars-recomendations .buttons-container .prev::after {
+	content: "";
+	width: 29px;
+	height: 29px;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyOCAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjEyNyAzLjEyNjU5TDI1Ljk5OTkgMTIuOTk5NUwxNi4xMjcgMjIuODcyNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+CjxwYXRoIGQ9Ik0yNS41MjQgMTIuOTk5NEwxLjAwMDMxIDEzIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 24px;
+} */
