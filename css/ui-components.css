@@ -263,8 +263,8 @@ div.breadcrumbs a {
 
 div.breadcrumbs a::before {
 	content: "";
-	width: 9px;
-	height: 15px;
+	min-width: 9px;
+	min-height: 15px;
 	margin: 0px 12px;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxMCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUw4IDhMMSAxNSIgc3Ryb2tlPSIjM0IzQjNBIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
 	background-repeat: no-repeat;

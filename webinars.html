@@ -16,6 +16,7 @@
   <link href="css/style.css?v=106" type="text/css" rel="stylesheet" />
   <link href="css/webinars.css?v=106" type="text/css" rel="stylesheet" />
   <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
+  <script src="js/webinars.js?v=106" defer></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
       </div>
       <div class="nav-user-icon"></div>
     </nav>
-    <div>
+    <div class="content-container">
       <header>
         <div class="header-burger-icon"></div>
         <div class="header-search-icon"></div>
@@ -42,14 +43,14 @@
       </header>
       <main>
         <div class="video-container">
-          <video controls>
+          <video controls autoplay>
             <source src="/video/3.mp4">
           </video>
           <!-- <iframe width="1611" height="907" src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe> -->
         </div>
-        <div class="video-panel">
-          <div class="video-panel-likes">
+        <div class="webinars-tab-bar">
+          <div class="webinars-tab-bar-likes">
             <div class="ui-like-container like">
               <p class="text">Нравится</p>
               <div class="icon"></div>
@@ -59,7 +60,7 @@
               <div class="icon"></div>
             </div>
           </div>
-          <div class="video-panel-controls">
+          <div class="webinars-tab-bar-controls">
             <div class="ui-share-container">
               <p class="text">Поделиться</p>
               <div class="icon"></div>
@@ -104,7 +105,17 @@
             <form id="webinar-poll-answer">
               <div class="row">
                 <legend>Общее впечатление</legend>
-                <fieldset>              
+                <fieldset>
+                  <input type="radio" name="row1" id="1-1">
+                  <input type="radio" name="row1" id="1-2">
+                  <input type="radio" name="row1" id="1-3">
+                  <input type="radio" name="row1" id="1-4">
+                  <input type="radio" name="row1" id="1-5">
+                </fieldset>
+              </div>
+              <div class="row">
+                <legend>Новизна</legend>
+                <fieldset>
                   <input type="radio" id="1-1">
                   <input type="radio" id="1-2">
                   <input type="radio" id="1-3">
@@ -113,18 +124,8 @@
                 </fieldset>
               </div>
               <div class="row">
-                <legend>Общее впечатление</legend>
-                <fieldset>              
-                  <input type="radio" id="1-1">
-                  <input type="radio" id="1-2">
-                  <input type="radio" id="1-3">
-                  <input type="radio" id="1-4">
-                  <input type="radio" id="1-5">
-                </fieldset>
-              </div>
-              <div class="row">
-                <legend>Общее впечатление</legend>
-                <fieldset>              
+                <legend>Понятность</legend>
+                <fieldset>
                   <input type="radio" id="2-1">
                   <input type="radio" id="2-2">
                   <input type="radio" id="2-3">
@@ -133,8 +134,8 @@
                 </fieldset>
               </div>
               <div class="row">
-                <legend>Общее впечатление</legend>
-                <fieldset>              
+                <legend>Применимость в работе</legend>
+                <fieldset>
                   <input type="radio" id="3-1">
                   <input type="radio" id="3-2">
                   <input type="radio" id="3-3">
@@ -143,8 +144,8 @@
                 </fieldset>
               </div>
               <div class="row">
-                <legend>Общее впечатление</legend>
-                <fieldset>              
+                <legend>Уровень организации</legend>
+                <fieldset>
                   <input type="radio" id="4-1">
                   <input type="radio" id="4-2">
                   <input type="radio" id="4-3">
@@ -153,8 +154,8 @@
                 </fieldset>
               </div>
               <div class="row">
-                <legend>Общее впечатление</legend>
-                <fieldset>              
+                <legend>Качество трансляции</legend>
+                <fieldset>
                   <input type="radio" id="5-1">
                   <input type="radio" id="5-2">
                   <input type="radio" id="5-3">
@@ -163,6 +164,78 @@
                 </fieldset>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="webinars-recomendations">
+          <p class="title">Рекомендации</p>
+          <div class="recomendations-container">
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек1.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек2.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек3.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек1.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек1.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек1.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+            <div class="recomendations-card">
+              <p class="card-title">Специальность</p>
+              <img class="сard-image" src="/img/рек1.jpg"></img>
+              <p class="card-header">Раздел</p>
+              <p class="card-text">Противовоспалительная активность противоаллергического препарата
+                7-[4-(4-бензгидрилпиперазинил-1)
+                бутил]-3-метилксантина сукцината (теоритин)</p>
+              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+            </div>
+          </div>
+          <div class="buttons-container">
+            <button type="button" class="prev">Назад</button>
+            <button type="button" class="next">Вперед</button>
           </div>
         </div>
       </main>
