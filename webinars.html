@@ -13,9 +13,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
   <link href="css/style.css?v=106" type="text/css" rel="stylesheet" />
   <link href="css/webinars.css?v=106" type="text/css" rel="stylesheet" />
-  <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
   <script src="js/webinars.js?v=106" defer></script>
 </head>
 
@@ -51,29 +51,83 @@
         <div class="webinars-tab-bar">
           <div class="webinars-tab-bar-likes">
             <div class="ui-like-container like">
-              <p class="text">Нравится</p>
-              <div class="icon"></div>
+              <div class="desktop">
+                <p class="text">Нравится</p>
+                <div class="icon"></div>
+              </div>
+              <div class="tablet">
+                <p class="text">Нравится</p>
+                <div class="icon"></div>
+              </div>
+              <div class="mobile">
+                <p class="text">Нравится</p>
+                <div class="icon"></div>
+              </div>
             </div>
             <div class="ui-like-container unlike">
-              <p class="text">Не нравится</p>
-              <div class="icon"></div>
+              <div class="desktop">
+                <p class="text">Не нравится</p>
+                <div class="icon"></div>
+              </div>
+              <div class="tablet">
+                <p class="text">Не нравится</p>
+                <div class="icon"></div>
+              </div>
+              <div class="mobile">
+                <p class="text">Не нравится</p>
+                <div class="icon"></div>
+              </div>
             </div>
           </div>
           <div class="webinars-tab-bar-controls">
             <div class="ui-share-container">
-              <p class="text">Поделиться</p>
-              <div class="icon"></div>
+              <div class="desktop">
+                <p class="text">Поделиться</p>
+                <div class="icon"></div>
+              </div>
+              <div class="tablet">
+                <p class="text">Поделиться</p>
+                <div class="icon"></div>
+              </div>
+              <div class="mobile">
+                <p class="text">Поделиться</p>
+                <div class="icon"></div>
+              </div>
             </div>
             <div class="ui-save-container">
-              <p class="text">Сохранить материал</p>
-              <div class="icon"></div>
+              <div class="desktop">
+                <p class="text">Сохранить материал</p>
+                <div class="icon"></div>
+              </div>
+                <div class="tablet">
+                  <p class="text">Сохранить материал</p>
+                  <div class="icon"></div>
+                </div>
+                <div class="mobile">
+                  <p class="text">Сохранить материал</p>
+                  <div class="icon"></div>
+                </div>
+              </div>
             </div>
             <div class="ui-views-container">
-              <p class="text">Просмотров</p>
-              <div class="icon"></div>
-              <p class="count">143</p>
+              <div class="desktop">
+                <p class="text">Просмотров</p>
+                <div class="icon"></div>
+                <p class="count">143</p>
+              </div>
+              <div class="tablet">
+                <p class="text">Просмотров:<span>143</span></p>
+                <!-- <p class="count">143</p> -->
+                <div class="icon"></div>
+                
+              </div>
+              <div class="mobile">
+                <p class="text">Просмотров:<span>143</span></p>
+                <!-- <p class="count">143</p> -->
+                <div class="icon"></div>
+                
+              </div>
             </div>
-          </div>
         </div>
         <div class="webinars-empty-row"></div>
         <div class="webinars-tags">
@@ -115,52 +169,55 @@
               <div class="row">
                 <legend>Новизна</legend>
                 <fieldset>
-                  <input type="radio" id="1-1">
-                  <input type="radio" id="1-2">
-                  <input type="radio" id="1-3">
-                  <input type="radio" id="1-4">
-                  <input type="radio" id="1-5">
+                  <input type="radio" name="row2" id="2-1">
+                  <input type="radio" name="row2" id="2-2">
+                  <input type="radio" name="row2" id="2-3">
+                  <input type="radio" name="row2" id="2-4">
+                  <input type="radio" name="row2" id="2-5">
                 </fieldset>
               </div>
               <div class="row">
                 <legend>Понятность</legend>
                 <fieldset>
-                  <input type="radio" id="2-1">
-                  <input type="radio" id="2-2">
-                  <input type="radio" id="2-3">
-                  <input type="radio" id="2-4">
-                  <input type="radio" id="2-5">
+                  <input type="radio" name="row3" id="3-1">
+                  <input type="radio" name="row3" id="3-2">
+                  <input type="radio" name="row3" id="3-3">
+                  <input type="radio" name="row3" id="3-4">
+                  <input type="radio" name="row3" id="3-5">
                 </fieldset>
               </div>
               <div class="row">
                 <legend>Применимость в работе</legend>
                 <fieldset>
-                  <input type="radio" id="3-1">
-                  <input type="radio" id="3-2">
-                  <input type="radio" id="3-3">
-                  <input type="radio" id="3-4">
-                  <input type="radio" id="3-5">
+                  <input type="radio" name="row4" id="4-1">
+                  <input type="radio" name="row4" id="4-2">
+                  <input type="radio" name="row4" id="4-3">
+                  <input type="radio" name="row4" id="4-4">
+                  <input type="radio" name="row4" id="4-5">
                 </fieldset>
               </div>
               <div class="row">
                 <legend>Уровень организации</legend>
                 <fieldset>
-                  <input type="radio" id="4-1">
-                  <input type="radio" id="4-2">
-                  <input type="radio" id="4-3">
-                  <input type="radio" id="4-4">
-                  <input type="radio" id="4-5">
+                  <input type="radio" name="row5" id="5-1">
+                  <input type="radio" name="row5" id="5-2">
+                  <input type="radio" name="row5" id="5-3">
+                  <input type="radio" name="row5" id="5-4">
+                  <input type="radio" name="row5" id="5-5">
                 </fieldset>
               </div>
               <div class="row">
                 <legend>Качество трансляции</legend>
                 <fieldset>
-                  <input type="radio" id="5-1">
-                  <input type="radio" id="5-2">
-                  <input type="radio" id="5-3">
-                  <input type="radio" id="5-4">
-                  <input type="radio" id="5-5">
+                  <input type="radio" name="row6" id="6-1">
+                  <input type="radio" name="row6" id="6-2">
+                  <input type="radio" name="row6" id="6-3">
+                  <input type="radio" name="row6" id="6-4">
+                  <input type="radio" name="row6" id="6-5">
                 </fieldset>
+              </div>
+              <div class="row">
+                <button type="button" class="send-button">Отправить ответ</button>
               </div>
             </form>
           </div>
@@ -240,15 +297,49 @@
       </main>
       <footer>
         <div class="ui-footer-container">
-          <button type="up-button" class="up-button">Наверх</button>
-          <div class="site-links">
-            <p>© 2022</p>
-            <a href="#">Условия использования</a>
-            <a href="#">Политика конфиденциальности</a>
-            <a href="#">Обратная связь</a>
+          <div class="desktop">
+            <button type="up-button" class="up-button">Наверх</button>
+            <div class="site-links">
+              <p>© 2022</p>
+              <a href="#">Условия использования</a>
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Обратная связь</a>
+            </div>
+            <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников</div>
+            <img class="logo" src="/img/logo.png"></img>
           </div>
-          <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников</div>
-          <img class="logo" src="/img/logo.png"></img>          
+          <div class="tablet">
+            <div class="first-container">
+              <img class="logo" src="/img/logo.png"></img>
+              <button type="up-button" class="up-button">Наверх</button>
+            </div>
+            <div class="second-container">
+              <div class="site-links">
+                <p>© 2022</p>
+                <a href="#">Условия использования</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Обратная связь</a>
+              </div>
+              <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
+              </div>
+            </div>
+          </div>
+          <div class="mobile">
+            <div class="first-container">
+              <img class="logo" src="/img/logo.png"></img>
+              <button type="up-button" class="up-button">Наверх</button>
+            </div>
+            <div class="second-container">
+              <div class="site-links">
+                <p>© 2022</p>
+                <a href="#">Условия использования</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Обратная связь</a>
+              </div>
+              <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
