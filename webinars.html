@@ -9,7 +9,6 @@
   <title>Webinars</title>
   <meta name="description" content="Webinars" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -26,6 +25,24 @@
       <div class="nav-text-container">
         <p class="text">ОСТАВАЙТЕСЬ В КУРСЕ ТЕНДЕНЦИЙ</p>
       </div>
+      <div class="expanded-menu">
+        <div class="title-container">
+          <p class="title">Меню</p>
+          <div class="close-menu"></div>
+        </div>
+        <div class="search-container">
+          <input placeholder="Что вы хотите найти?">
+          <div class="search-icon"></div>
+        </div>
+        <div class="menu-list">
+          <ul>
+            <li>Вебинары</li>
+            <li>Клинические<br>случаи</li>
+            <li>Обзоры</li>
+            <li>Новости</li>
+          </ul>
+        </div>
+      </div>
       <div class="nav-user-icon"></div>
     </nav>
     <div class="content-container">
@@ -36,100 +53,143 @@
         <div class="webinar-breadcrumbs">
           <div class="breadcrumbs">
             <a href="#">ВЕБИНАРЫ</a>
-            <a href="#">ФУНКЦИОНАЛЬНЫЕ ЗАБОЛЕВАНИЯ ОРГАНОВ ПИЩЕВАРЕНИЯ: МЕЖДИСЦИПЛИНАРНАЯ ПРОБЛЕМА</a>
+            <a href="#">ФУНКЦИОНАЛЬНЫЕ ЗАБОЛЕВАНИЯ ОРГАНОВ ПИЩЕВАРЕНИЯ</a>
           </div>
         </div>
       </header>
       <main>
         <div class="video-container">
-          <video controls>
+          <div class="video-stub">
+            <div class="speakers">
+              <img class="speaker" src="/img/medvedev_speaker.jpg"></img>
+              <img class="speaker" src="/img/fedotova_speaker.jpg"></img>
+            </div>
+            <div class="separator"></div>
+            <!-- <hr> -->
+            <div class="webinar desktop">
+              <div class="planned-dayweek">Вторник<span>СКОРО</span></div>
+              <div class="planned-date">20<span>сентября</span></div>
+              <p class="planned-time">19:00</p>
+              <p class="title">Тревога: от соматовегетативных<br> до когнитивных расстройств</p>
+              <p class="speakers-fio">Медведев Владимир Эрнстович</p>
+              <p class="speakers-fio">Федотова Анастасия Валерьевна</p>
+              <div class="ui-button-container">
+                <button type="button" class="ui-button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              </div>
+            </div>
+            <div class="webinar tablet">
+              <span class="soon">СКОРО</span>
+              <div class="date-container">
+                <div>
+              <p class="planned-time">Начало в 19:00</p>
+                <div class="planned-dayweek">Вторник</div>
+              </div>
+              <div class="date-separator"></div>
+                <div class="planned-date">20<span>сентября</span></div>
+              </div>
+              <p class="title">Тревога: от соматовегетативных<br> до когнитивных расстройств</p>
+              <p class="speakers-fio">Медведев Владимир Эрнстович</p>
+              <p class="speakers-fio">Федотова Анастасия Валерьевна</p>
+              <div class="ui-button-container">
+                <button type="button" class="ui-button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              </div>
+            </div>
+            <!-- <div class="webinar mobile">
+              <div class="planned-dayweek">Вторник<span>СКОРО</span></div>
+              <div class="planned-date">20<span>сентября</span></div>
+              <p class="planned-time">19:00</p>
+              <p class="title">Тревога: от соматовегетативных<br> до когнитивных расстройств</p>
+              <p class="speakers-fio">Медведев Владимир Эрнстович</p>
+              <p class="speakers-fio">Федотова Анастасия Валерьевна</p>
+              <div class="ui-button-container">
+                <button type="button" class="ui-button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              </div>
+            </div> -->
+          </div>
+          <!-- <video controls>
             <source src="/video/3.mp4">
-          </video>
+          </video> -->
           <!-- <iframe width="1611" height="907" src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe> -->
         </div>
         <div class="webinars-tab-bar">
-          <div class="webinars-tab-bar-likes">
-            <div class="ui-like-container like">
-              <div class="desktop">
-                <p class="text">Нравится</p>
-                <div class="icon"></div>
-              </div>
-              <div class="tablet">
-                <p class="text">Нравится</p>
-                <div class="icon"></div>
-              </div>
-              <div class="mobile">
-                <p class="text">Нравится</p>
-                <div class="icon"></div>
-              </div>
+          <div class="ui-like-container like">
+            <div class="desktop">
+              <p class="text">Нравится</p>
+              <div class="icon"></div>
             </div>
-            <div class="ui-like-container unlike">
-              <div class="desktop">
-                <p class="text">Не нравится</p>
-                <div class="icon"></div>
-              </div>
-              <div class="tablet">
-                <p class="text">Не нравится</p>
-                <div class="icon"></div>
-              </div>
-              <div class="mobile">
-                <p class="text">Не нравится</p>
-                <div class="icon"></div>
-              </div>
+            <div class="tablet">
+              <p class="text">Нравится</p>
+              <div class="icon"></div>
+            </div>
+            <div class="mobile">
+              <p class="text">Нравится</p>
+              <div class="icon"></div>
             </div>
           </div>
-          <div class="webinars-tab-bar-controls">
-            <div class="ui-share-container">
-              <div class="desktop">
-                <p class="text">Поделиться</p>
-                <div class="icon"></div>
-              </div>
-              <div class="tablet">
-                <p class="text">Поделиться</p>
-                <div class="icon"></div>
-              </div>
-              <div class="mobile">
-                <p class="text">Поделиться</p>
-                <div class="icon"></div>
-              </div>
+          <div class="ui-like-container unlike">
+            <div class="desktop">
+              <p class="text">Не нравится</p>
+              <div class="icon"></div>
             </div>
-            <div class="ui-save-container">
-              <div class="desktop">
-                <p class="text">Сохранить материал</p>
-                <div class="icon"></div>
-              </div>
-                <div class="tablet">
-                  <p class="text">Сохранить материал</p>
-                  <div class="icon"></div>
-                </div>
-                <div class="mobile">
-                  <p class="text">Сохранить материал</p>
-                  <div class="icon"></div>
-                </div>
-              </div>
+            <div class="tablet">
+              <p class="text">Не нравится</p>
+              <div class="icon"></div>
             </div>
-            <div class="ui-views-container">
-              <div class="desktop">
-                <p class="text">Просмотров</p>
-                <div class="icon"></div>
-                <p class="count">143</p>
-              </div>
-              <div class="tablet">
-                <p class="text">Просмотров:<span>143</span></p>
-                <!-- <p class="count">143</p> -->
-                <div class="icon"></div>
-                
-              </div>
-              <div class="mobile">
-                <p class="text">Просмотров:<span>143</span></p>
-                <!-- <p class="count">143</p> -->
-                <div class="icon"></div>
-                
-              </div>
+            <div class="mobile">
+              <p class="text">Не нравится</p>
+              <div class="icon"></div>
             </div>
+          </div>
+          <div class="ui-share-container">
+            <div class="desktop">
+              <p class="text">Поделиться</p>
+              <div class="icon"></div>
+            </div>
+            <div class="tablet">
+              <p class="text">Поделиться</p>
+              <div class="icon"></div>
+            </div>
+            <div class="mobile">
+              <p class="text">Поделиться</p>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="ui-save-container">
+            <div class="desktop">
+              <p class="text">Сохранить материал</p>
+              <div class="icon"></div>
+            </div>
+            <div class="tablet">
+              <p class="text">Сохранить</p>
+              <div class="icon"></div>
+            </div>
+            <div class="mobile">
+              <p class="text">Сохранить</p>
+              <div class="icon"></div>
+            </div>
+          </div>
+          <div class="ui-views-container">
+            <div class="desktop">
+              <p class="text">Просмотров</p>
+              <div class="icon"></div>
+              <p class="count">143</p>
+            </div>
+            <div class="tablet">
+              <p class="text">Просмотров:<span>143</span></p>
+              <!-- <p class="count">143</p> -->
+              <div class="icon"></div>
+
+            </div>
+            <div class="mobile">
+              <p class="text">Просмотров:<span>143</span></p>
+              <!-- <p class="count">143</p> -->
+              <div class="icon"></div>
+
+            </div>
+          </div>
         </div>
-        <div class="webinars-empty-row"></div>
+        <!-- <div class="webinars-empty-row"></div> -->
         <div class="webinars-tags">
           <p class="title">ТЕГИ</p>
           <div class="tags-container">
@@ -226,33 +286,27 @@
           <p class="title">Рекомендации</p>
           <div class="recomendations-container">
             <div class="recomendations-card">
-              <p class="card-title">Специальность</p>
+              <p class="card-title">Неврология</p>
               <img class="сard-image" src="/img/рек1.jpg"></img>
-              <p class="card-header">Раздел</p>
-              <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                7-[4-(4-бензгидрилпиперазинил-1)
-                бутил]-3-метилксантина сукцината (теоритин)</p>
-              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+              <p class="card-header">Обзоры</p>
+              <p class="card-text">Эффекты при воздействии на различные типы рецепторов</p>
+              <!-- <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p> -->
             </div>
             <div class="recomendations-card">
-              <p class="card-title">Специальность</p>
+              <p class="card-title">Неврология</p>
               <img class="сard-image" src="/img/рек2.jpg"></img>
-              <p class="card-header">Раздел</p>
-              <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                7-[4-(4-бензгидрилпиперазинил-1)
-                бутил]-3-метилксантина сукцината (теоритин)</p>
-              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+              <p class="card-header">Обзоры</p>
+              <p class="card-text">Эффективность применения инъекционного алимемазина</p>
+              <!-- <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p> -->
             </div>
             <div class="recomendations-card">
-              <p class="card-title">Специальность</p>
+              <p class="card-title">Неврология</p>
               <img class="сard-image" src="/img/рек3.jpg"></img>
-              <p class="card-header">Раздел</p>
-              <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                7-[4-(4-бензгидрилпиперазинил-1)
-                бутил]-3-метилксантина сукцината (теоритин)</p>
-              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
+              <p class="card-header">Обзоры</p>
+              <p class="card-text">«Маски» тревоги</p>
+              <!-- <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p> -->
             </div>
-            <div class="recomendations-card">
+            <!-- <div class="recomendations-card">
               <p class="card-title">Специальность</p>
               <img class="сard-image" src="/img/рек1.jpg"></img>
               <p class="card-header">Раздел</p>
@@ -284,10 +338,9 @@
               <img class="сard-image" src="/img/рек1.jpg"></img>
               <p class="card-header">Раздел</p>
               <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                7-[4-(4-бензгидрилпиперазинил-1)
-                бутил]-3-метилксантина сукцината (теоритин)</p>
+                7-[4-(4-бензгидрилпиперазинил-1)бутил]-3-метилксантина сукцината (теоритин)</p>
               <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
-            </div>
+            </div> -->
           </div>
           <div class="buttons-container">
             <button type="button" class="prev">Назад</button>
@@ -298,7 +351,7 @@
       <footer>
         <div class="ui-footer-container">
           <div class="desktop">
-            <button type="up-button" class="up-button">Наверх</button>
+            <button type="button" class="up-button">Наверх</button>
             <div class="site-links">
               <p>© 2022</p>
               <a href="#">Условия использования</a>
@@ -311,7 +364,7 @@
           <div class="tablet">
             <div class="first-container">
               <img class="logo" src="/img/logo.png"></img>
-              <button type="up-button" class="up-button">Наверх</button>
+              <button type="button" class="up-button">Наверх</button>
             </div>
             <div class="second-container">
               <div class="site-links">
@@ -327,7 +380,7 @@
           <div class="mobile">
             <div class="first-container">
               <img class="logo" src="/img/logo.png"></img>
-              <button type="up-button" class="up-button">Наверх</button>
+              <button type="button" class="up-button">Наверх</button>
             </div>
             <div class="second-container">
               <div class="site-links">

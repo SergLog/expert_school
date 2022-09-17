@@ -2,10 +2,6 @@ const rightButtons = Array.from(document.getElementsByClassName('next'));
 const leftButtons = Array.from(document.getElementsByClassName('prev'));
 const containers = Array.from(document.getElementsByClassName('recomendations-container'));
 
-console.log(rightButtons);
-console.log(leftButtons);
-console.log(containers);
-
 let index = 0;
 for (const rightButton of rightButtons) {
     const container = containers[index];
@@ -23,3 +19,17 @@ for (const leftButton of leftButtons) {
     });
     index++;
 }
+
+// Открытие/закрытие левого меню
+const burgerMenuIcon = document.querySelector("nav .nav-burger-icon");
+const closeMenuIcon = document.querySelector("nav .close-menu");
+const navMenu = document.querySelector("nav");
+
+burgerMenuIcon.addEventListener("click", () => {
+    navMenu.classList.add("expand");
+});
+
+closeMenuIcon.addEventListener("click", () => {
+    navMenu.classList.remove("expand");
+});
+// Открытие/закрытие левого меню
