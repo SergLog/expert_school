@@ -6,7 +6,8 @@ let index = 0;
 for (const rightButton of rightButtons) {
     const container = containers[index];
     rightButton.addEventListener("click", function () {
-        container.scrollLeft += 543;
+        // container.scrollLeft += 543;
+        container.scrollLeft += 255;
     });
     index++;
 }
@@ -15,7 +16,8 @@ index = 0;
 for (const leftButton of leftButtons) {
     const container = containers[index];
     leftButton.addEventListener("click", function () {
-        container.scrollLeft -= 543;
+        // container.scrollLeft -= 543;
+        container.scrollLeft -= 255;
     });
     index++;
 }

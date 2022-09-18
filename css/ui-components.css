@@ -615,6 +615,8 @@ div.ui-footer-container .up-button {
 	padding: 0;
 	background: inherit;
 	cursor: pointer;
+	text-decoration: none;
+    color: #3B3B3A;
 }
 
 @media(max-width:768px) {

@@ -516,8 +516,11 @@ main .webinars-poll .poll-description-container {
 main .webinars-poll .poll-title {
 	font-weight: 700;
 	font-size: 45px;
-	line-height: 58px;
+	line-height: 38px;
 	text-transform: uppercase;
+	border-bottom: 6px solid #FF7900;
+	width: fit-content;
+	margin-bottom: 14px;
 }
 
 @media(max-width:768px) {
@@ -796,6 +799,18 @@ main .webinars-recomendations .title {
 	line-height: 99%;
 }
 
+@media(max-width:768px) {
+	main .webinars-recomendations .title {
+		font-size: 36px;
+	}
+}
+
+@media(max-width:375px) {
+	main .webinars-recomendations .title {
+		font-size: 28px;
+	}
+}
+
 main .webinars-recomendations .recomendations-container {
 	display: flex;
 	padding: 40px 0px 68px 16px;
@@ -941,7 +956,7 @@ main .webinars-recomendations .buttons-container .prev {
 	margin-left: 40px;
 }
 
-main .webinars-recomendations .buttons-container .next::after {
+/* main .webinars-recomendations .buttons-container .next::after {
 	content: "";
 	width: 29px;
 	height: 29px;
@@ -949,6 +964,23 @@ main .webinars-recomendations .buttons-container .next::after {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-left: 24px;
+} */
+
+@media(max-width:768px) {
+	main .webinars-recomendations .buttons-container .next {
+		margin-right: 40px;
+	}	
+}
+
+@media(max-width:375px) {
+	main .webinars-recomendations .buttons-container .next {
+		margin-right: 40px;
+		font-size: 20px;
+	}
+
+	main .webinars-recomendations .buttons-container .prev {
+		font-size: 20px;
+	}
 }
 
 footer {
@@ -996,6 +1028,9 @@ footer .ui-footer-container .mobile {
 	}
 }
 
+footer a.up-button {
+	appearance: none;
+}
 
 .video-stub {
 	display: flex;
