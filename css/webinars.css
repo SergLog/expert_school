@@ -1072,6 +1072,25 @@ footer .ui-footer-container .mobile {
 
 footer a.up-button {
 	appearance: none;
+	height: 100%;
+}
+
+.video-container .webinar {
+	background-image: url("/img/webinar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    height: 692px;
+    width: 1385px;
+    
+}
+
+.video-container .webinar:hover {
+	background-image: url("/img/webinar2.png");
+}
+
+.video-container .webinar:active {
+	background-image: url("/img/webinar3.png");
 }
 
 .video-stub {
@@ -1080,7 +1099,7 @@ footer a.up-button {
 	justify-content: space-between;
 	padding: 44px 0px;
 	/* border-bottom: 2px solid black; */
-	/* display: none; */
+	display: none;
 }
 
 @media(max-width:620px) {
@@ -1103,6 +1122,7 @@ footer a.up-button {
 
 .video-stub .speakers {
 	display: flex;
+	margin-right: 50px;
 }
 
 /* @media(max-width:1528px) {
