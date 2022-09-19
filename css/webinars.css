@@ -1105,11 +1105,11 @@ footer a.up-button {
 	display: flex;
 }
 
-@media(max-width:1528px) {
+/* @media(max-width:1528px) {
 	.video-stub .speaker {
 		margin-right: 24px;
 	}
-}
+} */
 
 .video-stub img.speaker {
 	display: block;
