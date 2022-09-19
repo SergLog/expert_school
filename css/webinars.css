@@ -20,6 +20,7 @@ body {
 
 .content-container {
 	width: 100%;
+	overflow: hidden;
 }
 
 div.webinars-content {
@@ -191,7 +192,7 @@ nav.expand .nav-user-icon {
 header {
 	display: flex;
 	align-items: center;
-	height: 67px;
+	/* height: 67px; */
 	border-bottom: 2px solid black;
 	padding-bottom: 10px;
 }
@@ -478,7 +479,7 @@ main .webinars-poll {
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 2px solid black;
-	padding: 66px 88px 276px 24px;
+	padding: 66px 6px 276px 24px;
 	/* display: none; */
 }
 
@@ -515,7 +516,6 @@ main .webinars-poll .poll-description-container {
 		justify-content: space-between;
 		padding-bottom: 39px;
 		border-bottom: 2px solid #3B3B3A;
-		flex-direction: row;
 	}
 }
 
@@ -534,6 +534,7 @@ main .webinars-poll .poll-title {
 	main .webinars-poll .poll-title {
 		font-size: 36px;
 		line-height: 46px;
+		box-shadow: none;
 	}
 }
 
@@ -559,9 +560,15 @@ main .webinars-poll .poll-table .table-title {
 	line-height: 41px;
 }
 
-@media(max-width:768px) {
+@media(max-width:1480px) {
 	main .webinars-poll .poll-table .table-title {
 		margin-top: 24px;
+	}
+}
+
+@media(max-width:1080px) {
+	main .webinars-poll .poll-table .table-title {
+		
 		font-size: 24px;
 		line-height: 31px
 	}
@@ -589,13 +596,7 @@ main .webinars-poll .poll-table form .send-button {
 	cursor: pointer;
 }
 
-@media(max-width:768px) {
-	main .webinars-poll .poll-table form .send-button {
-		height: 70px;
-	}
-}
-
-@media(max-width:768px) {
+@media(max-width:1080px) {
 	main .webinars-poll .poll-table form .send-button {
 		height: 70px;
 	}
@@ -605,7 +606,7 @@ main .webinars-poll .poll-table form legend {
 	min-width: 235px;
 }
 
-@media(max-width:768px) {
+@media(max-width:1080px) {
 	main .webinars-poll .poll-table form legend {
 		font-size: 14px;
 		line-height: 18px;
@@ -622,13 +623,13 @@ main .webinars-poll .poll-table form .row {
 	cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media(max-width:1080px) {
 	main .webinars-poll .poll-table form .row {
 		height: 70px;
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:660px) {
 	main .webinars-poll .poll-table form .row {
 		display: block;
 		border: none;
@@ -642,6 +643,7 @@ main .webinars-poll .poll-table form .row:hover {
 
 main .webinars-poll .poll-table form fieldset {
 	display: flex;
+	justify-content: space-around;
 	border: none;
 }
 
@@ -662,7 +664,7 @@ main .webinars-poll .poll-table form fieldset input::before {
 	cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media(max-width:1080px) {
 	main .webinars-poll .poll-table form fieldset input::before {
 		width: 74px;
 		height: 70px;
@@ -671,7 +673,7 @@ main .webinars-poll .poll-table form fieldset input::before {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:660px) {
 	main .webinars-poll .poll-table form fieldset input::before {
 		width: 66px;
 		height: 50px;
@@ -1278,7 +1280,7 @@ margin-bottom: 24px;
 	font-size: 18px !important;
 }
 
-.video-stub .tablet .ui-button-container button {
+.video-stub .tablet .ui-button-container a {
 	height: 80px;
 	font-size: 18px;
 }

@@ -192,6 +192,8 @@ div.ui-textarea-container .ui-textarea:focus::before {
 	font-weight: 500;
 	font-size: 26px;
 	cursor: pointer;
+	text-decoration: none;
+	color: #000000;
 }
 
 .ui-button-container .ui-button:hover {
