@@ -64,11 +64,14 @@ nav .expanded-menu .title {
 }
 
 nav .expanded-menu .search-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	margin-top: 48px;
 	position: relative;
+}
+
+nav .expanded-menu .search-container form {
+	display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
 nav .expanded-menu .search-container input {
@@ -86,6 +89,8 @@ nav .expanded-menu .search-container input {
 nav .expanded-menu .search-container .search-icon {
 	width: 37px;
 	height: 37px;
+	border: none;
+	appearance: none;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAzOCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTUuMTcwNSIgY3k9IjE0LjU3NTgiIHI9IjEzLjU3NTgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSB4MT0iMzYuMTgwNSIgeTE9IjM0Ljc1NzYiIHgyPSIyNi4zODI2IiB5Mj0iMjQuOTU5NyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+Cjwvc3ZnPgo=");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -835,6 +840,8 @@ main .webinars-recomendations .recomendations-card {
 	min-width: 411px;
     margin-right: 133px;
     height: 100%;
+	filter: grayscale(100%);transition: all 0.5s ease;
+	cursor: pointer;
 }
 
 main .webinars-recomendations .recomendations-card a {
@@ -863,10 +870,10 @@ main .webinars-recomendations .recomendations-card .сard-image {
     height: 100%;
     min-height: 411px;
 	max-width: 411px;
-	filter: grayscale(100%);transition: all 0.5s ease;
+	
 }
 
-main .webinars-recomendations .recomendations-card .сard-image:hover {
+main .webinars-recomendations .recomendations-card:hover {
 	filter: grayscale(0%);
 }
 
