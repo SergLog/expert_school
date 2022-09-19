@@ -35,3 +35,27 @@ closeMenuIcon.addEventListener("click", () => {
     navMenu.classList.remove("expand");
 });
 // Открытие/закрытие левого меню
+
+// Открытие/закрытие левого меню
+const tabletBurgerMenuIcon = document.querySelector(".header-burger-icon");
+const tabletCloseMenuIcon = document.querySelector("nav.tablet-nav-menu .close-menu");
+const tabletNavMenu = document.querySelector("nav.tablet-nav-menu");
+const mainContent = document.querySelector(".content-container");
+
+
+console.log(tabletBurgerMenuIcon);
+console.log(tabletCloseMenuIcon);
+console.log(tabletNavMenu);
+
+tabletBurgerMenuIcon.addEventListener("click", () => {
+    tabletNavMenu.classList.add("tablet-expand");
+    mainContent.classList.add("tablet-expand");
+});
+
+tabletCloseMenuIcon.addEventListener("click", () => {
+    tabletNavMenu.classList.remove("tablet-expand");
+    mainContent.classList.remove("tablet-expand");
+});
+
+
+// Открытие/закрытие левого меню
