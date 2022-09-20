@@ -36,16 +36,11 @@ closeMenuIcon.addEventListener("click", () => {
 });
 // Открытие/закрытие левого меню
 
-// Открытие/закрытие левого меню
+// Открытие мобильного меню
 const tabletBurgerMenuIcon = document.querySelector(".header-burger-icon");
 const tabletCloseMenuIcon = document.querySelector("nav.tablet-nav-menu .close-menu");
 const tabletNavMenu = document.querySelector("nav.tablet-nav-menu");
 const mainContent = document.querySelector(".content-container");
-
-
-console.log(tabletBurgerMenuIcon);
-console.log(tabletCloseMenuIcon);
-console.log(tabletNavMenu);
 
 tabletBurgerMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.add("tablet-expand");
@@ -55,7 +50,17 @@ tabletBurgerMenuIcon.addEventListener("click", () => {
 tabletCloseMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.remove("tablet-expand");
     mainContent.classList.remove("tablet-expand");
+});// Открытие мобильного меню
+
+const sendPollButtom = document.querySelector("main .webinars-poll .send-button");
+const webinarPollEnd = document.querySelector("main .webinars-poll-end");
+const webinarPoll = document.querySelector("main .webinars-poll");
+
+console.log(sendPollButtom);
+console.log(webinarPollEnd);
+console.log(webinarPoll);
+
+sendPollButtom.addEventListener("click", () => {
+    webinarPollEnd.classList.add("show");
+    webinarPoll.classList.add("hide");
 });
-
-
-// Открытие/закрытие левого меню
