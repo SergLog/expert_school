@@ -630,7 +630,7 @@ main .site-intro .site-title {
 main .site-intro .site-intro-text {
 	font-size: 1.67rem;
 	line-height: 1.98rem;
-	order: 2;
+	order: 4;
 }
 
 @media(max-width:768px) {
@@ -638,6 +638,7 @@ main .site-intro .site-intro-text {
 		padding-left: 5.87rem;
 		font-size: 3.73rem;
 		line-height: 4.27rem;
+		order: 2;
 	}
 }
 
@@ -652,7 +653,7 @@ main .site-intro .site-intro-text {
 
 main .site-intro .site-intro-text .site-logo {
 	margin-top: 2.71rem;
-	margin-bottom: 1.04rem;
+	margin-bottom: 5.21rem;
 }
 
 @media(max-width:768px) {
