@@ -1,3 +1,65 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-Light.eot');
+	src: local('DINPro Light'), local('DINPro-Light'),
+		url('../fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-Light.woff') format('woff'),
+		url('../fonts/DINPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-SemiBold.eot');
+	src: local('DINPro SemiBold'), local('DINPro-SemiBold'),
+		url('../fonts/DINPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-SemiBold.woff') format('woff'),
+		url('../fonts/DINPro-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-Bold.eot');
+	src: local('DINPro Bold'), local('DINPro-Bold'),
+		url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-Bold.woff') format('woff'),
+		url('../fonts/DINPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro.eot');
+	src: local('DINPro'), local('DINPro'),
+		url('../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro.woff') format('woff'),
+		url('../fonts/DINPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'DINPro';
+	src: url('../fonts/DINPro-ExtraBold.eot');
+	src: local('DINPro ExtraBold'), local('DINPro-ExtraBold'),
+		url('../fonts/DINPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-ExtraBold.woff') format('woff'),
+		url('../fonts/DINPro-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
 *,
 :after,
 :before {
@@ -506,7 +568,7 @@ header div.breadcrumbs a::before {
 	width: 0.47rem;
 	height: 0.83rem;
 	margin: 0px 0.63rem;
-	background-image: url("img/breadcrumbs_arrow.svg");
+	background-image: url("../img/breadcrumbs_arrow.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain
