@@ -141,7 +141,7 @@ nav .expanded-menu .search-container .search-icon {
 	height: 1.93rem;
 	border: none;
 	appearance: none;
-	background-image: url("/img/search_icon_nav_desktop.svg");
+	background-image: url("../img/search_icon_nav_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -157,7 +157,7 @@ nav .expanded-menu .search-container input:focus {
 nav .expanded-menu .close-menu {
 	width: 1.93rem;
 	height: 1.93rem;
-	background-image: url("/img/closed_nav_desktop.svg");
+	background-image: url("../img/closed_nav_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -202,7 +202,7 @@ nav.expand {
 nav .nav-burger-icon {
 	width: 2.29rem;
 	height: 1.35rem;
-	background-image: url("/img/burger_desktop.svg");
+	background-image: url("../img/burger_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -457,7 +457,7 @@ header {
 	header .header-burger-icon {
 		width: 4.3rem;
 		height: 3.2rem;
-		background-image: url("/img/burger_tablet.svg");
+		background-image: url("../img/burger_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -470,7 +470,7 @@ header {
 	header .header-search-icon {
 		width: 3.78rem;
 		height: 3.78rem;
-		background-image: url("/img/search_icon_tablet.svg");
+		background-image: url("../img/search_icon_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -481,7 +481,7 @@ header {
 
 @media(max-width:375px) {
 	header .header-burger-icon {
-		background-image: url("/img/burger_tablet.svg");
+		background-image: url("../img/burger_tablet.svg");
 		width: 6.93rem;
 		height: 4.53rem;
 		margin-left: 5.87rem;
@@ -490,7 +490,7 @@ header {
 
 @media(max-width:375px) {
 	header .header-search-icon {
-		background-image: url("/img/search_icon_tablet.svg");
+		background-image: url("../img/search_icon_tablet.svg");
 		width: 5.87rem;
 		height: 5.87rem;
 		margin-left: 5.87rem;
@@ -1376,7 +1376,7 @@ div.footer-container .mobile .second-container .site-links a {
 }
 
 footer div.footer-container .up-button {
-	background-image: url("/img/up-button.svg");
+	background-image: url("../img/up-button.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1388,7 +1388,7 @@ footer div.footer-container .up-button {
 
 @media(max-width:768px) {
 	footer div.footer-container .up-button {
-		background-image: url("/img/up-button.svg");
+		background-image: url("../img/up-button.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -1399,7 +1399,7 @@ footer div.footer-container .up-button {
 
 @media(max-width:375px) {
 	footer div.footer-container .up-button {
-		background-image: url("/img/up-button.svg");
+		background-image: url("../img/up-button.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -1551,7 +1551,7 @@ footer .footer-container .mobile {
 }
 
 .video-container .webinar {
-	background-image: url("/img/webinar.png");
+	background-image: url("../img/webinar.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1561,11 +1561,11 @@ footer .footer-container .mobile {
 }
 
 .video-container .webinar:hover {
-	background-image: url("/img/webinar2.png");
+	background-image: url("../img/webinar2.png");
 }
 
 .video-container .webinar:active {
-	background-image: url("/img/webinar3.png");
+	background-image: url("../img/webinar3.png");
 }
 
 .video-stub {
