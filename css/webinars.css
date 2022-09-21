@@ -8,7 +8,7 @@
 
 html {
 	font-family: 'DINPro', sans-serif;
-	font-size: 20px;
+	font-size: 1vw;
 	line-height: 26px;
 	background: #EBEAE9;
 }
@@ -29,8 +29,8 @@ body {
 }
 
 div.webinars-content {
-	padding-top: 68px;
-	padding-right: 40px;
+	padding-top: 3.54rem;
+	padding-right: 2.08rem;
 	display: flex;
 	background: #EBEAE9;
 	width: 100%;
@@ -39,7 +39,8 @@ div.webinars-content {
 
 @media(max-width:768px) {
 	div.webinars-content {
-		padding: 0px;
+		padding: 0;
+		padding-top: 0.52rem;
 	}
 }
 
@@ -393,12 +394,12 @@ header {
 	align-items: center;
 	/* height: 67px; */
 	border-bottom: 2px solid black;
-	padding-bottom: 10px;
+	padding-bottom: 0.52rem;
 }
 
 @media(max-width:768px) {
 	header {
-		height: 60px;
+		/* height: 60px; */
 		border-bottom: none;
 		padding-bottom: 0px;
 	}
@@ -406,77 +407,110 @@ header {
 
 @media(max-width:768px) {
 	header .header-burger-icon {
-		width: 34px;
-		height: 21px;
-		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAzNCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjAuNSIgeTE9IjAuNSIgeDI9IjMzLjM0NjEiIHkyPSIwLjQ5OTk5NyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgo8bGluZSB4MT0iMC41IiB5MT0iMTAuNSIgeDI9IjMzLjM0NjEiIHkyPSIxMC41IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+CjxsaW5lIHgxPSIwLjUiIHkxPSIyMC41IiB4Mj0iMzMuMzQ2MSIgeTI9IjIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==");
+		width: 4.3rem;
+		height: 3.2rem;
+		background-image: url("/img/burger_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
-		margin-left: 34px;
+		background-size: contain;
+		margin-left: 4.3rem;
 		cursor: pointer;
 	}
 }
 
 @media(max-width:768px) {
 	header .header-search-icon {
-		width: 29px;
-		height: 29px;
-		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAyOCAyOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSByPSIxMC43MTI5IiB0cmFuc2Zvcm09Im1hdHJpeCgwIDEgMSAwIDExLjIxMjkgMTEuMjEyOSkiIHN0cm9rZT0iYmxhY2siLz4KPGxpbmUgeDE9IjAuNSIgeTE9Ii0wLjUiIHgyPSIxMS42OTgiIHkyPSItMC41IiB0cmFuc2Zvcm09Im1hdHJpeCgtMC43MDcxMDcgLTAuNzA3MTA3IC0wLjcwNzEwNyAwLjcwNzEwNyAyNi43MzgzIDI4LjQ2MzYpIiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+Cjwvc3ZnPgo=");
+		width: 3.78rem;
+		height: 3.78rem;
+		background-image: url("/img/search_icon_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
-		margin-left: 31px;
+		background-size: contain;
+		margin-left: 3.78rem;
 		cursor: pointer;
 	}
 }
 
 @media(max-width:375px) {
 	header .header-burger-icon {
-		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAyNyAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjAuNSIgeTE9IjAuODA3NjE3IiB4Mj0iMjUuNTM1NSIgeTI9IjAuODA3NjE1IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+CjxsaW5lIHgxPSIwLjUiIHkxPSI4LjUiIHgyPSIyNS41MzU1IiB5Mj0iOC41IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+CjxsaW5lIHgxPSIwLjUiIHkxPSIxNi4xOTIxIiB4Mj0iMjUuNTM1NSIgeTI9IjE2LjE5MjEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==");
-		width: 26px;
-		height: 17px;
-		margin-left: 23px;
+		background-image: url("/img/burger_tablet.svg");
+		width: 6.93rem;
+		height: 4.53rem;
+		margin-left: 5.87rem;
 	}
 }
 
 @media(max-width:375px) {
 	header .header-search-icon {
-		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSByPSI4LjEzMjI2IiB0cmFuc2Zvcm09Im1hdHJpeCgwIDEgMSAwIDguOTc3OTYgOC42NzU5NikiIHN0cm9rZT0iYmxhY2siLz4KPGxpbmUgeDE9IjAuNSIgeTE9Ii0wLjUiIHgyPSI4Ljg5MDY2IiB5Mj0iLTAuNSIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MTA3IC0wLjcwNzEwNyAtMC43MDcxMDcgMC43MDcxMDcgMjAuOTMwNyAyMS45NTYzKSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPgo8L3N2Zz4K");
-		width: 22px;
-		height: 22px;
-		margin-left: 22px;
+		background-image: url("/img/search_icon_tablet.svg");
+		width: 5.87rem;
+		height: 5.87rem;
+		margin-left: 5.87rem;
 	}
 }
 
 header .logo {
-	width: 187px;
-	height: 55px;
-	margin-left: 45px;
-	margin-right: 35px;
+	/* width: 187px;
+	/* height: 55px; */
+	width: 9.74rem;
+	margin-left: 2.34rem;
+	margin-right: 1.82rem;
 }
 
 @media(max-width:768px) {
 	header .logo {
-		width: 143px;
-		height: 42px;
+		/* width: 143px;
+		height: 42px; */
+		width: 18.75rem;
+		/* height: 42px; */
 		margin-left: auto;
 	}
 }
 
 @media(max-width:375px) {
 	header .logo {
-		width: 89px;
-		height: 26px;
-		margin-right: 22px;
+		/* width: 89px;
+		height: 26px; */
+		width: 23.47rem;
+		/* margin-right: 22px; */
 	}
 }
 
 header .webinar-breadcrumbs {
-	margin-left: 40px;
+	margin-left: 2.08rem;
 }
 
 @media(max-width:768px) {
 	header .webinar-breadcrumbs {
 		display: none;
 	}
+}
+
+header div.breadcrumbs {
+	display: flex;
+}
+
+header div.breadcrumbs a {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.042rem;
+	color: #3B3B3A;
+	text-transform: uppercase;
+}
+
+header div.breadcrumbs a::before {
+	content: "";
+	/* min-width: 9px;
+	min-height: 16px;
+	margin: 0px 12px; */
+	width: 0.47rem;
+	height: 0.83rem;
+	margin: 0px 0.63rem;
+	background-image: url(/img/breadcrumbs_arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
 }
 
 main .video-container {
@@ -610,42 +644,44 @@ main .webinars-empty-row {
 main .webinars-tags {
 	display: flex;
 	align-items: center;
-	padding: 86px 24px 86px 24px;
+	/* padding: 86px 24px 86px 24px; */
+	padding: 4.64em 1.29em;
 	border-bottom: 2px solid black;
 	/* display: none; */
 }
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
 	main .webinars-tags {
 		padding: 38px 24px 38px 24px;
 	}
-}
+} */
 
-@media(max-width:375px) {
+/* @media(max-width:375px) {
 	main .webinars-tags {
 		display: block;
 		padding: 24px 24px 24px 24px;
 	}
-}
+} */
 
 main .webinars-tags .title {
-	margin-right: 250px;
+	margin-right: 11.32em;
 	font-weight: 700;
-	font-size: 45px;
+	/* font-size: 45px; */
+	/* font-size: 2.43em; */
+	font-size: 2.43rem;
 	line-height: 99%;
 }
 
 @media(max-width:768px) {
 	main .webinars-tags .title {
-		margin-right: 50px;
-		font-size: 36px;
-		line-height: 46px;
+		font-size: 4.69em;
+		margin-right: 11.32em;
 	}
 }
 
 @media(max-width:375px) {
 	main .webinars-tags .title {
-		margin-bottom: 50px;
+		font-size: 5.87em;
 	}
 }
 
@@ -657,9 +693,9 @@ main .webinars-tags .tags-container {
 
 main .webinars-tags .tags-container a {
 	margin-right: 25px;
-	font-weight: 400;
+	/* font-weight: 400;
 	font-size: 18px;
-	line-height: 23px;
+	line-height: 23px; */
 	margin-top: 30px;
 	text-decoration-line: underline;
 	color: #000000;
