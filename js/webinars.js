@@ -56,10 +56,6 @@ const sendPollButtom = document.querySelector("main .webinars-poll .send-button"
 const webinarPollEnd = document.querySelector("main .webinars-poll-end");
 const webinarPoll = document.querySelector("main .webinars-poll");
 
-console.log(sendPollButtom);
-console.log(webinarPollEnd);
-console.log(webinarPoll);
-
 sendPollButtom.addEventListener("click", () => {
     webinarPollEnd.classList.add("show");
     webinarPoll.classList.add("hide");
