@@ -668,6 +668,7 @@ main .site-content .site-content-item.tablet {
 main .site-content .site-content-item {
 	border-bottom: 2px solid #000000;
 	display: flex;
+	cursor: pointer;
 }
 
 
@@ -709,7 +710,8 @@ main .site-content-item.tablet .image {
 	max-height: 23.96rem;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain
+	background-size: contain;
+	
 }
 
 main .site-content-item.tablet .image.webinars {
@@ -758,10 +760,6 @@ main .site-content .site-content-item .section .title {
 	margin-bottom: -1rem;
 }
 
-main .site-content .site-content-item .section .title:hover {		
-	margin-bottom: 2.03rem;
-}
-
 main .site-content .site-content-item .section-description {	
 	display: flex;
 	align-items: center;
@@ -775,7 +773,7 @@ main .site-content .site-content-item .section-description .text {
 	width: 156%;
 } 
 
-main .site-content .site-content-item .section-description .image {	
+main .site-content-item .section-description .image {	
 	/* width: 16.93rem;
 	height: 12.24rem; */
 	width: 100%;
@@ -783,6 +781,19 @@ main .site-content .site-content-item .section-description .image {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+
+main .site-content-item.hover .section-description .image {	
+	/* width: 16.93rem;
+	height: 12.24rem; */
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	filter: grayscale(0%);
 }
 
 main .site-content .site-content-item .section-description .image.webinars{	
@@ -815,9 +826,9 @@ main .site-content .site-content-item .section-description .image.news{
 	text-transform: uppercase;
 }
 
-.site-content .section-breadcrumbs a:hover {
+/* .site-content .section-breadcrumbs a:hover {
 	color: #ED7A33;
-}
+} */
 
 .site-content .section-breadcrumbs a::before {
 	content: "";
@@ -827,7 +838,23 @@ main .site-content .site-content-item .section-description .image.news{
 	background-image: url("../img/breadcrumbs_arrow.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain
+	background-size: contain;
+}
+
+/* .site-content .section-breadcrumbs .breadcrumbs.hover a {
+	color: #ED7A33;
+} */
+
+main .site-content-item.hover .section .title {		
+	margin-bottom: 2.03rem;
+}
+
+main .site-content-item.hover .breadcrumbs a {		
+	color: #ED7A33;
+}
+
+.site-content .site-content-item.hover .breadcrumbs a::before {
+	background-image: url("../img/breadcrumbs_arrow_orange.svg");
 }
 
 main .webinars-recomendations {

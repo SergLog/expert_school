@@ -53,17 +53,18 @@ tabletCloseMenuIcon.addEventListener("click", () => {
 });
 // Открытие мобильного меню
 
-const siteContentItem = document.querySelector(".site-content-item");
-const breadcrumbs = document.querySelector(".section-breadcrumbs .breadcrumbs");
+// ховер для site-content-item
+const siteContentItems = document.querySelectorAll(".site-content-item");
 
-console.log(siteContentItem);
-console.log(breadcrumbs);
+siteContentItems.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+        item.classList.add("hover");
+    });
+})
 
-
-siteContentItem.addEventListener("mouseover", () => {
-    breadcrumbs.classList.add("hover");
-});
-
-siteContentItem.addEventListener("mouseover", () => {
-    breadcrumbs.classList.remove("hover");
-});
+siteContentItems.forEach(item => {
+    item.addEventListener("mouseleave", () => {
+        item.classList.remove("hover");
+    });    
+})
+// ховер для site-content-item
