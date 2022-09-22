@@ -52,3 +52,15 @@ tabletCloseMenuIcon.addEventListener("click", () => {
     mainContent.classList.remove("tablet-expand");
 });
 // Открытие мобильного меню
+
+const siteContentItemSection = document.querySelector(".site-content-item .section");
+const breadcrumbs = document.querySelector(".section-breadcrumbs .breadcrumbs");
+
+
+siteContentItemSection.addEventListener("mouseover", () => {
+    breadcrumbs.classList.add("hover");
+});
+
+tabletCloseMenuIcon.addEventListener("mouseover", () => {
+    breadcrumbs.classList.remove("hover");
+});
