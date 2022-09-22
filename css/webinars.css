@@ -136,6 +136,19 @@ nav .expanded-menu .search-container input {
 	border-bottom: 2px solid #000000;
 }
 
+nav #nav-search .search-icon,
+nav .expanded-menu .search-container .search-icon {
+	width: 1.93rem;
+	height: 1.93rem;
+	border: none;
+	appearance: none;
+	background-image: url("../img/search_icon_nav_desktop.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+}
+
 nav .expanded-menu .search-container .search-icon {
 	width: 1.93rem;
 	height: 1.93rem;
@@ -148,6 +161,10 @@ nav .expanded-menu .search-container .search-icon {
 	cursor: pointer;
 	position: absolute;
 	right: 0px;
+}
+
+nav.expand #nav-search .search-icon {
+	display: none;
 }
 
 nav .expanded-menu .search-container input:focus {
