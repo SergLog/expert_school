@@ -166,24 +166,6 @@ nav.expand #nav-search .search-icon {
 	display: none;
 }
 
-/* nav .expanded-menu .search-container .search-icon {
-	display: none;
-} */
-
-/* nav .expanded-menu .search-container .search-icon {
-	width: 1.93rem;
-	height: 1.93rem;
-	border: none;
-	appearance: none;
-	background-image: url("../img/search_icon_nav_desktop.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	cursor: pointer;
-	position: absolute;
-	right: 0px;
-} */
-
 nav .expanded-menu .search-container input:focus {
 	outline: none;
 }
@@ -612,7 +594,6 @@ main .site-intro .site-title {
 	order: 3;
 	margin-top: -6.25rem;
     margin-bottom: 100px;
-	/* margin-right: 9.08rem; */
 }
 
 @media(max-width:768px) {
@@ -695,7 +676,6 @@ main .site-intro .site-intro-text .empty-row {
 }
 
 main .site-content {
-	/* border-top: 2px solid #000000; */
 	display: flex;
 	flex-direction: column;
 }
@@ -787,7 +767,6 @@ main .site-content-item.tablet.no-content p {
 
 main .site-content .site-content-empty-item {
 	border-bottom: 2px solid #000000;
-	/* height: 6.41rem; */
 }
 
 main .site-content .site-content-empty-item {
@@ -800,10 +779,6 @@ main .site-content .site-content-empty-item {
 		display: none;
 	}
 }
-
-/* main .site-content .site-content-empty-item {
-	height: 15.63rem;
-} */
 
 main .site-content .site-content-item .section {	
 	display: flex;
@@ -835,12 +810,9 @@ main .site-content .site-content-item .section-description .text {
 	padding: 0 2.29rem;
 	font-size: 1.51rem;
 	line-height: 1.56rem;
-	/* width: 156%; */
 } 
 
 main .site-content-item .section-description .image {	
-	/* width: 16.93rem;
-	height: 12.24rem; */
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -851,8 +823,6 @@ main .site-content-item .section-description .image {
 }
 
 main .site-content-item.hover .section-description .image {	
-	/* width: 16.93rem;
-	height: 12.24rem; */
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -891,10 +861,6 @@ main .site-content .site-content-item .section-description .image.news{
 	text-transform: uppercase;
 }
 
-/* .site-content .section-breadcrumbs a:hover {
-	color: #ED7A33;
-} */
-
 .site-content .section-breadcrumbs a::before {
 	content: "";
 	width: 0.47rem;
@@ -905,10 +871,6 @@ main .site-content .site-content-item .section-description .image.news{
 	background-position: center;
 	background-size: contain;
 }
-
-/* .site-content .section-breadcrumbs .breadcrumbs.hover a {
-	color: #ED7A33;
-} */
 
 main .site-content-item.hover .section .title {		
 	margin-bottom: 2.03rem;
@@ -931,7 +893,6 @@ main .recomendations .title {
 	align-items: center;
 	justify-content: center;
 	border-bottom: 2px solid black;
-	/* height: 7.03rem; */
 	height: 136px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -962,7 +923,6 @@ main .recomendations .recomendations-container {
 
 main .recomendations .recomendations-card {
 	width: 21.41rem;
-	/* width: 411px; */
 	margin-right: 6.93rem;
 	height: 100%;
 	filter: grayscale(100%);
@@ -991,17 +951,10 @@ main .recomendations .recomendations-card a {
 }
 
 main .recomendations .recomendations-card .сard-image {
-	/* width: 100%;
-	object-fit: cover;
-	height: 100%;
-	min-height: 411px;
-	max-width: 411px; */
 	width: 100%;
 	object-fit: cover;
 	height: 100%;
 	min-height: 21.41rem;
-	/* max-width: 21.41rem; */
-
 }
 
 main .recomendations .recomendations-card:hover {
@@ -1018,7 +971,6 @@ main .recomendations .recomendations-card .card-title {
 	font-weight: 500;
 	font-size: 1.04rem;
 	line-height: 100%;
-	/* line-height: 26px; */
 	text-transform: uppercase;
 	border-bottom: 2px solid #000000;
 	margin-bottom: 1.51rem;
@@ -1029,7 +981,6 @@ main .recomendations .recomendations-card .card-title {
 	main .recomendations .recomendations-card .card-title {
 		font-size: 20px;
 		line-height: 100%;
-		/* line-height: 26px; */
 		margin-bottom: 14px;
 	}
 }
@@ -1038,7 +989,6 @@ main .recomendations .recomendations-card .card-title {
 	main .recomendations .recomendations-card .card-title {
 		font-size: 14px;
 		line-height: 100%;
-		/* line-height: 18px; */
 		margin-bottom: 8px;
 	}
 }
@@ -1077,7 +1027,6 @@ main .recomendations .recomendations-card .card-text {
 	main .recomendations .recomendations-card .card-text {
 		font-size: 3.13rem;
 		line-height: 3.65rem;
-		/* line-height: 18px; */
 	}
 }
 
@@ -1085,7 +1034,6 @@ main .recomendations .recomendations-card .card-text {
 	main .recomendations .recomendations-card .card-text {
 		font-size: 3.73rem;
 		line-height: 4.27rem;
-		/* line-height: 18px; */
 	}
 }
 
