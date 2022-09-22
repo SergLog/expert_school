@@ -819,6 +819,7 @@ main .site-content .site-content-item .section-description {
 	justify-content: space-between;
 	border-left: 2px solid #000000;
     width: 49.9rem;
+	width: 156%;
 }
 main .site-content .site-content-item .section-description .text {	
 	padding: 0 2.29rem;
