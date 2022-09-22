@@ -520,6 +520,12 @@ header .logo {
 	}
 }
 
+@media(max-width:768px) {
+	main {
+		padding: 4.17rem;
+	}
+}
+
 main .site-intro {
 	display: flex;
 	flex-wrap: wrap;
@@ -531,15 +537,16 @@ main .site-intro {
 		flex-wrap: nowrap;
 		flex-direction: column;
 		padding: 0;
+		margin-left: -4.17rem;
 	}
 }
 
 main .site-intro .doctors-logo {
-	width: 49.9rem;
+	/* width: 49.9rem; */
+	width: 47.81rem;
 	order: 2;
 	margin-left: auto;
 	border-left: 2px solid #000000;
-	margin-top: 1.3rem;
 }
 
 @media(max-width:768px) {
@@ -640,6 +647,7 @@ main .site-intro .site-intro-text .empty-row {
 	border-left: 2px solid #000000;
 	height: 9.22rem;
 	margin-top: 1.93rem;
+	margin-left: 1.9rem;
 }
 
 @media(max-width:768px) {
@@ -654,10 +662,82 @@ main .site-content {
 	flex-direction: column;
 }
 
+main .site-content .site-content-item.tablet {
+	display: none;
+}
+
 main .site-content .site-content-item {
 	border-bottom: 2px solid #000000;
 	display: flex;
 }
+
+
+@media(max-width:768px) {
+	main .site-content .site-content-item {
+		display: none;
+	}
+}
+
+@media(max-width:768px) {
+	main .site-content .site-content-item.tablet {
+		display: flex;
+		align-items: center;
+		height: 28.5rem;
+		padding: 1.17rem;
+	}
+}
+
+main .site-content-item.tablet .text-container {
+	width: 149%;	
+}
+
+main .site-content-item.tablet p {
+	font-size: 2.6rem;
+	line-height: 3.54rem;	
+}
+
+main .site-content-item.tablet a {
+	font-size: 7.55rem;
+	line-height: 100%;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+main .site-content-item.tablet .image {
+	width: 100%;
+	height: 100%;
+	max-width: 23.96rem;
+	max-height: 23.96rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
+}
+
+main .site-content-item.tablet .image.webinars {
+	background-image: url("../img/doctors1_main.jpg");
+}
+
+main .site-content-item.tablet .image.cases {
+	background-image: url("../img/doctors2_main.jpg");
+}
+
+main .site-content-item.tablet .image.reviews {
+	background-image: url("../img/doctors3_main.jpg");
+}
+
+main .site-content-item.tablet .image.news {
+	background-image: url("../img/doctors4_main.jpg");
+}
+
+
+main .site-content .site-content-empty-item {
+	border-bottom: 2px solid #000000;
+	height: 6.41rem;
+}
+
+/* main .site-content .site-content-empty-item {
+	height: 15.63rem;
+} */
 
 main .site-content .site-content-item .section {	
 	display: flex;
@@ -676,20 +756,53 @@ main .site-content .site-content-item .section .title {
 	line-height: 4.22rem;
 	font-weight: 600;
 	text-transform: uppercase;
-	/* margin-top: 5.1rem; */
 	margin-bottom: -1rem;
+}
+
+main .site-content .site-content-item .section .title:hover {		
+	margin-bottom: 2.03rem;
 }
 
 main .site-content .site-content-item .section-description {	
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+}
+main .site-content .site-content-item .section-description .text {	
+	padding: 0 2.29rem;
+	font-size: 1.51rem;
+	line-height: 1.56rem;
+	width: 156%;
 } 
 
 main .site-content .site-content-item .section-description .image {	
-	width: 16.93rem;
+	/* width: 16.93rem;
+	height: 12.24rem; */
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
-.site-content .section-breadcrumbs {
+main .site-content .site-content-item .section-description .image.webinars{	
+	background-image: url("../img/doctors1_main.jpg");
+}
+
+main .site-content .site-content-item .section-description .image.cases{	
+	background-image: url("../img/doctors2_main.jpg");
+}
+
+main .site-content .site-content-item .section-description .image.reviews{	
+	background-image: url("../img/doctors3_main.jpg");
+}
+
+main .site-content .site-content-item .section-description .image.news{	
+	background-image: url("../img/doctors4_main.jpg");
+}
+
+.site-content .section-breadcrumbs .breadcrumbs {
 	display: flex;
 }
 
@@ -701,6 +814,10 @@ main .site-content .site-content-item .section-description .image {
 	line-height: 100%;
 	color: #3B3B3A;
 	text-transform: uppercase;
+}
+
+.site-content .section-breadcrumbs a:hover {
+	color: #ED7A33;
 }
 
 .site-content .section-breadcrumbs a::before {

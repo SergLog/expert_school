@@ -50,4 +50,22 @@ tabletBurgerMenuIcon.addEventListener("click", () => {
 tabletCloseMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.remove("tablet-expand");
     mainContent.classList.remove("tablet-expand");
-});// Открытие мобильного меню
+});
+// Открытие мобильного меню
+
+// 
+const tabletBurgerMenuIcon = document.querySelector(".header-burger-icon");
+const tabletCloseMenuIcon = document.querySelector("nav.tablet-nav-menu .close-menu");
+const tabletNavMenu = document.querySelector("nav.tablet-nav-menu");
+const mainContent = document.querySelector(".content-container");
+
+tabletBurgerMenuIcon.addEventListener("click", () => {
+    tabletNavMenu.classList.add("tablet-expand");
+    mainContent.classList.add("tablet-expand");
+});
+
+tabletCloseMenuIcon.addEventListener("click", () => {
+    tabletNavMenu.classList.remove("tablet-expand");
+    mainContent.classList.remove("tablet-expand");
+});
+// 
