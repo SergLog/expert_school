@@ -6,23 +6,23 @@
 	margin: 0;
 } */
 
-html {
+/* html {
 	overflow-x: hidden;
 	font-family: 'DINPro', sans-serif;
 	font-size: 20px;
 	line-height: 26px;
-}
+} */
 
 a.ui-link {
 text-decoration: none;
 color: #000000;
 }
 
-/* **********ui-input********** */
+/* **********ui-dropdown********** */
 div.ui-dropdown-container {
 	display: flex;
 	flex-direction: column;
-	width: 920px;
+	width: 100%;
 }
 
 div.ui-dropdown-container .ui-dropdown-label {
@@ -32,10 +32,11 @@ div.ui-dropdown-container .ui-dropdown-label {
 	margin-right: 21px;
 	padding: 0 6px 0 6px;
 	z-index: 1;
-	background-color: #ffffff;
+	background-color: #EBEAE9;
 	color: #525251;
 	display: flex;
 	justify-content: space-between;
+	text-transform: uppercase;
 }
 
 div.ui-dropdown-container .ui-dropdown-label::after {
@@ -46,6 +47,7 @@ div.ui-dropdown-container .ui-dropdown-label::after {
 	background-repeat: no-repeat;
 	background-position: center;
 	align-self: center;
+	
 }
 
 div.ui-dropdown-container .ui-dropdown {
@@ -59,6 +61,7 @@ div.ui-dropdown-container .ui-dropdown {
 	-webkit-appearance: none;
 	appearance: none;
 	font-size: 20px;
+	background-color: #EBEAE9;
 }
 
 div.ui-dropdown-container .ui-dropdown option {
@@ -71,7 +74,11 @@ div.ui-dropdown-container .ui-dropdown option {
 div.ui-input-container {
 	display: flex;
 	flex-direction: column;
-	width: 920px;
+	width: 100%;
+}
+
+div.ui-input-container:hover {
+	color: #ED7A33;
 }
 
 div.ui-input-container .ui-input-label {
@@ -81,8 +88,10 @@ div.ui-input-container .ui-input-label {
 	margin-left: 21px;
 	padding: 0 6px 0 6px;
 	z-index: 1;
-	background-color: #ffffff;
-	color: #525251;
+	background-color: #EBEAE9;
+	/* color: #525251; */
+	color: inherit;
+	text-transform: uppercase;
 }
 
 div.ui-input-container .ui-input {
@@ -92,6 +101,7 @@ div.ui-input-container .ui-input {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 31px;
+	background-color: #EBEAE9;
 }
 
 div.ui-input-container.error .ui-input {
@@ -103,13 +113,17 @@ div.ui-input-container.error .ui-input-label {
 	color: #ED7A33;
 }
 
+/* div.ui-input-container .ui-input-label {
+	color: #ED7A33;
+} */
+
 div.ui-input-container.required .ui-input-label::after {
 	content: "*";
 }
 
-div.ui-input-container .ui-input:focus {
+div.ui-input-container .ui-input:focus,
+div.ui-input-container .ui-input:hover {
 	outline-color: #ED7A33;
-	/* border: 2px solid #ED7A33; */
 	caret-color: #ED7A33;
 }
 
@@ -180,11 +194,13 @@ div.ui-textarea-container .ui-textarea:focus::before {
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* **********ui-buttons********** */
-.ui-button-container {}
+.ui-button-container {
+	width: 100%;
+}
 
 .ui-button-container .ui-button {
-	/* width: 954px; */
 	height: 100px;
+	width: 100%;
 	padding: 27px 35px;
 	background: #EBEAE9;
 	border: 2px solid #000000;

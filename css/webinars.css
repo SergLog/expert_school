@@ -59,7 +59,7 @@ a.ui-link {
 
 body {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	overflow: hidden;
 }
 
@@ -77,8 +77,8 @@ div.webinars-content {
 	padding-right: 2.08rem;
 	display: flex;
 	background: #EBEAE9;
-	width: 100%;
-	max-width: 1920px;
+	/* width: 100%; */
+	/* max-width: 1920px; */
 }
 
 @media(max-width:768px) {

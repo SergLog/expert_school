@@ -12,8 +12,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link href="css/index.css?v=106" type="text/css" rel="stylesheet" />
-  <script src="js/main.js?v=106" defer></script>
+  <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
+  <link href="css/registration.css" type="text/css" rel="stylesheet" />
+  <script src="js/registration.js?v=106" defer></script>
 </head>
 
 <body>
@@ -84,7 +85,81 @@
         </div> -->
       </header>
       <main>
-        
+        <div class="site-intro">
+          <img class="doctors-logo" src="img/doctors_main.jpg "></img>
+          <img class="site-logo" src="img/logo.svg"></img>
+          <div class="site-intro-text">
+            <p class="title">ШКОЛА<br>ЭКСПЕРТОВ</p>
+            <p class="text">Данный сайт имеет<br>ограниченный доступ</p>
+          </div>          
+        </div>
+        <div class="site-content">
+        </div>
+        <div class="registration">
+          <div class="registration-tabs">
+            <div class="tab reg active">Регистрация</div>
+            <div class="tab auth">Авторизация</div>
+          </div>
+          <div class="reg-fields">
+          <div class="ui-input-container required">
+            <label class="ui-input-label" for="input">Фамилия</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-input-container required">
+            <label class="ui-input-label" for="input">Имя</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-input-container required">
+            <label class="ui-input-label" for="input">Отчество</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-input-container tel required">
+            <label class="ui-input-label" for="input">Телефон</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-input-container mail required">
+            <label class="ui-input-label" for="input">E-mail</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-input-container town">
+            <label class="ui-input-label" for="input">Город</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-input-container job">
+            <label class="ui-input-label" for="input">Место работы</label>
+            <input class="ui-input" type="text" id="input" />
+            <p class="error-text"></p>
+          </div>
+          <div class="ui-dropdown-container">
+            <label class="ui-dropdown-label" for="dropdown">Специальность</label>
+            <select class="ui-dropdown" id="dropdown">
+              <!-- <option value="volvo"></option> -->
+              <option value="" disabled selected style='display:none;'></option>
+              <option value="val">ПОЛНОЕ ВЫСШЕЕ</option>
+              <option value="val">НЕ ПОЛНОЕ ВЫСШЕЕ</option>
+              <option value="val">СПЕЦИАЛЬНОЕ</option>
+              <option value="val">СРЕДНЕСПЕЦИАЛЬНОЕ</option>
+            </select>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" class="agreement-checkbox">
+            <p>Настоящим я даю согласие на обработку моих <a class="ui-link" href="#">персональных данных</a>. (Возможно, для уточнения ваших данных с вами свяжется ваш персональный координатор)</p>
+          </div>
+          <div class="ui-button-container">
+            <button type="button" class="ui-button">Зарегистироваться</button>
+          </div>
+          <p class="note">* Обязательные поля</p>
+        </div>
+        <div class="auth-fields">
+          auth
+        </div>
+        </div>
       </main>
       <footer>
         <div class="footer-container">
