@@ -649,6 +649,7 @@ main .site-intro .site-intro-text {
 		font-size: 3.73rem;
 		line-height: 4.27rem;
 		order: 2;
+		margin-left: 0;
 	}
 }
 
