@@ -543,7 +543,7 @@ main .site-intro {
 
 main .site-intro .doctors-logo {
 	/* width: 49.9rem; */
-	width: 47.81rem;
+	width: 47rem;
 	order: 2;
 	margin-left: auto;
 	border-left: 2px solid #000000;
@@ -647,7 +647,6 @@ main .site-intro .site-intro-text .empty-row {
 	border-left: 2px solid #000000;
 	height: 9.22rem;
 	margin-top: 1.93rem;
-	margin-left: 2.18rem;
 }
 
 @media(max-width:768px) {

@@ -53,14 +53,17 @@ tabletCloseMenuIcon.addEventListener("click", () => {
 });
 // Открытие мобильного меню
 
-const siteContentItemSection = document.querySelector(".site-content-item .section");
+const siteContentItem = document.querySelector(".site-content-item");
 const breadcrumbs = document.querySelector(".section-breadcrumbs .breadcrumbs");
 
+console.log(siteContentItem);
+console.log(breadcrumbs);
 
-siteContentItemSection.addEventListener("mouseover", () => {
+
+siteContentItem.addEventListener("mouseover", () => {
     breadcrumbs.classList.add("hover");
 });
 
-tabletCloseMenuIcon.addEventListener("mouseover", () => {
+siteContentItem.addEventListener("mouseover", () => {
     breadcrumbs.classList.remove("hover");
 });
