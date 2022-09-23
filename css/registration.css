@@ -55,7 +55,7 @@ html {
 a.ui-link {
 	text-decoration: none;
 	color: #000000;
-	}
+}
 
 body {
 	display: flex;
@@ -288,6 +288,7 @@ nav.tablet-nav-menu .header {
 		border: none;
 	}
 }
+
 nav.tablet-nav-menu .search-container {
 	margin-top: 88px;
 	position: relative;
@@ -601,7 +602,7 @@ main .site-intro .site-logo {
 	}
 }
 
-main .site-intro .site-intro-text {	
+main .site-intro .site-intro-text {
 	order: 3;
 	/* margin-left: auto;
 	width: 49.9rem;	
@@ -614,7 +615,7 @@ main .site-intro .site-intro-text .title {
 	line-height: 100%;
 	order: 3;
 	margin-top: -21.25rem;
-    margin-bottom: 4.69rem;
+	margin-bottom: 4.69rem;
 }
 
 @media(max-width:768px) {
@@ -636,7 +637,7 @@ main .site-intro .site-intro-text .title {
 	}
 }
 
-main .site-intro .site-intro-text .text{
+main .site-intro .site-intro-text .text {
 	font-size: 1.67rem;
 	line-height: 1.98rem;
 	order: 3;
@@ -647,8 +648,8 @@ main .site-intro .site-intro-text .text{
 	width: 100%;
 }
 
-@media(max-width:768px) { 
-	main .site-intro .site-intro-text .text {		
+@media(max-width:768px) {
+	main .site-intro .site-intro-text .text {
 		font-size: 3.25rem;
 		line-height: 3.65rem;
 		order: 2;
@@ -669,7 +670,7 @@ main .site-intro .site-intro-text .text{
 .registration {
 	width: 49.69rem;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 }
 
 @media(max-width:768px) {
@@ -739,12 +740,13 @@ main .site-intro .site-intro-text .text{
 }
 
 @media(max-width:768px) {
+
 	.registration .ui-input-container.tel,
 	.registration .ui-input-container.mail,
 	.registration .ui-input-container.town,
 	.registration .ui-input-container.job {
-	width: 100%;
-}
+		width: 100%;
+	}
 }
 
 .registration .reg-fields {
@@ -757,9 +759,9 @@ main .site-intro .site-intro-text .text{
 
 .registration .reg-fields form {
 	align-items: center;
-    flex-flow: wrap;
-    justify-content: space-between;
-    display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	display: flex;
 	width: 100%;
 }
 
@@ -768,17 +770,30 @@ main .site-intro .site-intro-text .text{
 }
 
 .registration .reg-fields .agreement {
-	font-size: 24px;
-	line-height: 28px;
-	margin-top: 50px;
-	margin-bottom: 76px;
+	font-size: 1.25rem;
+	line-height: 115%;
+	margin-top: 2.6rem;
+	margin-bottom: 3.96rem;
 	display: flex;
 	align-items: center;
 }
 
+@media(max-width:768px) {
+	.registration .reg-fields .agreement {
+		font-size: 2.08rem;
+
+	}
+}
+
+@media(max-width:375px) {
+	.registration .reg-fields .agreement {
+		font-size: 3.2rem;
+	}
+}
+
 .registration .reg-fields .agreement .ui-link {
 	text-decoration: underline;
-	text-underline-offset: 5px;
+	/* text-underline-offset: 5px; */
 }
 
 .registration .reg-fields .agreement-checkbox {
@@ -798,17 +813,33 @@ main .site-intro .site-intro-text .text{
 	margin-right: 1.28rem;
 }
 
+@media(max-width:768px) {
+	.registration .reg-fields .agreement-checkbox::before {
+		height: 4.3rem;
+		width: 4.3rem;
+
+	}
+}
+
+@media(max-width:375px) {
+	.registration .reg-fields .agreement-checkbox::before {
+		height: 8.8rem;
+		width: 8.8rem;
+	}
+}
+
 .registration .reg-fields .agreement-checkbox:checked::before {
 	background-image: url("../img/agreement_desktop.svg");
 }
 
 .registration .reg-fields .note {
 	margin-top: 2.29rem;
-	font-size: 26px;
-	line-height: 30px;
+	font-size: 1.35rem;
 	color: #525251;
 	margin-bottom: 10.31rem;
 }
+
+
 
 .registration .auth-fields.active {
 	display: flex;
@@ -825,7 +856,7 @@ footer {
 @media(max-width:768px) {
 	footer {
 		padding: 4.65rem 4.43rem 3.65rem 4.43rem;
-		
+
 	}
 }
 
