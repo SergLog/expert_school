@@ -64,15 +64,22 @@ body {
 }
 
 .content-container {
-	width: 100%;
+	/* width: 100%; */
 	overflow: hidden;
+	width: 94.27rem;
+}
+
+@media(max-width:768px) {
+	.content-container {
+		width: 100rem;
+	}
 }
 
 .content-container.tablet-expand {
 	display: none;
 }
 
-.main-page-content {
+.main-page {
 	display: flex;
 	background: #EBEAE9;
 	/* width: 100%; */

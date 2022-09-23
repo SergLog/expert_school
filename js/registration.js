@@ -50,3 +50,8 @@ authTab.addEventListener("click", () => {
 
 regTab.click();
 // Переключение между табами
+
+// Валидации формы регистрации
+// const invalid = document.querySelector(".registration-tabs .tab.reg");
+// Валидации формы регистрации
+

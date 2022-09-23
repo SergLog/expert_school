@@ -64,15 +64,16 @@ body {
 }
 
 .content-container {
-	width: 100%;
+	/* width: 100%; */
 	overflow: hidden;
+	width: 94.27rem;
 }
 
 .content-container.tablet-expand {
 	display: none;
 }
 
-div.webinars-content {
+div.webinars-page {
 	padding-top: 3.54rem;
 	padding-right: 2.08rem;
 	display: flex;
