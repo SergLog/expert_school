@@ -101,31 +101,31 @@
             <div class="tab reg active">Регистрация</div>
             <div class="tab auth">Авторизация</div>
           </div>
-          <div class="reg-fields">
-            <form id="reg-fields">
+          <div class="reg-fields">            
+            <form id="reg-fields" action="post">
               <div class="ui-input-container required">
                 <label class="ui-input-label" for="input">Фамилия</label>
-                <input class="ui-input" required type="text" id="input" />
+                <input required class="ui-input" type="text" id="input">
                 <p class="error-text"></p>
               </div>
               <div class="ui-input-container required">
                 <label class="ui-input-label" for="input">Имя</label>
-                <input class="ui-input" type="text" id="input" />
+                <input required class="ui-input" type="text" id="input" />
                 <p class="error-text"></p>
               </div>
               <div class="ui-input-container required">
                 <label class="ui-input-label" for="input">Отчество</label>
-                <input class="ui-input" type="text" id="input" />
+                <input required class="ui-input" type="text" id="input" />
                 <p class="error-text"></p>
               </div>
               <div class="ui-input-container tel required">
                 <label class="ui-input-label" for="input">Телефон</label>
-                <input class="ui-input" type="text" id="input" />
+                <input required class="ui-input" type="text" id="input" />
                 <p class="error-text"></p>
               </div>
               <div class="ui-input-container mail required">
                 <label class="ui-input-label" for="input">E-mail</label>
-                <input class="ui-input" type="email" id="input" />
+                <input required class="ui-input" type="email" id="input" />
                 <p class="error-text"></p>
               </div>
               <div class="ui-input-container town">
@@ -140,7 +140,7 @@
               </div>
               <div class="ui-dropdown-container">
                 <label class="ui-dropdown-label" for="dropdown">Специальность</label>
-                <select class="ui-dropdown" id="dropdown">
+                <select required class="ui-dropdown" id="dropdown">
                   <!-- <option value="volvo"></option> -->
                   <option value="" disabled selected style='display:none;'></option>
                   <option value="val">ПОЛНОЕ ВЫСШЕЕ</option>
@@ -150,12 +150,12 @@
                 </select>
               </div>
               <div class="agreement">
-                <input type="checkbox" class="agreement-checkbox">
+                <input required type="checkbox" class="agreement-checkbox">
                 <p>Настоящим я даю согласие на обработку моих <a class="ui-link" href="#">персональных данных</a>.
                   (Возможно, для уточнения ваших данных с вами свяжется ваш персональный координатор)</p>
               </div>
               <div class="ui-button-container">
-                <button type="button" class="ui-button">Зарегистироваться</button>
+                <button type="submit" class="ui-button">Зарегистироваться</button>
               </div>
               <p class="note">* Обязательные поля</p>
             </form>
