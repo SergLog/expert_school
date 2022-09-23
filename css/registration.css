@@ -664,6 +664,7 @@ main .site-intro .site-intro-text .text {
 		font-size: 3.13rem;
 		line-height: 3.64rem;
 		margin-top: 6.4rem;
+		border-bottom: 0;
 	}
 }
 
