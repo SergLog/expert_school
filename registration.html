@@ -87,6 +87,7 @@
       <main>
         <div class="site-intro">
           <img class="doctors-logo" src="img/doctors_main.jpg "></img>
+          <!-- <img class="doctors-logo"></img> -->
           <img class="site-logo" src="img/logo.svg"></img>
           <div class="site-intro-text">
             <p class="title">ШКОЛА<br>ЭКСПЕРТОВ</p>
@@ -160,7 +161,17 @@
             </form>
           </div>
           <div class="auth-fields">
-            auth
+            <p class="title">Войти по коду</p>
+            <form id="login">
+              <div class="ui-input-container mail required">
+                <label class="ui-input-label" for="input">E-mail</label>
+                <input class="ui-input" type="email" id="input" />
+                <p class="error-text"></p>
+              </div>
+              <div class="ui-button-container">
+                <button type="button" class="ui-button">Запросить код</button>
+              </div>
+            </form>
           </div>
         </div>
       </main>

@@ -284,7 +284,7 @@ nav.tablet-nav-menu .header {
 @media(max-width:768px) {
 	nav.tablet-nav-menu.tablet-expand {
 		display: block;
-		width: 100%;
+		width: 100rem;
 		border: none;
 	}
 }
@@ -610,11 +610,11 @@ main .site-intro .site-intro-text {
 }
 
 main .site-intro .site-intro-text .title {
-	font-size: 5.47rem;
+	font-size: 4.79rem;
 	font-weight: 600;
 	line-height: 100%;
 	order: 3;
-	margin-top: -21.25rem;
+	margin-top: -18.25rem;
 	margin-bottom: 4.69rem;
 }
 
@@ -647,7 +647,7 @@ main .site-intro .site-intro-text .text {
 	padding-bottom: 5.21rem;
 	width: 100%;
 }
-
+ 
 @media(max-width:768px) {
 	main .site-intro .site-intro-text .text {
 		font-size: 3.25rem;
@@ -733,19 +733,18 @@ main .site-intro .site-intro-text .text {
 	margin-bottom: 2.4rem;
 }
 
-.registration .ui-input-container.tel,
-.registration .ui-input-container.mail,
-.registration .ui-input-container.town,
-.registration .ui-input-container.job {
+.registration .reg-fields .ui-input-container.tel,
+.registration .reg-fields .ui-input-container.mail,
+.registration .reg-fields .ui-input-container.town,
+.registration .reg-fields .ui-input-container.job {
 	width: 45%;
 }
 
 @media(max-width:768px) {
-
-	.registration .ui-input-container.tel,
-	.registration .ui-input-container.mail,
-	.registration .ui-input-container.town,
-	.registration .ui-input-container.job {
+	.registration .reg-fields .ui-input-container.tel,
+	.registration .reg-fields .ui-input-container.mail,
+	.registration .reg-fields .ui-input-container.town,
+	.registration .reg-fields .ui-input-container.job {
 		width: 100%;
 	}
 }
@@ -782,13 +781,16 @@ main .site-intro .site-intro-text .text {
 @media(max-width:768px) {
 	.registration .reg-fields .agreement {
 		font-size: 2.08rem;
-
+		margin-top: 2.6rem;
+		margin-bottom: 3.96rem;
 	}
 }
 
 @media(max-width:375px) {
 	.registration .reg-fields .agreement {
 		font-size: 3.2rem;
+		margin-top: 5.6rem;
+    margin-bottom: 8.96rem;
 	}
 }
 
@@ -811,21 +813,22 @@ main .site-intro .site-intro-text .text {
 	height: 1.77rem;
 	width: 1.77rem;
 	cursor: pointer;
-	margin-right: 1.28rem;
+	margin-right: 20px;
 }
 
 @media(max-width:768px) {
 	.registration .reg-fields .agreement-checkbox::before {
 		height: 4.3rem;
 		width: 4.3rem;
-
+		margin-right: 15px;
 	}
 }
 
 @media(max-width:375px) {
 	.registration .reg-fields .agreement-checkbox::before {
-		height: 8.8rem;
-		width: 8.8rem;
+		height: 5.8rem;
+		width: 5.8rem;
+		margin-right: 10px;
 	}
 }
 
@@ -840,12 +843,52 @@ main .site-intro .site-intro-text .text {
 	margin-bottom: 10.31rem;
 }
 
+@media(max-width:768px) {
+	.registration .reg-fields .note {
+		/* margin-top: 8rem; */
+		font-size: 2.08rem;
+		/* margin-bottom: 9.9rem; */
+	}
+}
 
+@media(max-width:375px) {
+	.registration .reg-fields .note {
+		/* margin-top: 10rem; */
+		font-size: 2.5rem;
+		/* margin-bottom: 20rem; */
+	}
+}
 
 .registration .auth-fields.active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.registration .auth-fields {
+	margin-top: 3.44rem;
+	margin-bottom: 11.61rem;
+}
+
+.registration .auth-fields form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: space-between;    
+    width: 100%;
+}
+
+
+.registration .auth-fields .title {
+	font-size: 2.4rem;	
+	margin-bottom: 3.44rem;
+}
+
+@media(max-width:768px) {
+	.registration .auth-fields .title {
+		font-size: 5.4rem;	
+
+	}
 }
 
 footer {
