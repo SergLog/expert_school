@@ -162,14 +162,14 @@
           </div>
           <div class="auth-fields">
             <p class="title">Войти по коду</p>
-            <form id="login">
+            <form id="login" action="post">
               <div class="ui-input-container mail required">
                 <label class="ui-input-label" for="input">E-mail</label>
-                <input class="ui-input" type="email" id="input" />
+                <input required class="ui-input" type="email" id="input" />
                 <p class="error-text"></p>
               </div>
               <div class="ui-button-container">
-                <button type="button" class="ui-button">Запросить код</button>
+                <button type="submit" class="ui-button">Запросить код</button>
               </div>
             </form>
           </div>
