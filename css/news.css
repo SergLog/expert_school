@@ -522,6 +522,7 @@ header {
 	header .header-search-icon {
 		background: #EBEAE9;
 		background-image: url("../img/search_icon_tablet.svg");
+		background-size: contain;
 		width: 5.87rem;
 		height: 5.87rem;
 		margin-left: 5.87rem;
