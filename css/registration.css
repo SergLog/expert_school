@@ -744,6 +744,27 @@ main .site-intro .site-intro-text .text {
 	width: 45%;
 }
 
+.registration .reg-fields .ui-input-container.tel input::placeholder {
+	color: #d3d2d1;
+	font-size: 1.25rem;
+}
+
+@media(max-width:768px) {
+	.registration .reg-fields .ui-input-container.tel input::placeholder {
+		color: #d3d2d1;
+		font-size: 2.34rem;
+	}
+	
+}
+
+@media(max-width:378px) {
+	.registration .reg-fields .ui-input-container.tel input::placeholder {
+		color: #d3d2d1;
+		font-size: 4.8rem;
+	}
+	
+}
+
 @media(max-width:768px) {
 	.registration .reg-fields .ui-input-container.tel,
 	.registration .reg-fields .ui-input-container.mail,
