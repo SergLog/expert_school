@@ -991,7 +991,8 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item img {
 @media(max-width:768px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item img {
 		width: 29.69rem;
-		object-fit: contain;
+		/* object-fit: contain; */
+		height: 29.3rem;
 	}
 }
 
@@ -1002,6 +1003,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover {
 main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .image .empty {
 	background-color: #ED7A33;
 	transition: all 0.5s ease;
+	border: 0;
 }
 
 main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .image img {
@@ -1077,7 +1079,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.text {
 		width: 53.52rem;
 		font-size: 2.08rem;
 		line-height: 120%;
-		height: 20.05rem;
+		/* height: 20.05rem; */
 		/* margin-left: 2rem; */
 	}
 }
