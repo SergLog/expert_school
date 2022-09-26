@@ -775,8 +775,8 @@ main .site-content-item.tablet a {
 }
 
 main .site-content-item.tablet .image {
-	/* width: 33.96rem; */
-	width: 31.76rem;
+	width: 33.96rem;
+	/* width: 31.76rem; */
 	height: 23.96rem;
 	background-repeat: no-repeat;
 	background-position: center;
