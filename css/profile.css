@@ -491,6 +491,18 @@ main .title {
 	font-weight: 600;
 }
 
+@media(max-width:768px) {
+	main .title {
+		font-size: 4.69rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .title {
+		font-size: 5.87rem;
+	}
+}
+
 main .menu {
 	display: flex;
 	flex-direction: column;
@@ -503,9 +515,31 @@ main .menu .item {
 	width: 90.05rem;
 }
 
-main .menu .item:hover .item-title{
+@media(max-width:768px) {
+	main .menu .item {
+		flex-direction: column;
+		width: 91.15rem;
+		padding: 1.3rem 0;
+		margin: 0;
+	}
+}
+
+@media(max-width:375px) {
+	main .menu .item {
+		padding: 3.47rem 0;
+	}
+}
+
+
+main .menu .item:hover .item-title {
 	margin-bottom: 1.3rem;
 	cursor: pointer
+}
+
+@media(max-width:768px) {
+	main .menu .item:hover .item-title {
+		margin-bottom: 0;
+	}
 }
 
 main .menu .item-goal {
@@ -516,12 +550,38 @@ main .menu .item-goal {
 	padding: 2.97rem 1.67rem 2.6rem 0;
 }
 
+@media(max-width:768px) {
+	main .menu .item-goal {
+		border: 0;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-size: 2.87rem;
+		order: 2;
+	}
+}
+
 main .menu .title-container {
 	display: flex;
 	justify-content: space-between;
     width: 57%;
 	align-items: end;
 	overflow: hidden;
+}
+
+@media(max-width:768px) {
+	main .menu .title-container {
+		border: 0;
+		width: 100%;
+	}
+}
+
+@media(max-width:768px) {
+	main .menu .title-container .item-title {
+		margin: 0;
+		padding: 0;
+		font-size: 8.33rem;
+	}
 }
 
 
@@ -535,13 +595,76 @@ main .menu .item-title {
 }
 
 main .menu .title-icon {
-	background-image: url("../img/profile_icon_1.svg");
+	/* background-image: url("../img/profile_icon_1.svg"); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 	width: 6.51rem;
 	height: 6.3rem;
 	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+@media(max-width:768px) {
+	main .menu .title-icon {
+		width: 12.5rem;
+		height: 12.11rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .menu .title-icon {
+		width: 10.4rem;
+		height: 10.4rem;
+	}
+}
+
+main .menu .title-icon.my-data {
+	background-image: url("../img/profile_icon_1.svg");
+}
+
+main .menu .item:hover .title-icon.my-data {
+	background-image: url("../img/profile_hover_icon_1.svg");
+}
+
+main .menu .title-icon.drafts {
+	background-image: url("../img/profile_icon_2.svg");
+}
+
+main .menu .item:hover .title-icon.drafts {
+	background-image: url("../img/profile_hover_icon_2.svg");
+}
+
+main .menu .title-icon.saved {
+	background-image: url("../img/profile_icon_3.svg");
+}
+
+main .menu .item:hover .title-icon.saved {
+	background-image: url("../img/profile_hover_icon_3.svg");
+}
+
+main .menu .title-icon.pass {
+	background-image: url("../img/profile_icon_4.svg");
+}
+
+main .menu .item:hover .title-icon.pass {
+	background-image: url("../img/profile_hover_icon_4.svg");
+}
+
+main .menu .title-icon.feedback {
+	background-image: url("../img/profile_icon_5.svg");
+}
+
+main .menu .item:hover .title-icon.feedback {
+	background-image: url("../img/profile_hover_icon_5.svg");
+}
+
+main .menu .title-icon.agreements {
+	background-image: url("../img/profile_icon_6.svg");
+}
+
+main .menu .item:hover .title-icon.agreements {
+	background-image: url("../img/profile_hover_icon_6.svg");
 }
 
 footer {
