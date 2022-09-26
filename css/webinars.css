@@ -143,6 +143,7 @@ nav .expanded-menu .search-container .search-icon {
 	height: 1.93rem;
 	border: none;
 	appearance: none;
+	background-color: #EBEAE9;
 	background-image: url("../img/search_icon_nav_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
