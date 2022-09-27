@@ -48,7 +48,7 @@ html {
 	font-family: 'DINPro', sans-serif;
 	font-size: 1vw;
 	/* line-height: 100%; */
-	/* background: #EBEAE9; */
+	background: #EBEAE9;
 	overflow-x: hidden;
 }
 
@@ -648,7 +648,7 @@ main .site-intro .site-title .text2::after {
 	background: #FF7900;
 	display: inline-block;
 	width: 92%;
-    bottom: 0.6rem;
+    bottom: 0.61rem;
     z-index: -1;
     position: absolute;
     left: 1.3rem;
@@ -810,6 +810,12 @@ main .site-content-item.tablet.no-content p {
 	font-weight: 600;
 	border-bottom: 4px solid #ED7A33;
 	width: fit-content;
+}
+
+@media(max-width:375px) {
+	main .site-content-item.tablet.no-content p {
+		border-bottom: 2px solid #ED7A33;
+	}
 }
 
 main .site-content .site-content-empty-item {

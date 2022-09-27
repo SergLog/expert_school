@@ -48,7 +48,7 @@ html {
 	font-family: 'DINPro', sans-serif;
 	font-size: 1vw;
 	/* line-height: 100%; */
-	/* background: #EBEAE9; */
+	background: #EBEAE9;
 	overflow-x: hidden;
 }
 
@@ -702,6 +702,12 @@ main .site-intro .site-title .title {
 		border-bottom: 4px solid #ED7A33;
 		font-size: 4.67rem;
 		line-height: 5.47rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .site-intro .site-title .title{
+		border-bottom: 2px solid #ED7A33;
 	}
 }
 

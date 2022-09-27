@@ -48,7 +48,7 @@ html {
 	font-family: 'DINPro', sans-serif;
 	font-size: 1vw;
 	/* line-height: 100%; */
-	/* background: #EBEAE9; */
+	background: #EBEAE9;
 	overflow-x: hidden;
 }
 
@@ -492,15 +492,32 @@ main .title {
 	font-weight: 600;
 }
 
+main .title p {
+	border-bottom: 4px solid #ED7A33;
+	width: fit-content;
+}
+
 @media(max-width:768px) {
 	main .title {
-		font-size: 4.69rem;
+		font-size: 3.81rem;
 	}
 }
 
 @media(max-width:375px) {
 	main .title {
-		font-size: 5.87rem;
+		font-size: 3.81rem;
+	}
+}
+
+@media(max-width:768px) {
+	main .title p {
+		border-bottom: 3px solid #ED7A33;
+	}
+}
+
+@media(max-width:375px) {
+	main .title p {
+		border-bottom: 2px solid #ED7A33;
 	}
 }
 
