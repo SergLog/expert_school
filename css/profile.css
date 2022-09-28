@@ -744,10 +744,30 @@ main .menu .item:hover .title-icon.my-data {
 
 main .menu .title-icon.drafts {
 	background-image: url("../img/profile_icon_2.svg");
+	width: 6.4rem;
+	height: 6.4rem;
 }
 
 main .menu .item:hover .title-icon.drafts {
-	background-image: url("../img/profile_hover_icon_2.svg");
+	background-image: url("../img/profile_hover_icon_2_.svg");
+	width: 8.4rem;
+	height: 8.4rem;
+}
+
+@media(max-width:768px) {
+	main .menu .item .title-icon.drafts {
+		background-image: url("../img/profile_icon_2_768.svg");
+		width: 11.4rem;
+		height: 11.4rem;
+	}
+}
+
+@media(max-width:768px) {
+	main .menu .item:hover .title-icon.drafts {
+		background-image: url("../img/profile_hover_icon_2_768.svg");
+		width: 11.4rem;
+		height: 11.4rem;
+	}
 }
 
 main .menu .title-icon.saved {
