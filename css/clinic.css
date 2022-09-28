@@ -1175,6 +1175,14 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .ar
 	background-size: contain;
 }
 
+@media(max-width:768px) {
+	main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .arrow {
+		width: 6.51rem;
+		height: 2.6rem;
+		
+	}
+}
+
 @media(max-width:375px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .arrow {
 		width: 11.47rem;

@@ -672,10 +672,18 @@ main .site-intro-text .site-title .text2::after {
 }
 
 @media(max-width:375px) {
-	main .site-intro-text .site-title .text1::after,
-	main .site-intro-text .site-title .text2::after {	
-	height: 0.85rem;
+	main .site-intro-text .site-title .text1::after {	
+	height: 1.2rem;
     bottom: 2.2rem;
+	width: 95%;
+}
+}
+
+@media(max-width:375px) {
+	main .site-intro-text .site-title .text2::after {	
+	height: 1.2rem;
+    bottom: 2.2rem;
+	left: 3.1rem;
 }
 }
 

@@ -1120,6 +1120,22 @@ main .news-content .news-list .news-item:hover .arrow {
 	background-size: contain;
 }
 
+@media(max-width:768px) {
+	main .news-content .news-list .news-item:hover .arrow {
+		width: 6.51rem;
+		height: 2.6rem;
+		
+	}
+}
+
+@media(max-width:375px) {
+	main .news-content .news-list .news-item:hover .arrow {
+		width: 11.47rem;
+		height: 4rem;
+		
+	}
+}
+
 main .news-content .news-list .news-item .tags {
 	text-transform: uppercase;
 	font-size: 1rem;
@@ -1200,6 +1216,14 @@ main .news-content .news-list .news-item .arrow {
 @media(max-width:768px) {
 	main .news-content .news-list .news-item .arrow {
 		width: 2.6rem;
+		height: 2.6rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .news-content .news-list .news-item .arrow {
+		width: 4.27rem;
+		height: 4.27rem;
 	}
 }
 
