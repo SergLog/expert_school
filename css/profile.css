@@ -575,7 +575,7 @@ main .title p.text2 {
 }
 
 main .title p.text {
-	border-bottom: 4px solid #ED7A33;
+	/* border-bottom: 4px solid #ED7A33; */
 	width: fit-content;
 }
 
