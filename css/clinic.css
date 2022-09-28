@@ -831,6 +831,8 @@ main .clinical-cases-content .tab {
 @media(max-width:375px) {
 	main .clinical-cases-content .tab {
 		border-top: 1px solid #000000;
+		padding-top: 6.4rem;
+		align-items: flex-start;
 	}
 }
 
@@ -840,8 +842,15 @@ main .clinical-cases-content .tab {
 	}
 }
 
+
 main .clinical-cases-content .tab .tags-container {
 	display: flex;
+}
+
+@media(max-width:375px) {
+	main .clinical-cases-content .tab .tags-container {
+		flex-direction: column;
+	}
 }
 
 main .clinical-cases-content .tab .tags-container .tag {
@@ -864,6 +873,12 @@ main .clinical-cases-content .tab .tags-container .tag {
 		background: #F2F2F2;
 		margin-right: 6px;		
 		font-size: 2.34rem;		
+	}
+}
+
+@media(max-width:375px) {
+	main .clinical-cases-content .tab .tags-container .tag {
+		margin-bottom: 3.67rem;	
 	}
 }
 

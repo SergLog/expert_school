@@ -739,6 +739,7 @@ main .site-intro .site-intro-text .text {
 @media(max-width:768px) {
 	.registration .registration-tabs {
 		margin-bottom: 9rem;
+		margin-top: 8.2rem;
 	}
 }
 
