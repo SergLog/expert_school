@@ -945,6 +945,8 @@ main .site-intro .site-intro-text .text {
 .registration .auth-fields .title {
 	font-size: 2.4rem;	
 	margin-bottom: 3.44rem;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 @media(max-width:768px) {
