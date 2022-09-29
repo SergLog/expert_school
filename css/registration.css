@@ -762,7 +762,7 @@ main .site-intro .site-intro-text .text {
 
 @media(max-width:768px) {
 	.registration .registration-tabs .tab {
-		font-size: 3.39rem;
+		font-size: 3.125rem;
 	}
 }
 
@@ -776,7 +776,19 @@ main .site-intro .site-intro-text .text {
 	color: #000000;
 	font-weight: 600;
 	border-bottom: 2px solid #ED7A33;
-	font-size: 4rem;
+	font-size: 1.5rem;
+}
+
+@media(max-width:768px) {
+	.registration .registration-tabs .tab.active {
+		font-size: 3.125rem;
+	}
+}
+
+@media(max-width:375px) {
+	.registration .registration-tabs .tab.active {
+		font-size: 4rem;
+	}
 }
 
 /*  */
