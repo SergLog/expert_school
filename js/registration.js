@@ -57,22 +57,22 @@ authTab.click();
 
 // Откртие модалки
 const regSendButton = document.querySelector("#reg-fields button");
-const regModal = document.querySelector("#reg-fields .registration-modal");
-
-regSendButton.addEventListener("click", (event) => {
-    const form = document.querySelector("#reg-fields");
+const authModal = document.querySelector(".auth-fields .registration-modal");
+const authTab1 = document.querySelector(".registration-tabs .tab.auth");
     
-    if (form.checkValidity()) {
-        event.preventDefault();
+
+// regSendButton.addEventListener("click", (event) => {
+//     event.preventDefault(); 
+//     const form = document.querySelector("#reg-fields");    
+    
+//     // if (form.checkValidity()) {
+//     //     console.log(authModal);  
+//     //     event.preventDefault(); 
+             
+//     //     window.location = 'registration.html';        
         
-        window.location = 'registration.html';
-        // const authTab = document.querySelector(".registration-tabs .tab.auth");
-        // setTimeout(() => {
-        //     const authTab = document.querySelector(".registration-tabs .tab.auth");
-        //     authTab.click(); 
-        //   }, "1000")
-        // regModal.classList.add("show");
-               
-    } 
-});
+//     // } 
+//     authTab1.click();
+//     authModal.classList.add("active");
+// });
 // Откртие модалки
