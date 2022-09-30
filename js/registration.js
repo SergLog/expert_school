@@ -48,26 +48,31 @@ authTab.addEventListener("click", () => {
     regFields.classList.remove("active");
 });
 
-regTab.click();
+authTab.click();
 // Переключение между табами
 
 // Валидации формы регистрации
 // const invalid = document.querySelector(".registration-tabs .tab.reg");
 // Валидации формы регистрации
 
-//
+// Откртие модалки
 const regSendButton = document.querySelector("#reg-fields button");
 const regModal = document.querySelector("#reg-fields .registration-modal");
 
-regSendButton.addEventListener("click", () => {
+regSendButton.addEventListener("click", (event) => {
     const form = document.querySelector("#reg-fields");
-    console.log(form.checkValidity());
+    
     if (form.checkValidity()) {
-        regModal.classList.add("show");
-        // regModal.style.dispaly = 'block';
+        event.preventDefault();
+        
+        window.location = 'registration.html';
+        // const authTab = document.querySelector(".registration-tabs .tab.auth");
+        // setTimeout(() => {
+        //     const authTab = document.querySelector(".registration-tabs .tab.auth");
+        //     authTab.click(); 
+        //   }, "1000")
+        // regModal.classList.add("show");
+               
     } 
-    // else {
-    //     regModal.classList.remove("active");
-    // }
 });
-//
+// Откртие модалки
