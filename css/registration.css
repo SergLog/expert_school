@@ -79,6 +79,20 @@ body {
 	display: none;
 }
 
+.registration-modal {
+	display: none;
+	position: absolute;
+	width: 30rem;
+	height: 10rem;
+	background-color: #FFFFFF;
+	top: -160%;
+    left: 22%;
+}
+
+.registration-modal.show {
+	display: block;
+}
+
 .registration-page {
 	display: flex;
 	background: #EBEAE9;
@@ -1198,6 +1212,7 @@ div.footer-container .site-description {
 		font-weight: 400;
 		font-size: 2.67rem;
 		line-height: 100%;
+		text-align: center;
 	}
 }
 

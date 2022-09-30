@@ -55,3 +55,19 @@ regTab.click();
 // const invalid = document.querySelector(".registration-tabs .tab.reg");
 // Валидации формы регистрации
 
+//
+const regSendButton = document.querySelector("#reg-fields button");
+const regModal = document.querySelector("#reg-fields .registration-modal");
+
+regSendButton.addEventListener("click", () => {
+    const form = document.querySelector("#reg-fields");
+    console.log(form.checkValidity());
+    if (form.checkValidity()) {
+        regModal.classList.add("show");
+        // regModal.style.dispaly = 'block';
+    } 
+    // else {
+    //     regModal.classList.remove("active");
+    // }
+});
+//

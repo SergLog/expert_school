@@ -602,6 +602,7 @@ main .site-intro .site-title {
 	order: 3;
 	margin-top: -6.25rem;
     margin-bottom: 100px;
+
 	/* box-shadow: inset 0 -0.2em #ff7900; */
 	width: fit-content;
 }
@@ -613,11 +614,13 @@ main .site-intro .site-title {
 		margin-top: 4.95rem;
 		font-size: 11.72rem;
 		line-height: 13.67rem; */
-		font-size: 4.67rem;
-		line-height: 5.47rem;
+		font-size: 11.72rem;
 		font-weight: 600;
-		border-bottom: 4px solid #ED7A33;
+		/* border-bottom: 4px solid #ED7A33; */
 		width: fit-content;
+		margin-top: 4.95rem;
+		margin-bottom: 13.02rem;
+		padding-left: 5.87rem;
 	}
 }
 
@@ -627,6 +630,7 @@ main .site-intro .site-title {
 		font-size: 11.72rem;
 		line-height: 13.67rem;
 		margin-top: 6.4rem;
+		margin-bottom: 12rem;
 	}
 }
 
@@ -655,8 +659,25 @@ main .site-intro .site-title .text2::after {
 }
 
 @media(max-width:768px) {
+	main .site-intro .site-title .text1::after,
+main .site-intro .site-title .text2::after {
+	height: 1.35rem;
+    bottom: 1.3rem;
+    width: 91%;
+    left: 2.4rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .site-intro .site-title .text1::after,
+main .site-intro .site-title .text2::after {
+    bottom: 2.3rem;
+	}
+}
+
+@media(max-width:768px) {
 	main .site-intro .site-title {
-		display: none;
+		/* display: none; */
 	}
 }
 
@@ -721,9 +742,25 @@ main .site-intro .site-intro-text .empty-row {
 	}
 }
 
+main .site-intro .site-intro-text p.text {
+	width: 36rem;
+}
+
+@media(max-width:768px) {
+	main .site-intro .site-intro-text p.text {
+		width: 69rem;
+	}
+}
+
 main .site-content {
 	display: flex;
 	flex-direction: column;
+}
+
+@media(max-width:768px) {
+	main .site-content {
+		border-top: 2px solid #000000;
+	}
 }
 
 main .site-content .site-content-item:first-child {
@@ -757,14 +794,24 @@ main .site-content .site-content-item {
 	}
 }
 
+@media(max-width:768px) {
+	main .site-content .site-content-item:first-child {
+		border-top: 2px solid #000000;
+	}
+}
+
 main .site-content-item.tablet .text-container {
-	/* width: 149%;	 */
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
 
 main .site-content-item.tablet p {
 	font-size: 2.6rem;
 	line-height: 3.54rem;
 	width: 63.92rem;
+	padding-right: 8rem;
 }
 
 main .site-content-item.tablet a {
@@ -781,22 +828,6 @@ main .site-content-item.tablet .image {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;	
-}
-
-main .site-content-item.tablet .image.webinars {
-	background-image: url("../img/doctors1_main.jpg");
-}
-
-main .site-content-item.tablet .image.cases {
-	background-image: url("../img/doctors2_main.jpg");
-}
-
-main .site-content-item.tablet .image.reviews {
-	background-image: url("../img/doctors3_main.jpg");
-}
-
-main .site-content-item.tablet .image.news {
-	background-image: url("../img/doctors4_main.jpg");
 }
 
 main .site-content-item.tablet.no-content {	
@@ -877,39 +908,39 @@ main .site-content .site-content-item .section-description .text {
 	width: 31.56rem;
 } 
 
-main .site-content-item .section-description .image {	
+main .site-content-item .image {	
 	width: 100%;
 	height: 100%;
 	width: 16.93rem;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	filter: grayscale(100%);
 	transition: all 0.5s ease;
 }
 
-main .site-content-item.hover .section-description .image {	
+main .site-content-item.hover .image {	
 	/* width: 100%;
 	height: 100%; */
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	filter: grayscale(0%);
 }
 
-main .site-content .site-content-item .section-description .image.webinars{	
+main .site-content .site-content-item .image.webinars{	
 	background-image: url("../img/doctors1_main.jpg");
 }
 
-main .site-content .site-content-item .section-description .image.cases{	
+main .site-content .site-content-item .image.cases{	
 	background-image: url("../img/doctors2_main.jpg");
 }
 
-main .site-content .site-content-item .section-description .image.reviews{	
+main .site-content .site-content-item .image.reviews{	
 	background-image: url("../img/doctors3_main.jpg");
 }
 
-main .site-content .site-content-item .section-description .image.news{	
+main .site-content .site-content-item .image.news{	
 	background-image: url("../img/doctors4_main.jpg");
 }
 
@@ -952,7 +983,7 @@ main .site-content-item.hover .breadcrumbs a {
 }
 
 main .recomendations {
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 }
 
 main .recomendations .title {
@@ -970,22 +1001,35 @@ main .recomendations .title {
 @media(max-width:768px) {
 	main .recomendations .title {
 		font-size: 4.69rem;
+		height: 17.71rem;
+		justify-content: flex-start;
+		
 	}
 }
 
 @media(max-width:375px) {
 	main .recomendations .title {
 		font-size: 7.47rem;
+		align-items: flex-end;
+		padding-bottom: 6.4rem;
+		height: 30.9rem;
 	}
 }
 
 main .recomendations .recomendations-container {
 	display: flex;
-	padding: 1.98rem 0px 3.54rem 2.19rem;
+	/* padding: 1.98rem 0px 3.54rem 2.19rem; */
+	padding: 40px 0px 68px 16px;
 	/* max-width: 1766px; */
 	max-width: 91.98rem;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+}
+
+@media(max-width:768px) {
+	main .recomendations .recomendations-container {
+		padding: 40px 0px 68px 0px;
+	}
 }
 
 main .recomendations .recomendations-card {
@@ -1072,6 +1116,8 @@ main .recomendations .recomendations-card .card-header {
 	main .recomendations .recomendations-card .card-header {
 		font-size: 24px;
 		line-height: 100%;
+		margin-bottom: 1.25rem;
+	margin-top: 3.125rem;
 	}
 }
 
@@ -1079,6 +1125,8 @@ main .recomendations .recomendations-card .card-header {
 	main .recomendations .recomendations-card .card-header {
 		font-size: 18px;
 		line-height: 100%;
+		margin-bottom: 6.4rem;
+	margin-top: 6.4rem;
 	}
 }
 
@@ -1391,6 +1439,7 @@ div.footer-container .site-description {
 		font-weight: 400;
 		font-size: 2.67rem;
 		line-height: 100%;
+		text-align: center;
 	}
 }
 

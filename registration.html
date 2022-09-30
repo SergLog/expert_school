@@ -16,7 +16,6 @@
   <link href="css/registration.css" type="text/css" rel="stylesheet" />
   <script src="js/registration.js?v=106" defer></script>
 </head>
-
 <body>
   <div name="top" class="registration-page">
     <nav>
@@ -112,7 +111,7 @@
                 <input required class="ui-input" type="text" id="input">
                 <p class="error-text"></p>
               </div>
-              <div class="ui-input-container required">
+              <!-- <div class="ui-input-container required">
                 <label class="ui-input-label" for="input">Имя</label>
                 <input required class="ui-input" type="text" id="input" />
                 <p class="error-text"></p>
@@ -141,7 +140,7 @@
                 <label class="ui-input-label" for="input">Место работы</label>
                 <input class="ui-input" type="text" id="input" />
                 <p class="error-text"></p>
-              </div>
+              </div> -->
               <div class="ui-dropdown-container">
                 <label class="ui-dropdown-label" for="dropdown">Специальность</label>
                 <select required class="ui-dropdown" id="dropdown">
@@ -161,9 +160,10 @@
                 <p>Настоящим я даю согласие на обработку моих <a class="ui-link" href="#">персональных данных</a>.
                   (Возможно, для уточнения ваших данных с вами свяжется ваш персональный координатор)</p>
               </div>
-              <div class="ui-button-container">
-                <button type="submit" class="ui-button">Зарегистироваться</button>
-              </div>
+              <div class="ui-button-container" style="position: relative">
+                <button type="button" class="ui-button">Зарегистироваться</button>
+                <div class="registration-modal">На указанный вами адрес электронной почты выслана ссылка для входа на сайт</div>
+              </div>              
               <p class="note">* Обязательные поля</p>
             </form>
           </div>
