@@ -854,6 +854,7 @@ main .reviews-content .tab .tags-container .tag {
 	}
 }
 
+
 main .reviews-content .tab .tags-container .close {
 	background-image: url("../img/close_news_tag.svg");
 	background-repeat: no-repeat;
@@ -872,6 +873,18 @@ main .reviews-content .tab .tags-container .close {
 		height: 1.95rem;
 		width: 1.95rem;
 		margin-left: 2.87rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .reviews-content .tab .tags-container .text {
+		font-size: 3.73rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .reviews-content .tab .sort-container .sort-text{
+		font-size: 3.73rem;
 	}
 }
 
@@ -937,6 +950,12 @@ main .reviews-content .tablet-search {
 	main .reviews-content .search-nav .desktop-search {
 		display: none;
 	}
+}
+
+@media(max-width:375px) {
+	main .reviews-content .tablet-search input::placeholder {
+	font-size: 3.73rem;
+}
 }
 
 

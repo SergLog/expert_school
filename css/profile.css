@@ -603,6 +603,9 @@ main .title p.text {
 	main .title {
 		font-size: 5.87rem;
 		padding-bottom: 6.67rem;
+		border-top: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		padding-top: 6.4rem;
 	}
 }
 
@@ -636,12 +639,14 @@ main .menu .item {
 		width: 91.15rem;
 		padding: 1.3rem 0;
 		margin: 0;
+		position: relative;
 	}
 }
 
 @media(max-width:375px) {
 	main .menu .item {
 		padding: 3.47rem 0;
+		border-bottom: 1px solid #000000;
 	}
 }
 
@@ -724,6 +729,9 @@ main .menu .title-icon {
 	main .menu .title-icon {
 		width: 12.5rem;
 		height: 12.11rem;
+		position: absolute;
+		right: 0;
+		top: 2.6rem;
 	}
 }
 
@@ -731,6 +739,7 @@ main .menu .title-icon {
 	main .menu .title-icon {
 		width: 10.4rem;
 		height: 10.4rem;
+		top: 5.6rem;
 	}
 }
 
@@ -754,6 +763,14 @@ main .menu .item:hover .title-icon.drafts {
 	height: 8.4rem;
 }
 
+/* main .menu .item .title-icon.drafts::before {
+		content: "";
+		background-image: url("../img/profile_icon_2_768.svg");
+		width: 11.4rem;
+		height: 11.4rem;
+		display: none;
+	} */
+
 @media(max-width:768px) {
 	main .menu .item .title-icon.drafts {
 		background-image: url("../img/profile_icon_2_768.svg");
@@ -761,6 +778,19 @@ main .menu .item:hover .title-icon.drafts {
 		height: 11.4rem;
 	}
 }
+
+/* @media(max-width:768px) {
+	main .menu .item .title-icon.drafts {
+		
+		background: none;
+	}
+}
+
+@media(max-width:768px) {
+	main .menu .item .title-icon.drafts::before {		
+		display: block;
+	}
+} */
 
 @media(max-width:768px) {
 	main .menu .item:hover .title-icon.drafts {

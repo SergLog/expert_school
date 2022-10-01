@@ -1121,7 +1121,6 @@ main .webinars-poll-end .image {
 	width: 57%;
 }
 
-
 main .webinars-recomendations {
 	border-bottom: 2px solid black;
 }
@@ -1280,6 +1279,7 @@ main .webinars-recomendations .recomendations-card .card-authors {
 	font-size: 20px;
 	line-height: 100%;
 	margin-top: 24px;
+	text-transform: uppercase;
 }
 
 @media(max-width:768px) {

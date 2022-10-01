@@ -903,6 +903,18 @@ main .clinical-cases-content .tab .tags-container .close {
 	}
 }
 
+@media(max-width:375px) {
+	main .clinical-cases-content .tab .tags-container .text {
+		font-size: 3.73rem;
+	}
+}
+
+@media(max-width:375px) {
+	main .clinical-cases-content .tab .sort-container .sort-text{
+		font-size: 3.73rem;
+	}
+}
+
 main .clinical-cases-content .tab .sort-container {
 	display: flex;
 	align-items: center;
@@ -959,6 +971,12 @@ main .clinical-cases-content .tablet-search {
 	main .clinical-cases-content .tablet-search {
 		display: block;
 	}
+}
+
+@media(max-width:375px) {
+	main .clinical-cases-content .tablet-search input::placeholder {
+	font-size: 3.73rem;
+}
 }
 
 @media(max-width:768px) {

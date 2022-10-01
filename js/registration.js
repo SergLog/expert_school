@@ -48,7 +48,7 @@ authTab.addEventListener("click", () => {
     regFields.classList.remove("active");
 });
 
-authTab.click();
+regTab.click();
 // Переключение между табами
 
 // Валидации формы регистрации
