@@ -222,6 +222,15 @@ div.ui-input-container .ui-input:hover {
 	border: 2px solid #ED7A33;
 }
 
+@media(max-width:375px) {
+	div.ui-input-container .ui-input:focus,
+	div.ui-input-container .ui-input:hover {
+	border: 1px solid #ED7A33;
+}
+}
+
+
+
 div.ui-input-container p.error-text {
 	display: none;
 	margin-top: 6px;
