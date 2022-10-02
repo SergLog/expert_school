@@ -76,9 +76,7 @@ div.ui-dropdown-container .ui-dropdown {
 	width: 100%;
 	border: none;
 	margin-top: -5px;
-    background: transparent;
-	color: red;
-	
+    background: transparent;	
 }
 
 div.ui-dropdown-container .ui-dropdown option {
