@@ -550,6 +550,7 @@ header .logo {
 
 header .header-breadcrumbs {
 	margin-left: 2.08rem;
+	margin-top: 1.83rem;
 }
 
 @media(max-width:768px) {
@@ -1160,6 +1161,10 @@ main .news-content .news-list .news-item:hover .arrow {
 	background-size: contain;
 }
 
+main .news-content .news-list .news-item:hover p.date {
+	display: none;
+}
+
 @media(max-width:768px) {
 	main .news-content .news-list .news-item:hover .arrow {
 		width: 6.51rem;
@@ -1176,14 +1181,32 @@ main .news-content .news-list .news-item:hover .arrow {
 	}
 }
 
-main .news-content .news-list .news-item .tags {
-	text-transform: uppercase;
-	font-size: 1rem;
+main .news-content .news-list .news-item .footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+main .news-content .news-list .news-item .footer-container p.date {
+	color: #9D9D9C;
+}
+
+
+@media(max-width:768px) {
+	main .news-content .news-list .news-item .footer-container p.date {
+		display: none;
+	}
 }
 
 main .news-content .news-list .news-item .tags {
 	text-transform: uppercase;
 	font-size: 1rem;
+	cursor: pointer;
+}
+
+@media(max-width:768px) {
+	main .news-content .news-list .news-item .tags {
+		font-size: 1.85rem;
+	}
 }
 
 @media(max-width:375px) {
