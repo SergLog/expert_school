@@ -61,6 +61,7 @@ body {
 	display: flex;
 	/* justify-content: center; */
 	overflow: hidden;
+	position: relative;
 }
 
 .content-container {
@@ -79,19 +80,110 @@ body {
 	display: none;
 }
 
-.registration-modal {
-	/* display: none; */
+/* .registration-modal {
 	position: absolute;
 	width: 30rem;
 	height: 10rem;
 	background-color: #FFFFFF;
-	top: -160%;
-    left: 22%;
+} */
+
+
+.success-modal a.modal-link {   
+    display:none;
+}
+.success-modal #container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility:hidden;
+    display:none;
+    background-color: rgba(96, 96, 95, 0.3);
+	z-index: 100;
 }
 
-.registration-modal.show {
-	display: block;
+.success-modal #container:target {
+    visibility: visible;
+    display: block;
 }
+
+.success-modal .reveal-modal {
+    background:#EDECEB; 
+    margin: 0 auto;
+    width: 49.84rem;
+	height: 20.31rem;
+    position:relative; 
+    z-index:100;
+    top: 15%;
+    padding:1.98rem;
+    border: 2px solid;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    }   
+
+    .success-modal .reveal-modal p {
+    	font-weight: 500;
+    	font-size: 1.35rem;
+    	line-height: 130%;
+    	text-transform: uppercase;
+    	margin: auto;
+    }
+
+	@media(max-width:768px) {
+    	.success-modal .reveal-modal {
+    		width: 57.84rem;
+    		height: 28.31rem;
+    	}
+
+    	.success-modal .reveal-modal p {
+    		font-size: 2rem;
+    	}
+
+    }
+
+	@media(max-width:375px) {
+    	.success-modal .reveal-modal {
+			width: 64.84rem;
+			height: 35.31rem;
+		}
+
+    	.success-modal .reveal-modal p {
+    		font-size: 2.5rem;
+    	}
+
+    }
+
+    .success-modal .close-reveal-modal {
+	align-self: flex-end;
+	width: 1.93rem;
+	height: 1.93rem;
+	background-image: url("../img/closed_nav_desktop.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+	position: absolute;
+}
+
+@media(max-width:768px) {
+	.success-modal .close-reveal-modal {
+		width: 2.93rem;
+		height: 2.93rem;
+	}
+
+}
+
+@media(max-width:375px) {
+	.success-modal .close-reveal-modal {
+		width: 3.93rem;
+		height: 3.93rem;
+	}
+
+}
+
+/* .registration-modal.show {
+	display: block;
+} */
 
 .registration-page {
 	display: flex;

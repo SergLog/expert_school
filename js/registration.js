@@ -48,7 +48,7 @@ authTab.addEventListener("click", () => {
     regFields.classList.remove("active");
 });
 
-regTab.click();
+authTab.click();
 // Переключение между табами
 
 // Валидации формы регистрации
@@ -57,22 +57,19 @@ regTab.click();
 
 // Откртие модалки
 const regSendButton = document.querySelector("#reg-fields button");
-const authModal = document.querySelector(".auth-fields .registration-modal");
-const authTab1 = document.querySelector(".registration-tabs .tab.auth");
-    
+const modalLink = document.querySelector(".success-modal a.modal-link");
 
-// regSendButton.addEventListener("click", (event) => {
-//     event.preventDefault(); 
-//     const form = document.querySelector("#reg-fields");    
+regSendButton.addEventListener("click", (event) => {
+    // event.preventDefault(); 
+    const form = document.querySelector("#reg-fields");
     
-//     // if (form.checkValidity()) {
-//     //     console.log(authModal);  
-//     //     event.preventDefault(); 
-             
-//     //     window.location = 'registration.html';        
-        
-//     // } 
-//     authTab1.click();
-//     authModal.classList.add("active");
-// });
+    if (form.checkValidity()) {
+        event.preventDefault();             
+        // window.location = 'registration.html';
+        authTab.click();
+        modalLink.click();
+        // setTimeout(() => modalLink.click(), 1000);  
+    }   
+    // modalLink.click();         
+});
 // Откртие модалки

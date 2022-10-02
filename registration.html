@@ -16,8 +16,18 @@
   <link href="css/registration.css" type="text/css" rel="stylesheet" />
   <script src="js/registration.js?v=106" defer></script>
 </head>
+
 <body>
-  <div class="registration-modal">На указанный вами адрес электронной почты выслана ссылка для входа на сайт</div>
+  <!-- <div class="registration-modal">На указанный вами адрес электронной почты выслана ссылка для входа на сайт</div> -->
+  <div class="success-modal">
+    <a href="#container" data-reveal-id="modal" class="modal-link">POP UP</a>
+    <div id="container">
+      <div id="modal" class="reveal-modal">
+        <a href="#" class="close-reveal-modal"></a>
+        <p>Вы успешно прошли регистрацию.<br>На ваш e-mail отправлено письмо<br>с подтверждением.</p>        
+      </div>
+    </div>
+  </div>
   <div name="top" class="registration-page">
     <nav>
       <div class="nav-burger-icon"></div>
@@ -105,7 +115,7 @@
             <div class="tab reg active">Регистрация</div>
             <div class="tab auth">Авторизация</div>
           </div>
-          <div class="reg-fields">            
+          <div class="reg-fields">
             <form id="reg-fields" action="post">
               <div class="ui-input-container required">
                 <label class="ui-input-label" for="input">Фамилия</label>
@@ -124,7 +134,8 @@
               </div>
               <div class="ui-input-container tel required">
                 <label class="ui-input-label" for="input">Телефон</label>
-                <input required class="ui-input" type="tel" pattern="\+[0-9]{11}" placeholder="+7(000)1234567" id="input" />
+                <input required class="ui-input" type="tel" pattern="\+[0-9]{11}" placeholder="+7(000)1234567"
+                  id="input" />
                 <p class="error-text"></p>
               </div>
               <div class="ui-input-container mail required">
@@ -141,22 +152,23 @@
                 <label class="ui-input-label" for="input">Место работы</label>
                 <input class="ui-input" type="text" id="input" />
                 <p class="error-text"></p>
-              </div> 
+              </div>
               <div class="ui-dropdown-container">
                 <label class="ui-dropdown-label" for="dropdown">Специальность</label>
                 <div class="ui-select-container">
-                <select required class="ui-dropdown" id="dropdown">
-                  <!-- <option value="volvo"></option> -->
-                  <option value="" disabled selected style='display:none;'></option>
-                  <option value="val">Неврология (неврологи)</option>
-                  <option value="val">Психиатрия (психиатры взрослые)</option>
-                  <option value="val">Терапия (терапевты, ВОП)</option>
-                  <option value="val">Гастроэнтерология (гастроэнтерологи)</option>
-                  <option value="val">Гинекология (гинекологи)</option>                  
-                  <option value="val">Педиатрия (педиатры, детские гастроэнтерологи, детские неврологи/психиатры)</option>
-                  <option value="val">Оториноларингология(ЛОРы)</option>
-                </select>
-              </div>
+                  <select required class="ui-dropdown" id="dropdown">
+                    <!-- <option value="volvo"></option> -->
+                    <option value="" disabled selected style='display:none;'></option>
+                    <option value="val">Неврология (неврологи)</option>
+                    <option value="val">Психиатрия (психиатры взрослые)</option>
+                    <option value="val">Терапия (терапевты, ВОП)</option>
+                    <option value="val">Гастроэнтерология (гастроэнтерологи)</option>
+                    <option value="val">Гинекология (гинекологи)</option>
+                    <option value="val">Педиатрия (педиатры, детские гастроэнтерологи, детские неврологи/психиатры)
+                    </option>
+                    <option value="val">Оториноларингология(ЛОРы)</option>
+                  </select>
+                </div>
               </div>
               <div class="agreement">
                 <input required type="checkbox" class="agreement-checkbox">
@@ -165,7 +177,7 @@
               </div>
               <div class="ui-button-container" style="position: relative">
                 <button type="submit" class="ui-button">Зарегистироваться</button>
-              </div>              
+              </div>
               <p class="note">* Обязательные поля</p>
             </form>
           </div>
