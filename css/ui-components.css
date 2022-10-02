@@ -77,7 +77,17 @@ div.ui-dropdown-container .ui-dropdown {
 	border: none;
 	margin-top: -5px;
     background: transparent;
+	color: red;
+	
 }
+
+div.ui-dropdown-container .ui-dropdown option {
+	background-color: #F2F2F2;
+}
+
+/* div.ui-dropdown-container .ui-dropdown:hover{
+	background-color: red;
+} */
 
 @media(max-width:768px) {
 	div.ui-dropdown-container .ui-dropdown {
