@@ -1023,6 +1023,13 @@ background-size: contain;
 cursor: pointer;
 }
 
+@media(max-width:375px) {
+	main .news-content .tablet-search form .search-icon {
+		width: 5.39rem;
+		height: 5.73rem;
+		}
+}
+
 @media(max-width:768px) {
 	main .news-content .news-container .search-nav {
 		display: none;
@@ -1582,7 +1589,7 @@ main .recomendations .buttons-container .next {
 
 @media(max-width:375px) {
 	main .recomendations .buttons-container .next {
-		width: 18.93rem;
+		width: 19.93rem;
 		height: 4.35rem;
 	}
 

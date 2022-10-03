@@ -1027,6 +1027,13 @@ main .reviews-content .tablet-search form .search-icon {
 	cursor: pointer;
 }
 
+@media(max-width:375px) {
+	main .reviews-content .tablet-search form .search-icon {
+		width: 5.39rem;
+		height: 5.73rem;
+		}
+}
+
 @media(max-width:768px) {
 	main .reviews-content .reviews-container .search-nav {
 		display: none;

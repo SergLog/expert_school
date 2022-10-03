@@ -650,7 +650,7 @@ main .site-intro .site-title .text2::after {
 	content: "";
 	height: 0.73rem;
 	background: #FF7900;
-	display: inline-block;
+	display: block;
 	width: 92%;
     bottom: 0.61rem;
     z-index: -1;
