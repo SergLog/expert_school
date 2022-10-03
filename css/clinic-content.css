@@ -73,8 +73,8 @@ body {
 	display: none;
 }
 
-div.webinars-page {
-	padding-top: 3.54rem;
+div.clinics-page {
+	padding-top: 0;
 	padding-right: 2.08rem;
 	display: flex;
 	background: #EBEAE9;
@@ -83,7 +83,7 @@ div.webinars-page {
 }
 
 @media(max-width:640px) {
-	div.webinars-content {
+	div.clinics-content {
 		padding: 0;
 		padding-top: 0.52rem;
 	}
@@ -755,371 +755,6 @@ main .webinars-tags .tags-container a {
 	}
 }
 
-main .webinars-poll {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 2px solid black;
-	padding: 66px 6px 276px 24px;
-}
-
-main .webinars-poll.hide {
-	display: none;
-}
-
-@media(max-width:1480px) {
-	main .webinars-poll {
-		display: block;
-	}
-}
-
-@media(max-width:640px) {
-	main .webinars-poll {
-		padding-bottom: 120px;
-		padding-right: 24px;
-	}
-}
-
-@media(max-width:360px) {
-	main .webinars-poll {
-		padding-bottom: 0px;
-	}
-}
-
-@media(max-width:640px) {
-	main .webinars-poll .poll-description-container {
-		font-size: 36px;
-		line-height: 100%;
-		/* line-height: 46px; */
-		align-items: center;
-		justify-content: space-between;
-		padding-bottom: 39px;
-		border-bottom: 2px solid #3B3B3A;
-	}
-}
-
-main .webinars-poll .poll-title {
-	font-weight: 700;
-	font-size: 45px;
-	line-height: 100%;
-	line-height: 58px;
-	text-transform: uppercase;
-	width: fit-content;
-	margin-bottom: 14px;
-	display: inline;
-	box-shadow: inset 0 -.2em #FF7900;
-}
-
-@media(max-width:1550px) {
-	main .webinars-poll .poll-title {
-		font-size: 42px;
-		line-height: 100%;
-	}
-}
-
-@media(max-width:640px) {
-	main .webinars-poll .poll-title {
-		font-size: 36px;
-		line-height: 100%;
-		/* line-height: 46px; */
-		box-shadow: none;
-	}
-}
-
-main .webinars-poll .poll-description {
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 100%;
-	line-height: 41px;
-	margin-top: 44px;
-	margin-left: 102px;
-}
-
-@media(max-width:640px) {
-	main .webinars-poll .poll-description {
-		font-size: 24px;
-		line-height: 100%;
-		/* line-height: 31px; */
-		margin: 0px;
-	}
-}
-
-main .webinars-poll .poll-table .table-title {
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 100%;
-	/* line-height: 41px; */
-}
-
-@media(max-width:1480px) {
-	main .webinars-poll .poll-table .table-title {
-		margin-top: 24px;
-	}
-}
-
-@media(max-width:1080px) {
-	main .webinars-poll .poll-table .table-title {
-		font-size: 24px;
-		line-height: 100%;
-		/* line-height: 31px */
-	}
-}
-
-main .webinars-poll .poll-table form {
-	font-size: 20px;
-	line-height: 100%;
-	/* line-height: 23px; */
-	letter-spacing: -0.01em;
-	text-transform: uppercase;
-	margin-top: 24px;
-}
-
-main .webinars-poll .poll-table form .send-button {
-	border: none;
-	border-bottom: 2px solid #3B3B3A;
-	height: 100px;
-	font-weight: 500;
-	font-size: 26px;
-	line-height: 100%;
-	
-	text-transform: uppercase;
-	color: #525251;
-	background: inherit;
-	width: 100%;
-	cursor: pointer;
-}
-
-main .webinars-poll .poll-table form .send-button:active {
-	background: #DAD6D2;
-}
-
-@media(max-width:1080px) {
-	main .webinars-poll .poll-table form .send-button {
-		height: 70px;
-	}
-}
-
-main .webinars-poll .poll-table form legend {
-	min-width: 235px;
-}
-
-@media(max-width:1080px) {
-	main .webinars-poll .poll-table form legend {
-		font-size: 14px;
-		line-height: 100%;
-		/* line-height: 18px; */
-		margin-bottom: 16px;
-	}
-}
-
-main .webinars-poll .poll-table form .row {
-	border-top: 2px solid #3B3B3A;
-	height: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	cursor: pointer;
-}
-
-@media(max-width:1080px) {
-	main .webinars-poll .poll-table form .row {
-		height: 70px;
-	}
-}
-
-@media(max-width:660px) {
-	main .webinars-poll .poll-table form .row {
-		display: block;
-		border: none;
-		height: 100px;
-	}
-}
-
-main .webinars-poll .poll-table form .row:hover {
-	background-color: #f2f2f2;
-}
-
-main .webinars-poll .poll-table form fieldset {
-	display: flex;
-	justify-content: space-around;
-	border: none;
-}
-
-main .webinars-poll .poll-table form fieldset input {
-	appearance: none;
-	text-align: center;
-}
-
-main .webinars-poll .poll-table form fieldset input::before {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 20px;
-	line-height: 100%;
-	/* line-height: 23px; */
-	width: 130px;
-	height: 100px;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-
-@media(max-width:1080px) {
-	main .webinars-poll .poll-table form fieldset input::before {
-		width: 74px;
-		height: 70px;
-		font-size: 18px;
-		line-height: 100%;
-		/* line-height: 23px; */
-	}
-}
-
-@media(max-width:660px) {
-	main .webinars-poll .poll-table form fieldset input::before {
-		width: 66px;
-		height: 50px;
-		border: 1px solid #3B3B3A;
-		font-size: 16px;
-		line-height: 100%;
-		/* line-height: 21px; */
-
-	}
-}
-
-main .webinars-poll .poll-table form fieldset input:checked:nth-child(1n)::before {
-	background-color: #ED7A33;
-}
-
-
-main .webinars-poll .poll-table form fieldset input:hover::before {
-	background-color: #DAD6D2;
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(1n)::before {
-	content: "1";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(1n):hover::before {
-	content: "Очень плохо";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(2n)::before {
-	content: "2";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(2n):hover::before {
-	content: "Плохо";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(3n)::before {
-	content: "3";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(3n):hover::before {
-	content: "Нормально";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(4n)::before {
-	content: "4";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(4n):hover::before {
-	content: "Хорошо";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(5n)::before {
-	content: "5";
-}
-
-main .webinars-poll .poll-table form fieldset input:nth-child(5n):hover::before {
-	content: "Очень хорошо";
-}
-
-@media(max-width:640px) {
-	main .webinars-poll .poll-table form fieldset input:nth-child(1n):hover::before {
-		content: "1";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:nth-child(2n):hover::before {
-		content: "2";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:nth-child(3n):hover::before {
-		content: "3";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:nth-child(4n):hover::before {
-		content: "4";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:nth-child(5n):hover::before {
-		content: "5";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:checked::before {
-		background-color: #ED7A33;
-	}
-
-	main .webinars-poll .poll-table form fieldset input:checked:nth-child(1n)::before {
-		content: "1";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:checked:nth-child(2n)::before {
-		content: "2";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:checked:nth-child(3n)::before {
-		content: "3";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:checked:nth-child(4n)::before {
-		content: "4";
-	}
-
-	main .webinars-poll .poll-table form fieldset input:checked:nth-child(5n)::before {
-		content: "5";
-	}
-}
-
-main .webinars-poll-end {
-	display: none;
-}
-
-main .webinars-poll-end.show {
-	padding: 7.5vw 1.88vw 15.7vw 1.88vw;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 2px solid black;
-}
-
-main .webinars-poll-end .text-container {
-	margin-right: 24px;
-}
-
-main .webinars-poll-end .text1 {
-	font-weight: 700;
-	font-size: 6.8vw;
-	/* line-height: 100%; */
-	line-height: 8.2vw;
-	text-transform: uppercase;
-	box-shadow: inset 0 -0.2em #ff7900;
-	display: inline-block;
-}
-
-main .webinars-poll-end .text2 {
-	margin-top: 3.75vw;
-	margin-left: 5.77vw;
-	font-weight: 400;
-	font-size: 1.7vw;
-	/* line-height: 100%; */
-	line-height: 2.2vw;
-}
-
-main .webinars-poll-end .image {
-	max-width: 978px;
-	max-height: 686px;
-	width: 57%;
-}
 
 main .webinars-recomendations {
 	border-bottom: 2px solid black;
@@ -1279,7 +914,6 @@ main .webinars-recomendations .recomendations-card .card-authors {
 	font-size: 20px;
 	line-height: 100%;
 	margin-top: 24px;
-	text-transform: uppercase;
 }
 
 @media(max-width:640px) {
@@ -1846,172 +1480,129 @@ footer .footer-container .mobile {
 
 
 
-/* speakers */
+/* clinics-content */
+.clinics-top-wrap{display: flex;flex-direction: column;} 
+.clinics-h1-title{font-weight: 700;font-size: 4.792rem;line-height: 5.990rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin: 6.771rem 0 0 1.771rem;width: 100%;} 
+.clinics-h1-title span{position: relative;z-index: 1;}
+.clinics-h1-title span:before{content:"";position: absolute;width: calc(100% - 1.667vw);height: 0.729vw;left: 0.260vw;bottom: 0.938vw;background-color: #D155BD;z-index: -1;}
+.clinics-main-photo{padding-left: 47.3%;margin-top: 1.563rem;} 
+.clinics-h2-bordered{font-weight: 700;font-size: 2.396rem;line-height: 3.073rem;letter-spacing: -0.01em;text-transform: uppercase;color: #953385;border-bottom: 2px solid #000;padding-left: 1.250rem;padding-bottom: 0.521rem;margin-bottom: 6.146rem;margin-top: 6.146rem;} 
+.clinics-row{display: flex;align-items: center;padding: 0 4.323rem 0 1.302rem;margin-bottom: 3.333rem;} 
+.clinics-row-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000000;width: 49%;} 
+.clinics-row-desc{font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000000;width: 52%;} 
+.clinics-numered-list{display: flex;justify-content: flex-end;margin-top: 6.250rem;margin-right: 0;margin-bottom: 6.198rem;} 
+.clinics-numered-list-item{border-left: solid 2px #000;min-height: 33.594rem;display: flex;flex-direction: column;padding-left: 0.677rem;padding-top: 1.250rem;width: 24.792rem;align-items: flex-start;} 
+.clinics-numered-list-item:last-child{width: 19.740rem;} 
+.clinics-numered-list-item-num{font-weight: 700;font-size: 8.958rem;line-height: 1;letter-spacing: -0.01em;color: #953385;margin-bottom: 0.313rem;} 
+.clinics-numered-list-item-desc{font-weight: 500;font-size: 1.042rem;line-height: 1.354rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-left: 0.677rem;} 
+.clinics-numered-list-item-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;display: flex;align-items: flex-end;letter-spacing: -0.01em;text-transform: uppercase;color: #000;flex: 1 1 auto;height: 100%;flex-direction: column;justify-content: flex-end;max-width: 80%;} 
+.clinics-ul{list-style: none;} 
+.clinics-ul li:last-child{margin-bottom: 0} 
+.clinics-li{position: relative;margin-bottom: 1.146rem;} 
+.clinics-li:before{content:"";position: absolute;width: 5.260rem;height: 2px;background-color: #953385;left: -6.563rem;top: 0.99rem;} 
+.clinics-h3-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-top: 6.146rem;margin-left: 1.250rem;} 
+.clinics-img-content{width: 100%;padding-left: 47.3%;margin-top: 2.813rem;margin-bottom: 6.042rem;} 
+.clinics-text-in-bordered-box{border-top: 2px solid #000;border-bottom: 2px solid #000;font-weight: 700;font-size: 2.396rem;line-height: 2.073rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin: 6.354rem 0;padding: 2.323rem 1.31rem;} 
+.clinics-text-in-bordered-box .border-right{border-right: solid 0.365vw currentColor;padding-right: 0.729vw;margin-right: 1.213vw;}
+.clinics-text-purple{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #953385;} 
+.clinics-simple-text{font-weight: 400;font-size: 1.354rem;line-height: 1.719rem;display: flex;align-items: flex-end;letter-spacing: -0.01em;color: #000;text-transform: none;} 
+.clinics-pantocalcin-diagram{margin-left: 14.271rem;margin-top: 2.344rem;} 
+.clinics-pantocalcin-diagram-desc-wrap{margin: -22.24rem 0 6.875rem 44.271rem;} 
+.clinics-pantocalcin-diagram img{width: 73%;}
+.clinics-pantocalcin-diagram-desc-wrap h3{margin-left: 0;margin-bottom: 3.333rem;} 
+.clinics-pantocalcin-diagram-desc-wrap p{font-size: 1.63rem;margin-bottom: 2.344rem;max-width: 89%;} 
+.clinics-pantocalcin-diagram-fullsize{margin-top: 3.438rem;padding: 0 1.302rem;} 
+.clinics-pantocalcin-diagram-fullsize img{width: 100%}
+.color-purple{color: #953385;}
+.tablet{display: none}
 
 
-.webinars-speakers{display: flex;padding-top: 10.5rem;border-bottom: solid 2px #000;}
-.webinars-speakers-theme{width: 46.9%;}
-.webinars-speakers-head h2{font-weight: 700;font-size: 2.396rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000000;margin-top: -1.5rem;}
-.webinars-speakers-bigtext{font-weight: 700;font-size: 1.67rem;line-height: 1.3;letter-spacing: -0.01em;color: #000000;}
-.webinars-speakers-videonav-wrap{padding: 1.7rem;letter-spacing: -0.01em;color: #000000;font-size: 1.25rem;line-height: 1.255;}
-.webinars-speakers-videonav-title{font-weight: 400;font-size: 1.25rem;line-height: 1;letter-spacing: -0.01em;color: #525251;margin-top: 3.4rem;margin-bottom: 2.5rem;}
-.webinars-speakers-videonav-list{margin-bottom: 3.5rem;max-width: 81.6%;}
-.webinars-speakers-videonav-list.full + .webinars-speakers-videonav-more:after{transform: rotate(-90deg);}
-
-.webinars-speakers-videonav-more .less {display:none}
-.webinars-speakers-videonav-more .more {display:block}
-.webinars-speakers-videonav-list.full + .webinars-speakers-videonav-more .less {display:block}
-.webinars-speakers-videonav-list.full + .webinars-speakers-videonav-more .more {display:none}
-.webinars-speakers-videonav-list.full .webinars-speakers-videonav-item:nth-child(n+7){display: flex;}
-.webinars-speakers-videonav-item{display: flex;align-items: center;margin-bottom: 1.24rem;}
-.webinars-speakers-videonav-item:nth-child(n+7){display:none}
-.webinars-speakers-videonav-item-time{font-weight: 500;font-size: 1.563rem;line-height: 1;letter-spacing: -0.01em;text-decoration-line: underline;color: #ED7A33;margin-right: 1.4rem;}
-.webinars-speakers-videonav-item-desc{font-weight: 400;font-size: 1.25rem;line-height: 1.255;display: flex;align-items: center;letter-spacing: -0.01em;color: #000000;}
-.webinars-speakers-videonav-more:hover{color: #000}
-.webinars-speakers-videonav-more{position: relative;cursor: pointer;color: #525251;}
-.webinars-speakers-videonav-more:after{content: "";background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='22' height='13' viewBox='0 0 22 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 1.5 10 10 10-10' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");position: absolute;width: 1.042rem;height: 1.042rem;background-repeat: no-repeat;background-position: center;right: 0;top: calc(50% - 0.573vw);transition: .3s;background-size: contain;}
-
-.webinars-speakers-staff{width: 50%;border-left: solid 2px #000;}
-.webinars-speakers-head{padding-left: 1.24rem;padding-bottom: 2.6rem;border-bottom: solid 2px #000;}
-.webinars-speakers-staff-list{padding: 1.8rem 0 1.2rem 1.2rem;letter-spacing: -0.01em;color: #000000;font-size: 1.35rem;line-height: 1.255;}
-
-.webinars-speakers-person-wrap{display: flex;align-items: center;margin-bottom: 1.4rem;}
-.webinars-speakers-photo{width: 7.73rem;margin-right: 2.2rem;}
-.webinars-speakers-name{font-weight: 700;font-size: 1.68rem;line-height: 1.3;display: flex;align-items: center;letter-spacing: -0.01em;color: #000000;max-width: 20rem;}
-.webinars-speakers-person-content{letter-spacing: -0.01em;color: #000000;font-size: 1.35rem;line-height: 1.255;}
-.webinars-speakers-person-content p{margin-bottom: 0.7rem;}
-.webinars-speakers-person-content p:last-child{margin:0}
-.webinars-speakers-person-more-wrap{margin-top: 1.1rem;overflow: hidden;height: 0;}
-
-.webinars-speakers-person-blokquote{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='85' height='128' viewBox='0 0 85 128' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49.9 56V25L85 0v56H49.9ZM0 56V25L35.1 0v56H0Z' fill='%23ED7A33'/%3E%3Cpath d='M15.7 103.5v15.3h2.1v7.2h-3.4v-4H2.2v-18.5h3.6v15.3H12v-15.3h3.6Zm16 5V122h-3.4v-8.3l-4.8 8.3h-3.4v-13.5h3.4v8l4.8-8h3.4Zm13.8 0v3h-4.1V122H38v-10.5h-4.4v-3h11.9Zm6.1-.2c3.9 0 5.8 1.6 5.8 4.8v8.9h-3.3v-1.2c-.4.5-1 .8-1.4 1-.5.2-1.1.3-2 .3-1.4 0-2.6-.4-3.4-1.2a4.2 4.2 0 0 1-1-3c0-1.2.3-2 1.1-2.8.8-.8 2-1.1 3.5-1.1H54v-.7c0-.8-.2-1.3-.6-1.6-.4-.4-1-.5-1.9-.5-1 0-2 .3-2.6 1.1l-2.1-2c.6-.8 1.3-1.3 2-1.6a8 8 0 0 1 2.8-.4Zm2.4 8h-2.5c-1.4 0-2 .5-2 1.5s.6 1.6 2 1.6c.9 0 1.6-.2 2-.7.4-.3.5-.8.5-1.7v-.7Zm16.8-7.8v3h-4V122h-3.4v-10.5H59v-3h11.8Zm6.2-.2c3.9 0 5.8 1.6 5.8 4.8v8.9h-3.3v-1.2c-.5.5-1 .8-1.5 1-.4.2-1 .3-1.8.3-1.5 0-2.7-.4-3.5-1.2a4.2 4.2 0 0 1-1.1-3c0-1.2.4-2 1.2-2.8.8-.8 2-1.1 3.5-1.1h3.1v-.7c0-.8-.2-1.3-.6-1.6-.4-.4-1-.5-1.9-.5-1 0-2 .3-2.6 1.1l-2.1-2c.6-.8 1.3-1.3 2-1.6a8 8 0 0 1 2.8-.4Zm2.4 8h-2.6c-1.3 0-2 .5-2 1.5s.7 1.6 2.1 1.6c.9 0 1.5-.2 2-.7.3-.3.5-.8.5-1.7v-.7Z' fill='%23000'/%3E%3C/svg%3E");background-repeat: no-repeat;padding-left: 7.8rem;min-height: 7.9rem;background-size: 4.5rem auto;}
-.webinars-speakers-person-more-btn{border-bottom: 2px solid rgba(82, 82, 81, 0.24);font-weight: 400;font-size: 1.042vw;line-height: 1;letter-spacing: -0.01em;color: #525251;padding-bottom: 1.1rem;margin-bottom: 1.3rem;cursor: pointer;transition: .3s;position: relative;}
-.webinars-speakers-person-more-btn:hover{color:#000}
-.webinars-speakers-person-more-btn:after{content:"";background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.3 8.2 8 1.5l6.7 6.7' stroke='%23525251' stroke-width='2'/%3E%3C/svg%3E");position: absolute;width: 1.042rem;height: 1.042rem;background-repeat: no-repeat;background-position: center;right: 0.6rem;transition: .2s;bottom: 1.2rem;transform: rotate(180deg);background-size: contain;}
-
-
-.webinars-speakers-person-more-wrap.active{padding: 1.3rem 0 2.3rem 0;height: auto;border-top: 2px solid rgba(82, 82, 81, 0.24);}
-.webinars-speakers-person-more-wrap.active + .webinars-speakers-person-more-btn:after{transform: rotate(0deg);}
-.webinars-speakers-person-more-btn .less {display:none}
-.webinars-speakers-person-more-btn .more {display:block}
-.webinars-speakers-person-more-wrap.active + .webinars-speakers-person-more-btn .less {display:block}
-.webinars-speakers-person-more-wrap.active + .webinars-speakers-person-more-btn .more {display:none}
-
-
-@media (max-width:768px){
-	.webinars-speakers{flex-direction: column;}
-	.webinars-speakers-theme{width: 100%;}
-	.webinars-speakers-theme .webinars-speakers-head{display: none}
-	.webinars-speakers-staff{width: 100%;}
-	.webinars-speakers-staff-list{font-size: 2.35rem;}
-	.webinars-speakers-staff .webinars-speakers-head{border-top: solid 2px #000;margin-left: 4.2rem;padding-left: 0rem;padding-top: 7.5rem;padding-bottom: 5.6rem;}
-	.webinars-speakers-head h2{font-size: 4.74rem;}
-	.webinars-speakers-bigtext{font-size: 3.15rem;max-width: 70%;}
-	.webinars-speakers-videonav-wrap{padding: 1.9rem 0 1.9rem 4.4rem;}
-	.webinars-speakers-videonav-title{font-size: 2.35rem;margin-top: 6rem;margin-bottom: 5.8rem;}
-	.webinars-speakers-videonav-item-time{font-size: 2.4rem;margin-right: 3.3rem;}
-	.webinars-speakers-videonav-item-desc{font-size: 2.35rem;}
-	.webinars-speakers-videonav-item{margin-bottom: 2.94rem;}
-	.webinars-speakers-videonav-wrap{}
-	.webinars-speakers-videonav-list{margin-bottom: 8.4rem;}
-	.webinars-speakers-videonav-more{padding-left: 1.5rem;min-height: 7.9rem;background-size: 4.5rem auto;font-size: 2.32rem;}
-	.webinars-speakers-videonav-more::after{width: 2.342rem;height: 2.342rem;right: 0.1rem;top: .1rem;}
-	.webinars-speakers-person-blokquote{padding-left: 11.1rem;min-height: 13.8rem;background-size: 8rem auto;}
-	.webinars-speakers-person-wrap{font-size: 1.042rem;margin-bottom: 3.3rem;}
-	.webinars-speakers-staff{margin-top: 5.5rem;}
-	.webinars-speakers-staff-list{padding: 3.1rem 0 1.2rem 4rem;}
-	.webinars-speakers-photo{width: 19.7rem;margin-right: 3.1rem;}
-	.webinars-speakers-name{font-size: 3.15rem;max-width: 100%;}
-	.webinars-speakers-person-content{font-size: 2.35rem;}
-	.webinars-speakers-person-more-btn{padding-bottom: 2.8rem;margin-bottom: 3rem;font-size: 2.1vw;}
-	.webinars-speakers-person-more-wrap{margin-top: 2.9rem;}
-	.webinars-speakers-person-more-wrap.active{padding: 1.3rem 0 2.3rem 0;}
-	.webinars-speakers-person-more-btn::after{width: 2.342rem;height: 2.342rem;right: 1.4rem;bottom: 2.5rem;}
-	.webinars-speakers-person-content p{margin-bottom: 1.2rem;}
+@media (max-width:640px) {
+	.tab{display: block} 
+	.clinics-row{flex-direction: column;} 
+	.clinics-page .content-container{width: 100rem;padding-top: 1.042rem;} 
+	.clinics-top-wrap{display: flex;flex-direction: column-reverse;width: calc(100% + 4.28rem);} 
+	.clinics-top-wrap .logo{width: 18.750rem;margin: 9.505rem 0 4.818rem 4.297rem;} 
+	.clinics-h1-title{margin: 0 0 0 3.385rem;font-size: 8.333rem;line-height: 98%;letter-spacing: -0.01em;} 
+	.clinics-main-photo{margin-top: 1.302rem;padding-left: 0;} 
+	.clinics-h1-title span:before{width: calc(100% - 2.995rem);height: 1.693rem;left: 0.651rem;bottom: 1.693rem;} 
+	.clinics-h2-bordered{font-size: 4.688rem;line-height: 5.990rem;padding-left: 0;padding-bottom: 4.688rem;margin-bottom: 7.552rem;margin-top: 9.766rem;border-top: solid 2px #000;padding-top: 4.948rem;margin-left: 4.297rem;margin-right: 4.297rem;padding-bottom: ;} 
+	.clinics-row{padding: 0 4.427rem 0 4.427rem;margin-bottom: 7.552rem;flex-direction: column;} 
+	.clinics-row-title{font-size: 3.125rem;line-height: 5.339rem;width: 100%;margin-bottom: 4.557rem;} 
+	.clinics-row-desc{font-size: 3.125rem;line-height: 4.036rem;width: 100%;} 
+	.clinics-numered-list{margin-top: 0;margin-bottom: 2.734rem;flex-wrap: wrap;width: calc();} 
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item{width: 31.771rem;padding-top: 0;min-height: 49.219rem;padding-left: 0.911rem;} 
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item-title{font-size: 2.344rem;line-height: 3.125rem;margin-left: 1.042rem;} 
+	.clinics-numered-list.tab-3-col .clinics-simple-text{font-size: 2.083rem;line-height: 1.3;margin-bottom: 1.823rem;} 
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item-num{line-height: 7.161rem;font-size: 11.198rem;margin-bottom: 5.208rem;margin-left: 0.781rem;} 
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item-desc{margin-left: 1.563rem;} 
+	.clinics-numered-list-item{min-height: 37.109rem;padding-left: 1.693rem;padding-top: 1.693rem;width: 47.786rem;margin-bottom: 5.078rem;align-items: flex-start;} 
+	.clinics-numered-list-item:last-child{width: 47.786rem;} 
+	.clinics-numered-list-item-num{font-size: 11.068rem;line-height: 10.938rem;margin-left: 0.000rem;letter-spacing: normal;margin-bottom: 5.339rem;} 
+	.clinics-numered-list-item-desc{font-size: 2.083rem;line-height: 3.385rem;margin-left: 0.781rem;letter-spacing: normal;} 
+	.clinics-numered-list-item-title{font-size: 3.125rem;line-height: 4.036rem;text-align: left;} 
+	.clinics-li{margin-bottom: 2.865rem;} 
+	.clinics-li:before{width: 13.151rem;left: -14.453rem;top: 1.693rem;} 
+	.clinics-h3-title{font-size: 4.688rem;line-height: 5.339rem;margin-top: 15.365rem;margin-left: 4.427rem;border-top: solid 0.260rem #000;border-bottom: solid 0.260rem #000;padding: 5.078rem 0;margin-right: 4.297rem;} 
+	.clinics-img-content{padding-left: 0;margin-top: 0;margin-bottom: 3.776rem;} 
+	.clinics-text-in-bordered-box{font-weight: 700;font-size: 3.125rem;line-height: 1.2;margin: 7.552rem 4.297rem 4.167rem 4.297rem;padding: 4.818rem 3.776rem 4.557rem 0.000rem;} 
+	.clinics-text-purple{font-size: 3.125rem;line-height: 4.297rem;} 
+	.clinics-simple-text{font-size: 3.385rem;line-height: 4.297rem;} 
+	.clinics-pantocalcin-diagram{margin-left: 0;margin-top: 5.859rem;} 
+	.clinics-pantocalcin-diagram img{width: 100%;} 
+	.clinics-pantocalcin-diagram-desc-wrap{margin: 0 4.427rem;} 
+	.clinics-pantocalcin-diagram-desc-wrap h3{margin-left: 0;margin-bottom: 8.333rem;} 
+	.clinics-pantocalcin-diagram-desc-wrap p{font-size: 2.9rem;margin-bottom: 5.859rem;} 
+	.clinics-pantocalcin-diagram-fullsize{margin-top: 8.594rem;padding: 0 3.255rem;} 
+	.clinics-text-in-bordered-box .border-right {border-right: solid 2px currentColor; padding-right: 1.953rem; margin-right: 2.344rem;font-size: 4.688rem;line-height: 1.8;} 
+	.clinics-ul{margin-left: 51%;} 
+	.clinics-ul.simple-style{margin-left:0} 
+	.clinics-ul.left-style{margin-leftma;margin-left: 14.453rem;} 
+	.clinics-li.simple-style:before{content:initial} 
+	.desktop{display: none} 
+	.tablet{display: block} 
 }
 
 
 
-@media (max-width:376px){
-	.webinars-speakers-theme{width: 100%;}
-	.webinars-speakers-theme .webinars-speakers-head{display: none}
-	.webinars-speakers-staff{width: 100%;}
-	.webinars-speakers-staff-list{font-size: 2.35rem;}
-	.webinars-speakers-staff .webinars-speakers-head{border-top: solid 2px #000;margin-left: 5.2rem;padding-left: 0rem;padding-top: 7.5rem;padding-bottom: 6.3rem;}
-	.webinars-speakers-head h2{font-size: 5.94rem;}
-	.webinars-speakers-bigtext{font-size: 4.28rem;max-width: 100%;}
-	.webinars-speakers-videonav-wrap{padding: 1.9rem 0 1.9rem 4.4rem;}
-	.webinars-speakers-videonav-title{font-size: 3.75rem;margin-top: 12.1rem;margin-bottom: 6.1rem;}
-	.webinars-speakers-videonav-item-time{font-size: 3.8rem;margin-right: 3.3rem;}
-	.webinars-speakers-videonav-item-desc{font-size: 4.25rem;}
-	.webinars-speakers-videonav-item{margin-bottom: 3.2rem;}
-	.webinars-speakers-videonav-wrap{padding: 1.9rem 0 1.9rem 5.8rem;}
-	.webinars-speakers-videonav-list{margin-bottom: 12.3rem;max-width: 100%;}
-	.webinars-speakers-videonav-more{padding-left: 2.9rem;min-height: 7.9rem;background-size: 4.5rem auto;font-size: 3.62rem;}
-	.webinars-speakers-videonav-more::after{width: 2.342rem;height: 2.342rem;right: 0.1rem;top: .1rem;}
-	.webinars-speakers-person-blokquote{padding-left: 21rem;min-height: 13.8rem;background-size: 14.6rem auto;font-size: 4.2rem;background-position: left center;}
-	.webinars-speakers-person-wrap{margin-top: 0;margin-bottom: 6.2rem;}
-	.webinars-speakers-staff{margin-top: 19.8rem;}
-	.webinars-speakers-staff-list{padding: 6.4rem 0 1.2rem 5.5rem;}
-	.webinars-speakers-photo{width: 39.9rem;margin-right: 6.2rem;}
-	.webinars-speakers-name{font-size: 4.85rem;max-width: 100%;}
-	.webinars-speakers-person-content{font-size: 4.25rem;}
-	.webinars-speakers-person-more-btn{padding-bottom: 5.7rem;margin-bottom: 6rem;font-size: 3.7vw;}
-	.webinars-speakers-person-more-wrap{margin-top: 2.9rem;}
-	.webinars-speakers-person-more-wrap.active{padding: 3rem 0 9.1rem 0;}
-	.webinars-speakers-person-more-btn::after{padding: 1.3rem 0 2.3rem 0;width: 4.342rem;height: 4.342rem;right: 3.6rem;bottom: 5.5rem;}
-	.webinars-speakers-person-content p{margin-bottom: 2rem;}
+@media (max-width:376px) {
+	.clinics-page .content-container{width: 100rem;padding-top: 2.133rem;}
+	.clinics-top-wrap{display: flex;flex-direction: column-reverse;width: calc(100% + 4.28rem);}
+	.clinics-top-wrap .logo{width: 23.467rem;margin: 6.4rem 0 6.4rem 5.867rem;}
+	.clinics-h1-title{margin: 0 0 0 4.8rem;font-size: 9.067rem;line-height: 130%;}
+	.clinics-main-photo{margin-top: 2.667rem;padding-left: 0;}
+	.clinics-h1-title span:before{width: calc(100% - 6.133rem);height: 1.333rem;left: 1.333rem;bottom: 1.867rem;}
+	.clinics-h2-bordered{font-size: 5.867rem;line-height: 7.2rem;margin-bottom: 11.2rem;margin-top: 10.667rem;border-top: solid 1px #000;margin-left: 4.533rem;margin-right: 7.733rem;border-bottom: solid 1px #000;padding-left: 0;padding-bottom: 7.2rem;padding-top: 6.133rem;}
+	.clinics-row{padding: 0 9.067rem 0 4.800rem;margin-bottom: 12rem;flex-direction: column;}
+	.clinics-row-title{font-size: 4.267rem;line-height: 10.933rem;width: 100%;margin-bottom: 3.467rem;}
+	.clinics-row-desc{font-size: 4.267rem;line-height: 5.600rem;width: 100%;}
+	.clinics-numered-list{margin-bottom: 5.600rem;}
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item{min-height: 62.933rem;padding-left: 1.867rem;padding-top: 1.600rem;width: 47.2rem;margin-bottom: 12rem;align-items: flex-start;}
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item:last-child{width: calc(100% - 5.333rem);}
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item-num{font-size: 11.733rem;line-height: 12.267rem;letter-spacing: normal;margin-bottom: 2.667rem;margin-left: 0rem;}
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item-desc{font-size: 4.267rem;line-height: 6.933rem;margin-left: 0;letter-spacing: normal;}
+	.clinics-numered-list.tab-3-col .clinics-numered-list-item-title{font-size: 3.200rem;line-height: 4rem;text-align: left;}
+	.clinics-numered-list-item{min-height: 45.867rem;padding-left: 1.867rem;padding-top: 1.600rem;width: 47.2rem;margin-bottom: 12rem;align-items: flex-start;}
+	.clinics-numered-list-item:last-child{width: 47.200rem;}
+	.clinics-numered-list-item-num{font-size: 11.733rem;line-height: 12.267rem;letter-spacing: normal;margin-bottom: 2.667rem;margin-left: 0rem;}
+	.clinics-numered-list-item-desc{font-size: 4.267rem;line-height: 6.933rem;margin-left: 0rem;letter-spacing: normal;}
+	.clinics-numered-list-item-title{font-size: 4.267rem;line-height: 5.333rem;text-align: left;}
+	.clinics-li{margin-bottom: 4.267rem;}
+	.clinics-li:before{width: 13.600rem;left: -17.600rem;top: 2.4rem;}
+	.clinics-h3-title{font-size: 5.867rem;line-height: 7.733rem;margin-top: 17rem;margin-left: 4.800rem;border-top: solid 1px #000;border-bottom: solid 1px #000;padding: 5.867rem 0;margin-right: 4.8rem;}
+	.clinics-img-content{padding-left: 0;margin-top: 0;margin-bottom: 7.733rem;}
+	.clinics-text-in-bordered-box{font-weight: 700;font-size: 4.267rem;line-height: 1.3;margin: 12rem 4.8rem 8.533rem 4.8rem;padding: 6.667rem 7.733rem 6.667rem 0;display: flex;flex-direction: column;align-items: flex-start;border-top: 1px solid #000;border-bottom: 0.267rem solid #000;}
+	.clinics-text-purple{font-size: 4.267rem;line-height: 5.6rem;}
+	.clinics-simple-text{font-size: 6.933rem;line-height: 8.8rem;}
+	.clinics-pantocalcin-diagram{margin-left: 0;margin-top: 12rem;}
+	.clinics-pantocalcin-diagram img{width: 100%;}
+	.clinics-pantocalcin-diagram-desc-wrap{margin: 0 4.8rem;}
+	.clinics-pantocalcin-diagram-desc-wrap h3{margin-left: 0;margin-bottom: 17.067rem;}
+	.clinics-pantocalcin-diagram-desc-wrap p{font-size: 3.733rem;margin-bottom: 12rem;}
+	.clinics-pantocalcin-diagram-fullsize{margin-top: 17.600rem;padding: 0 6.667rem;}
+	.clinics-text-in-bordered-box .border-right {border-bottom: solid 0.533rem currentColor; padding-right: 0; margin-right: 0;font-size: 5.867rem;line-height: 1.3;border-right: none;margin-bottom: 9.333rem;}
+	.clinics-ul{margin-left: 36%;}
+	.clinics-ul.left-style{margin-leftma;margin-left: 29.600rem;}
 }
 
 
-
-
-
-
-/* review */
-.webinars-review-container{margin-left: 1.250rem;margin-right: 0.625rem;} 
-.webinars-review-p{font-weight: 400;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000;padding-left: 20%;padding-right: 11.458rem;margin-bottom: 4.635rem;} 
-.section-label{font-weight: 700;font-size: 2.396rem;line-height: 3.073rem;letter-spacing: -0.01em;text-transform: uppercase;color: #ED7A33;margin-bottom: 2.240rem;} 
-.webinars-review-h1{font-weight: 700;font-size: 2.396rem;line-height: 3.073rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-bottom: 9.896rem;} 
-.webinars-review-video-wrap{width: 100%;margin-bottom: 4.271rem;} 
-.webinars-review-video-wrap img{width: 100%;} 
-.webinars-review-ul{list-style: none;} 
-.webinars-review-ul li{font-weight: 400;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000;padding-left: 20%;padding-right: 29.583rem;margin-bottom: 1.146rem;position: relative;} 
-.webinars-review-ul li:before{content:"";position: absolute;width: 5.313rem;height: 0.104rem;background-color: #335CED;left: 11.875rem;top: calc(50% - 0.052rem);} 
-.webinars-review-img-fullsize img{width: 100%;padding-left: 9.271rem;padding-right: 9.010rem;} 
-.webinars-review-img-fullsize{margin-bottom: 6.198rem;margin-top: 6.823rem;} 
-.webinars-review-bordered-wrap{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;border-top: solid 2px #000;border-bottom: solid 0.104rem #000;padding: 1.250rem 2.083rem 1.250rem 0.729rem;margin-left: -1.250rem;margin-right: -0.625rem;margin-bottom: 6.406rem;} 
-.webinars-review-row{display: flex;margin-bottom: 6.250rem;} 
-.webinars-review-row-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;width: 20%;padding-left: 1.146rem;} 
-.webinars-review-row-content{font-weight: 400;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000;width: 80%;padding-right: 5.208rem;} 
-.webinars-review-h2{font-weight: 700;font-size: 2.344rem;line-height: 3.021rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-left: 0.990rem;margin-bottom: 5.208rem;} 
-.webinars-review-stat{display: flex;align-items: center;padding: 8.073rem 0 8.073rem 1.198rem;margin-bottom: 3.854rem;} 
-.webinars-review-stat-value:before{content:"";position: absolute;right: -0.677rem;top: -6.510rem;width: 0.104rem;height: 3.958rem;background-color: #000;} 
-.webinars-review-stat-value:after{content: "";position: absolute;right: -0.677rem;bottom: -6.510rem;width: 0.104rem;height: 3.958rem;background-color: #000;} 
-.webinars-review-stat-value{font-weight: 700;font-size: 6.146rem;line-height: 7.917rem;letter-spacing: -0.01em;color: #335CED;margin-right: 2.656rem;position: relative;} 
-.webinars-review-stat-desc{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;max-width: 20.365rem;} 
-.webinars-review-img-diagramm{padding-left: 9.531rem;padding-right: 5.573rem;margin-bottom: 5.000rem;} 
-.webinars-review-img-diagramm img{width: 100%;} 
-.webinars-review-3-cols{display: flex;padding-left: 10.3%;margin-top: 6.250rem; margin-bottom: 12.708rem;} 
-.webinars-review-3-col-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;width: 27.5%;border-left: solid 2px #000;display: flex;align-items: center;padding-left: 0.677rem;padding-right: 2.604rem;} 
-.webinars-review-3-col-item{width: 35%;border-left: solid 2px #000;min-height: 39.792rem;padding-left: 0.781rem;display: flex;flex-direction: column;align-items: flex-start;padding-right: 2.865rem;} 
-.webinars-review-3-col-value{font-weight: 900;font-size: 7.917rem;line-height: 10.208rem;letter-spacing: -0.01em;color: #335CED;margin-bottom: 0.521rem;} 
-.webinars-review-3-col-label{font-weight: 500;font-size: 1.042rem;line-height: 1.354rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-left: 0.625rem;} 
-.webinars-review-3-col-desc{font-weight: 400;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000;height: 100%;display: flex;align-items: flex-end;} 
-.webinars-review-test-wrap{display: flex;} 
-.webinars-review-test-item{font-weight: 400;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000;border-bottom: solid 2px #000;padding: 1.719rem 0;position: relative;cursor: pointer;} 
-.webinars-review-test-submit-btn{/*! font-weight: 400; */font-size: 1.354rem;line-height: 99%;letter-spacing: -0.01em;text-transform: uppercase;color: #525251;border: none;border-bottom: 2px solid #3B3B3A;height: 5.104rem;width: 100%;background: #DAD6D2;cursor: pointer;} 
-.webinars-review-test-submit-btn:hover{background: #DAD3D2;} 
-.webinars-review-test-item input{display: none} 
-.webinars-review-test-item input + div{background-image: url("../img/agreement_desktop_initial.svg");position: absolute;width: 2.083rem;height: 1.771rem;right: 1.302rem;background-repeat: no-repeat;top: calc(50% - 1.042rem);} 
-.webinars-review-test-item input:checked + div{ background-image: url("../img/agreement_desktop.svg");} 
-.webinars-review-test-title{width: 47.8%;display: flex;flex-direction: column;align-items: flex-start;justify-content: center;padding-left: 1.615rem;padding-right: 2.865rem;} 
-.webinars-review-test-title h3{font-weight: 700;font-size: 2.344rem;line-height: 3.021rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;display: flex;flex-direction: column;align-items: flex-start;margin-bottom: 3.490rem;} 
-.webinars-review-test-title h3>span:after{content:""} 
-.webinars-review-test-title >span{font-weight: 400;font-size: 1.667rem;line-height: 2.135rem;display: flex;align-items: center;letter-spacing: -0.01em;padding-left: 44.8%;} 
-.webinars-review-test{width: 50%;display: flex;flex-direction: column;} 
-.webinars-review-literature{margin-left: -1.250rem;margin-right: -0.625rem;margin-top: 6.563rem;} 
-.webinars-review-literature-head{font-weight: 700;font-size: 2.396rem;line-height: 3.073rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;border-top: solid 2px #000;border-bottom: solid 2px #000;padding: 1.719rem 2.031rem;} 
-.webinars-review-literature-list {counter-reset: num;} 
-.webinars-review-literature-list li { counter-increment: num; font-weight: 400; font-size: 1.354rem; line-height: 1.667rem; letter-spacing: -0.01em; border-bottom: 2px solid #3B3B3A; min-height: 6.823rem; display: flex; align-items: center; padding: 0.781rem 3.542rem 0.781rem 0;} 
-.webinars-review-literature-list li:before {content: counter(num) "."; font-weight: 700; font-size: 2.396rem; line-height: 3.073rem; letter-spacing: -0.01em; text-transform: uppercase; color: #000; width: 21.354rem; padding-left: 1.927rem; flex: 0 0 auto;} 
-.webinars-review-literature-list li:nth-child(-n+9):before {content: "0" counter(num) ".";} 
