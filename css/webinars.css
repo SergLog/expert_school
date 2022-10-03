@@ -2002,7 +2002,7 @@ footer .footer-container .mobile {
 .webinars-review-test-submit-btn{/*! font-weight: 400; */font-size: 1.354rem;line-height: 99%;letter-spacing: -0.01em;text-transform: uppercase;color: #525251;border: none;border-bottom: 2px solid #3B3B3A;height: 5.104rem;width: 100%;background: #DAD6D2;cursor: pointer;} 
 .webinars-review-test-submit-btn:hover{background: #DAD3D2;} 
 .webinars-review-test-item input{display: none} 
-.webinars-review-test-item input + div{background-image: url("../img/agreement_desktop_initial.svg");position: absolute;width: 2.083rem;height: 1.771rem;right: 1.302rem;background-repeat: no-repeat;top: calc(50% - 1.042rem);} 
+.webinars-review-test-item input + div{background-size: contain;background-image: url("../img/agreement_desktop_initial.svg");position: absolute;width: 2.083rem;height: 1.771rem;right: 1.302rem;background-repeat: no-repeat;top: calc(50% - 1.042rem);} 
 .webinars-review-test-item input:checked + div{ background-image: url("../img/agreement_desktop.svg");} 
 .webinars-review-test-title{width: 47.8%;display: flex;flex-direction: column;align-items: flex-start;justify-content: center;padding-left: 1.615rem;padding-right: 2.865rem;} 
 .webinars-review-test-title h3{font-weight: 700;font-size: 2.344rem;line-height: 3.021rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;display: flex;flex-direction: column;align-items: flex-start;margin-bottom: 3.490rem;} 
