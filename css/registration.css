@@ -663,6 +663,7 @@ main .site-intro {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		padding: 0;
+		margin-top: 1.3rem;
 	}
 }
 
@@ -672,6 +673,7 @@ main .site-intro {
 		flex-direction: column;
 		padding: 0;
 		margin-left: -4.17rem;
+		margin-top: 2.67rem;
 	}
 }
 
@@ -1159,6 +1161,13 @@ div.footer-container .mobile .second-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
+}
+
+@media(max-width:768px) {
+	div.footer-container .tablet .second-container a,
+	div.footer-container .tablet .second-container p {
+		margin-bottom: 1.82rem;
+	}
 }
 
 @media(max-width:375px) {
