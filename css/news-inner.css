@@ -70,7 +70,7 @@ body {
 	width: 94.27rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	.content-container {
 		width: 100rem;
 	}
@@ -87,7 +87,7 @@ body {
 	/* max-width: 1920px; */
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	div.webinars-content {
 		padding: 0;
 		padding-top: 0.52rem;
@@ -218,7 +218,7 @@ nav.expand {
 	width: 25.47rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	nav {
 		display: none;
 	}
@@ -278,7 +278,7 @@ nav.tablet-nav-menu {
 	padding: 9px 32px;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu {
 		padding: 14px 22px;
 	}
@@ -290,7 +290,7 @@ nav.tablet-nav-menu .header {
 	justify-content: space-between;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	nav.tablet-nav-menu.tablet-expand {
 		display: block;
 		width: 100rem;
@@ -309,7 +309,7 @@ nav.tablet-nav-menu .search-container form {
 	align-items: center
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .search-container {
 		margin-top: 42px;
 		margin-bottom: 88px;
@@ -327,7 +327,7 @@ nav.tablet-nav-menu .search-container input {
 	border-bottom: 1px solid #000000;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .search-container input {
 		font-size: 14px;
 		line-height: 100%;
@@ -347,7 +347,7 @@ nav.tablet-nav-menu .search-container .search-icon {
 	right: 0px;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .search-container .search-icon {
 		width: 22px;
 		height: 22px;
@@ -372,7 +372,7 @@ nav.tablet-nav-menu .close-menu {
 	cursor: pointer;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .close-menu {
 		width: 22px;
 		height: 22px;
@@ -402,7 +402,7 @@ nav.tablet-nav-menu .title {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .title {
 		font-size: 14px;
 		line-height: 100%;
@@ -428,7 +428,7 @@ nav.tablet-nav-menu .menu-list {
 	text-transform: uppercase;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .menu-list {
 		font-size: 16px;
 		line-height: 100%;
@@ -459,7 +459,7 @@ nav.tablet-nav-menu .nav-user-icon {
 	margin-left: auto;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	nav.tablet-nav-menu .nav-user-icon {
 		width: 25px;
 		height: 25px;
@@ -474,7 +474,7 @@ header {
 	padding-bottom: 0.52rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	header {
 		display: flex;
 		border-bottom: none;
@@ -483,7 +483,7 @@ header {
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	header .header-burger-icon {
 		width: 4.3rem;
 		height: 3.2rem;
@@ -496,7 +496,7 @@ header {
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	header .header-search-icon {
 		width: 3.78rem;
 		height: 3.78rem;
@@ -509,7 +509,7 @@ header {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	header .header-burger-icon {
 		background-image: url("../img/burger_tablet.svg");
 		width: 6.93rem;
@@ -518,7 +518,7 @@ header {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	header .header-search-icon {
 		background-image: url("../img/search_icon_tablet.svg");
 		width: 5.87rem;
@@ -533,20 +533,20 @@ header .logo {
 	margin-right: 1.82rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	header .logo {
 		width: 18.75rem;
 		margin-left: auto;
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	header .logo {
 		width: 23.47rem;
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main {
 		padding: 4.17rem;
 	}
@@ -587,13 +587,13 @@ main .site-intro div.breadcrumbs a::before {
 	background-size: contain
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro div.breadcrumbs {
 		display: none;
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro {
 		flex-wrap: nowrap;
 		flex-direction: column;
@@ -610,7 +610,7 @@ main .site-intro .doctors-logo {
 	/* border-left: 2px solid #000000; */
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .doctors-logo {
 		order: 1;
 		width: 100rem;
@@ -626,7 +626,7 @@ main .site-intro .site-logo {
 	align-self: flex-start;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-logo {
 		display: none;
 	}
@@ -667,7 +667,7 @@ main .site-intro .site-title .title {
 	padding-right: 0.5rem; */
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-title {
 		order: 3;
 		padding-left: 4.43rem;
@@ -681,7 +681,7 @@ main .site-intro .site-title .title {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .site-intro .site-title {
 		padding-left: 5.87rem;
 		font-size: 11.72rem;
@@ -691,7 +691,7 @@ main .site-intro .site-title .title {
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-title {
 		margin-top: 15.49rem;
 		margin-bottom: 6.64rem;
@@ -699,7 +699,7 @@ main .site-intro .site-title .title {
 }
 
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-title .title{
 		border-bottom: 4px solid #ED7A33;
 		font-size: 4.67rem;
@@ -707,7 +707,7 @@ main .site-intro .site-title .title {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .site-intro .site-title .title{
 		border-bottom: 2px solid #ED7A33;
 	}
@@ -731,7 +731,7 @@ main .site-intro .site-title::after {
     left: 0.4rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-title::after {
 		display: none;
 	}
@@ -752,13 +752,13 @@ main .site-intro .site-intro-text .empty {
     border-left: 2px solid #000000;
 }
 
-@media(max-width:768px) { 
+@media(max-width:640px) { 
 	main .site-intro .site-intro-text .empty {
 		display: none;
 	}
 }
 
-@media(max-width:768px) { 
+@media(max-width:640px) { 
 	main .site-intro .site-intro-text {
 		padding-left: 5.87rem;
 		font-size: 3.125rem;
@@ -769,7 +769,7 @@ main .site-intro .site-intro-text .empty {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .site-intro .site-intro-text {
 		padding-left: 4.43rem;
 		padding-left: 3.125rem;
@@ -783,7 +783,7 @@ main .site-intro .site-intro-text .site-logo {
 	margin-bottom: 5.21rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-intro-text .site-logo {
 		display: block;
 		order: 3;
@@ -791,7 +791,7 @@ main .site-intro .site-intro-text .site-logo {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .site-intro .site-intro-text .site-logo {
 		width: 27.73rem;
 		margin-bottom: 4.95rem;
@@ -804,7 +804,7 @@ main .site-intro .site-intro-text .empty-row {
 	margin-top: 1.93rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .site-intro .site-intro-text .empty-row {
 		display: none;
 	}
@@ -814,7 +814,7 @@ main .clinical-cases-content {
 	padding-right: 1.41rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content {
 		padding: 0;
 	}
@@ -829,7 +829,7 @@ main .clinical-cases-content .tab {
 	border-bottom: 2px solid #000000;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .tab {
 		border-top: 1px solid #000000;
 		padding-top: 6.4rem;
@@ -837,7 +837,7 @@ main .clinical-cases-content .tab {
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .tab {
 		border-bottom: 0;
 	}
@@ -848,7 +848,7 @@ main .clinical-cases-content .tab .tags-container {
 	display: flex;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .tab .tags-container {
 		flex-direction: column;
 	}
@@ -865,7 +865,7 @@ main .clinical-cases-content .tab .tags-container .tag {
 	
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .tab .tags-container .tag {
 		display: flex;
 		align-items: center;
@@ -877,7 +877,7 @@ main .clinical-cases-content .tab .tags-container .tag {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .tab .tags-container .tag {
 		margin-bottom: 3.67rem;	
 	}
@@ -895,7 +895,7 @@ main .clinical-cases-content .tab .tags-container .close {
 	margin-left: 1.77rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .tab .tags-container .close {
 		background-image: url("../img/close_news_tag.svg");		
 		height: 1.95rem;
@@ -910,7 +910,7 @@ main .clinical-cases-content .tab .sort-container {
 	font-size: 1.25rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .tab .sort-container {
 		display: flex;
 		align-items: center;
@@ -930,7 +930,7 @@ main .clinical-cases-content .tab .sort-container .sort-icon {
 	margin-left: 2rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .tab .sort-container .sort-icon {
 		width: 2.47rem;
 		height: 2.47rem;
@@ -956,13 +956,13 @@ main .clinical-cases-content .tablet-search {
 	display: none;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .tablet-search {
 		display: block;
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .search-nav .desktop-search {
 		display: none;
 	}
@@ -1037,14 +1037,14 @@ background-size: contain;
 cursor: pointer;
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .tablet-search form .search-icon {
 		width: 5.39rem;
 		height: 5.73rem;
 		}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-container .search-nav {
 		display: none;
 	}
@@ -1115,14 +1115,14 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item .image-co
 	display: flex;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item {
 		width: 91.28rem;
 		padding: 1.67rem;
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item {
 		/* width: 91.28rem;
 		padding: 1.67rem; */
@@ -1146,7 +1146,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item img {
 	cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item img {
 		width: 29.69rem;
 		/* object-fit: contain; */
@@ -1154,7 +1154,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item img {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item img {
 		width: 81.33rem;
 		object-fit: cover;
@@ -1183,7 +1183,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .ar
 	background-size: contain;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .arrow {
 		width: 6.51rem;
 		height: 2.6rem;
@@ -1191,7 +1191,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .ar
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item:hover .arrow {
 		width: 11.47rem;
 		height: 4rem;
@@ -1205,14 +1205,14 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item .text-con
 	margin-left: 1.2rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item .text-container {
 		border-left: 0;
 		margin-left: 0
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item .text-container {
 		width: 81.5rem;
     	margin-left: 5rem;
@@ -1226,14 +1226,14 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item .title-co
 	
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item .title-container {
 		margin-left: 1.67rem;
 		/* border-bottom: 1px solid #000000; */
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item .title-container {
 		margin-left: 0;
 		border-bottom: 1px solid #000000;
@@ -1253,7 +1253,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.title {
 	cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.title {
 		font-size: 2.6rem;
 		height: 9.38rem;
@@ -1261,7 +1261,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.title {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.title {
 		font-size: 3.73rem;
 		height: 15.2rem;
@@ -1276,7 +1276,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.text {
     margin-bottom: auto;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.text {
 		width: 53.52rem;
 		font-size: 2.08rem;
@@ -1286,7 +1286,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.text {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.text {
 		/* width: 53.52rem;
 		font-size: 2.08rem;
@@ -1312,7 +1312,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.special
 	text-transform: uppercase;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.specialisation {
 		font-size: 2.6rem;
 		font-weight: 500;
@@ -1331,7 +1331,7 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.empty {
 	/* background: rgb(132, 189, 27); */
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item p.empty {
 		border-left: 1px solid #000000;
 	}
@@ -1350,14 +1350,14 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item .arrow {
 	/* margin-right: 0.89rem; */
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item .arrow {
 		width: 2.6rem;
 		height: 2.6rem;
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	main .clinical-cases-content .clinical-cases-list .clinical-cases-item .arrow {
 		width: 4rem;
 		height: 4rem;
@@ -1368,13 +1368,13 @@ footer {
 	padding: 2.6rem 2.29rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	footer {
 		padding: 4.65rem 4.43rem 3.65rem 4.43rem;
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	footer {
 		padding: 4.53rem 5.87rem;
 	}
@@ -1386,7 +1386,7 @@ div.footer-container .second-container {
 	align-items: center;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	div.footer-container .first-container {
 		margin-bottom: 7.16rem;
 	}
@@ -1425,7 +1425,14 @@ div.footer-container .mobile .second-container {
 	align-items: end;
 }
 
-@media(max-width:375px) {
+@media(max-width:640px) {
+	div.footer-container .tablet .second-container a,
+	div.footer-container .tablet .second-container p {
+		margin-bottom: 1.82rem;
+	}
+}
+
+@media(max-width:360px) {
 	div.footer-container .mobile .second-container {
 		margin-top: 2.67rem;
 		text-align: center;
@@ -1465,7 +1472,7 @@ footer div.footer-container .up-button {
 	cursor: pointer;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	footer div.footer-container .up-button {
 		background-image: url("../img/up-button.svg");
 		background-repeat: no-repeat;
@@ -1476,7 +1483,7 @@ footer div.footer-container .up-button {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	footer div.footer-container .up-button {
 		background-image: url("../img/up-button.svg");
 		background-repeat: no-repeat;
@@ -1493,7 +1500,7 @@ div.footer-container .site-links {
 	margin-left: 10.26rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	div.footer-container .site-links {
 		margin-left: 0;
 	}
@@ -1507,7 +1514,7 @@ div.footer-container .site-links p {
 	color: #525251;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 
 	div.footer-container .site-links a,
 	div.footer-container .site-links p {
@@ -1518,7 +1525,7 @@ div.footer-container .site-links p {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 
 	div.footer-container .site-links a,
 	div.footer-container .site-links p {
@@ -1546,7 +1553,7 @@ div.footer-container .site-description {
 	line-height: 100%;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	div.footer-container .site-description {
 		font-weight: 400;
 		font-size: 1.82rem;
@@ -1556,7 +1563,7 @@ div.footer-container .site-description {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	div.footer-container .site-description {
 		font-weight: 400;
 		font-size: 2.67rem;
@@ -1566,7 +1573,7 @@ div.footer-container .site-description {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	div.footer-container .mobile .second-container {
 		font-size: 1.82rem;
 		line-height: 100%;
@@ -1585,7 +1592,7 @@ div.footer-container img.logo {
 	margin-left: 1.41rem;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	div.footer-container img.logo {
 		width: 18.62rem;
 		height: 5.47rem;
@@ -1593,14 +1600,14 @@ div.footer-container img.logo {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	div.footer-container img.logo {
 		width: 23.47rem;
 		height: 6.96rem;
 	}
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	footer .footer-container .tablet {
 		display: flex;
 	}
@@ -1611,7 +1618,7 @@ footer .footer-container .mobile {
 	display: none;
 }
 
-@media(max-width:768px) {
+@media(max-width:640px) {
 	footer .footer-container .desktop {
 		display: none;
 	}
@@ -1621,7 +1628,7 @@ footer .footer-container .mobile {
 	}
 }
 
-@media(max-width:375px) {
+@media(max-width:360px) {
 	footer .footer-container .tablet {
 		display: none;
 	}
