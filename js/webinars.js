@@ -60,3 +60,43 @@ sendPollButtom.addEventListener("click", () => {
     webinarPollEnd.classList.add("show");
     webinarPoll.classList.add("hide");
 });
+
+
+// Открытие/закрытие подробной информации о спикере
+const personInfoBtn = document.querySelectorAll(".webinars-speakers-person-more-btn");
+
+personInfoBtn.forEach(
+    function(btn){
+        btn.addEventListener("click", function(){
+            this.previousElementSibling.classList.toggle('active');
+        });
+    }
+)
+// Открытие/закрытие подробной информации о спикере
+
+
+// Открытие/закрытие  видеонавигации
+const videoNavBtn = document.querySelectorAll(".webinars-speakers-videonav-more");
+
+videoNavBtn.forEach(
+    function(btn){
+        btn.addEventListener("click", function(){
+            this.previousElementSibling.classList.toggle('full');
+        });
+    }
+)
+// Открытие/закрытие  видеонавигации
+
+
+
+
+
+// Слайдер
+$(document).ready(function(){
+    $('.slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinity: true,
+    });
+
+});

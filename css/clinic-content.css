@@ -1565,7 +1565,7 @@ footer .footer-container .mobile {
 
 
 
-@media (max-width:376px) {
+@media (max-width:360px) {
 	.clinics-page .content-container{width: 100rem;padding-top: 2.133rem;}
 	.clinics-top-wrap{display: flex;flex-direction: column-reverse;width: calc(100% + 4.28rem);}
 	.clinics-top-wrap .logo{width: 23.467rem;margin: 6.4rem 0 6.4rem 5.867rem;}
