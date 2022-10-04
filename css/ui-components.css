@@ -26,7 +26,7 @@ div.ui-dropdown-container .ui-dropdown-label {
 	pointer-events: none;
 }
 
-@media(max-width:640px) {
+@media(max-width:1023px) {
 	div.ui-dropdown-container .ui-dropdown-label {
 		font-size: 2.34rem;
 		height: 3.91rem;
@@ -35,7 +35,7 @@ div.ui-dropdown-container .ui-dropdown-label {
 	}
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 	div.ui-dropdown-container .ui-dropdown-label {
 		font-size: 3.73rem;
 		margin-bottom: -1.95rem;
@@ -81,7 +81,7 @@ div.ui-dropdown-container .ui-dropdown option {
 	background-color: #F2F2F2;
 }
 
-@media(max-width:640px) {
+@media(max-width:1023px) {
 	div.ui-dropdown-container .ui-dropdown {
 		height: 60px;
 		font-size: 18px;
@@ -93,7 +93,7 @@ div.ui-dropdown-container .ui-dropdown option {
 	}
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 	div.ui-dropdown-container .ui-dropdown {
 		height: 50px;
 		font-size: 14px;
@@ -110,14 +110,14 @@ div.ui-dropdown-container .ui-dropdown option {
 	font-size: 20px;
 }
 
-@media(max-width:640px) {
+@media(max-width:1023px) {
 	div.ui-dropdown-container .ui-dropdown option {
 		font-size: 18px;
 		line-height: 21px;
 	}
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 	div.ui-dropdown-container .ui-dropdown option {
 		font-size: 14px;
 		line-height: 16px;
@@ -150,7 +150,7 @@ div.ui-input-container .ui-input-label {
 	text-transform: uppercase;
 }
 
-@media(max-width:640px) {
+@media(max-width:1023px) {
 	div.ui-input-container .ui-input-label {
 		font-size: 2.34rem;
 		height: 3.91rem;
@@ -159,7 +159,7 @@ div.ui-input-container .ui-input-label {
 	}
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 	div.ui-input-container .ui-input-label {
 		font-size: 3.73rem;
 		margin-bottom: -1.95rem;
@@ -178,7 +178,7 @@ div.ui-input-container .ui-input {
 	background-color: #EBEAE9;
 }
 
-@media(max-width:640px) {
+@media(max-width:1023px) {
 	div.ui-input-container .ui-input {
 		height: 60px;
 		font-size: 18px;
@@ -186,7 +186,7 @@ div.ui-input-container .ui-input {
 	}
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 	div.ui-input-container .ui-input {
 		height: 50px;
 		border: 1px solid #000000;
@@ -215,7 +215,7 @@ div.ui-input-container .ui-input:hover {
 	border: 2px solid #ED7A33;
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 
 	div.ui-input-container .ui-input:focus,
 	div.ui-input-container .ui-input:hover {
@@ -308,14 +308,14 @@ div.ui-textarea-container .ui-textarea:focus::before {
 	text-transform: uppercase;
 }
 
-@media(max-width:640px) {
+@media(max-width:1023px) {
 	.ui-button-container .ui-button {
 		height: 60px;
 		font-size: 14px;
 	}
 }
 
-@media(max-width:360px) {
+@media(max-width:639px) {
 	.ui-button-container .ui-button {
 		height: 50px;
 		border: 1px solid #000000;
