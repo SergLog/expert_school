@@ -722,7 +722,7 @@ main .menu .title-icon {
 	width: 6.51rem;
 	height: 6.3rem;
 	cursor: pointer;
-	transition: all 0.5s ease;
+	/* transition: all 0.5s ease; */
 }
 
 @media(max-width:1023px) {
