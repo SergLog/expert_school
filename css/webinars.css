@@ -1134,54 +1134,64 @@ main .webinars-poll-end .image {
 }
 
 
-main .webinars-recomendations {
-	border-bottom: 2px solid black;
+main .recomendations {
+	border-bottom: 1px solid black;
 }
 
-main .webinars-recomendations .title {
+main .recomendations .title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-bottom: 2px solid black;
-	height: 135px;
+	height: 136px;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 45px;
+	font-size: 2.34rem;
 	line-height: 100%;
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .title {
-		font-size: 36px;
-		line-height: 100%;
+	main .recomendations .title {
+		font-size: 4.69rem;
+		height: 17.71rem;
+		justify-content: flex-start;
+		
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-recomendations .title {
-		font-size: 28px;
-		line-height: 100%;
+	main .recomendations .title {
+		font-size: 7.47rem;
+		align-items: flex-end;
+		padding-bottom: 6.4rem;
+		height: 30.9rem;
 	}
 }
 
-main .webinars-recomendations .recomendations-container {
-	display: flex;
+main .recomendations .recomendations-container {
+	/* display: flex; */
 	padding: 40px 0px 68px 16px;
-	max-width: 1766px;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+	/* max-width: 91.98rem; */
+	/* overflow-x: hidden;
+	scroll-behavior: smooth; */
 }
 
-main .webinars-recomendations .recomendations-card {
-	min-width: 411px;
-	margin-right: 133px;
+@media(max-width:1023px) {
+	main .recomendations .recomendations-container {
+		padding: 40px 0px 68px 0px;
+	}
+}
+
+main .recomendations .recomendations-card {
+	width: 21.41rem;
+	margin-right: 6.93rem;
 	height: 100%;
 	filter: grayscale(100%);
 	transition: all 0.5s ease;
 	cursor: pointer;
 }
 
-main .webinars-recomendations .recomendations-card a {
+main .recomendations .recomendations-card a {
 	min-width: 411px;
 	margin-right: 133px;
 	height: 100%;
@@ -1189,170 +1199,265 @@ main .webinars-recomendations .recomendations-card a {
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .recomendations-card {
+	main .recomendations .recomendations-card {
+		min-width: 411px;
+		margin-right: 24px;
+	}
+}
+
+@media(max-width:360px) {
+	main .recomendations .recomendations-card {
 		min-width: 233px;
 		margin-right: 24px;
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-recomendations .recomendations-card {
+	main .recomendations .recomendations-card {
 		margin-right: 14px;
 	}
 }
 
-main .webinars-recomendations .recomendations-card .сard-image {
+main .recomendations .recomendations-card .сard-image {
 	width: 100%;
 	object-fit: cover;
 	height: 100%;
-	min-height: 411px;
-	max-width: 411px;
-
+	min-height: 21.41rem;
 }
 
-main .webinars-recomendations .recomendations-card:hover {
+main .recomendations .recomendations-card:hover {
 	filter: grayscale(0%);
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .recomendations-card .сard-image {
+	main .recomendations .recomendations-card .сard-image {
+		min-height: 411px;
+	}
+}
+
+@media(max-width:360px) {
+	main .recomendations .recomendations-card .сard-image {
 		min-height: 233px;
 	}
 }
 
-main .webinars-recomendations .recomendations-card .card-title {
+main .recomendations .recomendations-card .card-title {
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.04rem;
 	line-height: 100%;
-	/* line-height: 26px; */
 	text-transform: uppercase;
 	border-bottom: 2px solid #000000;
-	margin-bottom: 29px;
+	margin-bottom: 1.51rem;
+	padding-bottom: 0.83rem;
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .recomendations-card .card-title {
+	main .recomendations .recomendations-card .card-title {
 		font-size: 20px;
 		line-height: 100%;
-		/* line-height: 26px; */
 		margin-bottom: 14px;
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-recomendations .recomendations-card .card-title {
+	main .recomendations .recomendations-card .card-title {
 		font-size: 14px;
 		line-height: 100%;
-		/* line-height: 18px; */
 		margin-bottom: 8px;
 	}
 }
 
-main .webinars-recomendations .recomendations-card .card-header {
+main .recomendations .recomendations-card .card-header {
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 1.67rem;
 	line-height: 100%;
-	margin-bottom: 24px;
-	margin-top: 24px;
+	margin-bottom: 1.25rem;
+	margin-top: 1.25rem;
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .recomendations-card .card-header {
+	main .recomendations .recomendations-card .card-header {
 		font-size: 24px;
 		line-height: 100%;
+		margin-bottom: 1.25rem;
+	margin-top: 3.125rem;
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-recomendations .recomendations-card .card-header {
+	main .recomendations .recomendations-card .card-header {
 		font-size: 18px;
 		line-height: 100%;
+		margin-bottom: 6.4rem;
+	margin-top: 6.4rem;
 	}
 }
 
-main .webinars-recomendations .recomendations-card .card-text {
+main .recomendations .recomendations-card .card-text {
 	font-weight: 400;
-	font-size: 24px;
-	line-height: 100%;
-	line-height: 31px;
+	font-size: 1.25rem;
+	line-height: 1.61rem;
 	overflow: hidden;
 	overflow-wrap: break-word;
 }
 
-@media(max-width:639px) {
-	main .webinars-recomendations .recomendations-card .card-text {
-		font-size: 14px;
-		line-height: 100%;
-		/* line-height: 18px; */
+@media(max-width:1023px) {
+	main .recomendations .recomendations-card .card-text {
+		font-size: 3.13rem;
+		line-height: 3.65rem;
 	}
 }
 
-main .webinars-recomendations .recomendations-card .card-authors {
+@media(max-width:639px) {
+	main .recomendations .recomendations-card .card-text {
+		font-size: 3.73rem;
+		line-height: 4.27rem;
+	}
+}
+
+main .recomendations .recomendations-card .card-authors {
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.04rem;
 	line-height: 100%;
-	margin-top: 24px;
+	margin-top: 1.25rem;
 	text-transform: uppercase;
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .recomendations-card .card-authors {
-		font-size: 14px;
+	main .recomendations .recomendations-card .card-authors {
+		font-size: 2.21rem;
 		line-height: 100%;
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-recomendations .recomendations-card .card-authors {
-		font-size: 12px;
+	main .recomendations .recomendations-card .card-authors {
+		font-size: 3.2rem;
 		line-height: 100%;
 	}
 }
 
+main .recomendations .slick-track {
+	display: flex;
+}
 
-main .webinars-recomendations .buttons-container {
+main .recomendations .slick-prev {
+	background-color: #EBEAE9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+	left: 2.08rem;
+	top: calc(100% + 0.635rem);
+	background-image: url(../img/prev.svg);
+    width: 7.81rem;
+    height: 2rem;
+}
+
+main .recomendations .slick-prev::before {
+	content: none;
+}
+
+main .recomendations .slick-next {
+	background-color: #EBEAE9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+	right: 5.4rem;
+	top: calc(100% + 0.635rem);
+	background-image: url(../img/next.svg);
+	width: 8.3rem;
+    height: 2rem;
+}
+
+main .recomendations .slick-next::before {
+	content: none;
+}
+
+main .recomendations .slick-prev, main .recomendations .slick-next {
+	border-radius: 0;
+}
+
+@media(max-width:1023px) {
+	main .recomendations .slick-next {
+		width: 15.93rem;
+		height: 3.35rem;
+	}
+
+	main .recomendations .slick-prev {
+		width: 14.81rem;
+    	height: 3.35rem;
+	}
+}
+
+@media(max-width:639px) {
+	main .recomendations .slick-next {
+		width: 18.93rem;
+		height: 4.35rem;
+	}
+
+	main .recomendations .slick-prev {
+		width: 18.93rem;
+		height: 4.35rem;
+	}
+}
+
+
+main .recomendations .buttons-container {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 74px;
 }
 
-main .webinars-recomendations .buttons-container .next,
-main .webinars-recomendations .buttons-container .prev {
-	display: flex;
-	font-weight: 500;
-	font-size: 26px;
-	line-height: 100%;
-	text-transform: uppercase;
+main .recomendations .buttons-container .next,
+main .recomendations .buttons-container .prev {
+	display: none;
+	background-color: #EBEAE9;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 	border: none;
-	padding: 0;
-	background: inherit;
 	cursor: pointer;
 }
 
-main .webinars-recomendations .buttons-container .next {
-	margin-right: 80px;
+main .recomendations .buttons-container .prev {
+	background-image: url("../img/prev.svg");
+	width: 7.81rem;
+	height: 1.35rem;
+	margin-left: 2.08rem;
 }
 
-main .webinars-recomendations .buttons-container .prev {
-	margin-left: 40px;
+main .recomendations .buttons-container .next {
+	background-image: url("../img/next.svg");
+	width: 9.93rem;
+	height: 1.35rem;
+	margin-right: 4.17rem;
 }
 
 @media(max-width:1023px) {
-	main .webinars-recomendations .buttons-container .next {
-		margin-right: 40px;
+	main .recomendations .buttons-container .next {
+		width: 15.93rem;
+		height: 3.35rem;
+	}
+
+	main .recomendations .buttons-container .prev {
+		width: 14.81rem;
+    	height: 3.35rem;
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-recomendations .buttons-container .next {
-		margin-right: 40px;
-		font-size: 20px;
-		line-height: 100%;
+	main .recomendations .buttons-container .next {
+		width: 18.93rem;
+		height: 4.35rem;
 	}
 
-	main .webinars-recomendations .buttons-container .prev {
-		font-size: 20px;
-		line-height: 100%;
+	main .recomendations .buttons-container .prev {
+		width: 18.93rem;
+		height: 4.35rem;
 	}
 }
 

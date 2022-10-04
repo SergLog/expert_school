@@ -73,3 +73,4 @@ regSendButton.addEventListener("click", (event) => {
     // modalLink.click();         
 });
 // Откртие модалки
+
