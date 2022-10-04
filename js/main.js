@@ -1,6 +1,11 @@
+
 const rightButtons = Array.from(document.getElementsByClassName('next'));
 const leftButtons = Array.from(document.getElementsByClassName('prev'));
 const containers = Array.from(document.getElementsByClassName('recomendations-container'));
+
+// $(".recomendations-container").on("swipe",function(){
+//     $(this).hide();
+//   });
 
 let index = 0;
 for (const rightButton of rightButtons) {
@@ -68,3 +73,5 @@ siteContentItems.forEach(item => {
     });    
 })
 // ховер для site-content-item
+
+
