@@ -24,6 +24,16 @@ $(document).ready(function(){
               variableWidth: true
               }
             },
+            {
+              breakpoint: 640,
+              settings: {
+              slidesToShow: 1.5,
+              centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
+              slidesToScroll: 1,
+              // centerMode: true,
+              variableWidth: true
+              }
+            },
             // {
             //     breakpoint: 560,
             //     settings: {

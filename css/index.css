@@ -1053,7 +1053,7 @@ main .recomendations .recomendations-card a {
 	}
 }
 
-@media(max-width:640px) {
+@media(max-width:360px) {
 	main .recomendations .recomendations-card {
 		min-width: 233px;
 		margin-right: 24px;
@@ -1083,7 +1083,7 @@ main .recomendations .recomendations-card:hover {
 	}
 }
 
-@media(max-width:640px) {
+@media(max-width:360px) {
 	main .recomendations .recomendations-card .сard-image {
 		min-height: 233px;
 	}
