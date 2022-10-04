@@ -17,27 +17,29 @@ $(document).ready(function(){
             {
               breakpoint: 640,
               settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              // centerMode: true,
+              variableWidth: true
               }
             },
-            {
-                breakpoint: 560,
-                settings: {
-                slidesToShow: 1,
-                centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
-                slidesToScroll: 1
-                }
-              },
-            {
-                breakpoint: 360,
-                settings: {
-                slidesToShow: 1,
-                centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
-                slidesToScroll: 1
-                }
-              }
+            // {
+            //     breakpoint: 560,
+            //     settings: {
+            //     slidesToShow: 1,
+            //     centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
+            //     slidesToScroll: 1
+            //     }
+            //   },
+            // {
+            //     breakpoint: 360,
+            //     settings: {
+            //     slidesToShow: 1,
+            //     centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
+            //     slidesToScroll: 1
+            //     }
+            //   }
            ]
     });
 

@@ -1172,6 +1172,10 @@ main .recomendations .recomendations-card .card-authors {
 	}
 }
 
+main .recomendations .slick-track {
+	display: flex;
+}
+
 main .recomendations .slick-prev {
 	background-color: #EBEAE9;
     background-repeat: no-repeat;
