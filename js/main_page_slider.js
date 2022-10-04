@@ -15,7 +15,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 640,
+              breakpoint: 1023,
               settings: {
               slidesToShow: 3,
               centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
