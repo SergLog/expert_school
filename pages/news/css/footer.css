@@ -97,7 +97,7 @@ div.footer-container .mobile .second-container .site-links a {
 }
 
 footer div.footer-container .up-button {
-	background-image: url("../../img/up-button.svg");
+	background-image: url("../../../img/up-button.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -109,7 +109,7 @@ footer div.footer-container .up-button {
 
 @media(max-width:1023px) {
 	footer div.footer-container .up-button {
-		background-image: url("../../img/up-button.svg");
+		background-image: url("../../../img/up-button.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -120,7 +120,7 @@ footer div.footer-container .up-button {
 
 @media(max-width:639px) {
 	footer div.footer-container .up-button {
-		background-image: url("../../img/up-button.svg");
+		background-image: url("../../../img/up-button.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;

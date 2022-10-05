@@ -72,7 +72,7 @@ main .news-content .tab .tags-container .tag {
 }
 
 main .news-content .tab .tags-container .close {
-	background-image: url("../../img/close_news_tag.svg");
+	background-image: url("../../../img/close_news_tag.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -85,7 +85,7 @@ main .news-content .tab .tags-container .close {
 
 @media(max-width:1023px) {
 	main .news-content .tab .tags-container .close {
-		background-image: url("../../img/close_news_tag.svg");		
+		background-image: url("../../../img/close_news_tag.svg");		
 		height: 1.95rem;
 		width: 1.95rem;		
 		margin-left: 2.87rem;
@@ -119,7 +119,7 @@ main .news-content .tab .sort-container {
 }
 
 main .news-content .tab .sort-container .sort-icon {
-	background-image: url("../../img/sort_news_newest.svg");
+	background-image: url("../../../img/sort_news_newest.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -201,7 +201,7 @@ main .news-content .search-nav form .search-icon {
 	border: none;
 	appearance: none;
 	background: #EBEAE9;
-	background-image: url("../../img/search_tag_icon_news.svg");
+	background-image: url("../../../img/search_tag_icon_news.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -236,7 +236,7 @@ height: 2.73rem;
 border: none;
 appearance: none;
 background: #EBEAE9;
-background-image: url("../../img/search_tag_icon_news.svg");
+background-image: url("../../../img/search_tag_icon_news.svg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: contain;
@@ -286,7 +286,7 @@ main .news-content .gategories .item input {
 
 main .news-content .gategories .item .checkbox::before {
     content: "";
-    background-image: url(../../img/agreement_desktop_initial.svg);
+    background-image: url(../../../img/agreement_desktop_initial.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -297,7 +297,7 @@ main .news-content .gategories .item .checkbox::before {
 }
 
 main .news-content .gategories .item .checkbox:checked::before {
-    background-image: url(../../img/agreement_desktop.svg);
+    background-image: url(../../../img/agreement_desktop.svg);
 }
 
 main .news-content .news-list {
@@ -398,7 +398,7 @@ main .news-content .news-list .news-item:hover .arrow {
 	width: 3.7rem;
 	/* height: 2.5rem; */
 	background-color: #F2F2F2;
-	background-image: url("../../img/orange_arrow.svg");
+	background-image: url("../../../img/orange_arrow.svg");
 	background-size: contain;
 }
 
@@ -579,7 +579,7 @@ main .news-content .news-list .news-item .arrow {
 	width: 1.3rem;
 	height: 1.3rem;
 	background: #EBEAE9;
-	background-image: url("../../img/arrow_news_item.svg");
+	background-image: url("../../../img/arrow_news_item.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;

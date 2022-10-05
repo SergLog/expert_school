@@ -54,7 +54,7 @@ nav .expanded-menu .search-container .search-icon {
 	border: none;
 	appearance: none;
 	background-color: #EBEAE9;
-	background-image: url("images/search_icon_nav_desktop.svg");
+	background-image: url("../../../img/search_icon_nav_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -66,7 +66,7 @@ nav .expanded-menu .search-container .search-icon {
 	height: 1.93rem;
 	border: none;
 	appearance: none;
-	background-image: url("images/search_icon_nav_desktop.svg");
+	background-image: url("../../../img/search_icon_nav_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -86,7 +86,7 @@ nav .expanded-menu .search-container input:focus {
 nav .expanded-menu .close-menu {
 	width: 1.93rem;
 	height: 1.93rem;
-	background-image: url("images/closed_nav_desktop.svg");
+	background-image: url("../../../img/closed_nav_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -131,7 +131,7 @@ nav.expand {
 nav .nav-burger-icon {
 	width: 2.35rem;
 	height: 1.46rem;
-	background-image: url("images/burger_desktop.svg");
+	background-image: url("../../../img/burger_desktop.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;

@@ -40,7 +40,7 @@ header {
 		width: 4.3rem;
 		height: 3.2rem;
 		background: #EBEAE9;
-		background-image: url("../../img/burger_tablet.svg");
+		background-image: url("../../../img/burger_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -54,7 +54,7 @@ header {
 		width: 3.78rem;
 		height: 3.88rem;
 		background: #EBEAE9;
-		background-image: url("../../img/search_icon_tablet.svg");
+		background-image: url("../../../img/search_icon_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -65,7 +65,7 @@ header {
 
 @media(max-width:639px) {
 	header .header-burger-icon {
-		background-image: url("../../img/burger_tablet.svg");
+		background-image: url("../../../img/burger_tablet.svg");
 		width: 6.93rem;
 		height: 4.53rem;
 		margin-left: 5.87rem;
@@ -75,7 +75,7 @@ header {
 @media(max-width:639px) {
 	header .header-search-icon {
 		background: #EBEAE9;
-		background-image: url("../../img/search_icon_tablet.svg");
+		background-image: url("../../../img/search_icon_tablet.svg");
 		background-size: cover;
 		width: 5.87rem;
 		height: 5.87rem;
@@ -133,7 +133,7 @@ header div.breadcrumbs a::before {
 	height: 0.83rem;
 	margin: 0px 0.63rem;
 	background: #EBEAE9;
-	background-image: url("../../img/breadcrumbs_arrow.svg");
+	background-image: url("../../../img/breadcrumbs_arrow.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain
