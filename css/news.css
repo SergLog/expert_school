@@ -682,7 +682,7 @@ main .site-intro .extra-text {
 	}
 }
 
-main .site-intro .site-intro-text .title {
+main .site-intro .site-title .title {
 	font-size: 4.79rem;
 	font-weight: 600;
 	line-height: 80%;
@@ -703,7 +703,7 @@ main .site-intro .site-title {
     z-index: 1;
 }
 
-main .site-intro .site-intro-text .title::after {
+main .site-intro .site-title .title::after {
 	content: "";
 	height: 0.55rem;
 	background: #FF7900;
@@ -716,14 +716,14 @@ main .site-intro .site-intro-text .title::after {
 }
 
 @media(max-width:1023px) {
-	main .site-intro .site-intro-text .title::after {
+	main .site-intro .site-title .title::after {
 		height: 1.4rem;
 		left: 1.1rem;
 	}
 }
 
 @media(max-width:639px) {
-	main .site-intro .site-intro-text .title::after {
+	main .site-intro .site-title .title::after {
 		height: 1.4rem;
 		width: 85%;
 		left: 7rem;
@@ -732,7 +732,7 @@ main .site-intro .site-intro-text .title::after {
 }
 
 @media(max-width:1023px) {
-	main .site-intro .site-intro-text .title {
+	main .site-intro .site-title .title {
 		margin-top: 4.95rem;
 		font-size: 11.98rem;
 		line-height: 80%;
@@ -742,7 +742,7 @@ main .site-intro .site-intro-text .title::after {
 }
 
 @media(max-width:639px) {
-	main .site-intro .site-intro-text .title {
+	main .site-intro .site-title .title {
 		padding-left: 4.13rem;
 		font-size: 11.72rem;
 		line-height: 13.67rem;

@@ -1,0 +1,199 @@
+/*-------------------- site-intro --------------------*/
+
+main .site-intro {
+	padding-top: 5.21rem;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 1.25rem;
+	/* padding-bottom: 9.9rem; */
+}
+
+@media(max-width:1023px) {
+	main .site-intro {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+}
+
+@media(max-width:639px) {
+	main .site-intro {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		padding: 0;
+		margin-left: -4.17rem;
+	}
+}
+
+main .site-intro .doctors-logo {
+	width: 49.4rem;
+	/* width: 47rem; */
+	order: 2;
+	margin-left: auto;
+	/* border-left: 2px solid #000000; */
+}
+
+@media(max-width:1023px) {
+	main .site-intro .doctors-logo {
+		order: 1;
+		width: 100%;
+		border-left: 0;
+		/* margin: 0 -4.17rem; */
+	}
+}
+
+@media(max-width:639px) {
+	main .site-intro .doctors-logo {
+		width: 100rem;
+	}
+}
+
+/* main .site-intro .site-logo {
+	width: 9.74rem;
+	order: 1;
+	margin-top: 3.54rem;
+	align-self: flex-start;
+}
+
+@media(max-width:1023px) {
+	main .site-intro .site-logo {
+		display: none;
+	}
+} */
+
+
+@media(max-width:1023px) {
+	main .site-intro .site-title  {
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		padding-left: 4.17rem;
+	}
+}
+
+main .site-intro .extra-text {
+    height: 24.9rem;
+    border-right: 2px solid #000000;
+    width: 19.27rem;
+    display: flex;
+    align-items: flex-end;
+	font-size: 2.4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 0.5rem;
+	margin-top: -15.11rem;
+	order: 3;
+}
+
+@media(max-width:1023px) {
+	main .site-intro .extra-text {
+		display: none;
+	}
+}
+
+main .site-intro .site-title .title {
+	font-size: 4.79rem;
+	font-weight: 600;
+	line-height: 80%;
+	/* margin-top: -18.25rem;
+	margin-bottom: 4.69rem; */
+	/* box-shadow: inset 0 -0.2em #ff7900; */
+	width: fit-content;
+	text-transform: uppercase;
+
+	position: relative;    
+    width: fit-content;
+    z-index: 1;
+}
+
+main .site-intro .site-title .text1{
+	position: relative;    
+    width: fit-content;
+    z-index: 1;
+}
+
+main .site-intro .site-title .text1::after {
+	content: "";
+	height: 0.55rem;
+	background: #FF7900;
+	display: inline-block;
+	width: 95%;
+    bottom: 0.05rem;
+    z-index: -1;
+    position: absolute;
+    left: 0.4rem;
+}
+
+@media(max-width:1023px) {
+	main .site-intro .site-title .text1::after {
+		height: 1.4rem;
+		left: 1.1rem;
+	}
+}
+
+@media(max-width:639px) {
+	main .site-intro .site-title .text1::after {
+		height: 1.4rem;
+		width: 93%;
+		left: 2rem;
+		bottom: 2.1rem;
+	}
+}
+
+@media(max-width:1023px) {
+	main .site-intro .site-title .title {
+		margin-top: 4.95rem;
+		font-size: 11.98rem;
+		line-height: 80%;
+		order: 2;
+		margin-bottom: 13rem;
+	}
+}
+
+@media(max-width:1023px) {
+	main .site-intro .site-title {
+		order: 2;
+	}
+}
+
+@media(max-width:639px) {
+	main .site-intro .site-title .title {
+		padding-left: 4.13rem;
+		font-size: 11.72rem;
+		line-height: 13.67rem;
+		margin-top: 6.4rem;
+	}
+}
+
+main .site-intro .site-title  .text {
+	font-size: 1.67rem;
+	line-height: 1.98rem;
+	width: 41.67rem;
+	margin-left: 19rem;
+	/* padding-bottom: 5.21rem; */
+	width: 100%;
+	margin-top: 3.33rem;
+}
+ 
+@media(max-width:1023px) {
+	main .site-intro .site-title  .text {
+		font-size: 3.25rem;
+		line-height: 3.65rem;
+		margin-left: 0;
+		order: 1;
+		padding-left: 0.5rem;
+	}
+}
+
+@media(max-width:639px) {
+	main .site-intro .site-title  .text {
+		padding-left: 4.43rem;
+		font-size: 3.13rem;
+		line-height: 3.64rem;
+		margin-top: 6.4rem;
+		border-bottom: 0;
+	}
+}
+
+/*-------------------- site-intro --------------------*/
+

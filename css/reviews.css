@@ -710,7 +710,19 @@ main .site-intro .site-intro-text .title {
 	z-index: 1;
 }
 
-main .site-intro .site-intro-text .title::after {
+main .site-intro .site-intro-text .text1, 
+main .site-intro .site-intro-text .text2 {
+	/* display: flex;
+	width: fit-content;
+	flex-direction: column-reverse; */    
+	position: relative;    
+    width: fit-content;
+    z-index: 1;
+	
+}
+
+main .site-intro .site-intro-text .text1::after,
+main .site-intro .site-intro-text .text2::after {
 	content: "";
 	height: 0.55rem;
 	background: #FF7900;
@@ -723,18 +735,26 @@ main .site-intro .site-intro-text .title::after {
 }
 
 @media(max-width:1023px) {
-	main .site-intro .site-intro-text .title::after {
+	main .site-intro .site-intro-text .text1::after,
+	main .site-intro .site-intro-text .text2::after {
 		height: 1.4rem;
 		left: 2.7rem;
 	}
 }
 
 @media(max-width:639px) {
-	main .site-intro .site-intro-text .title::after {
+	main .site-intro .site-intro-text .text1::after,
+	main .site-intro .site-intro-text .text2::after {
 		height: 1.3rem;
-		width: 80%;
-		left: 8.4rem;
+		width: 92%;
+		left: 2.4rem;
 		bottom: 2.2rem;
+	}
+}
+
+@media(max-width:1023px) {
+	main .site-intro .site-intro-text .site-title {
+		order: 2;
 	}
 }
 
