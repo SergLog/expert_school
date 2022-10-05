@@ -2,14 +2,8 @@
 
 
 main .recomendations {
-	
-	/* padding: 0 4.17rem; */
-}
-
-@media(max-width:1023px) {
-	main .recomendations {
-		padding: 0 4.17rem;
-	}
+	border-bottom: 1px solid black;
+	padding: 0 4.17rem;
 }
 
 main .recomendations .title {
@@ -22,7 +16,6 @@ main .recomendations .title {
 	font-weight: 700;
 	font-size: 2.34rem;
 	line-height: 100%;
-	border-top: 2px solid black;
 }
 
 @media(max-width:1023px) {
@@ -44,13 +37,11 @@ main .recomendations .title {
 }
 
 main .recomendations .recomendations-container {
-	display: flex;
-	/* padding: 1.98rem 0px 3.54rem 2.19rem; */
-	padding: 40px 0px 68px 46px;
-	/* max-width: 1766px; */
-	max-width: 91.98rem;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+	/* display: flex; */
+	padding: 40px 0px 68px 16px;
+	/* max-width: 91.98rem; */
+	/* overflow-x: hidden;
+	scroll-behavior: smooth; */
 }
 
 @media(max-width:1023px) {
@@ -77,6 +68,13 @@ main .recomendations .recomendations-card a {
 
 @media(max-width:1023px) {
 	main .recomendations .recomendations-card {
+		min-width: 411px;
+		margin-right: 24px;
+	}
+}
+
+@media(max-width:360px) {
+	main .recomendations .recomendations-card {
 		min-width: 233px;
 		margin-right: 24px;
 	}
@@ -100,6 +98,12 @@ main .recomendations .recomendations-card:hover {
 }
 
 @media(max-width:1023px) {
+	main .recomendations .recomendations-card .сard-image {
+		min-height: 411px;
+	}
+}
+
+@media(max-width:360px) {
 	main .recomendations .recomendations-card .сard-image {
 		min-height: 233px;
 	}
@@ -201,13 +205,6 @@ main .recomendations .recomendations-card .card-authors {
 	}
 }
 
-
-main .recomendations .buttons-container {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 74px;
-}
-
 main .recomendations .slick-track {
 	display: flex;
 }
@@ -277,6 +274,12 @@ main .recomendations .slick-prev, main .recomendations .slick-next {
 }
 
 
+main .recomendations .buttons-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 74px;
+}
+
 main .recomendations .buttons-container .next,
 main .recomendations .buttons-container .prev {
 	display: none;
@@ -289,17 +292,17 @@ main .recomendations .buttons-container .prev {
 }
 
 main .recomendations .buttons-container .prev {
-	background-image: url("../../../img/prev.svg");
+	background-image: url("../../img/prev.svg");
 	width: 7.81rem;
 	height: 1.35rem;
 	margin-left: 2.08rem;
 }
 
 main .recomendations .buttons-container .next {
-	background-image: url("../../../img/next.svg");
+	background-image: url("../../img/next.svg");
 	width: 9.93rem;
 	height: 1.35rem;
-	margin-right: 2.08rem;
+	margin-right: 4.17rem;
 }
 
 @media(max-width:1023px) {
@@ -316,7 +319,7 @@ main .recomendations .buttons-container .next {
 
 @media(max-width:639px) {
 	main .recomendations .buttons-container .next {
-		width: 19.93rem;
+		width: 18.93rem;
 		height: 4.35rem;
 	}
 

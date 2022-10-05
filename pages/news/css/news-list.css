@@ -303,6 +303,7 @@ main .news-content .gategories .item .checkbox:checked::before {
 main .news-content .news-list {
 	display: flex;
 	flex-direction: column;
+	border-bottom: 2px solid;
 }
 
 main .news-content .news-list {
