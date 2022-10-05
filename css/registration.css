@@ -655,7 +655,7 @@ main .site-intro {
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 2.29rem;
-	margin-top: 0.6rem;
+	/* margin-top: 0.6rem; */
 }
 
 @media(max-width:1023px) {

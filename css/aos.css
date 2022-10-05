@@ -1,0 +1,40 @@
+main .site-intro .site-title .title-tablet {
+	display: none;
+}
+
+main .site-intro .site-title .title-tablet .text1,
+main .site-intro .site-title .title-tablet .text2,
+main .site-intro .site-title .title-tablet .text1::after,
+main .site-intro .site-title .title-tablet .text2::after {
+	transition: all 0.5s ease;
+}
+
+main .site-intro .site-title .title-tablet.aos-animate .text1,
+main .site-intro .site-title .title-tablet.aos-animate .text2 {
+	display: inline-block;
+	font-size: 4.69rem;
+	line-height: 3.67rem;
+}
+
+@media (max-width: 1023px) {
+	main .site-intro .site-title .title-tablet.aos-animate .text1::after,
+	main .site-intro .site-title .title-tablet.aos-animate .text2::after {
+		width: 110%;
+		bottom: -1.5rem;
+		height: 0.53rem;
+		left: 0.3rem;
+	}
+
+	main .site-intro .site-title .title-tablet.aos-animate .text2::after {
+		margin-left: -12%;
+	}
+
+	main .site-intro .site-title .title-tablet {
+		display: block;
+	}
+
+	main .site-intro .site-title .title-desktop	{
+		display: none;
+	}
+
+}
