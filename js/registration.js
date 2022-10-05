@@ -117,7 +117,7 @@ function checkFields(obj) {
         }
     });
 
-    if(!obj.find('#agreement')[0].checked) {
+    if(!obj.find('#agreement')[0].checked && obj.find('.error').length == 0) {
         result = false;
         alert('Подвердите согласие на обработку')
     }   
