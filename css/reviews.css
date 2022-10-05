@@ -1102,7 +1102,7 @@ main .reviews-content .reviews-list .reviews-item {
 }
 
 main .reviews-content .reviews-list .reviews-item:first-child {
-	border-top: 2px solid #000000;
+	/* border-top: 2px solid #000000; */
 }
 
 main .reviews-content .reviews-list .reviews-item .image-container {

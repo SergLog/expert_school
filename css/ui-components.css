@@ -124,6 +124,34 @@ div.ui-dropdown-container .ui-dropdown option {
 	}
 }
 
+div.ui-dropdown-container.error .ui-dropdown {
+	outline: none;
+	border: 2px solid #ED7A33;
+	color: #ED7A33;
+}
+
+div.ui-dropdown-container.error .ui-dropdown-label {
+	color: #ED7A33;
+}
+
+div.ui-dropdown-container p.error-text {
+	display: none;
+	margin-top: 6px;
+	margin-left: 26px;
+	color: #ED7A33;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+div.ui-dropdown-container.error p.error-text {
+	display: block;
+}
+
+div.ui-dropdown-container.error .ui-select-container {
+	border: none;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* **********ui-input********** */

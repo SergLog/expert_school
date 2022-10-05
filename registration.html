@@ -12,6 +12,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <script src="js/jquery.js?v=106" defer></script>
   <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
   <link href="css/registration.css" type="text/css" rel="stylesheet" />
   <script src="js/registration.js?v=106" defer></script>
@@ -118,45 +119,44 @@
           <div class="reg-fields">
             <form id="reg-fields" action="post">
               <div class="ui-input-container required">
-                <label class="ui-input-label" for="input">Фамилия</label>
-                <input required class="ui-input" type="text" id="input">
-                <p class="error-text"></p>
+                <label class="ui-input-label" for="fio">Фамилия</label>
+                <input class="ui-input" name="name" type="text" id="fio">
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-input-container required">
-                <label class="ui-input-label" for="input">Имя</label>
-                <input required class="ui-input" type="text" id="input" />
-                <p class="error-text"></p>
+                <label class="ui-input-label" for="name">Имя</label>
+                <input class="ui-input" type="text" id="name" />
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-input-container required">
-                <label class="ui-input-label" for="input">Отчество</label>
-                <input required class="ui-input" type="text" id="input" />
-                <p class="error-text"></p>
+                <label class="ui-input-label" for="lastName">Отчество</label>
+                <input class="ui-input" type="text" id="lastName" />
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-input-container tel required">
-                <label class="ui-input-label" for="input">Телефон</label>
-                <input required class="ui-input" type="tel" pattern="\+[0-9]{11}" placeholder="+7(000)1234567"
-                  id="input" />
-                <p class="error-text"></p>
+                <label class="ui-input-label" for="tel">Телефон</label>
+                <input class="ui-input" type="text" placeholder="+7(000)1234567" id="tel" />
+                  <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-input-container mail required">
                 <label class="ui-input-label" for="input">E-mail</label>
-                <input required class="ui-input" type="email" id="input" />
-                <p class="error-text"></p>
+                <input class="ui-input" type="text" id="email" />
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-input-container town">
-                <label class="ui-input-label" for="input">Город</label>
-                <input class="ui-input" type="text" id="input" />
-                <p class="error-text"></p>
+                <label class="ui-input-label" for="town">Город</label>
+                <input class="ui-input" type="text" id="town" />
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-input-container job">
-                <label class="ui-input-label" for="input">Место работы</label>
-                <input class="ui-input" type="text" id="input" />
-                <p class="error-text"></p>
+                <label class="ui-input-label" for="job">Место работы</label>
+                <input class="ui-input" type="text" id="job" />
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="ui-dropdown-container">
                 <label class="ui-dropdown-label" for="dropdown">Специальность</label>
                 <div class="ui-select-container">
-                  <select required class="ui-dropdown" id="dropdown">
+                  <select  class="ui-dropdown" id="dropdown">
                     <!-- <option value="volvo"></option> -->
                     <option value="" disabled selected style='display:none;'></option>
                     <option value="val">Неврология (неврологи)</option>
@@ -169,9 +169,10 @@
                     <option value="val">Оториноларингология(ЛОРы)</option>
                   </select>
                 </div>
+                <p class="error-text">Ошибка ввода</p>
               </div>
               <div class="agreement">
-                <input required type="checkbox" class="agreement-checkbox">
+                <input  type="checkbox" class="agreement-checkbox" id="agreement">
                 <p>Настоящим я даю согласие на обработку моих <a class="ui-link" href="#">персональных данных</a>.
                   (Возможно, для уточнения ваших данных с вами свяжется ваш персональный координатор)</p>
               </div>
