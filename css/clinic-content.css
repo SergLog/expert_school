@@ -1831,6 +1831,7 @@ footer .footer-container .mobile {
 .clinics-numered-list{display: flex;justify-content: flex-end;margin-top: 6.250rem;margin-right: 0;margin-bottom: 6.198rem;} 
 .clinics-numered-list-item{border-left: solid 2px #000;min-height: 33.594rem;display: flex;flex-direction: column;padding-left: 0.677rem;padding-top: 1.250rem;width: 24.792rem;align-items: flex-start;} 
 .clinics-numered-list-item:last-child{width: 19.740rem;} 
+.clinics-numered-list-item:first-child{border-left: 0;} 
 .clinics-numered-list-item-num{font-weight: 700;font-size: 8.958rem;line-height: 1;letter-spacing: -0.01em;color: #953385;margin-bottom: 0.313rem;} 
 .clinics-numered-list-item-desc{font-weight: 500;font-size: 1.042rem;line-height: 1.354rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-left: 0.677rem;} 
 .clinics-numered-list-item-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;display: flex;align-items: flex-end;letter-spacing: -0.01em;text-transform: uppercase;color: #000;flex: 1 1 auto;height: 100%;flex-direction: column;justify-content: flex-end;max-width: 80%;} 
