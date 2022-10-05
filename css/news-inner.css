@@ -1653,24 +1653,21 @@ footer .footer-container .mobile {
 
 @media(max-width:1023px){
 	main .news-inner-title.site-title{width: 87rem;} 
-	main .news-inner-title.site-title:after {} 
 	main .news-inner-title.site-title span{font-size: 4.948rem;} 
-	main .news-inner-title.site-title span:after{} 
 	main .site-intro .news-inner-photo { width: 95.7%;margin-bottom: 7.813rem;} 
-	.news-inner-content{} 
+	.news-inner-title .title{border-bottom: none!important}
 	.news-inner-release-content{width: 74%;padding: 0 0 0 4.4rem;} 
 	.news-inner-page-date{font-size: 2.083rem;} 
 	.news-inner-paragraph{padding: 0 0% 0 27%;} 
 	.news-inner-p{font-size: 3.125rem;line-height: 4.036rem;} 
 	.news-inner-vertical-divider{margin: 3.3rem 0 3.3rem 24.2rem;height: 6rem;} 
-	.news-inner-release-wrap{} 
 	.news-inner-release-date{font-size: 4.297rem;line-height: 5.990rem;} 
 	.news-inner-upper{font-size: 3.125rem;line-height: 4.036rem;} 
-	.news-inner-map-head{} 
 	.news-inner-map-title{font-size: 3.125rem;line-height: 4.036rem;width: 30%;} 
 	.news-inner-map-desc{font-size: 3.125rem;line-height: 4.036rem;padding-right: 0;} 
-	.news-inner-map-content{}
 }
+
+
 
 
 

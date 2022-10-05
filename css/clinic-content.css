@@ -1830,15 +1830,15 @@ footer .footer-container .mobile {
 .clinics-row-desc{font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;color: #000000;width: 52%;} 
 .clinics-numered-list{display: flex;justify-content: flex-end;margin-top: 6.250rem;margin-right: 0;margin-bottom: 6.198rem;} 
 .clinics-numered-list-item{border-left: solid 2px #000;min-height: 33.594rem;display: flex;flex-direction: column;padding-left: 0.677rem;padding-top: 1.250rem;width: 24.792rem;align-items: flex-start;} 
+.clinics-numered-list-item.without-border{border: none}
 .clinics-numered-list-item:last-child{width: 19.740rem;} 
-.clinics-numered-list-item:first-child{border-left: 0;} 
 .clinics-numered-list-item-num{font-weight: 700;font-size: 8.958rem;line-height: 1;letter-spacing: -0.01em;color: #953385;margin-bottom: 0.313rem;} 
 .clinics-numered-list-item-desc{font-weight: 500;font-size: 1.042rem;line-height: 1.354rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-left: 0.677rem;} 
 .clinics-numered-list-item-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;display: flex;align-items: flex-end;letter-spacing: -0.01em;text-transform: uppercase;color: #000;flex: 1 1 auto;height: 100%;flex-direction: column;justify-content: flex-end;max-width: 80%;} 
 .clinics-ul{list-style: none;} 
 .clinics-ul li:last-child{margin-bottom: 0} 
 .clinics-li{position: relative;margin-bottom: 1.146rem;} 
-.clinics-li:before{content:"";position: absolute;width: 5.260rem;height: 2px;background-color: #953385;left: -6.563rem;top: 0.99rem;} 
+.clinics-li:before{content:"";position: absolute;width: 5.260rem;height: 2px;background-color: #953385;left: -6.563rem;top: 50%;} 
 .clinics-h3-title{font-weight: 700;font-size: 1.667rem;line-height: 2.135rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin-top: 6.146rem;margin-left: 1.250rem;} 
 .clinics-img-content{width: 100%;padding-left: 47.3%;margin-top: 2.813rem;margin-bottom: 6.042rem;} 
 .clinics-text-in-bordered-box{border-top: 2px solid #000;border-bottom: 2px solid #000;font-weight: 700;font-size: 2.396rem;line-height: 2.073rem;display: flex;align-items: center;letter-spacing: -0.01em;text-transform: uppercase;color: #000;margin: 6.354rem 0;padding: 2.323rem 1.31rem;} 
@@ -1857,6 +1857,7 @@ footer .footer-container .mobile {
 
 
 @media (max-width:1023px) {
+	.clinics-margin-mob{margin-bottom: 5rem;display: inline-block;}
 	.tab{display: block} 
 	.clinics-row{flex-direction: column;} 
 	.clinics-page .content-container{width: 100rem;padding-top: 1.042rem;} 
@@ -1880,8 +1881,9 @@ footer .footer-container .mobile {
 	.clinics-numered-list-item-num{font-size: 11.068rem;line-height: 10.938rem;margin-left: 0.000rem;letter-spacing: normal;margin-bottom: 5.339rem;} 
 	.clinics-numered-list-item-desc{font-size: 2.083rem;line-height: 3.385rem;margin-left: 0.781rem;letter-spacing: normal;} 
 	.clinics-numered-list-item-title{font-size: 3.125rem;line-height: 4.036rem;text-align: left;} 
+	.clinics-numered-list-item.without-border{border-left: solid 2px #000}
 	.clinics-li{margin-bottom: 2.865rem;} 
-	.clinics-li:before{width: 13.151rem;left: -14.453rem;top: 1.693rem;} 
+	.clinics-li:before{width: 13.151rem;left: -14.453rem;top: 50%;} 
 	.clinics-h3-title{font-size: 4.688rem;line-height: 5.339rem;margin-top: 15.365rem;margin-left: 4.427rem;border-top: solid 0.260rem #000;border-bottom: solid 0.260rem #000;padding: 5.078rem 0;margin-right: 4.297rem;} 
 	.clinics-img-content{padding-left: 0;margin-top: 0;margin-bottom: 3.776rem;} 
 	.clinics-text-in-bordered-box{font-weight: 700;font-size: 3.125rem;line-height: 1.2;margin: 7.552rem 4.297rem 4.167rem 4.297rem;padding: 4.818rem 3.776rem 4.557rem 0.000rem;} 
@@ -1911,7 +1913,7 @@ footer .footer-container .mobile {
 	.clinics-h1-title{margin: 0 0 0 4.8rem;font-size: 9.067rem;line-height: 130%;}
 	.clinics-main-photo{margin-top: 2.667rem;padding-left: 0;}
 	.clinics-h1-title span:before{width: calc(100% - 6.133rem);height: 1.333rem;left: 1.333rem;bottom: 1.867rem;}
-	.clinics-h2-bordered{font-size: 5.867rem;line-height: 7.2rem;margin-bottom: 11.2rem;margin-top: 10.667rem;border-top: solid 1px #000;margin-left: 4.533rem;margin-right: 7.733rem;border-bottom: solid 1px #000;padding-left: 0;padding-bottom: 7.2rem;padding-top: 6.133rem;}
+	.clinics-h2-bordered{font-size: 5.867rem;line-height: 7.2rem;border-top: solid 1px #000;border-bottom: solid 1px #000;margin: 10.667rem 7.733rem 7.333rem 4.533rem;padding: 6.133rem 0 7.2rem 0;}
 	.clinics-row{padding: 0 9.067rem 0 4.800rem;margin-bottom: 12rem;flex-direction: column;}
 	.clinics-row-title{font-size: 4.267rem;line-height: 10.933rem;width: 100%;margin-bottom: 3.467rem;}
 	.clinics-row-desc{font-size: 4.267rem;line-height: 5.600rem;width: 100%;}
@@ -1927,7 +1929,7 @@ footer .footer-container .mobile {
 	.clinics-numered-list-item-desc{font-size: 4.267rem;line-height: 6.933rem;margin-left: 0rem;letter-spacing: normal;}
 	.clinics-numered-list-item-title{font-size: 4.267rem;line-height: 5.333rem;text-align: left;}
 	.clinics-li{margin-bottom: 4.267rem;}
-	.clinics-li:before{width: 13.600rem;left: -17.600rem;top: 2.4rem;}
+	.clinics-li:before{width: 13.600rem;left: -17.600rem;top: 50%;}
 	.clinics-h3-title{font-size: 5.867rem;line-height: 7.733rem;margin-top: 17rem;margin-left: 4.800rem;border-top: solid 1px #000;border-bottom: solid 1px #000;padding: 5.867rem 0;margin-right: 4.8rem;}
 	.clinics-img-content{padding-left: 0;margin-top: 0;margin-bottom: 7.733rem;}
 	.clinics-text-in-bordered-box{font-weight: 700;font-size: 4.267rem;line-height: 1.3;margin: 12rem 4.8rem 8.533rem 4.8rem;padding: 6.667rem 7.733rem 6.667rem 0;display: flex;flex-direction: column;align-items: flex-start;border-top: 1px solid #000;border-bottom: 0.267rem solid #000;}
@@ -1941,6 +1943,7 @@ footer .footer-container .mobile {
 	.clinics-pantocalcin-diagram-fullsize{margin-top: 17.600rem;padding: 0 6.667rem;}
 	.clinics-text-in-bordered-box .border-right {border-bottom: solid 0.533rem currentColor; padding-right: 0; margin-right: 0;font-size: 5.867rem;line-height: 1.3;border-right: none;margin-bottom: 9.333rem;}
 	.clinics-ul{margin-left: 36%;}
+	.clinics-numered-list.tab-3-col .clinics-simple-text{letter-spacing: -0.01em;text-transform: uppercase;font-size: 2.347rem;line-height: 2.817rem;}
 	.clinics-ul.left-style{margin-leftma;margin-left: 29.600rem;}
 }
 
