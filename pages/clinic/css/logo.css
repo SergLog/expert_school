@@ -1,14 +1,14 @@
 /*-------------------- MAIN TEMPLATE OVERRIDE --------------------*/
 
-.page.news20 {
+.page.clinic20 {
 	display: flex;
 	background: #EBEAE9;
-	padding-top: 3.54rem;
+	/* padding-top: 3.54rem; */
 	/* width: 100%; */
 	/* max-width: 1920px; */
 }
 
-.page.news20 nav {
+.page.clinic20 nav {
 	margin: 0;
 }
 
@@ -21,16 +21,17 @@
 /*-------------------- header --------------------*/
 
 header {
-	/* display: none; */
-	display: flex;
+	display: none;
 	align-items: center;
+	border-bottom: 2px solid black;
+	padding-bottom: 0.52rem;
 }
 
 @media(max-width:1023px) {
 	header {
 		display: flex;
-		padding-bottom: 1rem;
-		/* padding-bottom: 0px; */
+		border-bottom: none;
+		padding-bottom: 0px;
 		padding-top: 1.3rem;
 	}
 }
@@ -39,8 +40,7 @@ header {
 	header .header-burger-icon {
 		width: 4.3rem;
 		height: 3.2rem;
-		background: #EBEAE9;
-		background-image: url("images/burger_tablet.svg");
+		background-image: url("../../../img/burger_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -52,9 +52,8 @@ header {
 @media(max-width:1023px) {
 	header .header-search-icon {
 		width: 3.78rem;
-		height: 3.88rem;
-		background: #EBEAE9;
-		background-image: url("images/search_icon_tablet.svg");
+		height: 3.78rem;
+		background-image: url("../../../img/search_icon_tablet.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -65,7 +64,7 @@ header {
 
 @media(max-width:639px) {
 	header .header-burger-icon {
-		background-image: url("images/burger_tablet.svg");
+		background-image: url("../../../img/burger_tablet.svg");
 		width: 6.93rem;
 		height: 4.53rem;
 		margin-left: 5.87rem;
@@ -74,9 +73,7 @@ header {
 
 @media(max-width:639px) {
 	header .header-search-icon {
-		background: #EBEAE9;
-		background-image: url("images/search_icon_tablet.svg");
-		background-size: cover;
+		background-image: url("../../../img/search_icon_tablet.svg");
 		width: 5.87rem;
 		height: 5.87rem;
 		margin-left: 5.87rem;
@@ -102,22 +99,26 @@ header .logo {
 	}
 }
 
-header .header-breadcrumbs {
-	margin-left: 2.08rem;
-	margin-top: 1.83rem;
-}
-
 @media(max-width:1023px) {
-	header .header-breadcrumbs {
-		display: none;
+	main {
+		padding: 4.17rem;
 	}
 }
 
-header div.breadcrumbs {
+main .site-intro {
 	display: flex;
+	flex-wrap: wrap;
+	padding-left: 1.04rem;
 }
 
-header div.breadcrumbs a {
+main .site-intro div.breadcrumbs {
+	display: flex;
+	align-self: flex-start;
+	margin-top: 5.4rem;
+	margin-left: 3.5rem;
+}
+
+main .site-intro div.breadcrumbs a {
 	display: flex;
 	align-items: center;
 	font-weight: 700;
@@ -127,13 +128,13 @@ header div.breadcrumbs a {
 	text-transform: uppercase;
 }
 
-header div.breadcrumbs a::before {
+main .site-intro div.breadcrumbs a::before {
 	content: "";
 	width: 0.47rem;
 	height: 0.83rem;
 	margin: 0px 0.63rem;
 	background: #EBEAE9;
-	background-image: url("images/breadcrumbs_arrow.svg");
+	background-image: url("../../../img/breadcrumbs_arrow.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain
