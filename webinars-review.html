@@ -14,6 +14,8 @@
   <meta name="theme-color" content="#ffffff">
   <!-- <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" /> -->
   <!-- <link href="css/style.css?v=106" type="text/css" rel="stylesheet" /> -->
+  <link href="css/vjs-clubdoc.css" type="text/css" rel="stylesheet" />
+  <link href="css/webinar-video.css" type="text/css" rel="stylesheet" />
   <link href="css/webinars.css?v=106" type="text/css" rel="stylesheet" />
   <script src="js/webinars.js?v=106" defer></script>
 </head>
@@ -90,7 +92,24 @@
           <div class="section-label">Вебинар</div>
           <h1 class="webinars-review-h1">Эффективность и безопасность антиоксиданта нового поколения (Этоксидол) у пациентов с ХИМ: результаты исследования</h1>
           <div class="webinars-review-video-wrap">
-            <img src="img/video-player-stub.svg" alt="video-player-stub">
+            <link href="css/webinar-video.css" type="text/css" rel="stylesheet">
+            <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+            <link href="css/vjs-clubdoc.css" rel="stylesheet" />
+            <video
+              id="webinar-video"
+              class="webinar-video video-js vjs-fluid vjs-16-9 vjs-clubdoc vjs-blue"
+              controls
+              preload="auto"
+              poster="img/video-poster.min.jpg"
+              data-setup="{}"
+            >
+              <source src="https://clubdoc.ru/upload/iblock/064/xiv20vv61cjj2ng4zrzyeqedl7pxlcqq.mp4" type="video/mp4" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+            <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
           </div>
 
           <p class="webinars-review-p">Подбор терапии пациентам с хронической ишемией мозга (ХИМ) — одна из частых и вместе с тем непростых задач в практике невролога [1]. Формирующиеся из-за длительной недостаточности церебрального кровоснабжения диффузные и/или мелкоочаговые повреждения мозговой ткани приводят к появлению спектра разнородной психоневрологической симптоматики (неврологический дефицит, астенизация, снижение мнестических, психоэмоциональных и когнитивных функций) и снижению качества жизни пациентов [2]. Симптоматическая терапия не может обеспечить комплексное воздействие на проявления ХИМ, поэтому особая роль в лечении таких пациентов отводится препаратам патогенетического действия — антиоксидантам.</p>
