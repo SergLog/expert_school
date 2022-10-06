@@ -17,6 +17,8 @@
   <link href="css/vjs-clubdoc.css" type="text/css" rel="stylesheet" />
   <link href="css/webinar-video.css" type="text/css" rel="stylesheet" />
   <link href="css/webinars.css?v=106" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.js?v=106" defer></script>
+  <script src="js/slick.min.js?v=106" defer></script>
   <script src="js/webinars.js?v=106" defer></script>
 </head>
 
@@ -202,43 +204,53 @@
               <h3><span>Какими эффектами</span><br><span>обладает Тералиджен®?</span></h3>
               <span>CTA к прохождению опроса в&nbsp;несколько строк</span>
             </div>
-            <div class="webinars-review-test">
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Анксиолитический
-              </label>
+            <div  class="webinars-review-test">
 
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Седативный
-              </label>
 
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Снотворный
-              </label>
+              <form id="interview" action="post">
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Анксиолитический" class="webinars-review-test-checkbox"><div></div>
+                  Анксиолитический
+                </label>
 
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Вегетостабилизирующий
-              </label>
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Седативный" class="webinars-review-test-checkbox"><div></div>
+                  Седативный
+                </label>
 
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Легкий антидепрессивный
-              </label>
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Снотворный" class="webinars-review-test-checkbox"><div></div>
+                  Снотворный
+                </label>
 
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Антипсихотический
-              </label>
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Вегетостабилизирующий" class="webinars-review-test-checkbox"><div></div>
+                  Вегетостабилизирующий
+                </label>
 
-              <label class="webinars-review-test-item">
-                <input type="checkbox" class="webinars-review-test-checkbox"><div></div>
-                Все ответы верные
-              </label>
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Легкий антидепрессивный" class="webinars-review-test-checkbox"><div></div>
+                  Легкий антидепрессивный
+                </label>
 
-              <input class="webinars-review-test-submit-btn" type="submit" value="ОТПРАВИТЬ ОТВЕТ">
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Антипсихотический" class="webinars-review-test-checkbox"><div></div>
+                  Антипсихотический
+                </label>
+
+                <label class="webinars-review-test-item">
+                  <input type="checkbox" name="question" value="Все ответы верные" class="webinars-review-test-checkbox"><div></div>
+                  Все ответы верные
+                </label>
+
+                <input class="webinars-review-test-submit-btn" disabled type="submit" value="ОТПРАВИТЬ ОТВЕТ">
+              </form>
+              <div class="success">
+                Спасибо за прохождение опроса
+              </div>
+              <div class="error">
+                Что-то пошло не так. Попробуйте в другой раз.
+              </div>
             </div>
           </div>
 

@@ -56,10 +56,13 @@ const sendPollButtom = document.querySelector("main .webinars-poll .send-button"
 const webinarPollEnd = document.querySelector("main .webinars-poll-end");
 const webinarPoll = document.querySelector("main .webinars-poll");
 
-sendPollButtom.addEventListener("click", () => {
-    webinarPollEnd.classList.add("show");
-    webinarPoll.classList.add("hide");
-});
+if(sendPollButtom){
+    sendPollButtom.addEventListener("click", () => {
+        webinarPollEnd.classList.add("show");
+        webinarPoll.classList.add("hide");
+    });
+}
+
 
 
 // Открытие/закрытие подробной информации о спикере
@@ -101,8 +104,7 @@ $(document).ready(function(){
 
     var sliderMain = $('.recomendations-container');
 
-    console.log($('.recomendations-container'));
-  
+ 
     sliderMain.slick({
       infinite: false,
       speed: 300,
@@ -129,11 +131,45 @@ $(document).ready(function(){
       ]
     });
 
+ 
+
+
+// Форма опроса
+
+    $('.webinars-review-test-item input').change(function() {
+        $('.webinars-review-test-item input:checked').length > 0 
+            ? $('.webinars-review-test-submit-btn').addClass('active').prop("disabled", false)
+            : $('.webinars-review-test-submit-btn').removeClass('active').prop("disabled", true)
+    });
+ 
+
+    function sendData(formObj) {
+        const msg = formObj.serialize();
+		const formName =  formObj[0].id;
+        console.log(msg);
+        $.ajax({
+            type: 'POST',
+            url: '/', 
+            data: msg,
+            success: function(data) { 
+                if(data.status==='success') {
+                    $(`#${formName} ~ .success`).addClass('active');
+                    $(`#${formName} input[type="checkbox"]`).prop('checked', false);
+                }
+            },
+            error:  function(xhr, str){
+                $(`#${formName} ~ .error`).addClass('active');
+                console.log('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    }
+
+    $('body').on('submit', '#interview', function(e){
+        e.preventDefault();
+        sendData($('#interview'));
+    });
+	
+	
+	
+	
 });
-
-
-// $(document).ready(function () {
-
-    
-  
-//   });
