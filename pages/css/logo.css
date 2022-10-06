@@ -21,12 +21,33 @@
 	background: #EBEAE9;
 }
 
+.page.news-inner20 {
+	display: flex;
+	background: #EBEAE9;
+}
+
 .page.clinic20 nav {
 	margin-top: 3.54rem;
 }
 
+.page.clinics-content20 nav {
+	margin-top: 0rem;
+}
+
 .page.clinic20 header {
 	display: none;	
+}
+
+.page.news-inner20 header {
+	display: none;	
+}
+
+.page.clinics-content20 {
+	padding-top: 0;
+    padding-right: 2.08rem;
+    display: flex;
+    background: #EBEAE9;
+    padding-top: 3.54rem;
 }
 
 @media(max-width:1023px) {

@@ -31,16 +31,8 @@ for (const leftButton of leftButtons) {
 const burgerMenuIcon = document.querySelector("nav .nav-burger-icon");
 const closeMenuIcon = document.querySelector("nav .close-menu");
 const navMenu = document.querySelector("nav");
-// const desktopSearch = document.querySelector("#nav-search .search-icon");
-const desktopSearch = document.querySelector("nav .search-icon");
-console.log(desktopSearch);
 
 burgerMenuIcon.addEventListener("click", () => {
-    navMenu.classList.add("expand");
-});
-
-desktopSearch.addEventListener("click", () => {
-    console.log('nvbv');
     navMenu.classList.add("expand");
 });
 
@@ -66,11 +58,6 @@ tabletBurgerMenuIcon.addEventListener("click", () => {
     mainContent.classList.add("tablet-expand");
 });
 
-// tabletBurgerMenuIcon.addEventListener("click", () => {
-//     tabletNavMenu.classList.add("tablet-expand");
-//     mainContent.classList.add("tablet-expand");
-// });
-
 tabletCloseMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.remove("tablet-expand");
     mainContent.classList.remove("tablet-expand");
@@ -92,27 +79,6 @@ siteContentItems.forEach(item => {
     });    
 })
 // ховер для site-content-item
-
-// Нажатие на иконки поиска
-// const searchIcons = Array.from(document.getElementsByClassName('search-icon'));
-
-// console.log(searchIcons);
-
-// searchIcons
-// for (const icon of searchIcons) {
-//     icon.addEventListener("click", function () {
-//         navMenu.classList.add("expand");
-//     });
-
-// const search1 = document.querySelector("#nav-search .search-icon");
-// console.log(navMenu);
-// search1.addEventListener("click", function () {
-//     navMenu.classList.add("expand");
-// });
-//}
-///
-
-
 
 
 $(document).ready(function () {

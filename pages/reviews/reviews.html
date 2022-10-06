@@ -12,15 +12,21 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script src="js/jquery.js?v=106" defer></script>
-  <script src="js/slick.min.js?v=106" defer></script>
-  <link href="css/ui-components.css?v=106" type="text/css" rel="stylesheet" />
-  <link href="css/news.css" type="text/css" rel="stylesheet" />
-  <script src="js/main.js?v=106" defer></script>
+  <script src="../../js/jquery.js?v=106" defer></script>
+  <script src="../../js/slick.min.js?v=106" defer></script>
+  <link href="../css/header.css" type="text/css" rel="stylesheet" />
+  <link href="../css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="../css/ui.css" type="text/css" rel="stylesheet" />
+  <link href="../css/logo.css" type="text/css" rel="stylesheet" />
+  <link href="css/reviews-intro.css" type="text/css" rel="stylesheet" />
+  <link href="css/reviews-list.css" type="text/css" rel="stylesheet" />
+  <link href="../css/footer.css" type="text/css" rel="stylesheet" />
+  <link href="../css/aos.css" type="text/css" rel="stylesheet" />
 </head>
 
+
 <body>
-  <div name="top" class="news-page">
+  <div name="top" class="page reviews20">
     <nav>
       <div class="nav-burger-icon"></div>
       <form id="nav-search">
@@ -54,7 +60,7 @@
     <nav class="tablet-nav-menu">
       <div class="header">
         <div class="close-menu"></div>
-        <img class="logo" src="img/logo.svg"></img>
+        <img class="logo" src="../img/logo.svg"></img>
         <p class="title">оставайтесь в курсе тенденций</p>
       </div>
       <div class="search-container">
@@ -78,28 +84,36 @@
       <header>
         <div class="header-burger-icon"></div>
         <div class="header-search-icon"></div>
-        <img class="logo" src="img/logo.svg"></img>
+        <img class="logo" src="../img/logo.svg"></img>
         <div class="header-breadcrumbs">
           <div class="breadcrumbs">
-            <a class="ui-link" href="#">Новости</a>
+            <a class="ui-link" href="#">Обзоры</a>
             <!-- <a class="ui-link" href="#">Функциональные заболевания органов пищеварения: междисциплинарная проблема</a> -->
           </div>
         </div>
       </header>
       <main>
         <div class="site-intro">
-          <img class="doctors-logo" src="img/doctors_main.jpg "></img>
+          <img class="doctors-logo" src="../img/doctors_main.jpg "></img>
           <!-- <img class="doctors-logo"></img> -->
-          <!-- <img class="site-logo" src="img/logo.svg"></img> -->
+          <!-- <img class="site-logo" src="../img/logo.svg"></img> -->
           <div class="site-intro-text">
-            <p class="title">НОВОСТИ</p>
-            <p class="text">Оставайтесь всегда<br> в курсе последних новостей</p>
+            <div class="site-title">
+              <div class="title title-desktop" data-aos="switch-style" data-aos-treshold="30">
+                <div class="text1">Обзоры</div>
+              </div>
+              <div class="title title-tablet" data-aos="switch-style" data-aos-treshold="30">
+                <div class="text1 one">Обзоры</div>
+              </div>
+            </div>
+            <p class="text">Оставайтесь всегда в курсе последних<br>новостей и актуальных тенденций<br>в вашей
+              специальности</p>
           </div>
-          <p class="extra-text">Новости</p>
+          <p class="extra-text">Обзоры</p>
         </div>
-        <div class="news-content">
+        <div class="reviews-content">
           <div class="tablet-search">
-            <form id="news-search-by-tag">
+            <form id="reviews-search-by-tag">
               <button class="search-icon"></button>
               <input placeholder="Поиск новости по тегу">
             </form>
@@ -120,10 +134,10 @@
               <div class="sort-icon"></div>
             </div>
           </div>
-          <div class="news-container">
+          <div class="reviews-container">
             <div class="search-nav">
               <div class="desktop-search">
-                <form id="news-search-by-tag">
+                <form id="reviews-search-by-tag">
                   <input placeholder="Поиск по тегу">
                   <button class="search-icon"></button>
                 </form>
@@ -162,13 +176,13 @@
                 </div>
               </div>
             </div>
-            <div class="news-list">
-              <div class="news-item">
+            <div class="reviews-list">
+              <div class="reviews-item">
                 <div class="image-container">
                   <p class="specialisation">Специальность</p>
                   <div class="image">
                     <p class="empty"></p>
-                    <img src="img/reviews1.jpg"></img>
+                    <img src="../img/reviews1.jpg"></img>
                   </div>
                 </div>
                 <div class="text-container">
@@ -176,19 +190,16 @@
                     <p class="text">Желчный рефлюкс и клиническая фармакология антацидных препаратов</p>
                     <div class="arrow"></div>
                   </div>
-                  <div class="footer-container">
-                    <p class="tags">Теги: ТЕОРИН</p>
-                    <p class="fio">Соловьева Элла Юрьевна</p>
-                    <p class="date">21 марта 2022</p>
-                  </div>
+                  <p class="tags">Теги: ТЕОРИН</p>
+                  <p class="fio">Соловьева Элла Юрьевна</p>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="reviews-item">
                 <div class="image-container">
                   <p class="specialisation">Специальность</p>
                   <div class="image">
                     <p class="empty"></p>
-                    <img src="img/reviews1.jpg"></img>
+                    <img src="../img/reviews1.jpg"></img>
                   </div>
                 </div>
                 <div class="text-container">
@@ -196,19 +207,16 @@
                     <p class="text">Желчный рефлюкс и клиническая фармакология антацидных препаратов</p>
                     <div class="arrow"></div>
                   </div>
-                  <div class="footer-container">
-                    <p class="tags">Теги: ТЕОРИН</p>
-                    <p class="fio">Соловьева Элла Юрьевна</p>
-                    <p class="date">21 марта 2022</p>
-                  </div>
+                  <p class="tags">Теги: ТЕОРИН</p>
+                  <p class="fio">Соловьева Элла Юрьевна</p>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="reviews-item">
                 <div class="image-container">
                   <p class="specialisation">Специальность</p>
                   <div class="image">
                     <p class="empty"></p>
-                    <img src="img/reviews1.jpg"></img>
+                    <img src="../img/reviews1.jpg"></img>
                   </div>
                 </div>
                 <div class="text-container">
@@ -216,19 +224,16 @@
                     <p class="text">Желчный рефлюкс и клиническая фармакология антацидных препаратов</p>
                     <div class="arrow"></div>
                   </div>
-                  <div class="footer-container">
-                    <p class="tags">Теги: ТЕОРИН</p>
-                    <p class="fio">Соловьева Элла Юрьевна</p>
-                    <p class="date">21 марта 2022</p>
-                  </div>
+                  <p class="tags">Теги: ТЕОРИН</p>
+                  <p class="fio">Соловьева Элла Юрьевна</p>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="reviews-item">
                 <div class="image-container">
                   <p class="specialisation">Специальность</p>
                   <div class="image">
                     <p class="empty"></p>
-                    <img src="img/reviews1.jpg"></img>
+                    <img src="../img/reviews1.jpg"></img>
                   </div>
                 </div>
                 <div class="text-container">
@@ -236,52 +241,11 @@
                     <p class="text">Желчный рефлюкс и клиническая фармакология антацидных препаратов</p>
                     <div class="arrow"></div>
                   </div>
-                  <div class="footer-container">
-                    <p class="tags">Теги: ТЕОРИН</p>
-                    <p class="fio">Соловьева Элла Юрьевна</p>
-                    <p class="date">21 марта 2022</p>
-                  </div>
+                  <p class="tags">Теги: ТЕОРИН</p>
+                  <p class="fio">Соловьева Элла Юрьевна</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="recomendations">
-          <p class="title">Рекомендации</p>
-          <div class="recomendations-container">
-            <div class="recomendations-card">
-              <p class="card-title">Специальность</p>
-              <a class="ui-link" href="https://clubdoc.ru/news/37">
-                <img class="сard-image" src="img/рек1.jpg"></img>
-                <p class="card-header">Раздел</p>
-                <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                  7-[4-(4-бензгидрилпиперазинил-1)
-                  бутил]-3-метилксантина сукцината (теоритин)</p>
-              </a>
-              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
-            </div>
-            <div class="recomendations-card">
-              <p class="card-title">Специальность</p>
-              <img class="сard-image" src="img/рек2.jpg"></img>
-              <p class="card-header">Раздел</p>
-              <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                7-[4-(4-бензгидрилпиперазинил-1)
-                бутил]-3-метилксантина сукцината (теоритин)</p>
-              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
-            </div>
-            <div class="recomendations-card">
-              <p class="card-title">Специальность</p>
-              <img class="сard-image" src="img/рек3.jpg"></img>
-              <p class="card-header">Раздел</p>
-              <p class="card-text">Противовоспалительная активность противоаллергического препарата
-                7-[4-(4-бензгидрилпиперазинил-1)
-                бутил]-3-метилксантина сукцината (теоритин)</p>
-              <p class="card-authors">И.С. Гущин, К.Л. Крышень, А.Б.Бондаренко</p>
-            </div>
-          </div>
-          <div class="buttons-container">
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
           </div>
         </div>
       </main>
@@ -303,12 +267,12 @@
             <div class="second-container">
               <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
               </div>
-              <img class="logo" src="img/logo.svg"></img>
+              <img class="logo" src="../img/logo.svg"></img>
             </div>
           </div>
           <div class="tablet">
             <div class="first-container">
-              <img class="logo" src="img/logo.svg"></img>
+              <img class="logo" src="../img/logo.svg"></img>
               <a class="up-button" href="#top"></a>
             </div>
             <div class="second-container">
@@ -325,7 +289,7 @@
           </div>
           <div class="mobile">
             <div class="first-container">
-              <img class="logo" src="img/logo.svg"></img>
+              <img class="logo" src="../img/logo.svg"></img>
               <a class="up-button" href="#top"></a>
             </div>
             <div class="second-container">
@@ -345,5 +309,6 @@
   </div>
   </div>
 </body>
-<script src="js/aos.js" defer></script>
+<script src="js/main.js?v=106" defer></script>
+<script src="../js/aos.js" defer></script>
 </html>
