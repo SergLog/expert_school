@@ -78,6 +78,7 @@ div.clinics-page {
 	padding-right: 2.08rem;
 	display: flex;
 	background: #EBEAE9;
+	padding-top: 3.54rem;
 	/* width: 100%; */
 	/* max-width: 1920px; */
 }
@@ -234,7 +235,7 @@ nav.expand .nav-burger-icon {
 }
 
 nav .nav-text-container {
-	height: 41.86rem;
+	height: 35.86rem;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -466,7 +467,6 @@ header {
 	display: flex;
 	align-items: center;
 	/* height: 67px; */
-	border-bottom: 2px solid black;
 	padding-bottom: 0.52rem;
 }
 
@@ -543,6 +543,7 @@ header .logo {
 
 header .webinar-breadcrumbs {
 	margin-left: 2.08rem;
+	margin-top: 1.83rem;
 }
 
 @media(max-width:1023px) {

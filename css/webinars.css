@@ -246,7 +246,7 @@ nav.expand .nav-burger-icon {
 }
 
 nav .nav-text-container {
-	height: 41.86rem;
+	height: 35.86rem;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -478,7 +478,7 @@ header {
 	display: flex;
 	align-items: center;
 	/* height: 67px; */
-	border-bottom: 2px solid black;
+	/* border-bottom: 2px solid black; */
 	padding-bottom: 0.52rem;
 }
 
@@ -555,6 +555,7 @@ header .logo {
 
 header .webinar-breadcrumbs {
 	margin-left: 2.08rem;
+	margin-top: 1.83rem;
 }
 
 @media(max-width:1023px) {
@@ -716,15 +717,15 @@ main .webinars-empty-row {
 	}
 }
 
-main .webinars-tags {
+main .tags {
 	display: flex;
 	align-items: center;
-	padding: 4.64em 1.29em;
+	padding: 4.64rem 1.29rem;
 	border-bottom: 2px solid black;
 }
 
-main .webinars-tags .title {
-	margin-right: 11.32em;
+main .tags .title {
+	margin-right: 11.32rem;
 	font-weight: 700;
 	font-size: 2.43rem;
 	line-height: 100%;
@@ -732,27 +733,27 @@ main .webinars-tags .title {
 }
 
 @media(max-width:1023px) {
-	main .webinars-tags .title {
-		font-size: 4.69em;
+	main .tags .title {
+		font-size: 4.69rem;
 		line-height: 100%;
-		margin-right: 11.32em;
+		margin-right: 7.7rem;
 	}
 }
 
 @media(max-width:639px) {
-	main .webinars-tags .title {
-		font-size: 5.87em;
+	main .tags .title {
+		font-size: 5.87rem;
 		line-height: 100%;
 	}
 }
 
-main .webinars-tags .tags-container {
+main .tags .tags-container {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: -30px;
 }
 
-main .webinars-tags .tags-container a {
+main .tags .tags-container a {
 	margin-right: 25px;
 	margin-top: 30px;
 	text-decoration-line: underline;
@@ -760,7 +761,7 @@ main .webinars-tags .tags-container a {
 }
 
 @media(max-width:1023px) {
-	main .webinars-tags .tags-container a {
+	main .tags .tags-container a {
 		font-size: 10px;
 		line-height: 100%;
 		/* line-height: 13px; */

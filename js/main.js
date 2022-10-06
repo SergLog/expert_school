@@ -31,8 +31,16 @@ for (const leftButton of leftButtons) {
 const burgerMenuIcon = document.querySelector("nav .nav-burger-icon");
 const closeMenuIcon = document.querySelector("nav .close-menu");
 const navMenu = document.querySelector("nav");
+const search1 = document.querySelector(".search-icon");
+const ttt = document.querySelector("#nav-search .se");
+console.log(search1[0]);
 
 burgerMenuIcon.addEventListener("click", () => {
+    navMenu.classList.add("expand");
+});
+
+search1.addEventListener("click", () => {
+    console.log('nvbv');
     navMenu.classList.add("expand");
 });
 
@@ -73,6 +81,27 @@ siteContentItems.forEach(item => {
     });    
 })
 // ховер для site-content-item
+
+// Нажатие на иконки поиска
+// const searchIcons = Array.from(document.getElementsByClassName('search-icon'));
+
+// console.log(searchIcons);
+
+// searchIcons
+// for (const icon of searchIcons) {
+//     icon.addEventListener("click", function () {
+//         navMenu.classList.add("expand");
+//     });
+
+// const search1 = document.querySelector("#nav-search .search-icon");
+// console.log(navMenu);
+// search1.addEventListener("click", function () {
+//     navMenu.classList.add("expand");
+// });
+//}
+///
+
+
 
 
 $(document).ready(function () {
