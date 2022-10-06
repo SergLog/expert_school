@@ -31,15 +31,13 @@ for (const leftButton of leftButtons) {
 const burgerMenuIcon = document.querySelector("nav .nav-burger-icon");
 const closeMenuIcon = document.querySelector("nav .close-menu");
 const navMenu = document.querySelector("nav");
-const search1 = document.querySelector(".search-icon");
-const ttt = document.querySelector("#nav-search .se");
-console.log(search1[0]);
+const desktopSearch = document.querySelector("#nav-search .search-icon");
 
 burgerMenuIcon.addEventListener("click", () => {
     navMenu.classList.add("expand");
 });
 
-search1.addEventListener("click", () => {
+desktopSearch.addEventListener("click", () => {
     console.log('nvbv');
     navMenu.classList.add("expand");
 });
@@ -54,11 +52,22 @@ const tabletBurgerMenuIcon = document.querySelector(".header-burger-icon");
 const tabletCloseMenuIcon = document.querySelector("nav.tablet-nav-menu .close-menu");
 const tabletNavMenu = document.querySelector("nav.tablet-nav-menu");
 const mainContent = document.querySelector(".content-container");
+const tabletSearch = document.querySelector(".header-search-icon");
+
+tabletSearch.addEventListener("click", () => {
+    tabletNavMenu.classList.add("tablet-expand");
+    mainContent.classList.add("tablet-expand");
+});
 
 tabletBurgerMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.add("tablet-expand");
     mainContent.classList.add("tablet-expand");
 });
+
+// tabletBurgerMenuIcon.addEventListener("click", () => {
+//     tabletNavMenu.classList.add("tablet-expand");
+//     mainContent.classList.add("tablet-expand");
+// });
 
 tabletCloseMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.remove("tablet-expand");

@@ -46,6 +46,12 @@ const tabletBurgerMenuIcon = document.querySelector(".header-burger-icon");
 const tabletCloseMenuIcon = document.querySelector("nav.tablet-nav-menu .close-menu");
 const tabletNavMenu = document.querySelector("nav.tablet-nav-menu");
 const mainContent = document.querySelector(".content-container");
+const tabletSearch = document.querySelector(".header-search-icon");
+
+tabletSearch.addEventListener("click", () => {
+    tabletNavMenu.classList.add("tablet-expand");
+    mainContent.classList.add("tablet-expand");
+});
 
 tabletBurgerMenuIcon.addEventListener("click", () => {
     tabletNavMenu.classList.add("tablet-expand");

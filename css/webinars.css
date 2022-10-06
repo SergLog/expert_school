@@ -299,7 +299,7 @@ nav.tablet-nav-menu .header {
 @media(max-width:1023px) {
 	nav.tablet-nav-menu.tablet-expand {
 		display: block;
-		width: 100%;
+		width: 100rem;
 		border: none;
 	}
 }
