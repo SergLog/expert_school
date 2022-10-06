@@ -31,9 +31,15 @@
 
 @media(max-width:1023px) {
 	.page.clinic20 header {
-		display: flex;	
+		display: flex;
 	}
 }
+
+/* @media(max-width:1023px) {
+	.page.clinic20 nav {
+		margin-top: 0;
+	}
+} */
 
 
 /*-------------------- MAIN TEMPLATE OVERRIDE --------------------*/

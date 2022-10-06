@@ -376,9 +376,9 @@ main .clinical-cases-content .clinical-cases-list .clinical-cases-item .image-co
 	}
 }
 
-/* main .clinical-cases-content .clinical-cases-list .clinical-cases-item:last-child {
+main .clinical-cases-content .clinical-cases-list:last-child .clinical-cases-item {
 	border-bottom: 0;
-} */
+}
 
 main .clinical-cases-content .clinical-cases-list .clinical-cases-item .image {
 	display: flex;
