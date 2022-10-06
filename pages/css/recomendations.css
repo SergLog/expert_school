@@ -218,7 +218,7 @@ main .recomendations .slick-prev {
     cursor: pointer;
 	left: 2.08rem;
 	top: calc(100% + 0.635rem);
-	background-image: url(../../../img/prev.svg);
+	background-image: url(../img/prev.svg);
     width: 7.81rem;
     height: 2rem;
 }
@@ -236,7 +236,7 @@ main .recomendations .slick-next {
     cursor: pointer;
 	right: 5.4rem;
 	top: calc(100% + 0.635rem);
-	background-image: url(../../../img/next.svg);
+	background-image: url(../img/next.svg);
 	width: 8.3rem;
     height: 2rem;
 }
