@@ -1,0 +1,10 @@
+header .webinar-breadcrumbs {
+	margin-left: 2.08rem;
+	margin-top: 1.83rem;
+}
+
+@media(max-width:1023px) {
+	header .webinar-breadcrumbs {
+		display: none;
+	}
+}

@@ -257,6 +257,7 @@ nav .nav-text-container .text {
 	font-weight: 700;
 	font-size: 1.67rem;
 	line-height: 100%;
+	pointer-events: none;
 }
 
 nav .nav-user-icon {

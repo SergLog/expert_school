@@ -2,6 +2,10 @@
 const burgerMenuIcon = document.querySelector("nav .nav-burger-icon");
 const closeMenuIcon = document.querySelector("nav .close-menu");
 const navMenu = document.querySelector("nav");
+const desktopSearch = document.querySelector("nav .search-icon");
+desktopSearch.addEventListener("click", () => {
+    navMenu.classList.add("expand");
+});
 
 burgerMenuIcon.addEventListener("click", () => {
     navMenu.classList.add("expand");

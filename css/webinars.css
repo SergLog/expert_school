@@ -262,6 +262,7 @@ nav .nav-text-container .text {
 	font-weight: 700;
 	font-size: 1.67rem;
 	line-height: 100%;
+	pointer-events: none;
 }
 
 nav .nav-user-icon {
@@ -2165,8 +2166,9 @@ footer .footer-container .mobile {
  .webinars-review-literature-list li::before{font-size: 3.385rem;}
  .webinars-review-test-item input + div{width: 3.125rem;height: 3.125rem;right: 3.125rem;}
  .webinars-review-test-submit-btn{font-size: 2.604rem;padding: 2.604rem;height: 7.813rem;}
- .webinars-review-literature-head{font-size: 3.385rem;line-height: 3.906rem;padding: 2.083rem;} }
+ .webinars-review-literature-head{font-size: 3.385rem;line-height: 3.906rem;padding: 2.083rem;} 
 }
+
 
 
 

@@ -35,19 +35,19 @@
 }
 
 .page.clinic20 header {
-	display: none;	
+	display: none;
 }
 
 .page.news-inner20 header {
-	display: none;	
+	display: none;
 }
 
 .page.clinics-content20 {
 	padding-top: 0;
-    padding-right: 2.08rem;
-    display: flex;
-    background: #EBEAE9;
-    padding-top: 3.54rem;
+	padding-right: 2.08rem;
+	display: flex;
+	background: #EBEAE9;
+	padding-top: 3.54rem;
 }
 
 @media(max-width:1023px) {
@@ -56,11 +56,17 @@
 	}
 }
 
-/* @media(max-width:1023px) {
-	.page.clinic20 nav {
-		margin-top: 0;
-	}
-} */
+.page.webinars-review20 {
+
+	padding-top: 3.54rem;
+	padding-right: 2.08rem;
+	display: flex;
+	background: #EBEAE9;
+}
+
+.page.webinars-review20 nav {
+	margin-top: 0rem;
+}
 
 
 /*-------------------- MAIN TEMPLATE OVERRIDE --------------------*/

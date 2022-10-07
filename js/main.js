@@ -33,16 +33,15 @@ const closeMenuIcon = document.querySelector("nav .close-menu");
 const navMenu = document.querySelector("nav");
 // const desktopSearch = document.querySelector("#nav-search .search-icon");
 const desktopSearch = document.querySelector("nav .search-icon");
-console.log(desktopSearch);
+desktopSearch.addEventListener("click", () => {
+    navMenu.classList.add("expand");
+});
 
 burgerMenuIcon.addEventListener("click", () => {
     navMenu.classList.add("expand");
 });
 
-desktopSearch.addEventListener("click", () => {
-    console.log('nvbv');
-    navMenu.classList.add("expand");
-});
+
 
 closeMenuIcon.addEventListener("click", () => {
     navMenu.classList.remove("expand");
