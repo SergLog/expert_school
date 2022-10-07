@@ -604,7 +604,7 @@ main .webinars-content .webinars-list .webinars-item .arrow {
  .webinars-item.viewed{background-color:#CFCFCF}
  .webinars-item:hover .webinars-item-image img{filter: grayscale(0%);}
  .webinars-item:hover .webinars-item-image:before {opacity:1}
-
+ .webinars-item:hover .webinars-item-image{border-left: solid 2px #ed7a33;}
 
  .webinars-item-props-container{width: 20.052rem;display: flex;flex-direction: column;align-items: flex-start;}
  .webinars-item-props-time{font-weight: 400;font-size: 1.250rem;line-height: 1.563rem;display: flex;align-items: center;letter-spacing: -0.01em;margin-bottom: 1.042rem;}
