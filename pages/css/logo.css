@@ -68,6 +68,16 @@
 	margin-top: 0rem;
 }
 
+.page.webinars-list20 {
+	display: flex;
+    background: #EBEAE9;
+	padding-top: 3.54rem;
+}
+
+.page.webinars-list20 nav {
+	margin-top: 0rem;
+}
+
 
 /*-------------------- MAIN TEMPLATE OVERRIDE --------------------*/
 
