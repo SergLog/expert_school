@@ -2282,7 +2282,7 @@ footer .footer-container .mobile {
 @media (min-aspect-ratio: 16/9) {
 	  .slider-main-item{height: calc(100vh - 15rem);}
 		.slider-main-item img{height: 100%; width: auto}
-    .slider-numbers {  line-height: 1.2;margin-top: 2vh;font-size: 4.1vh;}
-		.slick-next{top: calc(100% + 4.635vh);width: 4vh;height: 4vh;} 
-		.slick-prev{top: calc(100% + 4.635vh);width: 4vh;height: 4vh;left: 1px; z-index: 1;}
+    	.slider-numbers {  line-height: 1.2;margin-top: 2vh;font-size: 4.1vh;}
+		.slider-main .slick-next{top: calc(100% + 4.635vh);width: 4vh;height: 4vh;} 
+		.slider-main .slick-prev{top: calc(100% + 4.635vh);width: 4vh;height: 4vh;left: 1px; z-index: 1;}
 }
