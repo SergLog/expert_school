@@ -2166,9 +2166,8 @@ footer .footer-container .mobile {
  .webinars-review-literature-list li::before{font-size: 3.385rem;}
  .webinars-review-test-item input + div{width: 3.125rem;height: 3.125rem;right: 3.125rem;}
  .webinars-review-test-submit-btn{font-size: 2.604rem;padding: 2.604rem;height: 7.813rem;}
- .webinars-review-literature-head{font-size: 3.385rem;line-height: 3.906rem;padding: 2.083rem;} 
+ .webinars-review-literature-head{font-size: 3.385rem;line-height: 3.906rem;padding: 2.083rem;} }
 }
-
 
 
 
@@ -2177,13 +2176,13 @@ footer .footer-container .mobile {
 
 
 .slider-wrapper{border-bottom: solid 2px #000}
-.slider-main{width: 100%}
+.slider-main{width: 100%;height: 100%;}
 .slider-main-item img{width: 100%}
 
 .slider-numbers{font-weight: 400;text-align: center;letter-spacing: -0.01em;color: #000000;font-size: 2.396rem;line-height: 2.969rem;margin-top: 3.125rem;} 
 .slider-wrapper{padding-top: 3.125rem;padding-left: 2.135rem;padding-bottom: 7.969rem;padding: 3.125rem 2.135rem 1.869rem 2.135rem;} 
 .slick-next{top: calc(100% + 4.635rem);width: 2.083rem;height: 2.083rem;} 
-.slick-prev{left: 1px;z-index: 1;top: calc(100% + 4.635rem);width: 2.083rem;height: 2.083rem;}
+.slick-prev{top: calc(100% + 4.635rem);width: 2.083rem;height: 2.083rem;left: 1px; z-index: 1;}
 .slick-next{right: 3.906rem;} 
 [dir='rtl'] .slick-prev{right: -1.302rem;} 
 [dir='rtl'] .slick-next{left: -1.302rem;} 
@@ -2271,4 +2270,19 @@ footer .footer-container .mobile {
 	.slider-numbers{ margin-top: 0px;border-top: solid 1px #000;border-bottom: solid 1px #000;padding: 2.133rem 0;margin-left: -4.3rem;margin-right: -4.3rem;} 
 	.slick-next{top: calc(100% + 4.329rem);} 
 	.slick-prev{top: calc(100% + 3.729rem);} 
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+	.slider-main-item img{height: auto; width: 100%}
+	.slider-wrapper{height:auto}
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+	  .slider-main-item{height: calc(100vh - 15rem);}
+		.slider-main-item img{height: 100%; width: auto}
+    .slider-numbers {  line-height: 1.2;margin-top: 2vh;font-size: 4.1vh;}
+		.slick-next{top: calc(100% + 4.635vh);width: 4vh;height: 4vh;} 
+		.slick-prev{top: calc(100% + 4.635vh);width: 4vh;height: 4vh;left: 1px; z-index: 1;}
 }
