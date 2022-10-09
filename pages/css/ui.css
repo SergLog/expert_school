@@ -37,7 +37,7 @@ div.ui-dropdown-container .ui-dropdown-label {
 
 @media(max-width:639px) {
 	div.ui-dropdown-container .ui-dropdown-label {
-		font-size: 3.73rem;
+		font-size: 2.3rem;
 		margin-bottom: -1.95rem;
 		margin-left: 2.73rem;
 	}
@@ -189,7 +189,7 @@ div.ui-input-container .ui-input-label {
 
 @media(max-width:639px) {
 	div.ui-input-container .ui-input-label {
-		font-size: 3.73rem;
+		font-size: 2.3rem;
 		margin-bottom: -1.95rem;
 		margin-left: 2.73rem;
 	}
@@ -208,10 +208,16 @@ div.ui-input-container .ui-input {
 }
 
 div.ui-input-container .ui-input::placeholder {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	text-align: center;
 }
 
+@media(max-width:1023px) {
+	div.ui-input-container .ui-input::placeholder {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+}
 
 @media(max-width:1023px) {
 	div.ui-input-container .ui-input {
@@ -302,14 +308,42 @@ div.ui-textarea-container .ui-textarea-label {
 	color: inherit;
 }
 
+@media(max-width:1023px) {
+	div.ui-textarea-container .ui-textarea-label {
+		font-size: 2.34rem;
+		height: 3.91rem;
+    	margin-bottom: -1.95rem;
+    	margin-left: 2.73rem;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-textarea-container .ui-textarea-label {
+		font-size: 2.3rem;
+	}
+}
+
 div.ui-textarea-container .ui-textarea {
 	padding: 15px 24px 15px 24px;
 	border: 2px solid #000000;
-	min-height: 242px;
+	/* min-height: 242px; */
+	min-height: 12.6rem;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 31px;
 	color: #000000;
+}
+
+@media(max-width:1023px) {
+	div.ui-textarea-container .ui-textarea {
+		min-height: 18.6rem;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-textarea-container .ui-textarea {
+		min-height: 22.6rem;
+	}
 }
 
 div.ui-textarea-container .ui-textarea::before {
@@ -355,7 +389,7 @@ div.ui-textarea-container .ui-textarea:focus::before {
 	border: 2px solid #000000;
 	font: inherit;
 	font-weight: 500;
-	font-size: 26px;
+	font-size: 1.35rem;
 	cursor: pointer;
 	text-decoration: none;
 	color: #000000;
@@ -386,7 +420,7 @@ div.ui-textarea-container .ui-textarea:focus::before {
 	border: 2px solid #000000;
 	font: inherit;
 	font-weight: 500;
-	font-size: 26px;
+	font-size: 1.35rem;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -429,7 +463,7 @@ div.ui-textarea-container .ui-textarea:focus::before {
 	.ui-button-container .ui-button,
 	.ui-upload-button-container .ui-upload-button {
 		height: 60px;
-		font-size: 14px;
+		font-size: 2.34rem;
 	}
 }
 
@@ -443,10 +477,21 @@ div.ui-textarea-container .ui-textarea:focus::before {
 
 .ui-upload-button-container .description {
 	margin-top: 6px;
-	margin-left: 26px;
+	margin-left: 1.35rem;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 23px;
+	font-size: 0.94rem;
+}
+
+@media(max-width:1023px) {
+	.ui-upload-button-container .description {
+		font-size: 2rem;
+	}
+}
+
+@media(max-width:639px) {
+	.ui-upload-button-container .description {
+		font-size: 2.5rem;
+	}
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
 

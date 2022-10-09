@@ -13,13 +13,14 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link href="../css/aos.css" type="text/css" rel="stylesheet" />
+  <link href="css/clinical-cases.css" type="text/css" rel="stylesheet" />
   <link href="css/clinical-share-form.css" type="text/css" rel="stylesheet" />
   <link href="../css/nav.css" type="text/css" rel="stylesheet" />
   <link href="../css/footer.css" type="text/css" rel="stylesheet" />
   <link href="../css/header.css" type="text/css" rel="stylesheet" />
   <link href="../css/ui.css" type="text/css" rel="stylesheet" />
   <link href="../css/logo.css" type="text/css" rel="stylesheet" />
-  <link href="css/clinic-share-intro.css" type="text/css" rel="stylesheet" />
+  <link href="css/clinic-share-intro.css" type="text/css" rel="stylesheet" /> 
   <script src="js/clicnic-share.js" defer></script>
 </head>
 
@@ -96,7 +97,7 @@
             <img class="site-logo" src="../img/logo.svg"></img>
             <div style="order: 1" class="breadcrumbs"><a class="ui-link" href="#">Клинические случаи</a></div>
           </div>
-          <div class="doctors-logo-container">
+          <div class="doctors-logo-container"  style="display: none">
             <img class="doctors-logo" src="../img/doctor_clinic_share.jpg "></img>
             <div class="site-intro-text">
               <img class="diagnostic-icon" src="../img/diagnostic_icon.svg"></img>
@@ -104,7 +105,7 @@
               <!-- <div class="empty"></div> -->
             </div>
           </div>
-          <div class="site-title-container">
+          <div class="site-title-container"  style="display: none">
             <div class="site-title">
               <div class="title-tablet" data-aos="switch-style" data-aos-treshold="30">
                 <div class="text1">Поделиться</div>
@@ -116,9 +117,8 @@
               </div>
             </div>
           </div>
-
         </div>
-        <div class="clinical-share-content">
+        <div class="clinical-share-content" style="display: none">
           <div class="fields">
             <p class="form-title">заполните форму ниже</p>
             <form id="fields" action="post">
@@ -158,33 +158,40 @@
                   <p class="error-text">Ошибка ввода</p>
                 </div>
               </div>
-              <div class="ui-input-container sex">
-                <label class="ui-input-label" for="male">ПОЛ</label>
-                <input class="ui-input" type="text" placeholder="МУЖСКОЙ" id="male" />
-                <p class="error-text">Ошибка ввода</p>
-              </div>
-              <div class="ui-input-container sex">
-                <label class="ui-input-label" for="female"></label>
-                <input class="ui-input" type="text" placeholder="ЖЕНСКИЙ" id="female" />
-                <p class="error-text">Ошибка ввода</p>
-              </div>
-              <!-- <fieldset>
+              <div class="container-2">
+                <div class="gender-container">
+                  <div class="ui-input-container gender">
+                    <label class="ui-input-label" for="male">ПОЛ</label>
+                    <input class="ui-input" type="text" placeholder="МУЖСКОЙ" id="male" />
+                    <p class="error-text">Ошибка ввода</p>
+                  </div>
+                  <div class="ui-input-container gender">
+                    <label class="ui-input-label" for="female"></label>
+                    <input class="ui-input" type="text" placeholder="ЖЕНСКИЙ" id="female" />
+                    <p class="error-text">Ошибка ввода</p>
+                  </div>
+                </div>
+
+                <!-- <fieldset>
                 <input type="radio" name="male" id="male">
                 <input type="radio" name="female" id="female">                
               </fieldset> -->
 
-              <div class="ui-dropdown-container marital-status">
-                <label class="ui-dropdown-label" for="marital-status">семейное положение</label>
-                <div class="ui-select-container">
-                  <select class="ui-dropdown" id="marital-status">
-                    <option value="" disabled selected style='display:none;'></option>
-                    <option value="val">Холост</option>
-                    <option value="val">Женат</option>
-                  </select>
+                <div class="ui-dropdown-container marital-status">
+                  <label class="ui-dropdown-label" for="marital-status">семейное положение</label>
+                  <div class="ui-select-container">
+                    <select class="ui-dropdown" id="marital-status">
+                      <option value="" disabled selected style='display:none;'></option>
+                      <option value="val">Холост</option>
+                      <option value="val">Женат</option>
+                    </select>
+                  </div>
+                  <p class="error-text">Ошибка ввода</p>
                 </div>
-                <p class="error-text">Ошибка ввода</p>
               </div>
+
               <p class="header">Визит 1</p>
+              <div class="container-3">
               <div class="ui-input-container referral">
                 <label class="ui-input-label" for="referral">НАПРАВЛЕНИЕ ОТ</label>
                 <input class="ui-input" type="text" id="referral" />
@@ -195,6 +202,7 @@
                 <input class="ui-input" type="text" id="diagnos" />
                 <p class="error-text">Ошибка ввода</p>
               </div>
+            </div>
               <div class="ui-input-container complaints">
                 <label class="ui-input-label" for="complaints">ЖАЛОБЫ</label>
                 <input class="ui-input" type="text" id="complaints" />
@@ -235,6 +243,67 @@
               </div>
             </form>
           </div>
+        </div>
+        <div class="clinic-share-thanks">
+                <div class="thanks-text">Спасибо, что делитесь</div>
+                <div class="thanks-description">Изучите другие интересные истории болезни,<br> поделитесь своим мнением</div>
+                <div class="clinical-cases-list">
+                  <div class="clinical-cases-item">
+                    <div class="image-container">
+                      <p class="specialisation">Специальность</p>
+                      <div class="image">
+                        <p class="empty"></p>
+                        <img src="../img/clinical-case1.jpg"></img>
+                      </div>
+                    </div>
+                    <div class="text-container">
+                      <div class="title-container">
+                        <p class="title">Стресс и психосоматика ЖКТ</p>
+                        <div class="arrow"></div>
+                      </div>
+                      <p class="text">Женщина 28 лет предъявляет жалобы на вздутие живота, повышенное газообразование,
+                        периодически возникающие приступообразные боли в животе, преимущественно после приема пищи, тошноту,
+                        изжогу, частый жидкий стул, неприятный вкус во рту.</p>
+                    </div>
+                  </div>
+                  <div class="clinical-cases-item">
+                    <div class="image-container">
+                      <p class="specialisation">Специальность</p>
+                      <div class="image">
+                        <p class="empty"></p>
+                        <img src="../img/clinical-case1.jpg"></img>
+                      </div>
+                    </div>
+                    <div class="text-container">
+                      <div class="title-container">
+                        <p class="title">Стресс и психосоматика ЖКТ</p>
+                        <div class="arrow"></div>
+                      </div>
+                      <p class="text">Женщина 28 лет предъявляет жалобы на вздутие живота, повышенное газообразование,
+                        периодически возникающие приступообразные боли в животе, преимущественно после приема пищи, тошноту,
+                        изжогу, частый жидкий стул, неприятный вкус во рту.</p>
+                    </div>
+                  </div>
+                  <div class="clinical-cases-item">
+                    <div class="image-container">
+                      <p class="specialisation">Специальность</p>
+                      <div class="image">
+                        <p class="empty"></p>
+                        <img src="../img/clinical-case1.jpg"></img>
+                      </div>
+                    </div>
+                    <div class="text-container">
+                      <div class="title-container">
+                        <p class="title">Стресс и психосоматика ЖКТ</p>
+                        <div class="arrow"></div>
+                      </div>
+                      <p class="text">Женщина 28 лет предъявляет жалобы на вздутие живота, повышенное газообразование,
+                        периодически возникающие приступообразные боли в животе, преимущественно после приема пищи, тошноту,
+                        изжогу, частый жидкий стул, неприятный вкус во рту.</p>
+                    </div>
+                  </div>
+                  <div class="clinical-cases-item-empty"></div>
+                </div>  
         </div>
       </main>
       <footer>
