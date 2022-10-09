@@ -1,0 +1,76 @@
+
+main .tags {
+	display: flex;
+	align-items: center;
+	padding: 10rem 1.29rem;
+	border-bottom: 2px solid black;
+}
+
+@media(max-width:639px) {
+	main .tags {
+        flex-direction: column;
+        align-items: self-start;
+        /* margin-right: 5.87rem;
+        margin-left: 5.87rem; */
+    }
+}
+
+main .tags .title {
+	margin-right: 11.32rem;
+	font-weight: 700;
+	font-size: 2.43rem;
+	line-height: 100%;
+	
+}
+
+@media(max-width:1023px) {
+	main .tags .title {
+		font-size: 4.69rem;
+		line-height: 100%;
+		margin-right: 42.7rem;
+	}
+}
+
+@media(max-width:639px) {
+	main .tags .title {
+		font-size: 5.87rem;
+		line-height: 100%;
+        margin-right: 0;
+        text-align: left;
+	}
+}
+
+main .tags .tags-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -30px;
+}
+
+main .tags .tags-container a {
+	margin-right: 25px;
+	margin-top: 30px;
+	text-decoration-line: underline;
+	color: #000000;
+}
+
+@media(max-width:1023px) {
+	main .tags .tags-container a {
+		font-size: 14px;
+		line-height: 100%;
+		/* line-height: 13px; */
+	}
+}
+
+/* @media(max-width:639px) {
+	main .tags .tags-container a {
+		font-size: 10px;
+		line-height: 100%;
+		
+	}
+} */
+
+@media(max-width:639px) {
+	main .tags .tags-container {
+		margin-top: 0;
+	}
+}

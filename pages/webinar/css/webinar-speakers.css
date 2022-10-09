@@ -1,0 +1,115 @@
+
+/* speakers */
+.webinars-speakers{display: flex;padding-top: 10.5rem;border-bottom: solid 2px #000;}
+.webinars-speakers-theme{width: 46.9%;}
+.webinars-speakers-head h2{font-weight: 700;font-size: 2.396rem;letter-spacing: -0.01em;text-transform: uppercase;color: #000000;margin-top: -1.5rem;}
+.webinars-speakers-bigtext{font-weight: 700;font-size: 1.67rem;line-height: 1.3;letter-spacing: -0.01em;color: #000000;}
+.webinars-speakers-videonav-wrap{padding: 1.7rem;letter-spacing: -0.01em;color: #000000;font-size: 1.25rem;line-height: 1.255;}
+.webinars-speakers-videonav-title{font-weight: 400;font-size: 1.25rem;line-height: 1;letter-spacing: -0.01em;color: #525251;margin-top: 3.4rem;margin-bottom: 2.5rem;}
+.webinars-speakers-videonav-list{margin-bottom: 3.5rem;max-width: 81.6%;}
+.webinars-speakers-videonav-list.full + .webinars-speakers-videonav-more:after{transform: rotate(-90deg);}
+
+.webinars-speakers-videonav-more .less {display:none}
+.webinars-speakers-videonav-more .more {display:block}
+.webinars-speakers-videonav-list.full + .webinars-speakers-videonav-more .less {display:block}
+.webinars-speakers-videonav-list.full + .webinars-speakers-videonav-more .more {display:none}
+.webinars-speakers-videonav-list.full .webinars-speakers-videonav-item:nth-child(n+7){display: flex;}
+.webinars-speakers-videonav-item{display: flex;align-items: center;margin-bottom: 1.24rem;}
+.webinars-speakers-videonav-item:nth-child(n+7){display:none}
+.webinars-speakers-videonav-item-time{font-weight: 500;font-size: 1.563rem;line-height: 1;letter-spacing: -0.01em;text-decoration-line: underline;color: #ED7A33;margin-right: 1.4rem;}
+.webinars-speakers-videonav-item-desc{font-weight: 400;font-size: 1.25rem;line-height: 1.255;display: flex;align-items: center;letter-spacing: -0.01em;color: #000000;}
+.webinars-speakers-videonav-more:hover{color: #000}
+.webinars-speakers-videonav-more{position: relative;cursor: pointer;color: #525251;}
+.webinars-speakers-videonav-more:after{content: "";background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='22' height='13' viewBox='0 0 22 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 1.5 10 10 10-10' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");position: absolute;width: 1.042rem;height: 1.042rem;background-repeat: no-repeat;background-position: center;right: 0;top: calc(50% - 0.573vw);transition: .3s;background-size: contain;}
+
+.webinars-speakers-staff{width: 50%;border-left: solid 2px #000;}
+.webinars-speakers-head{padding-left: 1.24rem;padding-bottom: 2.6rem;border-bottom: solid 2px #000;}
+.webinars-speakers-staff-list{padding: 1.8rem 0 1.2rem 1.2rem;letter-spacing: -0.01em;color: #000000;font-size: 1.35rem;line-height: 1.255;}
+
+.webinars-speakers-person-wrap{display: flex;align-items: center;margin-bottom: 1.4rem;}
+.webinars-speakers-photo{width: 7.73rem;margin-right: 2.2rem;}
+.webinars-speakers-name{font-weight: 700;font-size: 1.68rem;line-height: 1.3;display: flex;align-items: center;letter-spacing: -0.01em;color: #000000;max-width: 20rem;}
+.webinars-speakers-person-content{letter-spacing: -0.01em;color: #000000;font-size: 1.35rem;line-height: 1.255;}
+.webinars-speakers-person-content p{margin-bottom: 0.7rem;}
+.webinars-speakers-person-content p:last-child{margin:0}
+.webinars-speakers-person-more-wrap{margin-top: 1.1rem;overflow: hidden;height: 0;}
+
+.webinars-speakers-person-blokquote{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='85' height='128' viewBox='0 0 85 128' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49.9 56V25L85 0v56H49.9ZM0 56V25L35.1 0v56H0Z' fill='%23ED7A33'/%3E%3Cpath d='M15.7 103.5v15.3h2.1v7.2h-3.4v-4H2.2v-18.5h3.6v15.3H12v-15.3h3.6Zm16 5V122h-3.4v-8.3l-4.8 8.3h-3.4v-13.5h3.4v8l4.8-8h3.4Zm13.8 0v3h-4.1V122H38v-10.5h-4.4v-3h11.9Zm6.1-.2c3.9 0 5.8 1.6 5.8 4.8v8.9h-3.3v-1.2c-.4.5-1 .8-1.4 1-.5.2-1.1.3-2 .3-1.4 0-2.6-.4-3.4-1.2a4.2 4.2 0 0 1-1-3c0-1.2.3-2 1.1-2.8.8-.8 2-1.1 3.5-1.1H54v-.7c0-.8-.2-1.3-.6-1.6-.4-.4-1-.5-1.9-.5-1 0-2 .3-2.6 1.1l-2.1-2c.6-.8 1.3-1.3 2-1.6a8 8 0 0 1 2.8-.4Zm2.4 8h-2.5c-1.4 0-2 .5-2 1.5s.6 1.6 2 1.6c.9 0 1.6-.2 2-.7.4-.3.5-.8.5-1.7v-.7Zm16.8-7.8v3h-4V122h-3.4v-10.5H59v-3h11.8Zm6.2-.2c3.9 0 5.8 1.6 5.8 4.8v8.9h-3.3v-1.2c-.5.5-1 .8-1.5 1-.4.2-1 .3-1.8.3-1.5 0-2.7-.4-3.5-1.2a4.2 4.2 0 0 1-1.1-3c0-1.2.4-2 1.2-2.8.8-.8 2-1.1 3.5-1.1h3.1v-.7c0-.8-.2-1.3-.6-1.6-.4-.4-1-.5-1.9-.5-1 0-2 .3-2.6 1.1l-2.1-2c.6-.8 1.3-1.3 2-1.6a8 8 0 0 1 2.8-.4Zm2.4 8h-2.6c-1.3 0-2 .5-2 1.5s.7 1.6 2.1 1.6c.9 0 1.5-.2 2-.7.3-.3.5-.8.5-1.7v-.7Z' fill='%23000'/%3E%3C/svg%3E");background-repeat: no-repeat;padding-left: 7.8rem;min-height: 7.9rem;background-size: 4.5rem auto;}
+.webinars-speakers-person-more-btn{border-bottom: 2px solid rgba(82, 82, 81, 0.24);font-weight: 400;font-size: 1.042vw;line-height: 1;letter-spacing: -0.01em;color: #525251;padding-bottom: 1.1rem;margin-bottom: 1.3rem;cursor: pointer;transition: .3s;position: relative;}
+.webinars-speakers-person-more-btn:hover{color:#000}
+.webinars-speakers-person-more-btn:after{content:"";background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.3 8.2 8 1.5l6.7 6.7' stroke='%23525251' stroke-width='2'/%3E%3C/svg%3E");position: absolute;width: 1.042rem;height: 1.042rem;background-repeat: no-repeat;background-position: center;right: 0.6rem;transition: .2s;bottom: 1.2rem;transform: rotate(180deg);background-size: contain;}
+
+
+.webinars-speakers-person-more-wrap.active{padding: 1.3rem 0 2.3rem 0;height: auto;border-top: 2px solid rgba(82, 82, 81, 0.24);}
+.webinars-speakers-person-more-wrap.active + .webinars-speakers-person-more-btn:after{transform: rotate(0deg);}
+.webinars-speakers-person-more-btn .less {display:none}
+.webinars-speakers-person-more-btn .more {display:block}
+.webinars-speakers-person-more-wrap.active + .webinars-speakers-person-more-btn .less {display:block}
+.webinars-speakers-person-more-wrap.active + .webinars-speakers-person-more-btn .more {display:none}
+
+
+@media (max-width:1023px){
+	.webinars-speakers{flex-direction: column;}
+	.webinars-speakers-theme{width: 100%;}
+	.webinars-speakers-theme .webinars-speakers-head{display: none}
+	.webinars-speakers-staff{width: 100%;}
+	.webinars-speakers-staff-list{font-size: 2.35rem;}
+	.webinars-speakers-staff .webinars-speakers-head{border-top: solid 2px #000;margin-left: 4.2rem;padding-left: 0rem;padding-top: 7.5rem;padding-bottom: 5.6rem;margin-left: 0;}
+	.webinars-speakers-head h2{font-size: 4.74rem;}
+	.webinars-speakers-bigtext{font-size: 3.15rem;max-width: 70%;}
+	.webinars-speakers-videonav-wrap{padding: 1.9rem 0 1.9rem 4.4rem;}
+	.webinars-speakers-videonav-title{font-size: 2.35rem;margin-top: 6rem;margin-bottom: 5.8rem;}
+	.webinars-speakers-videonav-item-time{font-size: 2.4rem;margin-right: 3.3rem;}
+	.webinars-speakers-videonav-item-desc{font-size: 2.35rem;}
+	.webinars-speakers-videonav-item{margin-bottom: 2.94rem;}
+	.webinars-speakers-videonav-wrap{padding-left: 0;}
+	.webinars-speakers-videonav-list{margin-bottom: 8.4rem;}
+	.webinars-speakers-videonav-more{padding-left: 1.5rem;min-height: 7.9rem;background-size: 4.5rem auto;font-size: 2.32rem;}
+	.webinars-speakers-videonav-more::after{width: 2.342rem;height: 2.342rem;right: 0.1rem;top: .1rem;}
+	.webinars-speakers-person-blokquote{padding-left: 11.1rem;min-height: 13.8rem;background-size: 8rem auto;}
+	.webinars-speakers-person-wrap{font-size: 1.042rem;margin-bottom: 3.3rem;}
+	.webinars-speakers-staff{margin-top: 5.5rem;border-left: 0;}
+	.webinars-speakers-staff-list{padding: 3.1rem 0 1.2rem 4rem;}
+	.webinars-speakers-staff-list{padding-left: 0;}
+	.webinars-speakers-photo{width: 19.7rem;margin-right: 3.1rem;}
+	.webinars-speakers-name{font-size: 3.15rem;max-width: 100%;}
+	.webinars-speakers-person-content{font-size: 2.35rem;}
+	.webinars-speakers-person-more-btn{padding-bottom: 2.8rem;margin-bottom: 3rem;font-size: 2.1vw;}
+	.webinars-speakers-person-more-wrap{margin-top: 2.9rem;}
+	.webinars-speakers-person-more-wrap.active{padding: 1.3rem 0 2.3rem 0;}
+	.webinars-speakers-person-more-btn::after{width: 2.342rem;height: 2.342rem;right: 1.4rem;bottom: 2.5rem;}
+	.webinars-speakers-person-content p{margin-bottom: 1.2rem;}
+}
+
+
+
+@media (max-width:639px){
+	.webinars-speakers-theme{width: 100%;}
+	.webinars-speakers-theme .webinars-speakers-head{display: none}
+	.webinars-speakers-staff{width: 100%;}
+	.webinars-speakers-staff-list{font-size: 2.35rem;}
+	.webinars-speakers-staff .webinars-speakers-head{margin-right: 5.87rem;border-top: solid 2px #000;margin-left: 5.2rem;padding-left: 0rem;padding-top: 7.5rem;padding-bottom: 6.3rem;margin-left:0;margin-right: 0;}
+	.webinars-speakers-head h2{font-size: 5.94rem;}
+	.webinars-speakers-bigtext{font-size: 4.28rem;max-width: 100%;}
+	.webinars-speakers-videonav-wrap{padding: 1.9rem 0 1.9rem 4.4rem;}
+	.webinars-speakers-videonav-title{font-size: 3.75rem;margin-top: 12.1rem;margin-bottom: 6.1rem;}
+	.webinars-speakers-videonav-item-time{font-size: 3.8rem;margin-right: 3.3rem;}
+	.webinars-speakers-videonav-item-desc{font-size: 4.25rem;}
+	.webinars-speakers-videonav-item{margin-bottom: 3.2rem;}
+	.webinars-speakers-videonav-wrap{padding: 1.9rem 0 1.9rem 5.8rem;padding-left: 0;padding-right: 0;}
+	.webinars-speakers-videonav-list{margin-bottom: 12.3rem;max-width: 100%;}
+	.webinars-speakers-videonav-more{padding-left: 2.9rem;min-height: 7.9rem;background-size: 4.5rem auto;font-size: 3.62rem;}
+	.webinars-speakers-videonav-more::after{width: 2.342rem;height: 2.342rem;right: 0.1rem;top: .1rem;}
+	.webinars-speakers-person-blokquote{padding-left: 21rem;min-height: 13.8rem;background-size: 14.6rem auto;font-size: 4.2rem;background-position: left center;}
+	.webinars-speakers-person-wrap{margin-top: 0;margin-bottom: 6.2rem;}
+	.webinars-speakers-staff{margin-top: 19.8rem;border-left: 0;}
+	.webinars-speakers-staff-list{padding: 6.4rem 0 1.2rem 5.5rem;padding-left: 0;}
+	.webinars-speakers-photo{width: 39.9rem;margin-right: 6.2rem;}
+	.webinars-speakers-name{font-size: 4.85rem;max-width: 100%;}
+	.webinars-speakers-person-content{font-size: 4.25rem;}
+	.webinars-speakers-person-more-btn{padding-bottom: 5.7rem;margin-bottom: 6rem;font-size: 3.7vw;}
+	.webinars-speakers-person-more-wrap{margin-top: 2.9rem;}
+	.webinars-speakers-person-more-wrap.active{padding: 3rem 0 9.1rem 0;}
+	.webinars-speakers-person-more-btn::after{padding: 1.3rem 0 2.3rem 0;width: 4.342rem;height: 4.342rem;right: 3.6rem;bottom: 5.5rem;}
+	.webinars-speakers-person-content p{margin-bottom: 2rem;}
+}

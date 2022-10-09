@@ -1136,8 +1136,12 @@ main .webinars-poll-end .image {
 }
 
 
+/*-------------------- recomendations --------------------*/
+
+
 main .recomendations {
 	border-bottom: 1px solid black;
+	padding: 0 4.17rem;
 }
 
 main .recomendations .title {
@@ -1426,14 +1430,14 @@ main .recomendations .buttons-container .prev {
 }
 
 main .recomendations .buttons-container .prev {
-	background-image: url("../img/prev.svg");
+	background-image: url("../../img/prev.svg");
 	width: 7.81rem;
 	height: 1.35rem;
 	margin-left: 2.08rem;
 }
 
 main .recomendations .buttons-container .next {
-	background-image: url("../img/next.svg");
+	background-image: url("../../img/next.svg");
 	width: 9.93rem;
 	height: 1.35rem;
 	margin-right: 4.17rem;
@@ -1462,6 +1466,10 @@ main .recomendations .buttons-container .next {
 		height: 4.35rem;
 	}
 }
+
+/*-------------------- recomendations --------------------*/
+
+
 
 footer {
 	padding: 2.6rem 2.29rem;

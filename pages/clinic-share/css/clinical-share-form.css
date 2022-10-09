@@ -1,0 +1,129 @@
+main .clinical-share-content {
+	margin-right: 170px;
+	border-right: 2px solid;
+	padding-top: 9rem;
+    margin-top: -9rem;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content {
+		padding: 0;
+		border: 0;
+		margin: 0;
+	}
+}
+
+
+main .clinical-share-content form {
+	display: flex;
+	flex-flow: wrap;
+	align-items: flex-end;
+
+}
+
+main .clinical-share-content .fields {
+	width: 49.69rem;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields {
+		width: 100%;
+	}
+}
+
+main .clinical-share-content .fields .form-title {
+	font-weight: 700;
+	font-size: 2.4rem;
+	margin-top: 6.25rem;
+	margin-bottom: 3.2rem;
+	text-transform: uppercase;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .form-title {
+		display: none;
+		font-size: 3.91rem;
+	}
+}
+
+main .clinical-share-content .fields .header {
+	width: 100%;
+	font-weight: 700;
+	font-size: 1.67rem;
+	border-bottom: 2px solid;
+	margin-top: 0.5rem;
+	margin-bottom: 3rem;
+}
+
+main .clinical-share-content .fields .container-1 {
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .container-1 {
+		flex-direction: column;
+	}
+}
+
+main .clinical-share-content .fields .age-container {
+	display: flex;
+	width: 50%;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .age-container {
+		width: 100%;
+	}
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .header {
+		font-size: 3.91rem;
+		margin-top: 0.5rem;
+	margin-bottom: 4.5rem;
+	}
+}
+
+main .clinical-share-content .fields .ui-input-container,
+main .clinical-share-content .fields .ui-dropdown-container,
+main .clinical-share-content .fields .ui-textarea-container,
+main .clinical-share-content .fields .ui-button-container {
+	margin-bottom: 2.6rem;
+}
+
+main .clinical-share-content .fields div.ui-input-container .ui-input {
+	font-size: 20px;
+}
+
+main .clinical-share-content .fields .ui-input-container.age {
+	width: 25%;
+	/* margin-right: 1.3rem; */
+}
+
+main .clinical-share-content .fields .ui-input-container.sex {
+	width: 22%;
+	margin-right: 1.75rem;
+}
+
+main .clinical-share-content .fields .ui-input-container.referral,
+main .clinical-share-content .fields .ui-input-container.diagnos {
+	width: 41%;
+}
+
+main .clinical-share-content .fields .ui-input-container.referral {
+	margin-right: 8.94rem;
+}
+
+main .clinical-share-content .fields .ui-dropdown-container.education {
+	width: 50%;
+	/* margin-left: 3.55rem; */
+}
+
+main .clinical-share-content .fields .ui-dropdown-container.marital-status {
+	width: 43%;
+	margin-left: 2.96rem;
+}

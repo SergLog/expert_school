@@ -21,6 +21,11 @@
 	background: #EBEAE9;
 }
 
+.page.clinic-shaer20 {
+	display: flex;
+	background: #EBEAE9;
+}
+
 .page.news-inner20 {
 	display: flex;
 	background: #EBEAE9;
@@ -30,11 +35,19 @@
 	margin-top: 3.54rem;
 }
 
+.page.clinic-share20 nav {
+	margin-top: 3.54rem;
+}
+
 .page.clinics-content20 nav {
 	margin-top: 0rem;
 }
 
 .page.clinic20 header {
+	display: none;
+}
+
+.page.clinic-share20 header {
 	display: none;
 }
 
@@ -51,7 +64,7 @@
 }
 
 @media(max-width:1023px) {
-	.page.clinic20 header {
+	.page.clinic20 header, .page.clinic-share20 header {
 		display: flex;
 	}
 }
