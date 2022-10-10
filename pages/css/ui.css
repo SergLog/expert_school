@@ -96,7 +96,7 @@ div.ui-dropdown-container .ui-dropdown option {
 @media(max-width:639px) {
 	div.ui-dropdown-container .ui-dropdown {
 		height: 50px;
-		font-size: 14px;
+		font-size: 3rem;
 		line-height: 16px;
 	}
 
