@@ -207,7 +207,7 @@ div.ui-input-container .ui-input {
 	border: 2px solid #000000;
 	font-weight: 400;
 	font-size: 24px;
-	line-height: 31px;
+	line-height: 100%;
 	appearance: none;
 	background-color: #EBEAE9;
 }
@@ -335,7 +335,7 @@ div.ui-textarea-container .ui-textarea {
 	min-height: 12.6rem;
 	font-weight: 400;
 	font-size: 24px;
-	line-height: 31px;
+	line-height: 100%;
 	color: #000000;
 	font-weight: 500;
 }
