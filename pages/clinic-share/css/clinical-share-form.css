@@ -105,9 +105,9 @@ main .clinical-share-content .fields .ui-button-container {
 	margin-bottom: 2.6rem;
 }
 
-main .clinical-share-content .fields div.ui-input-container .ui-input {
+/* main .clinical-share-content .fields div.ui-input-container .ui-input {
 	font-size: 20px;
-}
+} */
 
 main .clinical-share-content .fields .ui-input-container.gender {
 	width: 40%;
