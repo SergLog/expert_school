@@ -465,6 +465,15 @@ div.ui-textarea-container .ui-textarea:focus {
 	}
 }
 
+@media(max-width:639px) {
+	.ui-upload-button-container .ui-upload-button::after {
+		content: "";
+		width: 48px;
+		height: 48px;
+		border-left: 1px solid;
+	}
+}
+
 .ui-upload-button-container .ui-upload-button:hover {
 	background: #DAD6D2;
 }
@@ -485,7 +494,14 @@ div.ui-textarea-container .ui-textarea:focus {
 	.ui-button-container .ui-button,
 	.ui-upload-button-container .ui-upload-button {
 		height: 50px;
+		/* height: 6.51rem; */
 		border: 1px solid #000000;
+	}
+}
+
+@media(max-width:639px) {
+	.ui-upload-button-container .ui-upload-button {
+		padding: 1.2rem;
 	}
 }
 
