@@ -321,7 +321,7 @@ main .site-intro .site-intro-text .empty-row {
 }
 
 .clinic-share-thanks {
-	display: flex;
+	display: none;
 	flex-flow: column;    
 }
 
@@ -337,7 +337,6 @@ main .site-intro .site-intro-text .empty-row {
 
 .clinic-share-thanks .thanks-description {
 	font-size: 1.67rem;
-	margin-top: 1.5rem;
-	
+	margin-top: 1.5rem;	
 	margin-left: 8.13rem;
 }

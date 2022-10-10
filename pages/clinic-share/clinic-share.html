@@ -97,7 +97,7 @@
             <img class="site-logo" src="../img/logo.svg"></img>
             <div style="order: 1" class="breadcrumbs"><a class="ui-link" href="#">Клинические случаи</a></div>
           </div>
-          <div class="doctors-logo-container"  style="display: none">
+          <div class="doctors-logo-container">
             <img class="doctors-logo" src="../img/doctor_clinic_share.jpg "></img>
             <div class="site-intro-text">
               <img class="diagnostic-icon" src="../img/diagnostic_icon.svg"></img>
@@ -105,7 +105,7 @@
               <!-- <div class="empty"></div> -->
             </div>
           </div>
-          <div class="site-title-container"  style="display: none">
+          <div class="site-title-container">
             <div class="site-title">
               <div class="title-tablet" data-aos="switch-style" data-aos-treshold="30">
                 <div class="text1">Поделиться</div>
@@ -118,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="clinical-share-content" style="display: none">
+        <div class="clinical-share-content">
           <div class="fields">
             <p class="form-title">заполните форму ниже</p>
             <form id="fields" action="post">
@@ -136,12 +136,12 @@
                     <p class="error-text">Ошибка ввода</p>
                   </div>
                   <div class="ui-input-container age">
-                    <label class="ui-input-label" for="age-month"></label>
+                    <label class="ui-input-label no-label" for="age-month"></label>
                     <input class="ui-input" type="text" placeholder="МЕСЯЦ" id="age-month" />
                     <p class="error-text">Ошибка ввода</p>
                   </div>
                   <div class="ui-input-container age">
-                    <label class="ui-input-label" for="age-year"></label>
+                    <label class="ui-input-label no-label" for="age-year"></label>
                     <input class="ui-input" type="text" placeholder="ГОД" id="age-year" />
                     <p class="error-text">Ошибка ввода</p>
                   </div>
@@ -166,7 +166,7 @@
                     <p class="error-text">Ошибка ввода</p>
                   </div>
                   <div class="ui-input-container gender">
-                    <label class="ui-input-label" for="female"></label>
+                    <label class="ui-input-label no-label" for="female"></label>
                     <input class="ui-input" type="text" placeholder="ЖЕНСКИЙ" id="female" />
                     <p class="error-text">Ошибка ввода</p>
                   </div>
@@ -239,7 +239,7 @@
                 <button type="button" class="ui-button">Сохранить черновик в личный кабинет</button>
               </div>
               <div class="ui-button-container">
-                <button type="button" class="ui-button">Опубликовать</button>
+                <button type="button" class="ui-button" onclick="publishCase()">Опубликовать</button>
               </div>
             </form>
           </div>

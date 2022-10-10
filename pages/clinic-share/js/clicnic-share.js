@@ -65,3 +65,18 @@ document.getElementById("file1").addEventListener("change", (event) => {
 
     
 });
+
+
+const doctors = document.querySelector(".site-intro .doctors-logo-container");
+const siteTitle = document.querySelector(".site-intro .site-title-container");
+const content = document.querySelector(".clinical-share-content");
+const thanks = document.querySelector(".clinic-share-thanks");
+const upButton = document.querySelector("footer a.up-button");
+
+function publishCase() {
+    doctors.style.display = 'none';
+    siteTitle.style.display = 'none';
+    content.style.display = 'none';
+    thanks.style.display = 'flex';
+    upButton.click();
+};
