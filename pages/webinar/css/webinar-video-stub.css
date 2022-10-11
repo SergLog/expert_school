@@ -167,6 +167,12 @@ main .video-container {
 	color: #525251
 }
 
+@media(max-width:639px) {
+	.video-stub .tablet span.soon {
+		border: 1px solid #525251;
+	}
+}
+
 .video-stub .planned-date {
 	display: flex;
 	font-weight: 400;
