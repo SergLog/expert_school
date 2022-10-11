@@ -1768,7 +1768,7 @@ footer .footer-container .mobile {
 	align-items: center;
 	justify-content: space-between;
 	padding: 44px 0px;
-	display: none;
+	/* display: none; */
 }
 
 @media(max-width:620px) {

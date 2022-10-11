@@ -1,25 +1,6 @@
-main .video-container {
-    border-bottom: 2px solid black;
-    padding-left: 44px;
-    padding-right: 115px;
-}
-
-main {
-    /* border-bottom: 2px solid black; */
-    /* padding-left: 44px;
-    padding-right: 115px; */
-}
-
 @media (max-width: 1023px) {
     main {
         padding: 0 5rem;
-    }
-}
-
-@media (max-width: 1023px) {
-    main .video-container {
-        border-bottom: 0;
-        padding: 0;
     }
 }
 
