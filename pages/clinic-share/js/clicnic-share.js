@@ -96,10 +96,12 @@ visit3Container.style.display = "none";
     visit2.addEventListener("click", () => {
         if (visit2Container.style.display === "none") {
             visit2Container.style.display = "block";
+            visit2Container.classList.add("active-container");
             visit2.classList.add("minus");
           } else {
             visit2Container.style.display = "none";
             visit2.classList.remove("minus");
+            visit2Container.classList.remove("active-container");
           }
     });
 
@@ -107,9 +109,11 @@ visit3Container.style.display = "none";
         if (visit3Container.style.display === "none") {
             visit3Container.style.display = "block";
             visit3.classList.add("minus");
+            visit3Container.classList.add("active-container");
           } else {
             visit3Container.style.display = "none";
             visit3.classList.remove("minus");
+            visit3Container.classList.remove("active-container");
           }
     });
     
@@ -126,7 +130,7 @@ visit3Container.style.display = "none";
             $(field).parent().removeClass('error');
         }
     
-        obj.find('input[type="text"]').each(function () {
+        obj.find('.active-container .input[type="text"]').each(function () {
             let id = $(this)[0].id;
             let val = $(this).val();
             let el = $(this);
@@ -137,7 +141,7 @@ visit3Container.style.display = "none";
             }
         });
 
-        obj.find('div.ui-textarea').each(function () {
+        obj.find('.active-container div.ui-textarea').each(function () {
             console.log($(this));
             let id = $(this)[0].id;
             let text = $(this)[0].innerText;

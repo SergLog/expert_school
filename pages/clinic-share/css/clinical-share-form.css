@@ -6,7 +6,8 @@ main .clinical-share-content {
 }
 
 .clinical-share-content .visit2-container,
-.clinical-share-content .visit3-container {
+.clinical-share-content .visit3-container,
+.clinical-share-content .active-container {
 	width: 100%;
 }
 
