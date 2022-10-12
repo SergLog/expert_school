@@ -1,0 +1,28 @@
+main .site-intro.head-wrapper{position: relative;padding-bottom: 2.917rem;padding-left: 0;padding-top: 0;margin-top: 7.031rem;} 
+main .site-intro.head-wrapper:before{content:"";position: absolute;height: 100%;border-right: 2px solid #000;left: 20.9%;} 
+.head-logo{width: 9.792rem;position: absolute;top: -3.281rem;left: 2.240rem;} 
+.head-h1{font-weight: 700;font-size: 5rem;line-height: 6.25rem;letter-spacing: -0.01em;text-transform: uppercase;max-width: 40%;padding-left: 2.083rem;background-color: #ebeae9;margin-bottom: 3.854rem;} 
+.head-h1 span{position: relative;z-index: 1;} 
+.head-h1 span:before{content:"";width: calc(100% - 0.15em);height: 0.156em;background-color: #ed7a33;display: block;position: absolute;bottom: 0.2em;left: 0.08em;z-index: -1;} 
+.head-img{width: 52.5%;margin-top: 7.448rem;margin-right: 2.292rem;} 
+.head-img img{width: 100%;} 
+.head-content-wrapper{border-top: solid 2px #000;display: flex;justify-content: space-between;width: calc(100% - 1.41rem);position: relative;align-items: flex-end;}
+
+@media (max-width: 1023px){
+   .head-content-wrapper {width: 100%;border-top: none;flex-direction: column-reverse;display: flex;align-items: flex-start;} 
+    .head-img{margin-top: 1.563rem;margin-right: 0;width: 100%;margin-bottom: 15.104rem;} 
+    .head-h1{padding-left: 4.17rem;margin-top: 0;max-width: 100%;font-size: 11.979rem;line-height: 11.068rem;} 
+    .head-logo { width: 18.750rem; top: -5.859rem; left: initial;right: 3.646rem;} 
+    main .site-intro.head-wrapper {padding-bottom: 2.917rem;margin-top: 1.563rem;} 
+    main .site-intro.head-wrapper::before{content: initial;} 
+} 
+
+
+@media (max-width: 639px){
+	.head-content-wrapper {width: 100%;border-top: none;flex-direction: column-reverse;display: flex;align-items: flex-start;} 
+	.head-img{margin-top: 1.563vw;margin-right: 0;width: 100%;margin-bottom: 15.104vw;} 
+	.head-h1{margin-left: 4.17rem;} 
+	.head-logo { width: 23.45vw; top: -7.759vw; left: initial;right: 4.746vw;} 
+	main .site-intro.head-wrapper {padding-bottom: 2.917rem;margin-top: 2.263vw;} 
+	main .site-intro.head-wrapper::before{content: initial;} 
+}
