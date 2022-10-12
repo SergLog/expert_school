@@ -5,6 +5,8 @@ main .clinical-share-content {
 	margin-top: -9rem;
 }
 
+
+
 @media(max-width:1023px) {
 	main .clinical-share-content {
 		padding: 0;
@@ -12,7 +14,6 @@ main .clinical-share-content {
 		margin: 0;
 	}
 }
-
 
 main .clinical-share-content form {
 	display: flex;
@@ -55,6 +56,23 @@ main .clinical-share-content .fields .header {
 	border-bottom: 2px solid;
 	margin-top: 0.5rem;
 	margin-bottom: 3rem;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+main .clinical-share-content .fields .header .icon {
+	width: 1.56rem;
+	height: 1.56rem;
+	background: #EBEAE9;
+	background-image: url("../../img/plus.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+main .clinical-share-content .fields .header .icon.minus {
+	background-image: url("../../img/minus.svg");
 }
 
 main .clinical-share-content .fields .container-1,
@@ -62,7 +80,7 @@ main .clinical-share-content .fields .container-2,
 main .clinical-share-content .fields .container-3 {
 	display: flex;
 	width: 100%;
-	align-items: flex-end;
+	/* align-items: flex-end; */
 	justify-content: space-between;
 }
 
@@ -97,6 +115,8 @@ main .clinical-share-content .fields .gender-container {
 		margin-bottom: 4.5rem;
 	}
 }
+
+
 
 main .clinical-share-content .fields .ui-input-container,
 main .clinical-share-content .fields .ui-dropdown-container,
@@ -160,3 +180,4 @@ main .clinical-share-content .fields .ui-dropdown-container.marital-status {
 		width: 100%;
 	}
 }
+

@@ -80,3 +80,140 @@ function publishCase() {
     thanks.style.display = 'flex';
     upButton.click();
 };
+
+
+const visit2 = document.querySelector(".visit2 .icon");
+const visit2Container = document.querySelector(".visit2-container");
+const visit3 = document.querySelector(".visit3 .icon");
+const visit3Container = document.querySelector(".visit3-container");
+
+console.log(visit2Container);
+console.log(visit3Container.style.display);
+
+visit2Container.style.display === "none";
+visit3Container.style.display === "none";
+
+
+
+    visit2.addEventListener("click", () => {
+        if (visit2Container.style.display === "none") {
+            visit2Container.style.display = "block";
+            visit2.classList.remove("minus");
+          } else {
+            visit2Container.style.display = "none";
+            visit2.classList.add("minus");
+          }
+    });
+
+    visit3.addEventListener("click", () => {
+        if (visit3Container.style.display === "none") {
+            visit3Container.style.display = "block";
+            visit3.classList.remove("minus");
+          } else {
+            visit3Container.style.display = "none";
+            visit3.classList.add("minus");
+          }
+    });
+    
+
+    function checkFields(obj) {
+        let result = true;
+    
+        function setInvalidField(field) {
+            $(field).parent().addClass('error');
+            if (result) result = false;
+        }
+    
+        function setValidField(field) {
+            $(field).parent().removeClass('error');
+        }
+    
+        obj.find('input[type="text"]').each(function () {
+            let id = $(this)[0].id;
+            let val = $(this).val();
+            let el = $(this);
+            $(this).removeClass('error');
+    
+            if (id === 'age-year' || id === 'male' || id === 'female' || id === 'complaints' || id === 'diagnos' || id === 'dropdown') {
+                val.length < 1 ? setInvalidField(el) : setValidField(el);
+            }
+        });
+
+        obj.find('div.ui-textarea').each(function () {
+            console.log($(this));
+            let id = $(this)[0].id;
+            let text = $(this)[0].innerText;
+            let el = $(this);
+            $(this).removeClass('error');
+    
+            if (id === 'anamnez' || id === 'diagnostic' || id === 'recommend' || id === 'analysis' || id === 'diagnos' || id === 'dropdown') {
+
+                console.log(text);
+                console.log(text.length);
+                text.length < 1 ? setInvalidField(el) : setValidField(el);
+            }
+        });
+    
+        // obj.find('#education').each(function () {
+        //     let id = $(this)[0].id;
+        //     let val = $(this).val();
+        //     let el = $(this).parent();
+        //     $(this).removeClass('error');
+        //         val == null ? setInvalidField(el) : setValidField(el);            
+        // });
+
+        // obj.find('#maritalstatus').each(function () {
+        //     let id = $(this)[0].id;
+        //     let val = $(this).val();
+        //     let el = $(this).parent();
+        //     $(this).removeClass('error');            
+        //         val == null ? setInvalidField(el) : setValidField(el);            
+        // });
+    
+        return result;
+    }
+    
+    function submitForm(obj) {
+        if (checkFields(obj)) sendMessage(obj);
+    };
+    
+    function sendMessage(formObj) {
+        const msg = formObj.serialize();
+        const formName = formObj[0].id;
+        $.ajax({
+            type: 'POST',
+            url: '../PHPMailer.php',
+            data: msg,
+            success: function (data) {
+                if (data.status === 'success') {
+                    
+                }
+            },
+            error: function (xhr, str) {
+                doctors.style.display = 'none';
+    siteTitle.style.display = 'none';
+    content.style.display = 'none';
+    thanks.style.display = 'flex';
+    upButton.click();
+             
+                console.log('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    }
+    
+    $('body').on('submit', '#fields', function (e) {
+        e.preventDefault();
+        submitForm($('#fields'));
+    });
+    
+    $('#input[type="text"]').each(function () {
+        $(this).on("input", function () {
+            $(this).parent().removeClass('error');
+        });
+    });
+    
+    $('#dropdown').each(function () {
+        $(this).on("change", function () {
+            $(this).parent().parent().removeClass('error');
+        });
+    });

@@ -291,7 +291,7 @@ div.ui-textarea-container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	position: relative;
+	/* position: relative; */
 }
 
 div.ui-textarea-container:hover {
@@ -338,6 +338,7 @@ div.ui-textarea-container .ui-textarea {
 	line-height: 100%;
 	color: #000000;
 	font-weight: 500;
+	position: relative;
 }
 
 @media(max-width:1023px) {
@@ -362,8 +363,8 @@ div.ui-textarea-container .ui-textarea::before {
 	height: 1.46rem;
 	width: 28px;
     height: 28px;
-	right: -1px;
-	bottom: -1px;
+	right: -3px;
+	bottom: -3px;
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2IDFWMjZIMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0xMy41IDFWMTMuNUgxIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTIwIDFWMjBIMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
 }
 
@@ -390,6 +391,36 @@ div.ui-textarea-container .ui-textarea:focus::before {
 div.ui-textarea-container .ui-textarea:focus {
 	border: 1px solid #ED7A33;
 }
+}
+
+div.ui-textarea-container.error .ui-textarea {
+	outline: none;
+	border: 2px solid #ED7A33;
+	color: #ED7A33;
+}
+
+div.ui-textarea-container.error .ui-textarea-label {
+	color: #ED7A33;
+}
+
+div.ui-textarea-container p.error-text {
+	display: none;
+	margin-top: 6px;
+	margin-left: 26px;
+	color: #ED7A33;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+div.ui-textarea-container.error p.error-text {
+	display: block;
+}
+
+div.ui-textarea-container.error .ui-textarea::before,
+div.ui-textarea-container.error .ui-textarea::before {
+	outline-color: #ED7A33;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2IDFWMjZIMSIgc3Ryb2tlPSIjRUQ3QTMzIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEzLjUgMVYxMy41SDEiIHN0cm9rZT0iI0VEN0EzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0yMCAxVjIwSDEiIHN0cm9rZT0iI0VEN0EzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
