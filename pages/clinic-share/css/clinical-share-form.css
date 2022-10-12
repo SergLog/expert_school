@@ -5,6 +5,10 @@ main .clinical-share-content {
 	margin-top: -9rem;
 }
 
+.clinical-share-content .visit2-container,
+.clinical-share-content .visit3-container {
+	width: 100%;
+}
 
 
 @media(max-width:1023px) {

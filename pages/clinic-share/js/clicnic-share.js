@@ -90,28 +90,26 @@ const visit3Container = document.querySelector(".visit3-container");
 console.log(visit2Container);
 console.log(visit3Container.style.display);
 
-visit2Container.style.display === "none";
-visit3Container.style.display === "none";
-
-
+visit2Container.style.display = "none";
+visit3Container.style.display = "none";
 
     visit2.addEventListener("click", () => {
         if (visit2Container.style.display === "none") {
             visit2Container.style.display = "block";
-            visit2.classList.remove("minus");
+            visit2.classList.add("minus");
           } else {
             visit2Container.style.display = "none";
-            visit2.classList.add("minus");
+            visit2.classList.remove("minus");
           }
     });
 
     visit3.addEventListener("click", () => {
         if (visit3Container.style.display === "none") {
             visit3Container.style.display = "block";
-            visit3.classList.remove("minus");
+            visit3.classList.add("minus");
           } else {
             visit3Container.style.display = "none";
-            visit3.classList.add("minus");
+            visit3.classList.remove("minus");
           }
     });
     
