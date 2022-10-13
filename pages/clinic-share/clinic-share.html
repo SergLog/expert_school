@@ -119,6 +119,7 @@
               </div>
             </div>
           </div>
+          <div class="tablet-title-text">Опубликуйте один самый интересный<br>клинический случайиз вашей практики!</div>
         </div>
         <div class="clinical-share-content">
           <div class="fields">
@@ -154,8 +155,10 @@
                     <div class="ui-select-container">
                       <select class="ui-dropdown" id="education">
                         <option value="" disabled selected style='display:none;'></option>
-                        <option value="val">Высшее</option>
-                        <option value="val">Среднее</option>
+                        <option value="val">Полное высшее</option>
+                        <option value="val">Не полное высшее</option>
+                        <option value="val">Специальное</option>
+                        <option value="val">Среднеспециальное</option>
                       </select>
                     </div>
                     <p class="error-text">Ошибка ввода</p>
@@ -163,16 +166,27 @@
                 </div>
                 <div class="container-2">
                   <div class="gender-container">
-                    <div class="ui-input-container gender">
-                      <label class="ui-input-label" for="male">ПОЛ</label>
-                      <input class="ui-input" type="text" placeholder="МУЖСКОЙ" id="male" />
-                      <p class="error-text">Ошибка ввода</p>
-                    </div>
-                    <div class="ui-input-container gender">
-                      <label class="ui-input-label no-label" for="female"></label>
+                    <fieldset>
+                      <div class="male-container">
+                        <!-- <label class="ui-input-label" for="age-day">Возраст</label> -->
+                        <input type="radio" name="gender" id="male">
+                        <!-- <div class="male">МУЖСКОЙ</div> -->
+                      </div>
+                      <div class="male-container">
+                        <input type="radio" name="gender" id="female">
+                        <!-- <div class="female">ЖЕНСКИЙ</div> -->
+                      </div>
+                    </fieldset>
+                    <!-- <div class="ui-input-container gender">
+                                          <label class="ui-input-label" for="male">ПОЛ</label>
+                                          <input class="ui-input" type="text" placeholder="МУЖСКОЙ" id="male" />
+                                          <p class="error-text">Ошибка ввода</p>
+                                        </div>
+                                        <div class="ui-input-container gender">
+                                          <label class="ui-input-label no-label" for="female"></label>
                       <input class="ui-input" type="text" placeholder="ЖЕНСКИЙ" id="female" />
                       <p class="error-text">Ошибка ввода</p>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="ui-dropdown-container marital-status">
                     <label class="ui-dropdown-label" for="maritalstatus">семейное положение</label>

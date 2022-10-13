@@ -3,6 +3,10 @@ a.ui-link {
 	color: #000000;
 }
 
+div {
+	font-family: 'DINPro', sans-serif;
+}
+
 /* **********ui-dropdown********** */
 div.ui-dropdown-container {
 	display: flex;
@@ -12,7 +16,7 @@ div.ui-dropdown-container {
 
 div.ui-dropdown-container .ui-dropdown-label {
 	font-size: 1.04rem;
-	margin-bottom: -0.78rem;
+	margin-bottom: -0.5rem;
 	margin-left: 1.09rem;
 	margin-right: 1.09rem;
 	padding: 0 6px 0 6px;
@@ -75,6 +79,7 @@ div.ui-dropdown-container .ui-dropdown {
 	border: none;
 	margin-top: -5px;
 	background: transparent;
+	font-family: 'DINPro', sans-serif;
 }
 
 div.ui-dropdown-container .ui-dropdown option {
@@ -210,6 +215,7 @@ div.ui-input-container .ui-input {
 	line-height: 100%;
 	appearance: none;
 	background-color: #EBEAE9;
+	font-family: 'DINPro', sans-serif;
 }
 
 div.ui-input-container .ui-input::placeholder {
@@ -337,7 +343,7 @@ div.ui-textarea-container .ui-textarea {
 	font-size: 24px;
 	line-height: 100%;
 	color: #000000;
-	font-weight: 500;
+	font-weight: 400;
 	position: relative;
 }
 

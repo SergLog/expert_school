@@ -320,6 +320,29 @@ main .site-intro .site-intro-text .empty-row {
 	}
 }
 
+main .site-intro .tablet-title-text {
+	display: none;	
+	font-size: 3.125rem;
+	order: 3;
+	margin: 0 4.43rem;
+	margin-bottom: 5.47rem;
+	padding-bottom: 3rem;
+	border-bottom: 2px solid;
+}
+
+@media(max-width:1023px) {
+	main .site-intro .tablet-title-text {
+		display: block;
+	}
+}
+
+@media(max-width:639px) {
+	main .site-intro .tablet-title-text {
+		border-bottom: 1px solid;
+		font-size: 4.27rem;
+	}
+}
+
 .clinic-share-thanks {
 	display: none;
 	flex-flow: column;    

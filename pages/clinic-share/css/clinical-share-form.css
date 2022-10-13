@@ -64,6 +64,18 @@ main .clinical-share-content .fields .header {
 	display: flex;
 	align-items: center;
     justify-content: space-between;
+	margin-top: 2.6rem;
+	text-transform: uppercase;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .header {
+		border-bottom: 1px solid;
+	}
+}
+
+main .clinical-share-content .fields .header.visit3 {
+	margin-top: 0;
 }
 
 main .clinical-share-content .fields .header .icon {
@@ -76,6 +88,14 @@ main .clinical-share-content .fields .header .icon {
 	cursor: pointer;
 }
 
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .header .icon {
+		width: 3.56rem;
+		height: 3.56rem;
+	}
+}
+
+
 main .clinical-share-content .fields .header .icon.minus {
 	background-image: url("../../img/minus.svg");
 }
@@ -87,6 +107,14 @@ main .clinical-share-content .fields .container-3 {
 	width: 100%;
 	/* align-items: flex-end; */
 	justify-content: space-between;
+}
+
+main .clinical-share-content .fields .container-1,
+main .clinical-share-content .fields .container-3,
+main .clinical-share-content .fields .ui-input-container.complaints,
+main .clinical-share-content .fields .ui-textarea-container,
+main .clinical-share-content .fields .ui-button-container {
+	margin-bottom: 2.6rem
 }
 
 @media(max-width:1023px) {
@@ -105,6 +133,85 @@ main .clinical-share-content .fields .gender-container {
 }
 
 @media(max-width:1023px) {
+	main .clinical-share-content .fields .age-container,
+main .clinical-share-content .fields .gender-container {
+		margin-bottom: 2.6rem;
+	}
+}
+
+main .clinical-share-content .fields .gender-container input {
+	appearance: none;
+    text-align: center;
+}
+
+main .clinical-share-content .fields .gender-container fieldset {
+	display: flex;
+	border: none;
+	font-family: inherit;
+	align-items: center;
+	margin-top: 0.83rem;
+
+}
+
+main .clinical-share-content .fields .gender-container #male::after,
+main .clinical-share-content .fields .gender-container #female::after {
+	display: inline-block;
+	content: "МУЖСКОЙ";
+	font-family: 'DINPro', sans-serif;
+    /* padding: 23px 1.85rem 23px 1.85rem; */
+    border: 2px solid #000000;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #EBEAE9;
+	height: 76px;
+	width: 10.1rem;
+	margin-right: 1.3rem;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .gender-container #male::after,
+	main .clinical-share-content .fields .gender-container #female::after {
+		font-size: 2.34rem;
+		width: 43.5rem;
+		height: 50px;
+	}
+}
+
+@media(max-width:639px) {
+	main .clinical-share-content .fields .gender-container #male::after,
+	main .clinical-share-content .fields .gender-container #female::after {
+		border: 1px solid;
+	}
+}
+
+main .clinical-share-content .fields .gender-container #male:hover::after,
+main .clinical-share-content .fields .gender-container #female:hover::after {
+	background: #DAD6D2;
+	font-weight: 500;
+}
+
+main .clinical-share-content .fields .gender-container #male:checked::after,
+main .clinical-share-content .fields .gender-container #female:checked::after {
+	background: #ED7A33;
+	font-weight: 500;
+}
+
+main .clinical-share-content .fields .gender-container #female::after {
+	content: "ЖЕНСКИЙ";
+	margin-right: 0;
+}
+
+
+@media(max-width:1023px) {
+	main .clinical-share-content .fields .gender-container #male::after {
+		margin-right: 4.5rem;
+	}
+}
+
+@media(max-width:1023px) {
 
 	main .clinical-share-content .fields .age-container,
 	main .clinical-share-content .fields .gender-container {
@@ -116,7 +223,7 @@ main .clinical-share-content .fields .gender-container {
 @media(max-width:1023px) {
 	main .clinical-share-content .fields .header {
 		font-size: 3.91rem;
-		margin-top: 0.5rem;
+		/* margin-top: 0.5rem; */
 		margin-bottom: 4.5rem;
 	}
 }
@@ -127,7 +234,7 @@ main .clinical-share-content .fields .ui-input-container,
 main .clinical-share-content .fields .ui-dropdown-container,
 main .clinical-share-content .fields .ui-textarea-container,
 main .clinical-share-content .fields .ui-button-container {
-	margin-bottom: 2.6rem;
+	/* margin-bottom: 2.6rem; */
 }
 
 /* main .clinical-share-content .fields div.ui-input-container .ui-input {
@@ -185,4 +292,13 @@ main .clinical-share-content .fields .ui-dropdown-container.marital-status {
 		width: 100%;
 	}
 }
+
+@media(max-width:639px) {
+	footer {
+		border-top: 1px solid !important;
+
+	}
+}
+
+
 
