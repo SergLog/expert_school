@@ -15,17 +15,18 @@
   <link href="../css/nav.css" type="text/css" rel="stylesheet" />
   <link href="../css/footer.css" type="text/css" rel="stylesheet" />
   <link href="../css/header.css" type="text/css" rel="stylesheet" />
+  <link href="../css/ui.css" type="text/css" rel="stylesheet" />
   <link href="../css/logo.css" type="text/css" rel="stylesheet" />
   <link href="../css/recomendations.css" type="text/css" rel="stylesheet" />
-  <link href="css/webinar-intro.css" type="text/css" rel="stylesheet" />  
+  <link href="css/webinar-intro.css" type="text/css" rel="stylesheet" />
   <link href="../css/slider.css" type="text/css" rel="stylesheet" />
   <script src="../../js/jquery.js?v=106" defer></script>
   <script src="../../js/slick.min.js?v=106" defer></script>
   <link href="../css/slider.css" type="text/css" rel="stylesheet" />
-  <link href="css/webinar-speakers.css" type="text/css" rel="stylesheet" /> 
-  <link href="css/webinar-tags.css" type="text/css" rel="stylesheet" /> 
-  <link href="css/webinar-poll.css" type="text/css" rel="stylesheet" /> 
-  <link href="css/webinar-video-stub.css" type="text/css" rel="stylesheet" /> 
+  <link href="css/webinar-speakers.css" type="text/css" rel="stylesheet" />
+  <link href="css/webinar-tags.css" type="text/css" rel="stylesheet" />
+  <link href="css/webinar-poll.css" type="text/css" rel="stylesheet" />
+  <link href="css/webinar-video-stub.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -47,7 +48,7 @@
           <form id="expanded-nav-search">
             <input placeholder="Что вы хотите найти?">
             <button class="search-icon"></button>
-          </form>         
+          </form>
         </div>
         <div class="menu-list">
           <ul>
@@ -57,7 +58,7 @@
             <li><a class="ui-link" href="ya.ru">Новости</a></li>
           </ul>
         </div>
-      </div>      
+      </div>
       <a href="#" class="ui-link nav-user-icon"></a>
     </nav>
     <nav class="tablet-nav-menu">
@@ -70,17 +71,17 @@
         <form id="tablet-search">
           <input placeholder="Поиск по сайту">
           <button class="search-icon"></button>
-        </form>         
+        </form>
       </div>
       <div class="menu-list">
         <ul>
           <li><a class="ui-link" href="ya.ru">Вебинары</a></li>
           <li><a class="ui-link" href="ya.ru">Клинические случаи</a></li>
-          <li><a class="ui-link" href="ya.ru">Поделиться клиническим  случаем</a></li>          
+          <li><a class="ui-link" href="ya.ru">Поделиться клиническим случаем</a></li>
           <li><a class="ui-link" href="ya.ru">Обзоры</a></li>
           <li><a class="ui-link" href="ya.ru">Новости</a></li>
         </ul>
-      </div> 
+      </div>
       <a href="#" class="ui-link nav-user-icon"></a>
     </nav>
     <div class="content-container">
@@ -93,9 +94,9 @@
             <a class="ui-link" href="#">Вебинары</a>
             <a class="ui-link" href="#">Функциональные заболевания органов пищеварения: междисциплинарная проблема</a>
           </div>
-        </div>        
+        </div>
       </header>
-      <main>        
+      <main>
         <div class="video-container">
           <div class="video-stub">
             <div class="speakers">
@@ -112,26 +113,55 @@
             </div>
             <div class="webinar tablet">
               <div>
-              <span class="soon">СКОРО</span>
-              <div class="date-container">
-                <div>
-                  <p class="planned-time">Начало в 19:00</p>
-                  <div class="planned-dayweek">Вторник</div>
+                <span class="soon">СКОРО</span>
+                <div class="date-container">
+                  <div>
+                    <p class="planned-time">Начало в 19:00</p>
+                    <div class="planned-dayweek">Вторник</div>
+                  </div>
+                  <div class="date-separator"></div>
+                  <div class="planned-date">20<span>сентября</span></div>
                 </div>
-                <div class="date-separator"></div>
-                <div class="planned-date">20<span>сентября</span></div>
+              </div>
+              <div class="webinar-description">
+                <p class="title">Тревога: от соматовегетативных<br> до когнитивных расстройств</p>
+
+                <p class="speakers-fio">Медведев Владимир Эрнстович</p>
+                <p class="speakers-fio">Федотова Анастасия Валерьевна</p>
               </div>
             </div>
-            <div class="webinar-description">
-              <p class="title">Тревога: от соматовегетативных<br> до когнитивных расстройств</p>         
-              
-              <p class="speakers-fio">Медведев Владимир Эрнстович</p>
-              <p class="speakers-fio">Федотова Анастасия Валерьевна</p>
-            </div>
-            </div>            
-          </div>             
+          </div>
         </div>
-        <div class="registration-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>   
+        <div class="registration-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        <div class="tab-bar">
+          <div class="tab-bar-likes">
+          <div class="ui-like-container like">
+            <p class="text">Нравится</p>
+            <div class="icon"></div>
+          </div>
+          <div class="ui-like-container unlike">
+            <p class="text">Не нравится</p>
+            <div class="icon"></div>
+          </div>
+        </div>
+        <div class="tab-bar-others">
+          <div class="ui-share-container">
+            <p class="text">Поделиться</p>
+            <div class="icon"></div>
+          </div>
+          <div class="ui-save-container">
+            <p class="text">Сохранить <span class="material">материал</span></p>
+            <div class="icon"></div>
+          </div>
+          <div class="ui-views-container">
+            <div class="container">
+            <p class="text">Просмотров:</p>
+            <p class="count">143</p> 
+          </div>
+            <div class="icon"></div>
+          </div>
+        </div>
+        </div>
         <div class="webinars-speakers">
           <div class="webinars-speakers-theme">
             <div class="webinars-speakers-head">
@@ -139,48 +169,59 @@
             </div>
 
             <div class="webinars-speakers-videonav-wrap">
-              <h3 class="webinars-speakers-bigtext">Функциональные заболевания органов пищеварения: междисциплинарная проблема</h3>
+              <h3 class="webinars-speakers-bigtext">Функциональные заболевания органов пищеварения: междисциплинарная
+                проблема</h3>
               <p class="webinars-speakers-videonav-title">Навигация по видео</p>
               <div class="webinars-speakers-videonav-list">
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
                 <div class="webinars-speakers-videonav-item">
                   <div class="webinars-speakers-videonav-item-time">00:00</div>
-                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения: междисциплинарная проблема</div>
+                  <div class="webinars-speakers-videonav-item-desc">Функциональные заболевания органов пищеварения:
+                    междисциплинарная проблема</div>
                 </div>
               </div>
-              <div class="webinars-speakers-videonav-more"><span class="less">Показать меньше таймкодов</span> <span class="more">Показать больше таймкодов</span></div>
- 
+              <div class="webinars-speakers-videonav-more"><span class="less">Показать меньше таймкодов</span> <span
+                  class="more">Показать больше таймкодов</span></div>
+
             </div>
 
           </div>
@@ -196,14 +237,17 @@
                 </div>
                 <div class="webinars-speakers-person-content">
                   <p>Главный внештатный гастроэнтеролог Департамента здравоохранения г.&nbsp;Москвы, </p>
-                  <p>Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор</p>
+                  <p>Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного
+                    тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор</p>
                 </div>
                 <div class="webinars-speakers-person-more-wrap">
                   <div class="webinars-speakers-person-blokquote">
-                    “Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор”
+                    “Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного
+                    тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор”
                   </div>
                 </div>
-                <div class="webinars-speakers-person-more-btn"><span class="less">Скрыть</span> <span class="more">Подробнее о спикере</span></div>
+                <div class="webinars-speakers-person-more-btn"><span class="less">Скрыть</span> <span
+                    class="more">Подробнее о спикере</span></div>
               </div>
 
               <div class="webinars-speakers-staff-item">
@@ -213,14 +257,17 @@
                 </div>
                 <div class="webinars-speakers-person-content">
                   <p>Главный внештатный гастроэнтеролог Департамента здравоохранения г. Москвы, </p>
-                  <p>Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор</p>
+                  <p>Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного
+                    тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор</p>
                 </div>
                 <div class="webinars-speakers-person-more-wrap">
                   <div class="webinars-speakers-person-blokquote">
-                    “Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор”
+                    “Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного
+                    тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор”
                   </div>
                 </div>
-                <div class="webinars-speakers-person-more-btn"><span class="less">Скрыть</span> <span class="more">Подробнее о спикере</span></div>
+                <div class="webinars-speakers-person-more-btn"><span class="less">Скрыть</span> <span
+                    class="more">Подробнее о спикере</span></div>
               </div>
 
               <div class="webinars-speakers-staff-item">
@@ -230,17 +277,20 @@
                 </div>
                 <div class="webinars-speakers-person-content">
                   <p>Главный внештатный гастроэнтеролог Департамента здравоохранения г. Москвы, </p>
-                  <p>Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор</p>
+                  <p>Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного
+                    тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор</p>
                 </div>
                 <div class="webinars-speakers-person-more-wrap">
                   <div class="webinars-speakers-person-blokquote">
-                    “Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор”
+                    “Заведующий отделом патологии поджелудочной железы, желчных путей и верхних отделов пищеварительного
+                    тракта Московского клинического научного центра им. А.С. Логинова ДЗМ, д.м.н., профессор”
                   </div>
                 </div>
-                <div class="webinars-speakers-person-more-btn"><span class="less">Скрыть</span> <span class="more">Подробнее о спикере</span></div>
+                <div class="webinars-speakers-person-more-btn"><span class="less">Скрыть</span> <span
+                    class="more">Подробнее о спикере</span></div>
               </div>
 
-              
+
             </div>
 
           </div>
@@ -341,9 +391,9 @@
         </div>
         <div class="webinars-poll-end">
           <div class="text-container">
-          <p class="text1">Спасибо!</p>
-          <p class="text2">Ваш ответ отправлен, благодаря вашим<br> ответам сервис становится лучше!</p>
-        </div>
+            <p class="text1">Спасибо!</p>
+            <p class="text2">Ваш ответ отправлен, благодаря вашим<br> ответам сервис становится лучше!</p>
+          </div>
           <img class="image" src="../img/poll_end.png"></img>
         </div>
         <div class="recomendations">
@@ -416,21 +466,22 @@
         <div class="footer-container">
           <div class="desktop">
             <div class="first-container">
-            <a class="up-button" href="#top"></a>
-            <div class="site-links">
-              <p>© 2022</p>
-              <div class="separator">&#x2758;</div>
-              <a class="ui-link" href="#">Условия использования</a>
-              <div class="separator">&#x2758;</div>
-              <a class="ui-link" href="#">Политика конфиденциальности</a>
-              <div class="separator">&#x2758;</div>              
-              <a class="ui-link" href="#">Обратная связь</a>
+              <a class="up-button" href="#top"></a>
+              <div class="site-links">
+                <p>© 2022</p>
+                <div class="separator">&#x2758;</div>
+                <a class="ui-link" href="#">Условия использования</a>
+                <div class="separator">&#x2758;</div>
+                <a class="ui-link" href="#">Политика конфиденциальности</a>
+                <div class="separator">&#x2758;</div>
+                <a class="ui-link" href="#">Обратная связь</a>
+              </div>
             </div>
-          </div>
-          <div class="second-container">
-            <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников</div>
-            <img class="logo" src="../img/logo.svg"></img>
-          </div>
+            <div class="second-container">
+              <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
+              </div>
+              <img class="logo" src="../img/logo.svg"></img>
+            </div>
           </div>
           <div class="tablet">
             <div class="first-container">
@@ -440,7 +491,7 @@
             <div class="second-container">
               <div class="site-links">
                 <p>© 2022</p>
-                <a class="ui-link" href="#">Условия использования</a>                
+                <a class="ui-link" href="#">Условия использования</a>
                 <a class="ui-link" href="#">Политика конфиденциальности</a>
                 <div class="separator"></div>
                 <a class="ui-link" href="#">Обратная связь</a>
