@@ -152,7 +152,7 @@ main .site-intro .site-title {
 @media(max-width:639px) {
 	main .site-intro .site-title {
 		padding-left: 4.17rem;
-		font-size: 7.8rem;
+		font-size: 7.5rem;
 		/* line-height: 13.67rem; */
 		line-height: 100%;
 		margin-top: 6.4rem;
@@ -362,4 +362,11 @@ main .site-intro .tablet-title-text {
 	font-size: 1.67rem;
 	margin-top: 1.5rem;	
 	margin-left: 8.13rem;
+}
+
+@media (max-width: 1023px) {
+main .site-intro .site-title .title-tablet.aos-animate .text2::after {
+margin-left: 0;
+width: 99%;
+}
 }
