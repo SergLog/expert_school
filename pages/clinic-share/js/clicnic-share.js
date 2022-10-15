@@ -114,9 +114,34 @@ visit3.addEventListener("click", () => {
     }
 });
 
+const visit2Text = document.querySelector(".visit2 p");
+const visit3Text = document.querySelector(".visit3 p");
+
+const visit2Errors = document.querySelector(".visit2 error");
+const visit3Errors = document.querySelector(".visit3 error");
+
+function checkVisits() {
+    let errors2 = document.querySelector(".visit2-container .error");
+    if (errors2 != null) {
+        visit2Text.style.color = 'red';
+    }
+    else {
+        visit2Text.style.color = 'inherit';
+    }
+
+    let errors3 = document.querySelector(".visit3-container .error");
+    if (errors3 != null) {
+        visit3Text.style.color = 'red';
+    }
+    else {
+        visit3Text.style.color = 'inherit';
+    }
+}
+
 
 function checkFields(obj) {
     let result = true;
+
 
     function setInvalidField(field) {
         $(field).parent().addClass('error');
@@ -127,8 +152,7 @@ function checkFields(obj) {
         $(field).parent().removeClass('error');
     }
 
-    obj.find('.active-container input[type="text"]').each(function () {
-        console.log($(this)[0]);
+    obj.find('input[type="text"]').each(function () {
         let id = $(this)[0].id;
         let val = $(this).val();
         let el = $(this);
@@ -136,13 +160,13 @@ function checkFields(obj) {
 
         numnberRegex = /^[0-9]+$/;
 
-        if (id === 'male' || id === 'female' || id === 'complaints' || id === 'diagnos' || id === 'dropdown') {
+        if (id === 'name' || id === 'male' || id === 'female' || id === 'complaints' || id === 'diagnos' || id === 'dropdown') {
             val.length < 1 ? setInvalidField(el) : setValidField(el);
         }
 
         if (id === 'age-year') {
             numnberRegex.test(val) && val.length < 5 ? setValidField(el) : setInvalidField(el);
-        }
+        }        
 
         // if(!obj.find('#male')[0].checked && obj.find('.error').length == 0) {
         //     result = false;
@@ -152,9 +176,11 @@ function checkFields(obj) {
         // if (id === 'age-month') {
         //     val.length == 0 || (numnberRegex.test(val) && val.length > 0 && val.length < 13 ) ? setValidField(el) : setInvalidField(el);
         // }
+        
+
     });
 
-    obj.find('.active-container div.ui-textarea').each(function () {
+    obj.find('div.ui-textarea').each(function () {
         let id = $(this)[0].id;
         let text = $(this)[0].innerText;
         let el = $(this);
@@ -181,6 +207,7 @@ function checkFields(obj) {
     //         val == null ? setInvalidField(el) : setValidField(el);            
     // });
 
+    checkVisits();
     return result;
 }
 

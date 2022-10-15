@@ -334,6 +334,10 @@ div.ui-textarea-container .ui-textarea-label {
 	}
 }
 
+div.ui-textarea-container.required .ui-textarea-label::after {
+	content: "*";
+}
+
 div.ui-textarea-container .ui-textarea {
 	padding: 15px 24px 15px 24px;
 	border: 2px solid #000000;
