@@ -636,6 +636,14 @@ div.ui-textarea-container.error .ui-textarea::before {
 	margin-right: 1.77rem;
 }
 
+@media(max-width:1023px) {
+	.tab-bar .ui-like-container.like,
+.tab-bar .ui-share-container,
+.tab-bar .ui-save-container {
+	margin-right: 1rem;
+	}
+}
+
 /* **********ui-likes********** */
 div.ui-like-container {
 	display: flex;
@@ -661,6 +669,12 @@ div.ui-like-container .text {
 	}
 }
 
+@media(max-width:639px) {
+	div.ui-like-container .text {
+		font-size: 3rem;
+	}
+}
+
 div.ui-like-container .icon {
 	width: 1.56rem;
 	height: 1.62rem;
@@ -678,6 +692,13 @@ div.ui-like-container .icon {
 		height: 2.6rem;
 		margin-left: 0;
 		cursor: pointer;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-like-container .icon {
+		width: 3.8rem;
+		height: 3.8rem;
 	}
 }
 
@@ -724,6 +745,12 @@ div.ui-share-container .text {
 	}
 }
 
+@media(max-width:639px) {
+	div.ui-share-container .text {
+		font-size: 3rem;
+	}
+}
+
 div.ui-share-container .icon {
 	cursor: pointer;
 	width: 1.56rem;
@@ -741,6 +768,19 @@ div.ui-share-container .icon {
 		width: 2.5rem;
 		height: 2.5rem;
 		margin-left: 0;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-share-container .icon {
+		width: 3.6rem;
+		height: 3.6rem;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-like-container .text {
+		font-size: 3rem;
 	}
 }
 
@@ -781,6 +821,12 @@ div.ui-save-container .text {
 	}
 }
 
+@media(max-width:639px) {
+	div.ui-save-container .text {
+		font-size: 3rem;
+	}
+}
+
 div.ui-save-container .icon {
 	cursor: pointer;
 	width: 1.3rem;
@@ -798,6 +844,13 @@ div.ui-save-container .icon {
 		width: 2.3rem;
 		height: 2.5rem;
 		margin-left: 0;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-save-container .icon {
+		width: 3.5rem;
+		height: 3.8rem;
 	}
 }
 
@@ -842,6 +895,12 @@ div.ui-views-container .text {
 	}
 }
 
+@media(max-width:639px) {
+	div.ui-views-container .text {
+		font-size: 3rem;
+	}
+}
+
 div.ui-views-container .count {
 	font-weight: 400;
 	font-size: 1.25rem;
@@ -851,6 +910,12 @@ div.ui-views-container .count {
 @media(max-width:1023px) {
 	div.ui-views-container .count {
 		font-size: 2.34rem;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-views-container .count {
+		font-size: 3rem;
 	}
 }
 
@@ -867,8 +932,15 @@ div.ui-views-container .icon {
 @media(max-width:1023px) {
 	div.ui-views-container .icon {
 		order: 1;
-		width: 2.3rem;
+		width: 3.3rem;
 		height: 2.5rem;
 		margin-left: 0;
+	}
+}
+
+@media(max-width:639px) {
+	div.ui-views-container .icon {
+		width: 4.5rem;
+		height: 3.8rem;
 	}
 }
