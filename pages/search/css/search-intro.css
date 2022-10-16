@@ -6,6 +6,8 @@ main .site-intro {
 	flex-wrap: wrap;
 	padding-left: 1.25rem;
 	/* padding-bottom: 9.9rem; */
+	display: flex;
+	justify-content: space-between;
 }
 
 @media(max-width:1023px) {
