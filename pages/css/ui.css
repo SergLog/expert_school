@@ -353,6 +353,9 @@ div.ui-textarea-container .ui-textarea-label {
 @media(max-width:639px) {
 	div.ui-textarea-container .ui-textarea-label {
 		font-size: 2.3rem;
+		/* font-size: 3.733.3rem;
+		margin-bottom: -0.8rem;
+		margin-left: 2.667rem; */
 	}
 }
 
@@ -573,6 +576,7 @@ div.ui-textarea-container.error .ui-textarea::before {
 		height: 50px;
 		/* height: 6.51rem; */
 		border: 1px solid #000000;
+		/* font-size: 3.733rem; */
 	}
 }
 
