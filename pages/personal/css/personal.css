@@ -56,7 +56,13 @@
 
 @media(max-width:1023px) {
 	.personal-form {
-		padding: 3.49rem 15rem 15.16rem 15rem;
+		padding: 3.49rem 10rem 15.16rem 10rem;
+	}
+}
+
+@media(max-width:639px) {
+	.personal-form {
+		padding: 3.49rem 7rem 15.16rem 7rem;
 	}
 }
 
@@ -160,6 +166,12 @@
     align-items: center;
 	padding-left: 1.25rem;
 	border: 0;
+}
+
+@media(max-width:639px) {
+	.personal-form .ui-button-container a {
+		font-size: 3rem;
+	}	
 }
 
 .personal-form .ui-button-container .icon {
