@@ -62,7 +62,7 @@
 
 @media(max-width:639px) {
 	.personal-form {
-		padding: 3.49rem 7rem 15.16rem 7rem;
+		padding: 3.49rem 6rem 15.16rem 6rem;
 	}
 }
 
@@ -189,6 +189,7 @@
 	.personal-form .ui-button-container .icon {
 		width: 1rem;
 		height: 1.8rem;
+		padding-right: 5rem;
 	}	
 }
 
