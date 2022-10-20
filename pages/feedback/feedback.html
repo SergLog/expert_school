@@ -12,25 +12,19 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script src="../../js/jquery.js?v=106" defer></script>
-  <script src="../../js/slick.min.js?v=106" defer></script>
-  <link href="../css/head.css" type="text/css" rel="stylesheet" />
-  <link href="../css/header.css" type="text/css" rel="stylesheet" />
-  <link href="../css/nav.css" type="text/css" rel="stylesheet" />
-  <link href="../css/ui.css" type="text/css" rel="stylesheet" />
-  <link href="../css/logo.css" type="text/css" rel="stylesheet" />
-  <link href="css/drafts-intro.css" type="text/css" rel="stylesheet" />
-  <link href="css/drafts-list.css" type="text/css" rel="stylesheet" />
-  <link href="../css/footer.css" type="text/css" rel="stylesheet" />
   <link href="../css/aos.css" type="text/css" rel="stylesheet" />
-  <link href="../css/recomendations.css" type="text/css" rel="stylesheet" />
-  <link href="../css/slider.css" type="text/css" rel="stylesheet" />
-
+  <link href="css/feedback.css" type="text/css" rel="stylesheet" />
+  <link href="../css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="../css/footer.css" type="text/css" rel="stylesheet" />
+  <link href="../css/header.css" type="text/css" rel="stylesheet" />
+  <link href="../css/logo.css" type="text/css" rel="stylesheet" />
+  <link href="../css/ui.css" type="text/css" rel="stylesheet" />
+  <link href="css/feedback-intro.css" type="text/css" rel="stylesheet" />
+  <script src="../js/main.js?v=106" defer></script>
 </head>
 
 <body>
-  <div name="top" class="page search-list20">
-    <!------------------ UPDATE -------------------->
+  <div name="top" class="page clinic20">
     <nav>
       <div class="nav-burger-icon"></div>
       <form id="nav-search">
@@ -52,7 +46,7 @@
         </div>
         <div class="menu-list">
           <ul>
-            <li><a class="ui-link" href="search.html">Вебинары</a></li>
+            <li><a class="ui-link" href="webinars.html">Вебинары</a></li>
             <li><a class="ui-link" href="ya.ru">Клинические<br>случаи</a></li>
             <li><a class="ui-link" href="ya.ru">Обзоры</a></li>
             <li><a class="ui-link" href="ya.ru">Новости</a></li>
@@ -88,83 +82,50 @@
       <header>
         <div class="header-burger-icon"></div>
         <div class="header-search-icon"></div>
+        <img class="logo" src="../img/logo.svg"></img>
       </header>
       <main>
-
-
-        <div class="site-intro head-wrapper">
-          <img src="../img/logo.svg" alt="школа экспертов" class="head-logo">
-          <div class="head-content-wrapper">
-            <h1 class="head-h1"><span>Черновики</span> </h1>
-            <div class="head-img">
-              <img src="./img/saved-main.jpg" alt="Результаты поиска">
-            </div>
+        <div class="site-intro">          
+          <img class="site-logo" src="../img/logo.svg"></img>
+          <div style="order: 1" class="breadcrumbs">
+            <a class="ui-link" href="#">Клинические случаи</a>
+            <!-- <a class="ui-link" href="#">ХЛЕБНЫЕ КРОШКИ</a> -->
           </div>
         </div>
-
-
-      </main>
-      <footer>
-        <div class="footer-container">
-          <div class="desktop">
-            <div class="first-container">
-              <a class="up-button" href="#top"></a>
-              <div class="site-links">
-                <p>© 2022</p>
-                <div class="separator">&#x2758;</div>
-                <a class="ui-link" href="#">Условия использования</a>
-                <div class="separator">&#x2758;</div>
-                <a class="ui-link" href="#">Политика конфиденциальности</a>
-                <div class="separator">&#x2758;</div>
-                <a class="ui-link" href="#">Обратная связь</a>
-              </div>
-            </div>
-            <div class="second-container">
-              <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
-              </div>
-              <img class="logo" src="../img/logo.svg"></img>
-            </div>
-          </div>
-          <div class="tablet">
-            <div class="first-container">
-              <img class="logo" src="../img/logo.svg"></img>
-              <a class="up-button" href="#top"></a>
-            </div>
-            <div class="second-container">
-              <div class="site-links">
-                <p>© 2022</p>
-                <a class="ui-link" href="#">Условия использования</a>
-                <a class="ui-link" href="#">Политика конфиденциальности</a>
-                <div class="separator"></div>
-                <a class="ui-link" href="#">Обратная связь</a>
-              </div>
-              <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
-              </div>
-            </div>
-          </div>
-          <div class="mobile">
-            <div class="first-container">
-              <img class="logo" src="../img/logo.svg"></img>
-              <a class="up-button" href="#top"></a>
-            </div>
-            <div class="second-container">
-              <div class="site-links">
-                <p>© 2022</p>
-                <a class="ui-link" href="#">Условия использования</a>
-                <a class="ui-link" href="#">Политика конфиденциальности</a>
-                <a class="ui-link" href="#">Обратная связь</a>
-              </div>
-              <div class="site-description">Этот сайт предназначен для медицинских<br>и фармацевтических работников
-              </div>
-            </div>
-          </div>
+        <div class="feedback-header">
+          <p class="title">обратная<br>связь</p>
+          <p class="description">напишите ваше сообщение</p>
         </div>
-      </footer>
+        <div class="feedback-form">
+          <form id="feedback">
+            <div class="ui-dropdown-container theme">
+              <label class="ui-dropdown-label" for="theme">Тема</label>
+              <div class="ui-select-container">
+                <select class="ui-dropdown" id="education">
+                  <option value="" disabled selected style='display:none;'></option>
+                  <option value="val">Другое</option>
+                </select>
+              </div>
+            </div>
+            <div class="ui-textarea-container">
+              <label class="ui-textarea-label">Текст сообщения</label>
+              <div class="ui-textarea" contentEditable="true" data-placeholder="Текст который был напечатан" id="text"></div>
+            </div>
+            <div class="ui-checkbox-container">
+              <label class="ui-checkbox-label">
+                <input type="checkbox" name="question" value="PD" ><div></div>
+                Отправляя форму, Вы подтверждаете ознакомление с <a href="#">пользовательским соглашением</a>,
+                <a href="#">политикой обработки персональных данных</a> и даёте согласие на <a href="#">обработку персональных данных</a>.
+              </label>
+            </div>
+            <div class="ui-button-container">
+              <button type="submit" class="ui-button">Опубликовать</button>
+            </div>
+          </form>
+        </div>
+      </main>      
     </div>
   </div>
   </div>
-  <script src="js/main.js?v=106" defer></script>
-  <script src="../js/aos.js" defer></script>
 </body>
-
 </html>
