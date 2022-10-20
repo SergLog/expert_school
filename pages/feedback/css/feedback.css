@@ -6,11 +6,30 @@
 	align-items: center;
 }
 
+@media(max-width:1023px) {
+	.feedback-header {
+		border-top: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+	}
+}
+
 .feedback-header .title {
 	font-weight: 700;
 	font-size: 2.4rem;
 	text-transform: uppercase;
 	margin-right: 4.01rem;
+}
+
+@media(max-width:1023px) {
+	.feedback-header .title {
+		font-size: 3.4rem;
+	}
+}
+
+@media(max-width:639px) {
+	.feedback-header .title {
+		font-size: 4.4rem;
+	}
 }
 
 .feedback-header .description {
@@ -19,12 +38,30 @@
 	text-transform: uppercase;
 }
 
+@media(max-width:1023px) {
+	.feedback-header .description {
+		font-size: 2.5rem;
+	}
+}
+
+@media(max-width:639px) {
+	.feedback-header .description {
+		font-size: 3rem;
+	}
+}
+
 .feedback-form {
 	padding: 3.49rem 16.98rem 15.16rem 16.98rem;
 }
 
 .feedback-form .ui-dropdown-container {
 	width: 50%;
+}
+
+@media(max-width:1023px) {
+	.feedback-form .ui-dropdown-container {
+		width: 100%;
+	}
 }
 
 .feedback-form .ui-textarea-container {
@@ -39,7 +76,7 @@
 	margin-top: 2rem;
 }
 
-.feedback-form .ui-checkbox-container .ui-checkbox-label{
+.feedback-form .ui-checkbox-container .ui-checkbox-label {
 	font-size: 1.25rem;
 	line-height: 150%;
 	padding-left: 3rem;
@@ -47,16 +84,30 @@
 	appearance: unset;
 }
 
+@media(max-width:1023px) {
+	.feedback-form .ui-checkbox-container .ui-checkbox-label {
+		font-size: 1.9rem;
+		padding-left: 5rem;
+	}
+}
+
 .feedback-form .ui-checkbox-container .ui-checkbox-label a{
 	text-decoration: none;
 	color: inherit;
 	text-decoration: underline;	
-	text-underline-offset: 5px;
+	text-underline-offset: 0.26rem;
 }
 
 .feedback-form .ui-checkbox-container input + div {
 	width: 2.08rem;
 	height: 2.08rem;
+}
+
+@media(max-width:1023px) {
+	.feedback-form .ui-checkbox-container input + div {
+		width: 3.08rem;
+		height: 3.08rem;
+	}
 }
 
 .feedback-form .ui-button-container {
