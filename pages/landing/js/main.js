@@ -78,6 +78,17 @@ $(document).ready(function () {
 		});
 
 
+$('#fields').on('submit', function(e) {
+	e.preventDefault();
+	$('#success-popup').addClass('active');
+	$('body').addClass('openPopap');
+})
+
+
+$('.popup .close').on('click', function() {
+	$(this).closest('.popup').removeClass('active');
+	$('body').removeClass('openPopap');
+})
   
   
 });
