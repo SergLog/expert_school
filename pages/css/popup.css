@@ -1,0 +1,22 @@
+body.openPopap {overflow: hidden}
+.popup{display:none;position: fixed;width: 100vw;height: 100vh;z-index: 10;background-color: rgba(255,255,255,0.8);top: 0;left: 0;align-items: center;justify-content: center;}
+.popup.active{display:flex}
+.popup-wrap{width: 100%;max-width: 1000px;background: #EBEAE9;border: 2px solid #000000;position: relative;}
+.popup .close{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.2406 17.3585L1.58785 0L0.199219 1.41217L17.8401 18.759L0.781982 35.8172L2.18243 37.2176L19.2523 20.1477L36.6114 37.2175L38 35.8053L20.6528 18.7472L37.9995 1.4005L36.5991 4.56572e-05L19.2406 17.3585Z' fill='black'/%3E%3C/svg%3E");position: absolute;width: 38px;height: 38px;background-position: center;right: 40px;top: 50px;cursor: pointer;}
+.popup-content {padding: 112px 11.6%;}
+.popup-title{font-weight: 500;font-size: 26px;line-height: 130%;text-align: center;letter-spacing: -0.01em;text-transform: uppercase;}
+.popup-content.red {padding: 112px 5.6%;}
+.popup-content.red .popup-title {font-weight: 700;font-size: 46px;line-height: 58px;text-align: center;letter-spacing: -0.01em;text-transform: uppercase;color: #E31B21;}
+.popup-btns-wrap{display: flex;flex-direction: column;gap: 40px;margin-top: 40px;}
+.popup-btn{font-weight: 500;font-size: 26px;line-height: 130%;text-align: center;letter-spacing: -0.01em;text-transform: uppercase;text-decoration: none;color: #000;background: transparent;border: solid 2px #000;padding: 15px;}
+
+
+@media (max-width: 1024px) {
+  .popup .close{width: 3.711vw;height: 3.711vw;right: 3.906vw;top: 4.883vw;} 
+  .popup-content {padding: 10.938vw 11.6%;} 
+  .popup-title{font-size: 2.539vw;} 
+  .popup-content.red {padding: 10.938vw 5.6%;} 
+  .popup-content.red .popup-title {font-size: 4.492vw;line-height: 5.664vw;} 
+  .popup-btns-wrap{gap: 3.906vw;margin-top: 3.906vw;} 
+  .popup-btn{font-size: 2.539vw;padding: 1.465vw;}
+}

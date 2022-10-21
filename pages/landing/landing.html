@@ -19,6 +19,7 @@
   <link href="../css/recomendations.css" type="text/css" rel="stylesheet" />
   <link href="../css/slider.css" type="text/css" rel="stylesheet" />
   <link href="../css/ui.css" type="text/css" rel="stylesheet" />
+  <link href="../css/popup.css" type="text/css" rel="stylesheet" />
   <script src="../../js/jquery.js?v=106" defer></script>
   <script src="../../js/slick.min.js?v=106" defer></script>
   <link href="../css/slider.css" type="text/css" rel="stylesheet" />
@@ -249,9 +250,19 @@
                     </div>
   
                     <div class="age-container">
-                      <div class="ui-input-container">
-                        <label class="ui-input-label" for="age">Возраст</label>
-                        <input class="ui-input" type="text" id="age" />
+                      <div class="ui-input-container age">
+                        <label class="ui-input-label" for="age-day">Возраст</label>
+                        <input class="ui-input" type="text" placeholder="ДЕНЬ" id="age-day">
+                        <p class="error-text">Ошибка ввода</p>
+                      </div>
+                      <div class="ui-input-container age">
+                        <label class="ui-input-label no-label" for="age-month"></label>
+                        <input class="ui-input" type="text" placeholder="МЕСЯЦ" id="age-month">
+                        <p class="error-text">Ошибка ввода</p>
+                      </div>
+                      <div class="ui-input-container age">
+                        <label class="ui-input-label no-label" for="age-year"></label>
+                        <input class="ui-input" type="text" placeholder="ГОД" id="age-year">
                         <p class="error-text">Ошибка ввода</p>
                       </div>
                     </div>
@@ -266,20 +277,6 @@
                         </div>
                       </fieldset>
                     </div>
-  
-                    <!--div class="ui-dropdown-container education">
-                      <label class="ui-dropdown-label" for="education">Образование</label>
-                      <div class="ui-select-container">
-                        <select class="ui-dropdown" id="education">
-                          <option value="" disabled selected style='display:none;'></option>
-                          <option value="val">Полное высшее</option>
-                          <option value="val">Не полное высшее</option>
-                          <option value="val">Специальное</option>
-                          <option value="val">Среднеспециальное</option>
-                        </select>
-                      </div>
-                      <p class="error-text">Ошибка ввода</p>
-                    </div-->
           
                     <div class="ui-textarea-container">
                       <label class="ui-textarea-label">Анамнез заболевания*</label>
@@ -522,6 +519,61 @@
           </div>
         </div>
       </footer>
+
+
+
+
+      <div class="popup">
+        <div class="popup-wrap">
+          <div class="close"></div>
+          <div class="popup-content">
+            <h4 class="popup-title">Спасибо, что поделились вашим клиническим случаем</h4>
+            <div class="popup-btns-wrap">
+              <button id="to-form" class="popup-btn">поделиться еще одним клиническим случаем</button>
+              <a href="/" class="popup-btn">перейти на школу экспертов</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup-wrap">
+          <div class="close"></div>
+          <div class="popup-content">
+            <h4 class="popup-title">Приём заявок окончен! <br>
+              Мы приглашаем вас к участию <br>
+              в следующем этапе - голосовании за лучший клинический случай. Подробнее о дате проведения можно узнать в разделе "Сроки"</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup-wrap">
+          <div class="close"></div>
+          <div class="popup-content">
+            <h4 class="popup-title">приём окончен! результат 01.03.2023</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup-wrap">
+          <div class="close"></div>
+          <div class="popup-content red">
+            <h4 class="popup-title ">Приём заявок окончен! <br>Мы приглашаем вас к участию <br>в следующем этапе - голосовании за лучший клинический случай. Подробнее о дате проведения можно узнать в разделе "Сроки"</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup-wrap">
+          <div class="close"></div>
+          <div class="popup-content red">
+            <h4 class="popup-title ">приём окончен! результат 01.03.2023</h4>
+          </div>
+        </div>
+      </div>
+ 
 
     </div>
   </div>

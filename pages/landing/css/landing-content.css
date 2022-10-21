@@ -37,10 +37,15 @@ li:before{right: -1.563rem;content: "";position: absolute;width: 5.260rem;height
 .form-wrap .header.active + .form-section{display: flex;} 
 .form-wrap .header .icon {width: 1.56rem;height: 1.56rem; background: #EBEAE9;background-image: url("../../img/plus.svg");background-repeat: no-repeat;background-size: cover;cursor: pointer;} 
 .form-wrap .header.active .icon {background-image: url("../../img/minus.svg");} 
-.form-wrap .age-container,
-.form-wrap .gender-container,
 .form-wrap .ui-input-container.referral,
+.form-wrap .gender-container,
 .form-wrap .ui-input-container.diagnos{display: flex;width: calc(50% - 1.615rem);} 
+.form-wrap .age-container {display: flex;width: 100%;gap: 1.3rem;} 
+
+.form-wrap .ui-input-container.age {width: calc(33.333% - 0.9rem);}
+.video-wrap{height:auto;padding: 2.396rem;}
+
+
 .form-wrap .gender-container input {appearance: none; text-align: center;} 
 .form-wrap .gender-container fieldset {display: flex;border: none;font-family: inherit;align-items: center;margin-top: 0.83rem;} 
 .form-wrap .gender-container #male::after,
@@ -306,7 +311,7 @@ img.left{padding-left: 0;margin-top: 5.469rem;margin-bottom: 9.115rem;}
 
 @media (max-aspect-ratio: 16/9) {
 	.video-wrap img{height: auto; width: 100%}
-	.video-wrap{height:auto;padding: 2.396rem;}
+	.video-wrap{height:auto;}
 }
 
 
