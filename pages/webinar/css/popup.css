@@ -1,3 +1,8 @@
+.registration-modal div.ui-input-container .ui-input::placeholder {
+	font-size: 1.2rem;
+	text-align: left;
+}
+
 .registration-modal a.modal-link {   
     display:none;
 }
@@ -49,7 +54,7 @@
 	@media(max-width:1023px) {
     	.registration-modal .reveal-modal {
     		width: 57.84rem;
-    		height: 28.31rem;
+    		height: fit-content;
     	}
 
     	.registration-modal .reveal-modal p {
@@ -61,7 +66,8 @@
 	@media(max-width:639px) {
     	.registration-modal .reveal-modal {
 			width: 64.84rem;
-			height: 35.31rem;
+			/* height: 35.31rem; */
+			
 		}
 
     	.registration-modal .reveal-modal p {
@@ -158,7 +164,7 @@
 	@media(max-width:1023px) {
     	.modal .reveal-modal {
     		width: 57.84rem;
-    		height: 28.31rem;
+    		height: fit-content;
     	}
 
     	.modal .reveal-modal p {
