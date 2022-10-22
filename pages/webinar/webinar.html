@@ -26,10 +26,86 @@
   <link href="css/webinar-speakers.css" type="text/css" rel="stylesheet" />
   <link href="css/webinar-tags.css" type="text/css" rel="stylesheet" />
   <link href="css/webinar-poll.css" type="text/css" rel="stylesheet" />
+  <link href="css/popup.css" type="text/css" rel="stylesheet" />
   <link href="css/webinar-video-stub.css" type="text/css" rel="stylesheet" />
+  <script src="js/popup.js?v=106" defer></script>
 </head>
 
 <body>
+  <div class="modal">
+    <a href="#container" data-reveal-id="modal" class="modal-link">POP UP</a>
+    <div id="container">
+      <div id="modal" class="reveal-modal">
+        <a href="#" class="close-reveal-modal"></a>
+        <p></p>        
+      </div>
+    </div>
+  </div>
+  <div class="registration-modal">
+    <a href="#registration-container" data-reveal-id="registration-modal" class="modal-link">POP UP</a>
+    <div id="registration-container">
+      <form id="registration-modal" class="reveal-modal">
+        <a href="#" class="close-reveal-modal"></a>
+        <p class="title">Регистрация на мероприятие</p>
+        <div class="ui-input-container email required">
+          <label class="ui-input-label" for="email">e-mail</label>
+          <input class="ui-input" type="text" id="email" />
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-input-container surname required">
+          <label class="ui-input-label" for="surname">Фамилия</label>
+          <input class="ui-input" type="text" id="surname" />
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-input-container name required">
+          <label class="ui-input-label" for="name">Имя</label>
+          <input class="ui-input" type="text" id="name" />
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-input-container tel required">
+          <label class="ui-input-label" for="tel">Телефон</label>
+          <input class="ui-input" type="text" id="tel" />
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-input-container town required">
+          <label class="ui-input-label" for="town">Город</label>
+          <input class="ui-input" type="text" id="town" />
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-dropdown-container ">
+          <label class="ui-dropdown-label" for="dropdown">Специальность</label>
+          <div class="ui-select-container">
+            <select  class="ui-dropdown" id="dropdown">
+              <option value="" disabled selected style='display:none;'></option>
+              <option value="val">Неврология (неврологи)</option>
+              <option value="val">Психиатрия (психиатры взрослые)</option>
+              <option value="val">Терапия (терапевты, ВОП)</option>
+              <option value="val">Гастроэнтерология (гастроэнтерологи)</option>
+              <option value="val">Гинекология (гинекологи)</option>
+              <option value="val">Педиатрия (педиатры, детские гастроэнтерологи, детские неврологи/психиатры)
+              </option>
+              <option value="val">Оториноларингология(ЛОРы)</option>
+            </select>
+          </div>
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-dropdown-container">
+          <label class="ui-dropdown-label" for="dropdown">Регион</label>
+          <div class="ui-select-container">
+            <select  class="ui-dropdown" id="dropdown">
+              <option value="" disabled selected style='display:none;'></option>
+              <option value="val">Московская область</option>                    
+              <option value="val">Москва</option>
+            </select>
+          </div>
+          <p class="error-text">Ошибка ввода</p>
+        </div>
+        <div class="ui-button-container" style="position: relative">
+          <button type="submit" class="ui-button">Зарегистироваться</button>
+        </div>   
+      </form>
+    </div>
+  </div>
   <div name="top" class="page webinars-review20">
     <nav>
       <div class="nav-burger-icon"></div>
@@ -131,8 +207,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="registration-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        </di v>
+        <div class="registration-button" onclick="openRegistrationModal()">ЗАРЕГИСТРИРОВАТЬСЯ</div>        
         <div class="tab-bar">
           <div class="tab-bar-likes">
           <div class="ui-like-container like">

@@ -142,7 +142,6 @@ div.ui-dropdown-container.error .ui-dropdown-label {
 div.ui-dropdown-container p.error-text {
 	display: none;
 	margin-top: 6px;
-	/* /* margin-left: 26px; */ */
 	color: #ED7A33;
 	font-weight: 400;
 	font-size: 18px;
