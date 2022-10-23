@@ -1,0 +1,72 @@
+@media(max-width:1023px) {
+	main {
+		padding: 0 4.17rem;
+	}
+}
+
+main .site-intro {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-left: 1.04rem;
+}
+
+main .site-intro div.breadcrumbs {
+	display: flex;
+	align-self: flex-start;
+	margin-top: 5.4rem;
+	margin-left: 3.5rem;
+}
+
+main .site-intro div.breadcrumbs a {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.042rem;
+	line-height: 100%;
+	color: #525251;
+	text-transform: uppercase;
+}
+
+main .site-intro div.breadcrumbs a::before {
+	content: "";
+	width: 0.47rem;
+	height: 0.83rem;
+	margin: 0px 0.63rem;
+	background: #EBEAE9;
+	background-image: url("../../../img/breadcrumbs_arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
+}
+
+
+@media(max-width:1023px) {
+	main .site-intro div.breadcrumbs {
+		display: none;
+	}
+}
+
+@media(max-width:1023px) {
+	main .site-intro {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		padding: 0;
+		margin-left: -4.17rem;
+		margin-right: -4.17rem;
+	}
+}
+
+main .site-intro .site-logo {
+	width: 9.74rem;
+	order: 1;
+	margin-top: 3.54rem;
+	margin-left: 1.35rem;
+	align-self: flex-start;
+}
+
+@media(max-width:1023px) {
+	main .site-intro .site-logo {
+		display: none;
+	}
+}

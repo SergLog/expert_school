@@ -1,0 +1,306 @@
+
+.clinical-cases-list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 2rem;
+	margin-top: 5rem;
+}
+
+.clinical-cases-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.clinical-cases-list .clinical-cases-item {
+	display: flex;
+	padding: 1.67rem 0rem 1.67rem 1.67rem;
+	border-bottom: 2px solid #000000;
+	width: 71.8rem;
+}
+
+@media(max-width:639px) {
+.clinical-cases-list .clinical-cases-item:first-child {
+	border-top: 1px solid #000000;
+}
+}
+
+.clinical-cases-list .clinical-cases-item .image-container {
+	display: flex;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item {
+		width: 91.28rem;
+		padding: 1.67rem;
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item {
+		padding-top: 3.2rem;
+		flex-direction: column;
+		border-bottom: 1px solid #000000;
+	}
+}
+
+.clinical-cases-item-empty {
+	display: none;
+}
+
+@media(max-width:639px) {
+	.clinical-cases-item-empty {
+		display: block;
+		height: 19.2rem;
+		border-bottom: 1px solid;
+	}
+}
+
+.clinical-cases-list:last-child .clinical-cases-item {
+	border-bottom: 0;
+}
+
+.clinical-cases-list .clinical-cases-item .image {
+	display: flex;
+}
+
+.clinical-cases-list .clinical-cases-item img {
+	width: 27.97rem;
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item img {
+		width: 29.69rem;
+		/* object-fit: contain; */
+		height: 29.3rem;
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item img {
+		width: 81.33rem;
+		object-fit: cover;
+		height: 38.93rem;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item:hover {
+	background: #F2F2F2;
+}
+
+.clinical-cases-list .clinical-cases-item:hover .image .empty {
+	background-color: #ED7A33;
+	transition: all 0.5s ease;
+	border: 0;
+}
+
+.clinical-cases-list .clinical-cases-item:hover .image img {
+	filter: grayscale(0%);
+}
+
+.clinical-cases-list .clinical-cases-item:hover .arrow {
+	width: 3.7rem;
+	background-color: #F2F2F2;
+	background-image: url("../../../img/orange_arrow.svg");
+	background-size: contain;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item:hover .arrow {
+		width: 6.51rem;
+		height: 2.6rem;
+		
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item:hover .arrow {
+		width: 11.47rem;
+		height: 4rem;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item .text-container {
+	display: flex;
+	flex-direction: column;
+	border-left: 2px solid #000000;
+	margin-left: 1.2rem;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item .text-container {
+		border-left: 0;
+		margin-left: 0
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item .text-container {
+		width: 81.5rem;
+    	margin-left: 5rem;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item .title-container {
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #000000;
+	
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item .title-container {
+		margin-left: 1.67rem;
+		/* border-bottom: 1px solid #000000; */
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item .title-container {
+		margin-left: 0;
+		border-bottom: 1px solid #000000;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item p.title {
+	display: flex;
+    align-items: center;
+	/* width: 36.70rem; */
+	font-size: 1.67rem;
+	font-weight: 600;
+	line-height: 120%;
+	padding: 0.5rem 0 0.5rem 1.67rem;	
+	text-transform: uppercase;
+	height: 5.3rem;
+	cursor: pointer;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item p.title {
+		font-size: 2.6rem;
+		height: 9.38rem;
+		padding: 0.5rem 0;
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item p.title {
+		font-size: 3.73rem;
+		height: 15.2rem;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item p.text {
+	/* width: 37.67rem; */
+	font-size: 1.25rem;
+	padding: 0 1.67rem;
+	margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item p.text {
+		width: 53.52rem;
+		font-size: 2.08rem;
+		line-height: 120%;
+		/* height: 20.05rem; */
+		/* margin-left: 2rem; */
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item p.text {
+		/* width: 53.52rem;
+		font-size: 2.08rem;
+		line-height: 120%; */
+		/* height: 20.05rem; */
+		/* margin-left: 2rem; */
+		font-size: 3.2rem;
+		width: 100%;
+		padding: 0;
+		margin-top: 10.67rem;
+		margin-bottom: 8rem;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item p.specialisation {
+	font-size: 1rem;
+	font-weight: 500;
+	transform: rotate(-90deg);
+	width: 1rem;
+	height: 1rem;
+	align-self: end;
+	margin-right: 1rem;
+	text-transform: uppercase;
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item p.specialisation {
+		font-size: 2.6rem;
+		font-weight: 500;
+		transform: rotate(-90deg);
+		width: 2.6rem;
+		height: 2.6rem;
+		align-self: end;
+		margin-right: 1rem;
+		text-transform: uppercase;
+	}
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item p.specialisation {
+		font-size: 3.2rem;
+		width: 3.2rem;
+		height: 3.2rem;
+		
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item p.specialisation {
+		margin-bottom: 11.47rem;
+		
+	}
+}
+
+.clinical-cases-list .clinical-cases-item p.empty {
+	width: 1.51rem;	
+	border-left: 2px solid #000000;
+	/* background: rgb(132, 189, 27); */
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item p.empty {
+		border-left: 1px solid #000000;
+	}
+}
+
+.clinical-cases-list .clinical-cases-item .arrow {
+	width: 1.3rem;
+	height: 1.3rem;
+	background: #EBEAE9;
+	background-image: url("../../../img/arrow_news_item.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+	margin-left: auto;
+	/* margin-right: 0.89rem; */
+}
+
+@media(max-width:1023px) {
+	.clinical-cases-list .clinical-cases-item .arrow {
+		width: 2.6rem;
+		height: 2.6rem;
+	}
+}
+
+@media(max-width:639px) {
+	.clinical-cases-list .clinical-cases-item .arrow {
+		width: 4rem;
+		height: 4rem;
+	}
+}
