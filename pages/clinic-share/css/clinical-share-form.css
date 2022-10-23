@@ -68,7 +68,7 @@ main .clinical-share-content .fields .header {
 	text-transform: uppercase;
 }
 
-@media(max-width:1023px) {
+@media(max-width:639px) {
 	main .clinical-share-content .fields .header {
 		border-bottom: 1px solid;
 	}
