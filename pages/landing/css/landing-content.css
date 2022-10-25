@@ -101,7 +101,7 @@ li:before{right: -1.563rem;content: "";position: absolute;width: 5.260rem;height
 .landing-top-wrap .intro-text:before{content:"";position: absolute;height: 100%;border-right: solid 2px #000;left: 19.583rem;z-index: 0;} 
 .landing-top-wrap .text-bg{background-color: #ebeae9;position: relative;margin-top: 13.542rem;padding-bottom: 3.229rem;} 
 .landing-top-wrap .intro-img {width: 50%;padding-top: 9.792rem;} 
-.landing-top-wrap .intro-img img {width: 100%;margin-bottom: 5.729rem;filter: grayscale(100%);} 
+.landing-top-wrap .intro-img img {width: 100%;margin-bottom: 5.729rem;} 
 .landing-top-wrap .h1-desc{padding: 3.229rem 3.125rem 0 19.323rem;} 
 .landing-container>h3{margin-top: 6.146rem;margin-left: 1.250rem;} 
 
