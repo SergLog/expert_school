@@ -716,7 +716,8 @@ main .search-content .search-list.without-limits .search-item:nth-child(n+3){dis
 	/* .search-item-image img{width: 100%;height: auto;}  */
 	.search-item-text-container{width: 60%;padding-left: 1.823rem;padding-bottom: 0.651rem;} 
 	.search-item-title{line-height: 1;margin-bottom: 3.906rem;font-size: 2.865rem;max-width: 80%;} 
-	/* .search-item-buttons{display: none;} */
+	.search-item-buttons{font-size: 2.34rem;margin-top: -5rem;}
+	.search-item:hover .search-item-buttons{margin-top: -5rem}
 	.search-item-speakers-list{gap: 1.302rem;} 
 	.search-item-speaker{font-size: 1.823rem;line-height: 2.214rem;}
 	
@@ -751,6 +752,7 @@ main .search-content .search-list.without-limits .search-item:nth-child(n+3){dis
  .search-item-props-views{font-size: 3.125rem;line-height: 3.906rem;margin-bottom: 1.823rem;display: none;}
  .search-item-props-views span{padding-left: 7.422rem;background-position: 2.214rem 61%;}
  .search-item-image-container{width: 52%;order: -1;align-items: flex-start;height: 40rem;}
+ .search-item-buttons{font-size: 3.34rem;margin-top: -48rem;margin-bottom: 33rem;}
  .search-item-specialisation{width: 100%;width: 2.604rem;height: 3.604rem;padding-left: 1.432rem;font-size: 3.5rem;line-height: 4.000rem;display: flex;align-items: flex-end;flex-direction: column;}
  .search-item-image{padding-left: 1.823rem;margin-left: 1.823rem;border-left: solid 1px #000;}
  .search-item-text-container{width: 100%;padding: 1.600rem 0 0 6.133rem;}
