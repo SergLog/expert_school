@@ -229,7 +229,7 @@
                   <p>Поделитесь интересными клиническими случаями из вашей практики</p>
                 </div>
                 <div class="diagnostic-img">
-                  <img src="img/diagnostic.jpg" alt="">
+                  <img src="img/ex.jpg" alt="">
                 </div>
               </div>
 
@@ -244,26 +244,26 @@
                   </div>
                   <div class="form-section">
                     <div class="ui-input-container">
-                      <label class="ui-input-label" for="name">Название клинического случая</label>
-                      <input class="ui-input" type="text" id="name">
-                      <p class="error-text">Ошибка ввода</p>
+                      <label class="ui-input-label" for="name">Название клинического случая*</label>
+                      <input class="ui-input required" type="text" id="name">
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
                     <div class="age-container">
                       <div class="ui-input-container age">
-                        <label class="ui-input-label" for="age-day">Возраст</label>
-                        <input class="ui-input" type="text" placeholder="ДЕНЬ" id="age-day">
-                        <p class="error-text">Ошибка ввода</p>
+                        <label class="ui-input-label" for="age-day">Возраст*</label>
+                        <input class="ui-input only-numbers required" type="text" placeholder="ДЕНЬ" id="age-day">
+                        <p class="error-text">Введите число</p>
                       </div>
                       <div class="ui-input-container age">
                         <label class="ui-input-label no-label" for="age-month"></label>
-                        <input class="ui-input" type="text" placeholder="МЕСЯЦ" id="age-month">
-                        <p class="error-text">Ошибка ввода</p>
+                        <input class="ui-input only-numbers required" type="text" placeholder="МЕСЯЦ" id="age-month">
+                        <p class="error-text">Введите число</p>
                       </div>
                       <div class="ui-input-container age">
                         <label class="ui-input-label no-label" for="age-year"></label>
-                        <input class="ui-input" type="text" placeholder="ГОД" id="age-year">
-                        <p class="error-text">Ошибка ввода</p>
+                        <input class="ui-input only-numbers required" type="text" placeholder="ГОД" id="age-year">
+                        <p class="error-text">Введите число</p>
                       </div>
                     </div>
   
@@ -280,21 +280,21 @@
           
                     <div class="ui-textarea-container">
                       <label class="ui-textarea-label">Анамнез заболевания*</label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
-                    <div class="ui-textarea-container">
+                    <div class="ui-textarea-container ">
                       <label class="ui-textarea-label">Анамнез жизни*</label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
-                    <div class="ui-textarea-container">
-                      <label class="ui-textarea-label">Назначенная терапия*<div class="ui-label-desc">принимаются только кейсы с назначением препарата Нормомед® (хотя бы 1 из препаратов)</div></label>
+                    <div class="ui-textarea-container ">
+                      <label class="ui-textarea-label required">Назначенная терапия*<div class="ui-label-desc">принимаются только кейсы с назначением препарата Нормомед® (хотя бы 1 из препаратов)</div></label>
                       
                       <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
                   </div>
   
@@ -304,48 +304,45 @@
                     <div class="icon"></div>
                   </div>
                   <div class="form-section">
-                    <div class="ui-textarea-container">
-                      <label class="ui-textarea-label">эпидАнамнез* </label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                    <div class="ui-textarea-container ">
+                      <label class="ui-textarea-label">эпидАнамнез*</label>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
                     <div class="ui-input-container referral">
                       <label class="ui-input-label" for="referral">НАПРАВЛЕНИЕ ОТ</label>
                       <input class="ui-input" type="text" id="referral" />
-                      <p class="error-text">Ошибка ввода</p>
                     </div>
   
                     <div class="ui-input-container diagnos">
                       <label class="ui-input-label" for="diagnos">ДИАГНОЗ</label>
                       <input class="ui-input" type="text" id="diagnos" />
-                      <p class="error-text">Ошибка ввода</p>
                     </div>
   
   
                     <div class="ui-input-container complaints">
                       <label class="ui-input-label" for="complaints">ЖАЛОБЫ</label>
                       <input class="ui-input" type="text" id="complaints" />
-                      <p class="error-text">Ошибка ввода</p>
                     </div>
   
   
-                    <div class="ui-textarea-container">
+                    <div class="ui-textarea-container ">
                       <label class="ui-textarea-label">В анамнезе*</label>
-                      <div class="ui-textarea" contentEditable="true" id="anamnez"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <div class="ui-textarea required" contentEditable="true" id="anamnez"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
-                    <div class="ui-textarea-container">
+                    <div class="ui-textarea-container ">
                       <label class="ui-textarea-label">Аллергологический Анамнез*</label>
-                      <div class="ui-textarea" contentEditable="true" id="anamnez"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <div class="ui-textarea required" contentEditable="true" id="anamnez"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
-                    <div class="ui-textarea-container">
+                    <div class="ui-textarea-container ">
                       <label class="ui-textarea-label">Рекомендовано*</label>
-                      <div class="ui-textarea" contentEditable="true" id="anamnez"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <div class="ui-textarea required" contentEditable="true" id="anamnez"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
   
@@ -363,15 +360,15 @@
                   </div>
   
                   <div class="form-section">
-                    <div class="ui-textarea-container">
-                      <label class="ui-textarea-label">Жалобы* </label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                    <div class="ui-textarea-container ">
+                      <label class="ui-textarea-label">Жалобы*</label>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
-                    <div class="ui-textarea-container">
-                      <label class="ui-textarea-label">Рекомендовано* </label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                    <div class="ui-textarea-container ">
+                      <label class="ui-textarea-label">Рекомендовано*</label>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
                   </div>
@@ -382,16 +379,16 @@
                     <div class="icon"></div>
                   </div>
                   <div class="form-section">
-                    <div class="ui-textarea-container">
-                      <label class="ui-textarea-label">Жалобы* </label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                    <div class="ui-textarea-container ">
+                      <label class="ui-textarea-label">Жалобы*</label>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
-                    <div class="ui-textarea-container">
-                      <label class="ui-textarea-label">Рекомендовано* </label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                    <div class="ui-textarea-container ">
+                      <label class="ui-textarea-label">Рекомендовано*</label>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
                   </div>
   
@@ -402,10 +399,10 @@
                     <div class="icon"></div>
                   </div>
                   <div class="form-section">
-                    <div class="ui-textarea-container">
+                    <div class="ui-textarea-container ">
                       <label class="ui-textarea-label">Результаты и длительность лечения*</label>
-                      <div class="ui-textarea" contentEditable="true"></div>
-                      <p class="error-text">Ошибка ввода</p>
+                      <div class="ui-textarea required" contentEditable="true"></div>
+                      <p class="error-text">Обязательное поле</p>
                     </div>
   
                   </div>
@@ -418,23 +415,24 @@
                   </div>
                   <div class="form-section form-section-final">
   
-                    <div class="ui-checkbox-container">
-                      <label class="ui-checkbox-label">
-                        <input type="checkbox" name="question" value="PD" ><div></div>
-                        я даю согласие на обработку, хранение и использование моих персональных данных
+                    <div class="ui-checkbox-container ">
+                      <label class="ui-checkbox-label ">
+                        <input type="checkbox" class="ui-checkbox required" name="question" value="PD" ><div></div>
+                        я даю согласие на обработку, хранение и использование моих персональных данных*
                       </label>
+					  <p class="error-text">Обязательное поле</p>
                     </div>
   
                     <div class="ui-checkbox-container">
                       <label class="ui-checkbox-label">
-                        <input type="checkbox" name="question" value="RULES"><div></div>
+                        <input class="ui-checkbox" type="checkbox" name="question" value="RULES"><div></div>
                         я согласен с правилами участия в проекте
                       </label>
                     </div>
   
                     <div class="ui-checkbox-container">
                       <label class="ui-checkbox-label">
-                        <input type="checkbox" name="question" value="AGREE"><div></div>
+                        <input class="ui-checkbox" type="checkbox" name="question" value="AGREE"><div></div>
                         я разрешаю использование и публикацию моего клинического случая на сайте «Школа экспертов» 
                       </label>
                     </div>
