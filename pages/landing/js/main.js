@@ -23,7 +23,7 @@ $(document).ready(function () {
           slidesToShow: 1.33,
           centerMode: false,
           slidesToScroll: 1,
-    focusOnSelect: true
+          focusOnSelect: true
         }
       }
     ]
@@ -93,6 +93,7 @@ $(document).ready(function () {
 		  
 
 	function checkFields(obj) {
+		const numbersRegex = /^[0-9]+$/;
 		let result = true;
 
 		function setInvalidField(field) {
@@ -107,14 +108,18 @@ $(document).ready(function () {
 			$(field).closest('.required').removeClass('error');
 		}
 
-		obj.find('.ui-input, .ui-textarea').each(function () {
+		obj.find('.ui-input, .ui-textarea, .ui-checkbox').each(function () {
 			let el = $(this);
 			let val = el.val();
-			const numbersRegex = /^[0-9]+$/;
-			if(el[0].innerText.length > 1) val = el[0].innerText;
-		
+			
 			el.closest('.error').removeClass('error');
 			
+			if(el[0].innerText.length > 1) val = el[0].innerText;
+		
+			
+			if(el[0].type === "checkbox" && !el[0].checked) val = '';
+				
+
 			if (el.hasClass('required')){
 				val.length < 1 ? setInvalidField(el) : setValidField(el);
 			}

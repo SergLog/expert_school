@@ -953,6 +953,9 @@ div.ui-views-container .icon {
 .ui-checkbox-container input + div{background-image: url("../../img/agreement_desktop_initial.svg");position: absolute;left: 0;background-repeat: no-repeat;background-size: contain;width: 1.250vw;height: 1.250vw;top: calc(50% - 0.625vw);} 
 .ui-checkbox-container input:checked + div{ background-image: url("../../img/agreement_desktop.svg");} 
 .ui-checkbox-label{font-weight: 400;letter-spacing: -0.01em;color: #525251;position: relative;cursor: pointer;font-size: 0.938vw;line-height: 1.146vw;padding-left: 1.771vw;display: inline-block;}
+.ui-checkbox-container .error-text{display: none; 	margin-top: 6px;margin-left: 26px;color: #ED7A33;font-weight: 400;font-size: 18px;line-height: 23px;}
+.ui-checkbox-container.error .error-text{display: block}
+.ui-checkbox-container.error .ui-checkbox-label {color: #ED7A33;}
 
 
 
