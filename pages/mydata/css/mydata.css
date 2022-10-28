@@ -224,9 +224,12 @@
 	.mydata-header .title {
 		font-size: 6.4rem;
 		border-bottom: 1px solid #000000;
-		padding-bottom: 3rem;
+		padding-bottom: 4.5rem;
 		padding-top: 3rem;
 		margin-right: 0;
+		text-decoration: underline;
+		text-underline-offset: 8px;
+		text-decoration-color: #ED7A33;
 	}
 
 	.mydata-header .description {
