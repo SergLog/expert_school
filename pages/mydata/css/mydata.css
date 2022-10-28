@@ -260,10 +260,17 @@
 
 	.page-content .user-image .buttons .ui-button {
 		height: 10.91rem;
+		font-size: 3.5rem;
 	}
 
 	.page-content .user-image .buttons .button1 .ui-button {
 		width: 10.91rem;
+	}
+
+	.page-content .user-image .buttons .button1 .icon {
+		width: 3.4rem;
+		height: 3.4rem;
+		
 	}
 }
 
